@@ -22,6 +22,7 @@ logs/
 # OS
 .DS_Store
 Thumbs.db
+*:Zone.Identifier
 
 # Sensitive files
 github pat.txt
