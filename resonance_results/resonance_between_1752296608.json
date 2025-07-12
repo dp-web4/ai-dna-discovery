@@ -1,0 +1,22 @@
+{
+  "pattern": "between",
+  "timestamp": "2025-07-11T22:03:28.221824",
+  "resonant": true,
+  "models_responded": 2,
+  "shared_concepts": [
+    "between",
+    "heaven",
+    "etc.",
+    "rock",
+    "hard",
+    "place",
+    "(e.g.,",
+    "life",
+    "death",
+    "hell,"
+  ],
+  "response_samples": {
+    "phi3:mini": "Between two contrasting economic theories, Keynesianism and Monetarism. In the mid-20th century debate between these schools of thought regarding government intervention in the economy, John Maynard K",
+    "tinyllama:latest": "Between\n\n1. Between a rock and a hard place (literally)\n2. Between the devil and the deep blue sea\n3. Between heaven and earth\n4. Between the grass is greener over the fence, etc.\n5. Between a bargain"
+  }
+}

@@ -1,0 +1,10 @@
+digraph AIRelationships {
+  rankdir=LR;
+  node [shape=box, style=rounded];
+
+  "phi3" [label="phi3:mini"];
+  "tinyllama" [label="tinyllama:latest"];
+  "gemma" [label="gemma:2b"];
+  "mistral" [label="mistral:7b-instruct-v0.2-q4_0"];
+
+}

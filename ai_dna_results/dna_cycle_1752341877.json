@@ -1,0 +1,213 @@
+{
+  "timestamp": "2025-07-12T10:37:57.011481",
+  "results": [
+    {
+      "candidate": "you?",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "your",
+        "that",
+        "with",
+        "assistant",
+        "help"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "...",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "\"the",
+        "that",
+        "provide",
+        "help",
+        "with",
+        "activity",
+        "have",
+        "learning",
+        "something",
+        "some",
+        "hobbies",
+        "your",
+        "this",
+        "improve",
+        "could",
+        "start",
+        "learn",
+        "photography",
+        "taking",
+        "drawing",
+        "painting",
+        "great",
+        "from",
+        "used"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "cycle!",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "that",
+        "here",
+        "world",
+        "night",
+        "chorus:",
+        "cycle!",
+        "like",
+        "pendulum",
+        "motion",
+        "rhythm",
+        "that's",
+        "sync",
+        "with",
+        "revolves",
+        "around",
+        "life",
+        "\"cycle!\""
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "[or?]",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "with",
+        "context",
+        "what",
+        "about",
+        "provide",
+        "could",
+        "chatbot",
+        "your",
+        "questions",
+        "company",
+        "please",
+        "[insert"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "[[ ]?]",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "help",
+        "with"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "one",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "instruction",
+        "term",
+        "with",
+        "fait",
+        "pour",
+        "t'aider",
+        "cette",
+        "tout",
+        "comment",
+        "faire"
+      ],
+      "responses": 3
+    },
+    {
+      "candidate": "other",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "different",
+        "such",
+        "this",
+        "could",
+        "sure,",
+        "here",
+        "some",
+        "other",
+        "help",
+        "answer",
+        "provide",
+        "that",
+        "create",
+        "knowledge",
+        "allows",
+        "with",
+        "your",
+        "machine",
+        "using",
+        "chatbot",
+        "understand",
+        "natural",
+        "language",
+        "social",
+        "platforms",
+        "customer",
+        "support.",
+        "word"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u03c0",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "number",
+        "representing",
+        "ratio",
+        "circumference",
+        "context",
+        "mathematical",
+        "constant",
+        "circle's",
+        "diameter.",
+        "value",
+        "with",
+        "mathematics"
+      ],
+      "responses": 3
+    },
+    {
+      "candidate": "self",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "instance",
+        "method",
+        "that",
+        "object",
+        "with",
+        "provide",
+        "used"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "or?",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "both",
+        "here",
+        "revised",
+        "answer:",
+        "disjunction:",
+        "true",
+        "example,",
+        "\"you",
+        "have",
+        "cookie,"
+      ],
+      "responses": 4
+    }
+  ],
+  "resonance_events": []
+}

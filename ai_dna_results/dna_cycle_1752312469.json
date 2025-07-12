@@ -1,0 +1,218 @@
+{
+  "timestamp": "2025-07-12T02:27:49.118023",
+  "results": [
+    {
+      "candidate": "\u25b2\u25bc",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "have",
+        "provide",
+        "more",
+        "assistance",
+        "specific",
+        "that",
+        "your",
+        "with",
+        "through",
+        "make",
+        "individuals",
+        "need",
+        "help",
+        "quickly",
+        "their",
+        "crowd",
+        "people",
+        "medical",
+        "others",
+        "distributing",
+        "supplies",
+        "some",
+        "those",
+        "know"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "{ }",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "using",
+        "\"you",
+        "helpful",
+        "that",
+        "provide",
+        "your",
+        "responses",
+        "empty",
+        "object",
+        "with",
+        "properties",
+        "```javascript",
+        "console.log(obj.name);",
+        "output:",
+        "john",
+        "console.log(obj.age);"
+      ],
+      "responses": 3
+    },
+    {
+      "candidate": "[or?]",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "could",
+        "please",
+        "help",
+        "sure,",
+        "answer"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "?ro",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "with",
+        "such",
+        "capital",
+        "city",
+        "which",
+        "provide",
+        "using",
+        "virtual",
+        "assistance",
+        "small",
+        "business",
+        "assistants",
+        "help",
+        "your",
+        "improve",
+        "efficiency",
+        "support",
+        "tasks"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "many",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "\"many\"",
+        "that",
+        "than",
+        "describe",
+        "large",
+        "number",
+        "without",
+        "many",
+        "there",
+        "**many**"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "if",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "then",
+        "with",
+        "than",
+        "\\item",
+        "code",
+        "greater"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "or?or?",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "seeking",
+        "word",
+        "meant",
+        "without",
+        "context,",
+        "might",
+        "here",
+        "some",
+        "such",
+        "could",
+        "have",
+        "\"or?\"",
+        "repeated",
+        "before",
+        "rather",
+        "than",
+        "answer",
+        "'or?'",
+        "operator:",
+        "user",
+        "model",
+        "this",
+        "other"
+      ],
+      "responses": 3
+    },
+    {
+      "candidate": "you!",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "assist",
+        "today?",
+        "asistenta",
+        "aqu\u00ed?",
+        "\u00a1muy",
+        "bien,",
+        "bien!",
+        "ayudante",
+        "algo",
+        "crees",
+        "podr\u00edas",
+        "ayudarme",
+        "c\u00f3mo",
+        "para",
+        "ense\u00f1arme",
+        "sobre"
+      ],
+      "responses": 3
+    },
+    {
+      "candidate": "I",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "that",
+        "without",
+        "with",
+        "such",
+        "input",
+        "'i,'",
+        "your",
+        "letter",
+        "sound"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "one",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "like",
+        "context",
+        "that",
+        "human",
+        "number"
+      ],
+      "responses": 4
+    }
+  ],
+  "resonance_events": []
+}

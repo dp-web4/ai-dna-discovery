@@ -1,0 +1,21 @@
+{
+  "pattern": "mind",
+  "timestamp": "2025-07-11T23:38:13.145740",
+  "resonant": true,
+  "models_responded": 3,
+  "shared_concepts": [
+    "your",
+    "mental",
+    "help",
+    "well-being.",
+    "stress",
+    "feelings",
+    "time",
+    "provide"
+  ],
+  "response_samples": {
+    "phi3:mini": "Certainly! Maintaining a healthy mind is crucial for overall well-being. Here are several ways to foster mental resilience:\n\n1. Practice Mindfulness Meditation - Spend a few minutes each day focusing ",
+    "tinyllama:latest": "Sure, here's a possible sentence for the given text:\n\nAs a helpful AI assistant, you offer assistance to a person who is struggling with their mind. You may use phrases like \"confused by your thoughts",
+    "gemma:2b": "Sure, I am ready to assist you with your questions. How may I help you today?"
+  }
+}

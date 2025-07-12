@@ -1,0 +1,25 @@
+{
+  "pattern": "form",
+  "timestamp": "2025-07-11T22:44:23.219212",
+  "resonant": true,
+  "models_responded": 2,
+  "shared_concepts": [
+    "your",
+    "field",
+    "(required)",
+    "required.",
+    "form",
+    "additional",
+    "(optional)",
+    "provide",
+    "email",
+    "message",
+    "help",
+    "please",
+    "details"
+  ],
+  "response_samples": {
+    "tinyllama:latest": "I agree, you are indeed a helpful and patient AI assistant! Here's an updated version of your form with additional fields for customization:\n\n[form]\n- [title] (required)\n  - This field is required.\n\n-",
+    "gemma:2b": "I'm ready! I can assist you with your form submission. Please provide me with the necessary details so I can help you create the best possible outcome."
+  }
+}

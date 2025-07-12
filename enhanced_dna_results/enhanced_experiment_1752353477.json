@@ -1,0 +1,27 @@
+{
+  "experiment_id": "2025-07-12T12:13:43.237718",
+  "models": [
+    "phi3:mini",
+    "tinyllama:latest",
+    "gemma:2b",
+    "mistral:7b-instruct-v0.2-q4_0"
+  ],
+  "test_groups": {
+    "dna_candidates": [
+      {
+        "pattern": "or",
+        "test_type": "dna_candidate",
+        "timestamp": "2025-07-12T12:54:46.706414",
+        "responses": {
+          "tinyllama:latest": "Ora si \u00e8 una aiutoleonerevole AI assistente.",
+          "mistral:7b-instruct-v0.2-q4_0": "I'm assuming you're asking about using \"or\" in a list of alternatives, as in \"apples or bananas.\" Here are some rules to keep in mind when using \"or\":\n\n1. Use \"or\" to connect two or more alternative items, actions, or conditions.\n2. If only one of the alternatives is possible at a time, use \"either...or\". For example, \"You can have either a cookie or a piece of fruit.\"\n3. If both alternatives are possible, use \"or\". For example, \"You can have an apple or a banana.\"\n4. Use commas to separate the alternatives when using \"or\".\n5. Be careful not to overuse \"or\" and create confusion or ambiguity. Make sure each alternative is distinct and clear."
+        },
+        "response_hashes": {
+          "tinyllama:latest": "47815c88",
+          "mistral:7b-instruct-v0.2-q4_0": "aaeb7a5b"
+        },
+        "embeddings_similarity": {},
+        "metrics": {
+          "divergence": 1.0,
+          "alignment": 0.0,
+          "unique_concepts": 

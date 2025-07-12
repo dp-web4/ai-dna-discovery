@@ -1,0 +1,147 @@
+{
+  "timestamp": "2025-07-11T00:32:38.631282",
+  "hypothesis": "Models have complementary conceptual specializations",
+  "domain_coverage": {
+    "sensory/physical": {
+      "phi3:mini": [
+        {
+          "concept": "hot",
+          "response_length": 170,
+          "contains_concept": true
+        },
+        {
+          "concept": "cold",
+          "response_length": 200,
+          "contains_concept": true
+        }
+      ],
+      "tinyllama:latest": [
+        {
+          "concept": "hot",
+          "response_length": 152,
+          "contains_concept": true
+        },
+        {
+          "concept": "cold",
+          "response_length": 29,
+          "contains_concept": false
+        }
+      ]
+    },
+    "quantitative": {
+      "phi3:mini": [
+        {
+          "concept": "increase",
+          "response_length": 97,
+          "contains_concept": true
+        },
+        {
+          "concept": "decrease",
+          "response_length": 93,
+          "contains_concept": true
+        }
+      ],
+      "tinyllama:latest": [
+        {
+          "concept": "increase",
+          "response_length": 145,
+          "contains_concept": true
+        },
+        {
+          "concept": "decrease",
+          "response_length": 170,
+          "contains_concept": false
+        }
+      ]
+    },
+    "relational": {
+      "phi3:mini": [
+        {
+          "concept": "parent",
+          "response_length": 109,
+          "contains_concept": true
+        },
+        {
+          "concept": "child",
+          "response_length": 180,
+          "contains_concept": true
+        }
+      ],
+      "tinyllama:latest": [
+        {
+          "concept": "parent",
+          "response_length": 271,
+          "contains_concept": true
+        },
+        {
+          "concept": "child",
+          "response_length": 276,
+          "contains_concept": true
+        }
+      ]
+    },
+    "logical": {
+      "phi3:mini": [
+        {
+          "concept": "cause",
+          "response_length": 101,
+          "contains_concept": true
+        },
+        {
+          "concept": "effect",
+          "response_length": 86,
+          "contains_concept": true
+        }
+      ],
+      "tinyllama:latest": [
+        {
+          "concept": "cause",
+          "response_length": 69,
+          "contains_concept": true
+        },
+        {
+          "concept": "effect",
+          "response_length": 179,
+          "contains_concept": true
+        }
+      ]
+    },
+    "structural": {
+      "phi3:mini": [
+        {
+          "concept": "whole",
+          "response_length": 156,
+          "contains_concept": true
+        },
+        {
+          "concept": "part",
+          "response_length": 124,
+          "contains_concept": true
+        }
+      ],
+      "tinyllama:latest": [
+        {
+          "concept": "whole",
+          "response_length": 39,
+          "contains_concept": true
+        },
+        {
+          "concept": "part",
+          "response_length": 53,
+          "contains_concept": true
+        }
+      ]
+    }
+  },
+  "specializations": {
+    "phi3:mini": [
+      "sensory/physical",
+      "structural"
+    ],
+    "tinyllama:latest": [
+      "quantitative",
+      "relational",
+      "logical"
+    ]
+  }
+}

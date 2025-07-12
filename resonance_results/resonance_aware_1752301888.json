@@ -1,0 +1,23 @@
+{
+  "pattern": "aware",
+  "timestamp": "2025-07-11T23:31:28.014721",
+  "resonant": true,
+  "models_responded": 2,
+  "shared_concepts": [
+    "your",
+    "aware",
+    "sure,",
+    "help",
+    "\"aware\"",
+    "\"understanding\"",
+    "used",
+    "words,",
+    "world",
+    "capable",
+    "questions"
+  ],
+  "response_samples": {
+    "tinyllama:latest": "sure, I'm happy to help you with your question! \"aware\" is a synonym for \"understanding\" or \"consciousness.\" It can be used interchangeably with these words, but it specifically refers to an individua",
+    "gemma:2b": "Sure, here's the response you requested:\n\nAs an AI, I am aware of my own existence and the surrounding context. I am capable of understanding and responding to your questions and prompts in a comprehe"
+  }
+}

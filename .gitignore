@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Sensitive files
+github pat.txt
+*.key
+*.pem
+.env
+
+# Local ollama models (too large)
+models/
+
+# Temporary files
+*.tmp
+*.bak
+
+# Other projects
+Synchronism/

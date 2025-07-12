@@ -1,0 +1,24 @@
+{
+  "pattern": "effect",
+  "timestamp": "2025-07-11T23:18:29.028652",
+  "resonant": true,
+  "models_responded": 2,
+  "shared_concepts": [
+    "help",
+    "their",
+    "assistance,",
+    "those",
+    "provide",
+    "someone",
+    "understand",
+    "support",
+    "\"aid",
+    "achieve",
+    "\"she",
+    "affected"
+  ],
+  "response_samples": {
+    "phi3:mini": "Effect: A change that occurs as a result of an action or condition. In the study of causation, it's crucial to identify and understand effects because they are directly linked to their causes through ",
+    "tinyllama:latest": "aid:\n1. To render assistance, particularly in a time of need; \"helped each other out\"; \"he lent a hand to those in need\"\n2. To provide support and guidance to; \"aid the student\"\n3. To help to achieve "
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "timestamp": "2025-07-12T07:25:48.902055",
+  "results": [
+    {
+      "candidate": "end",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "like",
+        "have"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u2605\u2606",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "this",
+        "with",
+        "that",
+        "help",
+        "have",
+        "some",
+        "your",
+        "support",
+        "been",
+        "instrumental",
+        "during",
+        "these",
+        "also",
+        "ensuring",
+        "able",
+        "about"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "same",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "understand",
+        "that",
+        "similar",
+        "data",
+        "security",
+        "james",
+        "please",
+        "conversation",
+        "want",
+        "previous"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "1",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "have",
+        "specific",
+        "share",
+        "with",
+        "know",
+        "that",
+        "your",
+        "this",
+        "provide",
+        "please",
+        "like"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u2666\u2666\u2666",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "always"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "[[ ]]",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "with",
+        "help"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "begin",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "that",
+        "your",
+        "specific",
+        "about",
+        "information",
+        "provide",
+        "with",
+        "this",
+        "like",
+        "example,",
+        "code",
+        "function",
+        "programming",
+        "`begin`",
+        "used"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "pattern",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "that",
+        "followed",
+        "achieve",
+        "specific",
+        "sequence",
+        "repeated",
+        "particular",
+        "pattern",
+        "this",
+        "examples",
+        "pattern:**",
+        "(oo)\\_______",
+        "patterns.",
+        "design",
+        "refer",
+        "patterns,",
+        "example,",
+        "natural",
+        "regular",
+        "used",
+        "social"
+      ],
+      "responses": 3
+    },
+    {
+      "candidate": "===",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "provide",
+        "that",
+        "information",
+        "with",
+        "\"what's",
+        "new\"",
+        "section:",
+        "website",
+        "content",
+        "sections",
+        "title",
+        "{\"class\":",
+        "description",
+        "section",
+        "enter",
+        "prompt"
+      ],
+      "responses": 4
+    }
+  ],
+  "resonance_events": []
+}

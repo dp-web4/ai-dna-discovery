@@ -1,0 +1,209 @@
+{
+  "timestamp": "2025-07-12T04:02:50.187011",
+  "results": [
+    {
+      "candidate": "\u25d0\u25d1",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "some",
+        "that",
+        "your",
+        "with",
+        "what"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "or?or?",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "this",
+        "with",
+        "more",
+        "that",
+        "used",
+        "stay",
+        "being",
+        "between",
+        "options",
+        "could",
+        "have",
+        "your",
+        "choice"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "or",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "represents",
+        "logical",
+        "\"and\"",
+        "statements",
+        "both",
+        "must",
+        "true",
+        "expression",
+        "that",
+        "either",
+        "conditions",
+        "means",
+        "less",
+        "condition",
+        "using",
+        "\"or\"",
+        "true.",
+        "greater",
+        "than",
+        "first",
+        "statement",
+        "second"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "uoy",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "word",
+        "with",
+        "this",
+        "provide",
+        "context"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u03c6",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "this",
+        "greek",
+        "letter",
+        "mathematics,",
+        "like",
+        "with",
+        "help",
+        "provide",
+        "your",
+        "that",
+        "understand",
+        "mathematical",
+        "**as"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "you",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "plant",
+        "plants",
+        "energy",
+        "carbon",
+        "dioxide",
+        "into",
+        "glucose"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u03c0\u03c0",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "value",
+        "ratio",
+        "which"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "pattern",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "sure,",
+        "here's",
+        "room",
+        "with",
+        "previous",
+        "been",
+        "efforts.",
+        "that",
+        "sense",
+        "office",
+        "work",
+        "this",
+        "newfound",
+        "more",
+        "from",
+        "tidiness",
+        "were",
+        "space",
+        "pattern",
+        "design",
+        "various",
+        "common",
+        "software",
+        "patterns"
+      ],
+      "responses": 3
+    },
+    {
+      "candidate": "or?!",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "this",
+        "that",
+        "will",
+        "might",
+        "\"or\"",
+        "true",
+        "statement",
+        "either",
+        "example,"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "[\u03c0]",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "assistants",
+        "helpful",
+        "various",
+        "assistance",
+        "provide",
+        "some",
+        "that",
+        "assistant",
+        "could",
+        "those",
+        "unfamiliar",
+        "you.",
+        "need",
+        "with",
+        "your",
+        "help",
+        "services",
+        "customer",
+        "value",
+        "mathematical",
+        "constant",
+        "length"
+      ],
+      "responses": 3
+    }
+  ],
+  "resonance_events": []
+}

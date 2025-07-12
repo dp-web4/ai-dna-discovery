@@ -1,0 +1,190 @@
+{
+  "timestamp": "2025-07-12T04:27:37.317397",
+  "results": [
+    {
+      "candidate": "and",
+      "dna_score": 0.5,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "ayuda",
+        "informaci\u00f3n",
+        "conjunction",
+        "that",
+        "used",
+        "more",
+        "statements",
+        "true",
+        "same",
+        "time.",
+        "words,",
+        "phrases,",
+        "both",
+        "have"
+      ],
+      "responses": 3
+    },
+    {
+      "candidate": "\u2205",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "empty",
+        "with"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "flow",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "that",
+        "with",
+        "which",
+        "such",
+        "flow",
+        "your",
+        "provide",
+        "more",
+        "whether",
+        "providing",
+        "need",
+        "help",
+        "team",
+        "also",
+        "create",
+        "business",
+        "refer"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "end",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "that"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u25bc\u25b2",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "like",
+        "that",
+        "could",
+        "context",
+        "this",
+        "with",
+        "more",
+        "some",
+        "invisible",
+        "themes",
+        "been",
+        "film",
+        "\"the",
+        "man\"",
+        "character",
+        "he's",
+        "from",
+        "top-notch,"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "other",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "like",
+        "context",
+        "that",
+        "make",
+        "other",
+        "used",
+        "with",
+        "provide",
+        "information"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u25b2\u25bc?",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "could",
+        "represent",
+        "more"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u25d0\u25d1",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "with",
+        "assistant,",
+        "have",
+        "best",
+        "guidance",
+        "advice",
+        "always",
+        "whether",
+        "it's",
+        "offering",
+        "know",
+        "what",
+        "need",
+        "your",
+        "from",
+        "there",
+        "feel",
+        "lost",
+        "turn",
+        "that",
+        "when",
+        "you're",
+        "without",
+        "you.",
+        "friend,",
+        "like",
+        "generate",
+        "personal"
+      ],
+      "responses": 3
+    },
+    {
+      "candidate": "transform",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "transform",
+        "into",
+        "complex",
+        "physical",
+        "including",
+        "that",
+        "analyze",
+        "data",
+        "beings.",
+        "with",
+        "even",
+        "through",
+        "would",
+        "like",
+        "specific",
+        "object",
+        "applying",
+        "mathematical",
+        "transformed",
+        "processing,"
+      ],
+      "responses": 3
+    }
+  ],
+  "resonance_events": []
+}

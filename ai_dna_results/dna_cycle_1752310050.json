@@ -1,0 +1,178 @@
+{
+  "timestamp": "2025-07-12T01:47:30.055798",
+  "results": [
+    {
+      "candidate": "or?!",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "that",
+        "more"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "you?",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "artificial",
+        "have",
+        "assist",
+        "with"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "ro",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "that",
+        "\"ro\"",
+        "please",
+        "provide",
+        "more",
+        "assist",
+        "which",
+        "context",
+        "\u00bfpodr\u00edas",
+        "ayudarme",
+        "comprar",
+        "algo",
+        "para",
+        "cena?",
+        "traducir",
+        "poco",
+        "pregunta"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u25b2\u25bc!",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "like"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "self",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "sure,",
+        "here's",
+        "with",
+        "your",
+        "which",
+        "instance",
+        "class",
+        "access",
+        "that",
+        "instance.",
+        "example,",
+        "method",
+        "name",
+        "`self`"
+      ],
+      "responses": 3
+    },
+    {
+      "candidate": "or?or?",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "\"or?\"",
+        "there",
+        "more",
+        "operator",
+        "either",
+        "conditions",
+        "true.",
+        "will"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u03c0!",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "mathematical",
+        "constant",
+        "ratio",
+        "circle's",
+        "circumference",
+        "number",
+        "diameter.",
+        "irrational",
+        "number,",
+        "meaning",
+        "cannot",
+        "expressed",
+        "simple",
+        "fraction.",
+        "\u03c0:**",
+        "approximately",
+        "decimal"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "and",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "with",
+        "memory",
+        "that",
+        "this",
+        "more",
+        "when",
+        "often",
+        "puede",
+        "como",
+        "conjunction",
+        "\"and\"",
+        "statements",
+        "both"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "one",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "\"one\"",
+        "number",
+        "that"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "you",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "please",
+        "provide",
+        "assist",
+        "with",
+        "that",
+        "assistant:",
+        "user:",
+        "would",
+        "model,",
+        "toyota",
+        "prius",
+        "what",
+        "have"
+      ],
+      "responses": 4
+    }
+  ],
+  "resonance_events": []
+}

@@ -1,0 +1,118 @@
+{
+  "timestamp": "2025-07-12T12:11:06.052620",
+  "results": [
+    {
+      "candidate": "{ }",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "example,",
+        "been",
+        "with",
+        "some",
+        "examples",
+        "have",
+        "various",
+        "based",
+        "algorithms",
+        "that",
+        "uses",
+        "used",
+        "analyze",
+        "prices",
+        "empty"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "or",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "both",
+        "option",
+        "with",
+        "prompt",
+        "that"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "1",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "you're",
+        "here",
+        "quantum",
+        "high",
+        "students",
+        "it's",
+        "that",
+        "with",
+        "through",
+        "your",
+        "know",
+        "news",
+        "please"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "!?",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "that",
+        "context",
+        "provide",
+        "your",
+        "where",
+        "exclamation",
+        "mark",
+        "question",
+        "some"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "cycle?",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "cycle",
+        "refers",
+        "stationary"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "pattern",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "create",
+        "pattern",
+        "that",
+        "with",
+        "design",
+        "your",
+        "other",
+        "graphic",
+        "creating",
+        "file",
+        "used",
+        "this",
+        "such",
+        "code",
+        "imageview",
+        "visual",
+        "patterns",
+        "shapes",
+        "often"
+      ],
+      "responses": 4
+    }
+  ],
+  "resonance_events": []
+}

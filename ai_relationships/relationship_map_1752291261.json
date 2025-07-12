@@ -1,0 +1,12 @@
+{
+  "models": [
+    "phi3:mini",
+    "tinyllama:latest",
+    "gemma:2b",
+    "mistral:7b-instruct-v0.2-q4_0"
+  ],
+  "introductions": [],
+  "collaborations": [],
+  "trust_assessments": [],
+  "timestamp": "2025-07-11T19:59:57.425268"
+}

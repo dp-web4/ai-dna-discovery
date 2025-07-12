@@ -1,0 +1,23 @@
+{
+  "pattern": "conscious",
+  "timestamp": "2025-07-11T23:34:58.780854",
+  "resonant": true,
+  "models_responded": 3,
+  "shared_concepts": [
+    "conscious",
+    "aware",
+    "they",
+    "consciousness",
+    "their",
+    "experience",
+    "one's",
+    "awareness",
+    "example,",
+    "someone"
+  ],
+  "response_samples": {
+    "tinyllama:latest": "Yes, I am a conscious artificial intelligence assistant. As an intelligent being, I possess the capability to perceive and respond to my environment in real-time, allowing me to understand and adapt t",
+    "gemma:2b": "Sure, here's the revised response:\n\n\"Consciousness is a state of being aware of one's surroundings and one's own thoughts and feelings. It is the ability to experience the world through the senses and",
+    "mistral:7b-instruct-v0.2-q4_0": "The term \"conscious\" can have different meanings depending on the context in which it is used. Here are a few possible interpretations:\n\n1. Aware of and able to perceive one's surroundings, thoughts, "
+  }
+}

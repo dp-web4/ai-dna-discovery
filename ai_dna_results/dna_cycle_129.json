@@ -1,0 +1,24 @@
+{
+  "cycle": 129,
+  "timestamp": "2025-07-12T14:24:07.463372",
+  "results": [
+    {
+      "candidate": "understand",
+      "dna_score": 1.0,
+      "responses": 2,
+      "timestamp": "2025-07-12T14:22:32.042664"
+    },
+    {
+      "candidate": "\u2203",
+      "dna_score": 1.0,
+      "responses": 2,
+      "timestamp": "2025-07-12T14:22:41.142852"
+    },
+    {
+      "candidate": "think",
+      "dna_score": 1.0,
+      "responses": 2,
+      "timestamp": "2025-07-12T14:22:50.330673"
+    }
+  ]
+}

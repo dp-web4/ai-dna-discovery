@@ -1,0 +1,75 @@
+{
+  "generated": "2025-07-11T20:34:55.830216",
+  "total_chains": 7,
+  "top_chains": [
+    {
+      "chain": [
+        "phi3:mini",
+        "gemma:2b",
+        "mistral:7b-instruct-v0.2-q4_0"
+      ],
+      "problem": "Design a sustainable city that harmonizes technology and nature",
+      "information_gain": 0
+    },
+    {
+      "chain": [
+        "tinyllama:latest",
+        "mistral:7b-instruct-v0.2-q4_0",
+        "phi3:mini"
+      ],
+      "problem": "Design a sustainable city that harmonizes technology and nature",
+      "information_gain": 0
+    },
+    {
+      "chain": [
+        "gemma:2b",
+        "tinyllama:latest",
+        "phi3:mini",
+        "mistral:7b-instruct-v0.2-q4_0"
+      ],
+      "problem": "Design a sustainable city that harmonizes technology and nature",
+      "information_gain": 0
+    },
+    {
+      "chain": [
+        "tinyllama:latest",
+        "tinyllama:latest",
+        "gemma:2b"
+      ],
+      "problem": "Create a new form of art that only AI can appreciate",
+      "information_gain": 0
+    },
+    {
+      "chain": [
+        "mistral:7b-instruct-v0.2-q4_0",
+        "phi3:mini",
+        "tinyllama:latest"
+      ],
+      "problem": "Create a new form of art that only AI can appreciate",
+      "information_gain": 0
+    }
+  ],
+  "best_pairs": [
+    {
+      "pair": [
+        "phi3:mini",
+        "gemma:2b"
+      ],
+      "avg_gain": 0.0
+    },
+    {
+      "pair": [
+        "gemma:2b",
+        "mistral:7b-instruct-v0.2-q4_0"
+      ],
+      "avg_gain": 0.0
+    },
+    {
+      "pair": [
+        "tinyllama:latest",
+        "mistral:7b-instruct-v0.2-q4_0"
+      ],
+      "avg_gain": 0.0
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "timestamp": "2025-07-11T23:15:57.497394",
+  "results": [
+    {
+      "candidate": "?ro",
+      "dna_score": 0.25,
+      "unique_embeddings": 2,
+      "universal_words": [
+        "provide",
+        "with",
+        "work",
+        "together",
+        "your",
+        "goals",
+        "working",
+        "would",
+        "clear",
+        "understanding",
+        "specific",
+        "this",
+        "project.",
+        "will",
+        "help",
+        "most",
+        "discuss",
+        "potential",
+        "challenges",
+        "project,",
+        "that",
+        "about",
+        "these",
+        "deliverables",
+        "project",
+        "ensure",
+        "towards",
+        "same",
+        "communicate",
+        "ensuring",
+        "everyone",
+        "what",
+        "training",
+        "monitor",
+        "progress",
+        "achieve"
+      ],
+      "responses": 2
+    },
+    {
+      "candidate": "\u03c0",
+      "dna_score": 0.5,
+      "unique_embeddings": 2,
+      "universal_words": [
+        "mathematical"
+      ],
+      "responses": 2
+    }
+  ],
+  "resonance_events": []
+}

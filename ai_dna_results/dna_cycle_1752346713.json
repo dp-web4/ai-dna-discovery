@@ -1,0 +1,33 @@
+{
+  "timestamp": "2025-07-12T11:58:33.028155",
+  "results": [
+    {
+      "candidate": "\u2203y",
+      "dna_score": 0.25,
+      "unique_embeddings": 2,
+      "universal_words": [
+        "that",
+        "define",
+        "property",
+        "represents",
+        "whether",
+        "number",
+        "even",
+        "this",
+        "have",
+        "given",
+        "value",
+        "statement"
+      ],
+      "responses": 2
+    },
+    {
+      "candidate": "\u03c0",
+      "dna_score": 0.25,
+      "unique_embeddings": 2,
+      "universal_words": [],
+      "responses": 2
+    }
+  ],
+  "resonance_events": []
+}

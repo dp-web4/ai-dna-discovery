@@ -1,0 +1,23 @@
+{
+  "pattern": "one",
+  "timestamp": "2025-07-11T23:56:27.478466",
+  "resonant": true,
+  "models_responded": 2,
+  "shared_concepts": [
+    "number",
+    "context",
+    "understand",
+    "provide",
+    "**the",
+    "you'd",
+    "like",
+    "often",
+    "denoted",
+    "numeral",
+    "element"
+  ],
+  "response_samples": {
+    "gemma:2b": "Sure, I'd be happy to help with that. However, I need more context to understand the question fully. Please provide me with the following information:\n\n* **The main topic or question** you'd like me t",
+    "mistral:7b-instruct-v0.2-q4_0": "The number one is a positive integer, the smallest and the first number in the counting numbers. It is often denoted as 1, and it is an unit in the decimal numeral system, which is also called as the "
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "timestamp": "2025-07-12T02:35:24.592728",
+  "results": [
+    {
+      "candidate": "[\u03c0]",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "math",
+        "which",
+        "often",
+        "used",
+        "symbol",
+        "mathematical",
+        "constant",
+        "that",
+        "represents",
+        "ratio",
+        "circle's",
+        "circumference",
+        "approximately",
+        "equal",
+        "area",
+        "represented",
+        "letter",
+        "uppercase",
+        "number"
+      ],
+      "responses": 3
+    },
+    {
+      "candidate": "you!",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "with",
+        "have",
+        "your",
+        "hear",
+        "what",
+        "it's",
+        "from",
+        "today?",
+        "help",
+        "know",
+        "i'll",
+        "best",
+        "information."
+      ],
+      "responses": 3
+    },
+    {
+      "candidate": "uoy",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "with",
+        "story"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "?ro",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "question",
+        "with",
+        "please"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u2203y",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "existential",
+        "that",
+        "exists",
+        "this",
+        "\"there",
+        "capable",
+        "with"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "or?",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "that",
+        "example",
+        "have",
+        "with",
+        "could",
+        "more",
+        "please"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "e",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "this",
+        "like",
+        "that",
+        "natural",
+        "there",
+        "from",
+        "with",
+        "provide",
+        "chatbots,",
+        "algorithms,",
+        "language",
+        "processing",
+        "help",
+        "your",
+        "vast",
+        "expertise",
+        "data",
+        "insights",
+        "various",
+        "ability",
+        "human",
+        "businesses",
+        "customer",
+        "assistant,",
+        "their",
+        "support,",
+        "indispensable",
+        "asset",
+        "analyze",
+        "enabling",
+        "also",
+        "letter",
+        "used",
+        "sound",
+        "pronounced",
+        "word",
+        "long"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u03c0!",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "mathematical",
+        "constant",
+        "some",
+        "since",
+        "with",
+        "number",
+        "than",
+        "that",
+        "like",
+        "around",
+        "decimal",
+        "places",
+        "your",
+        "only",
+        "we're",
+        "infinite",
+        "circumference",
+        "value"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "or??",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "question",
+        "with",
+        "that"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u25b2\u25bc?",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "used",
+        "that",
+        "with",
+        "have",
+        "their",
+        "them"
+      ],
+      "responses": 4
+    }
+  ],
+  "resonance_events": []
+}

@@ -1,0 +1,190 @@
+{
+  "timestamp": "2025-07-12T07:42:16.685975",
+  "results": [
+    {
+      "candidate": "or?!",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "with",
+        "understand",
+        "syntax",
+        "conditional",
+        "```python"
+      ],
+      "responses": 3
+    },
+    {
+      "candidate": "\u25d0\u25d1",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "with"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u2200x",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "used",
+        "mathematical",
+        "universal",
+        "that",
+        "true",
+        "statement",
+        "quantifier",
+        "here",
+        "code"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "[and]",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "alice",
+        "with",
+        "college",
+        "application",
+        "felt",
+        "assistant",
+        "like",
+        "admission",
+        "questions",
+        "that",
+        "from",
+        "also",
+        "understand",
+        "your",
+        "will",
+        "best",
+        "question",
+        "have"
+      ],
+      "responses": 3
+    },
+    {
+      "candidate": "one",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "\"one\"",
+        "that",
+        "subject",
+        "used",
+        "serves",
+        "number",
+        "one.",
+        "positive",
+        "called",
+        "other",
+        "identity",
+        "element",
+        "binary",
+        "music",
+        "theory,"
+      ],
+      "responses": 3
+    },
+    {
+      "candidate": "[ ]?",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "please",
+        "your",
+        "used",
+        "indicate",
+        "question"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u25b2\u25bc\u25b2\u25bc",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "text",
+        "your"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "is",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "question",
+        "context",
+        "please",
+        "provide",
+        "more",
+        "american",
+        "would",
+        "such",
+        "happy",
+        "professional",
+        "experience",
+        "software",
+        "have",
+        "various",
+        "machine",
+        "learning",
+        "with",
+        "include",
+        "that",
+        "mean",
+        "then",
+        "x?\","
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u03c0?",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "mathematical",
+        "constant",
+        "ratio",
+        "circumference",
+        "irrational",
+        "number,",
+        "meaning",
+        "cannot",
+        "expressed",
+        "decimal",
+        "digits",
+        "most",
+        "with",
+        "such",
+        "however,",
+        "used",
+        "calculating",
+        "other",
+        "value",
+        "circle's",
+        "diameter.",
+        "\u03c0:**"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "and",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "both",
+        "true",
+        "same",
+        "time.",
+        "have"
+      ],
+      "responses": 3
+    }
+  ],
+  "resonance_events": []
+}

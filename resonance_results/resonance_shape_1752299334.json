@@ -1,0 +1,19 @@
+{
+  "pattern": "shape",
+  "timestamp": "2025-07-11T22:48:54.689067",
+  "resonant": true,
+  "models_responded": 2,
+  "shared_concepts": [
+    "shape",
+    "shapes",
+    "dimensions,",
+    "defined",
+    "width,",
+    "other",
+    "spatial"
+  ],
+  "response_samples": {
+    "gemma:2b": "Sure, here's the shape:\n\n```\n      /)\n     (oo)\\_______\n    (__)\\       )\\/\\\n        ||----w |\n        ||     ||",
+    "mistral:7b-instruct-v0.2-q4_0": "A shape is a two-dimensional or three-dimensional figure that can be described by its boundaries or outlines. Shapes can be classified into various categories based on their properties such as number "
+  }
+}

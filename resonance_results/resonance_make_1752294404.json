@@ -1,0 +1,28 @@
+{
+  "pattern": "make",
+  "timestamp": "2025-07-11T21:26:44.505645",
+  "resonant": true,
+  "models_responded": 2,
+  "shared_concepts": [
+    "would",
+    "into",
+    "ingredients",
+    "smooth",
+    "your",
+    "make",
+    "sauce,",
+    "once",
+    "turn",
+    "mixture",
+    "smooth,",
+    "silky",
+    "lemon",
+    "meringue",
+    "will",
+    "like"
+  ],
+  "response_samples": {
+    "tinyllama:latest": "To make something in cooking or baking, you would use ingredients to combine into a paste, sauce, or puree, typically using a mixer, whisk or other culinary tool with a stiff beat. Once the ingredient",
+    "gemma:2b": "Sure, I'd be happy to assist you with your request.\n\n**What would you like me to make?**\n\nPlease provide me with a specific item or task that you would like me to create. I will do my best to fulfill "
+  }
+}

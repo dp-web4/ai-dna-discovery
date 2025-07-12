@@ -1,0 +1,93 @@
+{
+  "timestamp": "2025-07-12T01:24:30.259192",
+  "results": [
+    {
+      "candidate": "or?",
+      "dna_score": 0.25,
+      "unique_embeddings": 2,
+      "universal_words": [
+        "alternative",
+        "with",
+        "provide"
+      ],
+      "responses": 2
+    },
+    {
+      "candidate": "\u2605\u2606",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "have",
+        "used",
+        "specific",
+        "this",
+        "understand",
+        "some",
+        "information",
+        "about",
+        "working",
+        "chatbot",
+        "that",
+        "help",
+        "users",
+        "find",
+        "their",
+        "next",
+        "job.",
+        "will",
+        "algorithms",
+        "natural",
+        "language",
+        "processing",
+        "user",
+        "provide",
+        "personalized",
+        "recommendations",
+        "based",
+        "interests,",
+        "here",
+        "user's",
+        "example,",
+        "might",
+        "they're",
+        "looking",
+        "generate",
+        "more",
+        "recommendations.",
+        "with",
+        "says",
+        "also",
+        "data"
+      ],
+      "responses": 3
+    },
+    {
+      "candidate": "begin",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "like",
+        "could",
+        "provide",
+        "more",
+        "that",
+        "assist",
+        "your",
+        "with",
+        "question",
+        "personality,",
+        "quickly",
+        "were",
+        "from",
+        "other",
+        "chatbot",
+        "assistant",
+        "unique",
+        "apart",
+        "responses"
+      ],
+      "responses": 3
+    }
+  ],
+  "resonance_events": []
+}
