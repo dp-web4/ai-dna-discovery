@@ -182,20 +182,57 @@ The model's behavior mirrors the text it interpreted - multiple valid perspectiv
 
 ## Next Steps
 
-1. **Investigate Warmup Effect**
-   - Test multiple models (Gemma, TinyLlama)
-   - Vary time between runs
-   - Test after cache clearing
+1. **Investigate Warmup Effect** ✓ COMPLETED
+   - Confirmed warmup effect persists through Ollama API
+   - First run differs, then stabilizes (Run 1 unique, Runs 2-5 identical)
+   - Pattern consistent across different prompt types
 
-2. **Explore State Persistence Duration**
-   - How long does "warmed up" state last?
-   - Does it survive model switching?
-   - Impact of context window usage
+2. **Hidden State Exploration** ✓ COMPLETED
+   - Context accumulation creates memory-like behavior
+   - State injection through context prefixes works effectively
+   - Different "personalities" achieved with ~25-28% word overlap
 
-3. **Cross-Model Comparison**
-   - Do all models show this pattern?
-   - Correlation with model size/architecture
-   - Quantization effects
+3. **Memory Implementation Paths**
+   - External context management (easiest)
+   - KV-cache persistence (requires Ollama modification)
+   - Hidden state serialization (most advanced)
+
+## Additional Findings (July 16)
+
+### Hidden State Experiments
+
+1. **Context as External Memory**
+   - Progressive context building successfully maintains information
+   - Model responses adapt based on accumulated context
+   - Clear progression from "no knowledge" to "comprehensive understanding"
+
+2. **Personality Injection**
+   - Expert chef: Professional terminology, detailed steps
+   - Novice cook: Simple language, basic instructions
+   - Robot chef: Precise measurements, mechanical tone
+   - Low similarity (25-28%) indicates successful differentiation
+
+3. **Warmup Effect Persistence**
+   - Confirmed through independent Ollama API test
+   - Pattern: First run unique, subsequent runs identical
+   - Suggests computational state initialization effects
+
+### Implementation Roadmap
+
+**Phase 1: External Memory (Immediate)**
+- Build conversation state tracker
+- Implement sliding window context
+- Test persistence across sessions
+
+**Phase 2: Ollama Modifications (Medium-term)**
+- Fork Ollama repository
+- Expose KV-cache in API
+- Add cache persistence options
+
+**Phase 3: True Hidden States (Long-term)**
+- Access transformer hidden states
+- Implement state serialization
+- Create state injection API
 
 ## File Artifacts
 
