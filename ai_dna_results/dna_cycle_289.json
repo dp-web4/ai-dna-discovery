@@ -1,0 +1,30 @@
+{
+  "cycle": 289,
+  "timestamp": "2025-07-12T21:35:06.267403",
+  "results": [
+    {
+      "candidate": "!",
+      "dna_score": 1.0,
+      "responses": 2,
+      "timestamp": "2025-07-12T21:33:30.189465"
+    },
+    {
+      "candidate": "else",
+      "dna_score": 1.0,
+      "responses": 2,
+      "timestamp": "2025-07-12T21:33:39.188282"
+    },
+    {
+      "candidate": "cycle",
+      "dna_score": 1.0,
+      "responses": 2,
+      "timestamp": "2025-07-12T21:33:59.815086"
+    },
+    {
+      "candidate": "know",
+      "dna_score": 1.0,
+      "responses": 2,
+      "timestamp": "2025-07-12T21:35:04.266912"
+    }
+  ]
+}

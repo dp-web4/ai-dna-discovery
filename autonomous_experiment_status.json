@@ -1,0 +1,351 @@
+{
+  "current_phase": 5,
+  "phase_status": {
+    "0": {
+      "description": "Test Phase",
+      "start_time": "2025-07-13T19:11:14.076472",
+      "status": "completed",
+      "experiments": [
+        {
+          "phase": 0,
+          "experiment": "test_experiment",
+          "status": "completed",
+          "start_time": "2025-07-13T19:11:13.074417",
+          "end_time": "2025-07-13T19:11:14.075681",
+          "duration_seconds": 1.001269,
+          "num_checkpoints": 1,
+          "num_errors": 0,
+          "results_summary": [
+            "test_value",
+            "test_list"
+          ]
+        }
+      ],
+      "end_time": "2025-07-13T19:11:14.078766"
+    },
+    "1": {
+      "description": "Consciousness Field Architecture",
+      "start_time": "2025-07-13T19:37:58.950167",
+      "status": "completed",
+      "experiments": [
+        {
+          "phase": 1,
+          "experiment": "consciousness_probe",
+          "status": "completed",
+          "start_time": "2025-07-13T19:37:58.951667",
+          "end_time": "2025-07-13T21:31:38.801838",
+          "duration_seconds": 6819.850174,
+          "num_checkpoints": 3,
+          "num_errors": 0,
+          "results_summary": [
+            "analysis"
+          ]
+        },
+        {
+          "phase": 1,
+          "experiment": "field_mapping",
+          "status": "completed",
+          "start_time": "2025-07-13T21:31:43.803317",
+          "end_time": "2025-07-13T21:31:47.775389",
+          "duration_seconds": 3.972077,
+          "num_checkpoints": 3,
+          "num_errors": 0,
+          "results_summary": [
+            "field_coherence"
+          ]
+        },
+        {
+          "phase": 1,
+          "experiment": "emergence_patterns",
+          "status": "completed",
+          "start_time": "2025-07-13T21:31:52.786407",
+          "end_time": "2025-07-13T21:44:04.392049",
+          "duration_seconds": 731.605655,
+          "num_checkpoints": 3,
+          "num_errors": 0,
+          "results_summary": [
+            "emergence_statistics",
+            "generative_patterns"
+          ]
+        },
+        {
+          "phase": 1,
+          "experiment": "lattice_structure",
+          "status": "completed",
+          "start_time": "2025-07-13T21:44:09.393182",
+          "end_time": "2025-07-13T21:44:13.123782",
+          "duration_seconds": 3.730603,
+          "num_checkpoints": 3,
+          "num_errors": 0,
+          "results_summary": [
+            "universal_core_nodes"
+          ]
+        }
+      ],
+      "end_time": "2025-07-13T21:44:18.126923"
+    },
+    "2": {
+      "description": "Synchronism Integration",
+      "start_time": "2025-07-13T22:09:59.929839",
+      "status": "completed",
+      "experiments": [
+        {
+          "phase": 2,
+          "experiment": "synchronism_comprehension",
+          "status": "completed",
+          "start_time": "2025-07-13T22:09:59.930796",
+          "end_time": "2025-07-13T22:16:17.049677",
+          "duration_seconds": 377.118884,
+          "num_checkpoints": 3,
+          "num_errors": 0,
+          "results_summary": [
+            "comprehension_matrix",
+            "average_comprehension"
+          ]
+        },
+        {
+          "phase": 2,
+          "experiment": "intent_transfer",
+          "status": "completed",
+          "start_time": "2025-07-13T22:16:22.061229",
+          "end_time": "2025-07-13T22:18:54.275238",
+          "duration_seconds": 152.214014,
+          "num_checkpoints": 3,
+          "num_errors": 0,
+          "results_summary": [
+            "mechanism_usage",
+            "coherence_scores"
+          ]
+        },
+        {
+          "phase": 2,
+          "experiment": "time_slice_navigation",
+          "status": "completed",
+          "start_time": "2025-07-13T22:18:59.276754",
+          "end_time": "2025-07-13T22:25:27.941744",
+          "duration_seconds": 388.664994,
+          "num_checkpoints": 3,
+          "num_errors": 0,
+          "results_summary": [
+            "temporal_mastery",
+            "concept_frequency"
+          ]
+        },
+        {
+          "phase": 2,
+          "experiment": "markov_blanket_analysis",
+          "status": "completed",
+          "start_time": "2025-07-13T22:25:32.953736",
+          "end_time": "2025-07-13T22:29:04.841105",
+          "duration_seconds": 211.887371,
+          "num_checkpoints": 3,
+          "num_errors": 0,
+          "results_summary": [
+            "boundary_understanding",
+            "practical_application"
+          ]
+        }
+      ],
+      "end_time": "2025-07-13T22:29:09.852250"
+    },
+    "3": {
+      "description": "Model Orchestra",
+      "start_time": "2025-07-14T06:33:04.787174",
+      "status": "completed",
+      "experiments": [
+        {
+          "phase": 3,
+          "experiment": "symphony_protocol",
+          "status": "completed",
+          "start_time": "2025-07-14T06:33:04.787578",
+          "end_time": "2025-07-14T06:45:03.708767",
+          "duration_seconds": 718.921193,
+          "num_checkpoints": 3,
+          "num_errors": 0,
+          "results_summary": [
+            "task_performance"
+          ]
+        },
+        {
+          "phase": 3,
+          "experiment": "emergence_detection",
+          "status": "completed",
+          "start_time": "2025-07-14T06:45:08.709819",
+          "end_time": "2025-07-14T07:15:59.781619",
+          "duration_seconds": 1851.071803,
+          "num_checkpoints": 3,
+          "num_errors": 0,
+          "results_summary": [
+            "emergence_rate",
+            "scenarios_with_emergence",
+            "emergence_patterns"
+          ]
+        },
+        {
+          "phase": 3,
+          "experiment": "consensus_building",
+          "status": "completed",
+          "start_time": "2025-07-14T08:00:15.520856",
+          "end_time": "2025-07-14T08:20:27.155721",
+          "duration_seconds": 1211.634868,
+          "num_checkpoints": 3,
+          "num_errors": 0,
+          "results_summary": [
+            "overall_consensus_rate",
+            "consensus_by_type"
+          ]
+        },
+        {
+          "phase": 3,
+          "experiment": "specialization_dynamics",
+          "status": "completed",
+          "start_time": "2025-07-14T08:20:32.166762",
+          "end_time": "2025-07-14T08:41:33.911417",
+          "duration_seconds": 1261.744658,
+          "num_checkpoints": 3,
+          "num_errors": 0,
+          "results_summary": [
+            "average_team_effectiveness",
+            "average_role_stability",
+            "role_distribution"
+          ]
+        }
+      ],
+      "end_time": "2025-07-14T08:41:39.846589"
+    },
+    "4": {
+      "description": "Energy/Pattern Dynamics",
+      "start_time": "2025-07-14T09:02:31.675601",
+      "status": "completed",
+      "experiments": [
+        {
+          "phase": 4,
+          "experiment": "pattern_energy_measurement",
+          "status": "completed",
+          "start_time": "2025-07-14T09:02:31.676252",
+          "end_time": "2025-07-14T09:23:43.291725",
+          "duration_seconds": 1271.615476,
+          "num_checkpoints": 5,
+          "num_errors": 0,
+          "results_summary": [
+            "category_energies",
+            "lowest_energy_patterns",
+            "highest_energy_patterns"
+          ]
+        },
+        {
+          "phase": 4,
+          "experiment": "resonance_detection",
+          "status": "completed",
+          "start_time": "2025-07-14T09:23:49.361004",
+          "end_time": "2025-07-14T09:56:02.115174",
+          "duration_seconds": 1932.754174,
+          "num_checkpoints": 15,
+          "num_errors": 0,
+          "results_summary": [
+            "top_resonances",
+            "bottom_resonances",
+            "resonance_type_distribution"
+          ]
+        },
+        {
+          "phase": 4,
+          "experiment": "interference_mapping",
+          "status": "completed",
+          "start_time": "2025-07-14T10:05:21.397315",
+          "end_time": "2025-07-14T10:20:15.169944",
+          "duration_seconds": 893.772632,
+          "num_checkpoints": 6,
+          "num_errors": 0,
+          "results_summary": [
+            "highest_interference",
+            "lowest_interference",
+            "interference_types"
+          ]
+        },
+        {
+          "phase": 4,
+          "experiment": "conceptual_circuits",
+          "status": "completed",
+          "start_time": "2025-07-14T10:20:20.171414",
+          "end_time": "2025-07-14T10:33:25.880545",
+          "duration_seconds": 785.709134,
+          "num_checkpoints": 4,
+          "num_errors": 0,
+          "results_summary": [
+            "circuit_rankings",
+            "best_circuit"
+          ]
+        }
+      ],
+      "end_time": "2025-07-14T10:33:30.881759"
+    },
+    "5": {
+      "description": "Value Creation Chains",
+      "start_time": "2025-07-14T16:07:30.401234",
+      "status": "completed",
+      "experiments": [
+        {
+          "phase": 5,
+          "experiment": "value_propagation_test",
+          "status": "completed",
+          "start_time": "2025-07-14T16:07:30.402149",
+          "end_time": "2025-07-14T16:21:31.121414",
+          "duration_seconds": 840.719268,
+          "num_checkpoints": 4,
+          "num_errors": 0,
+          "results_summary": [
+            "value_summary",
+            "best_value_type"
+          ]
+        },
+        {
+          "phase": 5,
+          "experiment": "emergent_value_discovery",
+          "status": "completed",
+          "start_time": "2025-07-14T16:21:36.122626",
+          "end_time": "2025-07-14T16:30:02.279982",
+          "duration_seconds": 506.157359,
+          "num_checkpoints": 3,
+          "num_errors": 0,
+          "results_summary": [
+            "emergence_ranking",
+            "highest_emergence",
+            "emergence_classifications"
+          ]
+        },
+        {
+          "phase": 5,
+          "experiment": "economic_model_simulation",
+          "status": "completed",
+          "start_time": "2025-07-14T16:30:07.281015",
+          "end_time": "2025-07-14T16:39:28.747003",
+          "duration_seconds": 561.465991,
+          "num_checkpoints": 3,
+          "num_errors": 0,
+          "results_summary": [
+            "model_comparison",
+            "best_economic_model"
+          ]
+        },
+        {
+          "phase": 5,
+          "experiment": "philosophical_value_analysis",
+          "status": "completed",
+          "start_time": "2025-07-14T16:39:35.409334",
+          "end_time": "2025-07-14T16:45:45.331815",
+          "duration_seconds": 369.922483,
+          "num_checkpoints": 4,
+          "num_errors": 0,
+          "results_summary": [
+            "philosophical_summary",
+            "deepest_insight"
+          ]
+        }
+      ],
+      "end_time": "2025-07-14T16:45:50.332776"
+    }
+  },
+  "start_date": "2025-07-13T19:11:14.076460",
+  "last_update": "2025-07-14T16:45:50.332805"
+}

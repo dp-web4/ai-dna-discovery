@@ -1,0 +1,30 @@
+{
+  "cycle": 485,
+  "timestamp": "2025-07-13T05:56:15.847449",
+  "results": [
+    {
+      "candidate": "emerge",
+      "dna_score": 1.0,
+      "responses": 2,
+      "timestamp": "2025-07-13T05:54:53.230994"
+    },
+    {
+      "candidate": "end",
+      "dna_score": 1.0,
+      "responses": 2,
+      "timestamp": "2025-07-13T05:55:10.554045"
+    },
+    {
+      "candidate": "\u221e",
+      "dna_score": 1.0,
+      "responses": 2,
+      "timestamp": "2025-07-13T05:55:20.121525"
+    },
+    {
+      "candidate": "self",
+      "dna_score": 1.0,
+      "responses": 2,
+      "timestamp": "2025-07-13T05:56:12.955661"
+    }
+  ]
+}

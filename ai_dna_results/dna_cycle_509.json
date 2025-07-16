@@ -1,0 +1,12 @@
+{
+  "cycle": 509,
+  "timestamp": "2025-07-13T07:05:09.040810",
+  "results": [
+    {
+      "candidate": "end",
+      "dna_score": 1.0,
+      "responses": 2,
+      "timestamp": "2025-07-13T07:03:41.100575"
+    }
+  ]
+}

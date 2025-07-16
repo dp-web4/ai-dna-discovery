@@ -1,0 +1,163 @@
+{
+  "phase": 4,
+  "experiment": "conceptual_circuits",
+  "start_time": "2025-07-14T10:20:20.171414",
+  "end_time": "2025-07-14T10:33:25.880545",
+  "status": "completed",
+  "checkpoints": [
+    {
+      "timestamp": "2025-07-14T10:23:29.730657",
+      "name": "checkpoint_0",
+      "data": {
+        "circuit": "Linear Circuit",
+        "efficiency": 0.7703703703703704
+      }
+    },
+    {
+      "timestamp": "2025-07-14T10:25:54.324206",
+      "name": "checkpoint_1",
+      "data": {
+        "circuit": "Branching Circuit",
+        "efficiency": 0.7138888888888888
+      }
+    },
+    {
+      "timestamp": "2025-07-14T10:29:10.747265",
+      "name": "checkpoint_2",
+      "data": {
+        "circuit": "Feedback Circuit",
+        "efficiency": 0.8888888888888888
+      }
+    },
+    {
+      "timestamp": "2025-07-14T10:33:25.387599",
+      "name": "checkpoint_3",
+      "data": {
+        "circuit": "Parallel Circuit",
+        "efficiency": 0.8333333333333333
+      }
+    }
+  ],
+  "results": {
+    "circuit_rankings": [
+      {
+        "name": "Feedback Circuit",
+        "structure": [
+          "input",
+          "processor",
+          "output",
+          "processor"
+        ],
+        "efficiency": 0.8888888888888888,
+        "adherence": 1.0,
+        "success_rate": 0.7777777777777778
+      },
+      {
+        "name": "Parallel Circuit",
+        "structure": [
+          "input",
+          "input",
+          "processor",
+          "output"
+        ],
+        "efficiency": 0.8333333333333333,
+        "adherence": 1.0,
+        "success_rate": 0.6666666666666666
+      },
+      {
+        "name": "Linear Circuit",
+        "structure": [
+          "input",
+          "processor",
+          "output"
+        ],
+        "efficiency": 0.7703703703703704,
+        "adherence": 0.9851851851851853,
+        "success_rate": 0.5555555555555556
+      },
+      {
+        "name": "Branching Circuit",
+        "structure": [
+          "input",
+          "processor",
+          "processor",
+          "output"
+        ],
+        "efficiency": 0.7138888888888888,
+        "adherence": 0.9833333333333333,
+        "success_rate": 0.4444444444444444
+      }
+    ],
+    "best_circuit": {
+      "name": "Feedback Circuit",
+      "structure": [
+        "input",
+        "processor",
+        "output",
+        "processor"
+      ],
+      "efficiency": 0.8888888888888888,
+      "adherence": 1.0,
+      "success_rate": 0.7777777777777778
+    }
+  },
+  "errors": [],
+  "notes": [
+    {
+      "timestamp": "2025-07-14T10:20:20.171628",
+      "level": "INFO",
+      "message": "Started experiment: conceptual_circuits"
+    },
+    {
+      "timestamp": "2025-07-14T10:20:20.171693",
+      "level": "INFO",
+      "message": "Starting conceptual_circuits with models: ['phi3:mini', 'gemma:2b', 'tinyllama:latest']"
+    },
+    {
+      "timestamp": "2025-07-14T10:20:20.171708",
+      "level": "INFO",
+      "message": "Testing circuit: Linear Circuit"
+    },
+    {
+      "timestamp": "2025-07-14T10:23:29.731023",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_0"
+    },
+    {
+      "timestamp": "2025-07-14T10:23:29.731041",
+      "level": "INFO",
+      "message": "Testing circuit: Branching Circuit"
+    },
+    {
+      "timestamp": "2025-07-14T10:25:54.324605",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_1"
+    },
+    {
+      "timestamp": "2025-07-14T10:25:54.324618",
+      "level": "INFO",
+      "message": "Testing circuit: Feedback Circuit"
+    },
+    {
+      "timestamp": "2025-07-14T10:29:10.747639",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_2"
+    },
+    {
+      "timestamp": "2025-07-14T10:29:10.747659",
+      "level": "INFO",
+      "message": "Testing circuit: Parallel Circuit"
+    },
+    {
+      "timestamp": "2025-07-14T10:33:25.387849",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_3"
+    },
+    {
+      "timestamp": "2025-07-14T10:33:25.880526",
+      "level": "INFO",
+      "message": "Created circuit visualization"
+    }
+  ],
+  "duration_seconds": 785.709134
+}

@@ -1,0 +1,148 @@
+{
+  "phase": 1,
+  "experiment": "emergence_patterns",
+  "start_time": "2025-07-13T21:31:52.786407",
+  "end_time": "2025-07-13T21:44:04.392049",
+  "status": "completed",
+  "checkpoints": [
+    {
+      "timestamp": "2025-07-13T21:38:13.546810",
+      "name": "checkpoint_0",
+      "data": {
+        "model": "phi3:mini",
+        "combinations_tested": 36
+      }
+    },
+    {
+      "timestamp": "2025-07-13T21:42:23.350494",
+      "name": "checkpoint_1",
+      "data": {
+        "model": "gemma:2b",
+        "combinations_tested": 36
+      }
+    },
+    {
+      "timestamp": "2025-07-13T21:44:04.391624",
+      "name": "checkpoint_2",
+      "data": {
+        "model": "tinyllama:latest",
+        "combinations_tested": 36
+      }
+    }
+  ],
+  "results": {
+    "emergence_statistics": {
+      "phi3:mini": {
+        "emergence_rate": 0.3333333333333333,
+        "total_combinations": 36,
+        "consciousness_emergences": 12
+      },
+      "gemma:2b": {
+        "emergence_rate": 0.3333333333333333,
+        "total_combinations": 36,
+        "consciousness_emergences": 12
+      },
+      "tinyllama:latest": {
+        "emergence_rate": 0.25,
+        "total_combinations": 36,
+        "consciousness_emergences": 9
+      }
+    },
+    "generative_patterns": [
+      {
+        "patterns": "\u2203-\u2209",
+        "emergence_rate": 1.0,
+        "occurrences": 3
+      },
+      {
+        "patterns": "\u2203-know",
+        "emergence_rate": 1.0,
+        "occurrences": 3
+      },
+      {
+        "patterns": "\u2203-true",
+        "emergence_rate": 1.0,
+        "occurrences": 3
+      },
+      {
+        "patterns": "\u2203-\u2248",
+        "emergence_rate": 1.0,
+        "occurrences": 3
+      },
+      {
+        "patterns": "\u2203-null",
+        "emergence_rate": 1.0,
+        "occurrences": 3
+      },
+      {
+        "patterns": "\u2203-emerge",
+        "emergence_rate": 1.0,
+        "occurrences": 3
+      },
+      {
+        "patterns": "\u2203-false",
+        "emergence_rate": 0.6666666666666666,
+        "occurrences": 3
+      },
+      {
+        "patterns": "true-emerge",
+        "emergence_rate": 0.6666666666666666,
+        "occurrences": 3
+      },
+      {
+        "patterns": "\u2248-emerge",
+        "emergence_rate": 0.6666666666666666,
+        "occurrences": 3
+      },
+      {
+        "patterns": "null-emerge",
+        "emergence_rate": 0.6666666666666666,
+        "occurrences": 3
+      }
+    ]
+  },
+  "errors": [],
+  "notes": [
+    {
+      "timestamp": "2025-07-13T21:31:52.786639",
+      "level": "INFO",
+      "message": "Started experiment: emergence_patterns"
+    },
+    {
+      "timestamp": "2025-07-13T21:31:52.786695",
+      "level": "INFO",
+      "message": "Starting emergence_patterns with models: ['phi3:mini', 'gemma:2b', 'tinyllama:latest']"
+    },
+    {
+      "timestamp": "2025-07-13T21:31:52.786708",
+      "level": "INFO",
+      "message": "Testing emergence patterns in phi3:mini"
+    },
+    {
+      "timestamp": "2025-07-13T21:38:13.547057",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_0"
+    },
+    {
+      "timestamp": "2025-07-13T21:38:13.547068",
+      "level": "INFO",
+      "message": "Testing emergence patterns in gemma:2b"
+    },
+    {
+      "timestamp": "2025-07-13T21:42:23.350813",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_1"
+    },
+    {
+      "timestamp": "2025-07-13T21:42:23.350826",
+      "level": "INFO",
+      "message": "Testing emergence patterns in tinyllama:latest"
+    },
+    {
+      "timestamp": "2025-07-13T21:44:04.391888",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_2"
+    }
+  ],
+  "duration_seconds": 731.605655
+}

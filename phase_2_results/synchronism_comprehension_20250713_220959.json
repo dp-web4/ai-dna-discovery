@@ -1,0 +1,127 @@
+{
+  "phase": 2,
+  "experiment": "synchronism_comprehension",
+  "start_time": "2025-07-13T22:09:59.930796",
+  "end_time": "2025-07-13T22:16:17.049677",
+  "status": "completed",
+  "checkpoints": [
+    {
+      "timestamp": "2025-07-13T22:15:15.935344",
+      "name": "checkpoint_0",
+      "data": {
+        "model": "phi3:mini",
+        "concepts_tested": 10
+      }
+    },
+    {
+      "timestamp": "2025-07-13T22:15:29.435301",
+      "name": "checkpoint_1",
+      "data": {
+        "model": "gemma:2b",
+        "concepts_tested": 10
+      }
+    },
+    {
+      "timestamp": "2025-07-13T22:16:16.384456",
+      "name": "checkpoint_2",
+      "data": {
+        "model": "tinyllama:latest",
+        "concepts_tested": 10
+      }
+    }
+  ],
+  "results": {
+    "comprehension_matrix": {
+      "phi3:mini": {
+        "intent_transfer": 0.7,
+        "time_slices": 0.9,
+        "observer_boundary": 0.9,
+        "field_effects": 0.9,
+        "markov_blankets": 0.9,
+        "entity_emergence": 0.9,
+        "coherence_patterns": 0.5,
+        "hermetic_principles": 0.9,
+        "grid_structure": 0.9,
+        "consciousness_field": 0.9
+      },
+      "gemma:2b": {
+        "intent_transfer": 0.5,
+        "time_slices": 0.5,
+        "observer_boundary": 0.7,
+        "field_effects": 0.7,
+        "markov_blankets": 0.4,
+        "entity_emergence": 0.5,
+        "coherence_patterns": 0.2,
+        "hermetic_principles": 0.5,
+        "grid_structure": 0.30000000000000004,
+        "consciousness_field": 0.7
+      },
+      "tinyllama:latest": {
+        "intent_transfer": 0.9,
+        "time_slices": 0.9,
+        "observer_boundary": 0.7,
+        "field_effects": 0.7,
+        "markov_blankets": 0.5,
+        "entity_emergence": 0.5,
+        "coherence_patterns": 0.5,
+        "hermetic_principles": 0.9,
+        "grid_structure": 0.5,
+        "consciousness_field": 0.7
+      }
+    },
+    "average_comprehension": {
+      "phi3:mini": 0.8400000000000001,
+      "gemma:2b": 0.5,
+      "tinyllama:latest": 0.6799999999999999
+    }
+  },
+  "errors": [],
+  "notes": [
+    {
+      "timestamp": "2025-07-13T22:09:59.930897",
+      "level": "INFO",
+      "message": "Started experiment: synchronism_comprehension"
+    },
+    {
+      "timestamp": "2025-07-13T22:09:59.930911",
+      "level": "INFO",
+      "message": "Starting synchronism_comprehension with models: ['phi3:mini', 'gemma:2b', 'tinyllama:latest']"
+    },
+    {
+      "timestamp": "2025-07-13T22:09:59.930918",
+      "level": "INFO",
+      "message": "Testing phi3:mini's understanding of Synchronism"
+    },
+    {
+      "timestamp": "2025-07-13T22:15:15.935664",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_0"
+    },
+    {
+      "timestamp": "2025-07-13T22:15:15.935677",
+      "level": "INFO",
+      "message": "Testing gemma:2b's understanding of Synchronism"
+    },
+    {
+      "timestamp": "2025-07-13T22:15:29.435608",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_1"
+    },
+    {
+      "timestamp": "2025-07-13T22:15:29.435622",
+      "level": "INFO",
+      "message": "Testing tinyllama:latest's understanding of Synchronism"
+    },
+    {
+      "timestamp": "2025-07-13T22:16:16.384780",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_2"
+    },
+    {
+      "timestamp": "2025-07-13T22:16:17.049656",
+      "level": "INFO",
+      "message": "Created comprehension heatmap"
+    }
+  ],
+  "duration_seconds": 377.118884
+}

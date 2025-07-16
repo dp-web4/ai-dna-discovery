@@ -1,0 +1,167 @@
+{
+  "timestamp": "2025-07-12T17:12:25.912736",
+  "total_patterns_tracked": 13,
+  "patterns_with_evolution": 3,
+  "settling_patterns": [
+    "then",
+    "or_evolved",
+    "cycle",
+    "loop",
+    "emerge",
+    "and_evolved",
+    "pattern",
+    "you_evolved",
+    "true",
+    "null",
+    "know"
+  ],
+  "pattern_evolution": {
+    "loop": {
+      "appearances": 3,
+      "first_cycle": 106,
+      "last_cycle": 172,
+      "cycle_span": 66,
+      "average_gap": 33.0,
+      "score_evolution": null,
+      "reinforcement_pattern": "decelerating_reinforcement",
+      "final_score": 1.0
+    },
+    "emerge": {
+      "appearances": 3,
+      "first_cycle": 121,
+      "last_cycle": 168,
+      "cycle_span": 47,
+      "average_gap": 23.5,
+      "score_evolution": null,
+      "reinforcement_pattern": "accelerating_reinforcement",
+      "final_score": 1.0
+    },
+    "pattern": {
+      "appearances": 3,
+      "first_cycle": 157,
+      "last_cycle": 175,
+      "cycle_span": 18,
+      "average_gap": 9.0,
+      "score_evolution": null,
+      "reinforcement_pattern": "decelerating_reinforcement",
+      "final_score": 1.0
+    },
+    "true": {
+      "appearances": 3,
+      "first_cycle": 111,
+      "last_cycle": 186,
+      "cycle_span": 75,
+      "average_gap": 37.5,
+      "score_evolution": null,
+      "reinforcement_pattern": "accelerating_reinforcement",
+      "final_score": 1.0
+    },
+    "false": {
+      "appearances": 2,
+      "first_cycle": 117,
+      "last_cycle": 144,
+      "cycle_span": 27,
+      "average_gap": 27.0,
+      "score_evolution": null,
+      "reinforcement_pattern": "accelerating_reinforcement",
+      "final_score": 1.0
+    },
+    "null": {
+      "appearances": 3,
+      "first_cycle": 120,
+      "last_cycle": 188,
+      "cycle_span": 68,
+      "average_gap": 34.0,
+      "score_evolution": null,
+      "reinforcement_pattern": "decelerating_reinforcement",
+      "final_score": 1.0
+    },
+    "then": {
+      "appearances": 6,
+      "first_cycle": 125,
+      "last_cycle": 190,
+      "cycle_span": 65,
+      "average_gap": 13.0,
+      "score_evolution": null,
+      "reinforcement_pattern": "irregular_reinforcement",
+      "final_score": 1.0
+    },
+    "know": {
+      "appearances": 3,
+      "first_cycle": 101,
+      "last_cycle": 155,
+      "cycle_span": 54,
+      "average_gap": 27.0,
+      "score_evolution": null,
+      "reinforcement_pattern": "accelerating_reinforcement",
+      "final_score": 1.0
+    },
+    "understand": {
+      "appearances": 2,
+      "first_cycle": 129,
+      "last_cycle": 152,
+      "cycle_span": 23,
+      "average_gap": 23.0,
+      "score_evolution": null,
+      "reinforcement_pattern": "accelerating_reinforcement",
+      "final_score": 1.0
+    },
+    "cycle": {
+      "appearances": 3,
+      "first_cycle": 135,
+      "last_cycle": 177,
+      "cycle_span": 42,
+      "average_gap": 21.0,
+      "score_evolution": null,
+      "reinforcement_pattern": "accelerating_reinforcement",
+      "final_score": 1.0
+    },
+    "or": {
+      "appearances": 2,
+      "first_cycle": 3,
+      "last_cycle": 182,
+      "cycle_span": 179,
+      "average_gap": 179.0,
+      "score_evolution": {
+        "from": 0.5,
+        "to": 1.0,
+        "improvement": 0.5
+      },
+      "reinforcement_pattern": "accelerating_reinforcement",
+      "final_score": 1.0
+    },
+    "and": {
+      "appearances": 2,
+      "first_cycle": 43,
+      "last_cycle": 183,
+      "cycle_span": 140,
+      "average_gap": 140.0,
+      "score_evolution": {
+        "from": 0.5,
+        "to": 1.0,
+        "improvement": 0.5
+      },
+      "reinforcement_pattern": "accelerating_reinforcement",
+      "final_score": 1.0
+    },
+    "you": {
+      "appearances": 2,
+      "first_cycle": 9,
+      "last_cycle": 164,
+      "cycle_span": 155,
+      "average_gap": 155.0,
+      "score_evolution": {
+        "from": 0.5,
+        "to": 1.0,
+        "improvement": 0.5
+      },
+      "reinforcement_pattern": "accelerating_reinforcement",
+      "final_score": 1.0
+    }
+  },
+  "key_insights": [
+    "Patterns that evolved to perfection: or, and, you",
+    "Most reinforced patterns: then, loop, emerge",
+    "Accelerating patterns: emerge, true, false, know, understand, cycle, or, and, you"
+  ]
+}

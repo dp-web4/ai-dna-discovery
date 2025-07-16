@@ -1,0 +1,18 @@
+{
+  "cycle": 468,
+  "timestamp": "2025-07-13T05:09:26.457003",
+  "results": [
+    {
+      "candidate": "pattern",
+      "dna_score": 1.0,
+      "responses": 2,
+      "timestamp": "2025-07-13T05:07:48.789952"
+    },
+    {
+      "candidate": "\u2208",
+      "dna_score": 1.0,
+      "responses": 2,
+      "timestamp": "2025-07-13T05:07:58.009196"
+    }
+  ]
+}

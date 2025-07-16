@@ -1,0 +1,18 @@
+{
+  "cycle": 514,
+  "timestamp": "2025-07-13T07:17:24.696627",
+  "results": [
+    {
+      "candidate": "emerge",
+      "dna_score": 1.0,
+      "responses": 2,
+      "timestamp": "2025-07-13T07:15:46.146060"
+    },
+    {
+      "candidate": "\u2203",
+      "dna_score": 1.0,
+      "responses": 2,
+      "timestamp": "2025-07-13T07:15:56.749592"
+    }
+  ]
+}
