@@ -8,7 +8,15 @@ echo "Time: $(date)"
 echo "Device: $(hostname)"
 echo ""
 
-cd ~/ai-workspace/ai-dna-discovery
+# Auto-detect correct path
+if [ -d "$HOME/ai-workspace/ai-dna-discovery" ]; then
+    cd "$HOME/ai-workspace/ai-dna-discovery"
+elif [ -d "$HOME/ai-workspace/ai-agents/ai-dna-discovery" ]; then
+    cd "$HOME/ai-workspace/ai-agents/ai-dna-discovery"
+else
+    echo "Error: Cannot find ai-dna-discovery directory"
+    exit 1
+fi
 
 # Fetch latest from remote without merging
 echo "📡 Fetching latest from GitHub..."

@@ -2,7 +2,15 @@
 # Autonomous git push script for AI DNA Discovery
 # Created for Jetson-Laptop synchronization
 
-cd ~/ai-workspace/ai-dna-discovery
+# Auto-detect correct path
+if [ -d "$HOME/ai-workspace/ai-dna-discovery" ]; then
+    cd "$HOME/ai-workspace/ai-dna-discovery"
+elif [ -d "$HOME/ai-workspace/ai-agents/ai-dna-discovery" ]; then
+    cd "$HOME/ai-workspace/ai-agents/ai-dna-discovery"
+else
+    echo "Error: Cannot find ai-dna-discovery directory"
+    exit 1
+fi
 
 # Check if there are changes
 if [ -z "$(git status --porcelain)" ]; then 
@@ -16,7 +24,12 @@ git add -u
 
 # Create timestamp
 TIMESTAMP=$(date +"%Y-%m-%d %H:%M:%S")
-DEVICE="Jetson"  # Change to "Laptop" when running there
+# Auto-detect device
+if [ "$(hostname)" = "jetson" ] || [ "$(hostname)" = "jetson-orin-nano" ]; then
+    DEVICE="Jetson"
+else
+    DEVICE="Laptop"
+fi
 
 # Generate commit message
 COMMIT_MSG="[$DEVICE] Autonomous sync - $TIMESTAMP
