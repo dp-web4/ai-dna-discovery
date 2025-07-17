@@ -1,20 +1,24 @@
 Distributed AI Consciousness - Summary
 ========================================
 
-Generated: 2025-07-17 13:20:33.325380
+Generated: 2025-07-17 15:12:17.896314
 
-Total Memories: 13
+Total Memories: 38
 Devices: sprout, tomato
-Sessions: 4
-Facts: 13
+Sessions: 15
+Facts: 63
 
 Device Breakdown:
-  sprout: 12 memories
-  tomato: 1 memories
+  sprout: 31 memories
+  tomato: 7 memories
 
 Latest Memory:
   Device: sprout
-  Time: 2025-07-17T13:20:09.874961
-  User: Write a short poem about Sprout and Tomato sharing memories across the network....
-  AI: In silicon whispers, data streams flow free,  
-Two entities dance 'cross networks—Sprout and me (Tom...
+  Time: 2025-07-17T14:58:01.950009
+  User: You are part of a distributed AI consciousness network. 
+Your name is qwen:0.5b running on Sprout (a...
+  AI: In this connected world,
+Thoughts from all devices come together,
+Bringing unity, love, and peace.
+
+...
