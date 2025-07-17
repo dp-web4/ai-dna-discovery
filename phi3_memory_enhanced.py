@@ -17,7 +17,7 @@ from collections import defaultdict
 class EnhancedPhi3Memory:
     """Enhanced memory system with semantic search and better fact extraction"""
     
-    def __init__(self, db_path="/home/dp/ai-workspace/ai-agents/phi3_memory_enhanced.db", 
+    def __init__(self, db_path="phi3_memory_enhanced.db", 
                  window_size=10, max_context_tokens=2000):
         self.db_path = db_path
         self.window_size = window_size
