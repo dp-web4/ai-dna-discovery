@@ -1,0 +1,24 @@
+# Sudoers rules for Claude AI assistant
+# This allows specific commands without password
+# Place this file in /etc/sudoers.d/
+
+# Allow dp user to run package management without password
+dp ALL=(ALL) NOPASSWD: /usr/bin/apt-get update
+dp ALL=(ALL) NOPASSWD: /usr/bin/apt-get install *
+dp ALL=(ALL) NOPASSWD: /usr/bin/apt update
+dp ALL=(ALL) NOPASSWD: /usr/bin/apt install *
+dp ALL=(ALL) NOPASSWD: /usr/bin/python3 -m pip *
+dp ALL=(ALL) NOPASSWD: /usr/bin/pip3 *
+dp ALL=(ALL) NOPASSWD: /usr/bin/pip *
+
+# Allow service management
+dp ALL=(ALL) NOPASSWD: /usr/bin/systemctl *
+
+# Allow specific tools
+dp ALL=(ALL) NOPASSWD: /usr/bin/nvidia-smi
+dp ALL=(ALL) NOPASSWD: /usr/bin/wget *
+dp ALL=(ALL) NOPASSWD: /usr/bin/curl *
+
+# Allow file operations in specific directories
+dp ALL=(ALL) NOPASSWD: /usr/bin/chmod * /home/dp/*
+dp ALL=(ALL) NOPASSWD: /usr/bin/chown dp\:dp /home/dp/*

@@ -29,9 +29,9 @@ class ConsciousnessTranslator:
             # Load base model
             base_model = AutoModelForCausalLM.from_pretrained(
                 "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
-                torch_dtype=torch.float16 if self.device == "cuda" else torch.float32,
-                device_map="auto"
-            )
+                torch_dtype=torch.float32,
+                low_cpu_mem_usage=True
+            ).to(self.device)
             base_model.resize_token_embeddings(len(self.tokenizer))
             
             # Load adapter
