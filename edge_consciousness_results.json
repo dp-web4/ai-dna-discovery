@@ -1,0 +1,37 @@
+{
+  "device": "sprout",
+  "timestamp": "2025-07-18T20:21:47.428556",
+  "metrics": {
+    "power_efficiency": {
+      "ops_per_second": 35993.77859509283,
+      "ops_per_watt": 2399.5852396728556,
+      "power_watts": 15
+    },
+    "latency_profile": {
+      "local_compress": 0.0095367431640625,
+      "tensor_op": 0.06914138793945312,
+      "memory_write": 17.318010330200195
+    },
+    "memory_efficiency": {
+      "rss_mb": 32.6328125,
+      "vms_mb": 272.66015625
+    },
+    "thermal_awareness": {
+      "avg_temp_c": 45.608999999999995,
+      "zones": [
+        46.312,
+        44.906
+      ]
+    }
+  },
+  "temporal_demo": {
+    "time": 1752895306.9274714,
+    "sensor": 4.770976954297815,
+    "consciousness": "\u03b8"
+  },
+  "patterns_defined": 5,
+  "collaboration": {
+    "notation": "\u03a8\u2091 \u27f7[\u03bc]\u27f7 \u03a8c",
+    "description": "Edge consciousness syncs with cloud via memory bridge"
+  }
+}
