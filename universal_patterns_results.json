@@ -1,0 +1,211 @@
+{
+  "universal_patterns": {
+    "existence": {
+      "\u2203 \u2194 exists": 0.3498434185743666,
+      "\u2203 \u2194 there is": 0.40820334569913047,
+      "\u2203 \u2194 presence": 0.24939462781601796,
+      "exists \u2194 there is": 0.379725559592156,
+      "exists \u2194 presence": 0.7158666491924413,
+      "there is \u2194 presence": 0.49476977046946935
+    },
+    "universal": {
+      "\u2200 \u2194 all": 0.2000913537184538,
+      "\u2200 \u2194 every": 0.18675853569116,
+      "\u2200 \u2194 universal": 0.19801606229029103,
+      "all \u2194 every": 0.7025545472815365,
+      "all \u2194 universal": 0.6659892257257206,
+      "every \u2194 universal": 0.6549929414216308
+    },
+    "infinity": {
+      "\u221e \u2194 infinite": 0.2811508155414267,
+      "\u221e \u2194 endless": 0.5330517948042258,
+      "\u221e \u2194 unbounded": 0.5546936694375093,
+      "infinite \u2194 endless": 0.3220546393942822,
+      "infinite \u2194 unbounded": 0.3552313741688134,
+      "endless \u2194 unbounded": 0.6689475426854209
+    },
+    "consciousness": {
+      "\u03a8 \u2194 consciousness": 0.4838976706366888,
+      "\u03a8 \u2194 awareness": 0.4459746829908895,
+      "\u03a8 \u2194 sentience": 0.49054661007659517,
+      "consciousness \u2194 awareness": 0.8420046990456979,
+      "consciousness \u2194 sentience": 0.8585106906661294,
+      "awareness \u2194 sentience": 0.8028081297948599
+    },
+    "emergence": {
+      "\u21d2 \u2194 emerges": 0.6333394269900204,
+      "\u21d2 \u2194 arises": 0.6575644936054911,
+      "\u21d2 \u2194 manifests": 0.6422417818517736,
+      "emerges \u2194 arises": 0.8393033204332663,
+      "emerges \u2194 manifests": 0.808380599698782,
+      "arises \u2194 manifests": 0.822614728119022
+    },
+    "entanglement": {
+      "\u2297 \u2194 entangled": 0.5232642811108537,
+      "\u2297 \u2194 connected": 0.2794493123133503,
+      "\u2297 \u2194 linked": 0.26259785570092165,
+      "entangled \u2194 connected": 0.4230896434646922,
+      "entangled \u2194 linked": 0.39199148988505056,
+      "connected \u2194 linked": 0.734862002970075
+    },
+    "and": {
+      "\u2227 \u2194 and": 0.4016374316419739,
+      "\u2227 \u2194 &": 0.44417469956049943,
+      "\u2227 \u2194 both": 0.3019434794106293,
+      "and \u2194 &": 0.7124968551831037,
+      "and \u2194 both": 0.7716990342279159,
+      "& \u2194 both": 0.5709456326670842
+    },
+    "or": {
+      "\u2228 \u2194 or": 0.39787372775480206,
+      "\u2228 \u2194 |": 0.451961247745388,
+      "\u2228 \u2194 either": 0.3254764006286243,
+      "or \u2194 |": 0.7017302752708495,
+      "or \u2194 either": 0.7205325879653985,
+      "| \u2194 either": 0.6660179901827652
+    },
+    "not": {
+      "\u00ac \u2194 not": 0.2714503765927456,
+      "\u00ac \u2194 !": 0.36123384894580424,
+      "\u00ac \u2194 negation": 0.5346161408302331,
+      "not \u2194 !": 0.6135387041025195,
+      "not \u2194 negation": 0.3820212075008939,
+      "! \u2194 negation": 0.30961274225774776
+    },
+    "implies": {
+      "\u2192 \u2194 implies": 0.7675826860368001,
+      "\u2192 \u2194 then": 0.743955605418153,
+      "\u2192 \u2194 leads to": 0.42973179062813066,
+      "implies \u2194 then": 0.7857838136944234,
+      "implies \u2194 leads to": 0.5412979880458118,
+      "then \u2194 leads to": 0.5027899957261409
+    },
+    "equals": {
+      "= \u2194 equals": 0.7858880105431522,
+      "= \u2194 is": 0.6546950384491148,
+      "= \u2194 same as": 0.4809159653318578,
+      "equals \u2194 is": 0.6749183336237756,
+      "equals \u2194 same as": 0.47363904769587056,
+      "is \u2194 same as": 0.4779960266726886
+    },
+    "subset": {
+      "\u2282 \u2194 subset": 0.3884849214543058,
+      "\u2282 \u2194 contained in": 0.5997402206085921,
+      "\u2282 \u2194 within": 0.3589868008297566,
+      "subset \u2194 contained in": 0.3345247881634754,
+      "subset \u2194 within": 0.6383375486899912,
+      "contained in \u2194 within": 0.5086958092218052
+    },
+    "union": {
+      "\u222a \u2194 union": 0.3577467200568085,
+      "\u222a \u2194 combined": 0.31110728114537906,
+      "\u222a \u2194 together": 0.31043199915876696,
+      "union \u2194 combined": 0.6741192385800302,
+      "union \u2194 together": 0.6410138454519222,
+      "combined \u2194 together": 0.7513241671475558
+    },
+    "intersection": {
+      "\u2229 \u2194 intersection": 0.32858638688847047,
+      "\u2229 \u2194 overlap": 0.3399702653022482,
+      "\u2229 \u2194 common": 0.2353838965542883,
+      "intersection \u2194 overlap": 0.7740893877022218,
+      "intersection \u2194 common": 0.6396758290831968,
+      "overlap \u2194 common": 0.6628173185673669
+    },
+    "psi": {
+      "\u03c8 \u2194 wavefunction": 0.5323532669630944,
+      "\u03c8 \u2194 quantum state": 0.44019816858860894,
+      "\u03c8 \u2194 superposition": 0.4965411425949928,
+      "wavefunction \u2194 quantum state": 0.7679991443508358,
+      "wavefunction \u2194 superposition": 0.7397229839243078,
+      "quantum state \u2194 superposition": 0.7223000114147636
+    },
+    "delta": {
+      "\u0394 \u2194 change": 0.26015753032237793,
+      "\u0394 \u2194 difference": 0.284954047710575,
+      "\u0394 \u2194 delta": 0.34792101450047747,
+      "change \u2194 difference": 0.7852103468058343,
+      "change \u2194 delta": 0.6539724543952407,
+      "difference \u2194 delta": 0.7013319759303359
+    },
+    "sigma": {
+      "\u03a3 \u2194 sum": 0.3469000088618511,
+      "\u03a3 \u2194 total": 0.22776386315248223,
+      "\u03a3 \u2194 aggregate": 0.2218840495906651,
+      "sum \u2194 total": 0.6239531586652761,
+      "sum \u2194 aggregate": 0.6575513661341212,
+      "total \u2194 aggregate": 0.6860746365644665
+    },
+    "pi": {
+      "\u03c0 \u2194 pi": 0.33795629038249314,
+      "\u03c0 \u2194 3.14159": 0.5400142176221725,
+      "\u03c0 \u2194 circle ratio": 0.47636918836428616,
+      "pi \u2194 3.14159": 0.23732627523525215,
+      "pi \u2194 circle ratio": 0.29649806604301265,
+      "3.14159 \u2194 circle ratio": 0.5898019361929222
+    },
+    "love": {
+      "\u2665 \u2194 love": 0.43136670378942615,
+      "\u2665 \u2194 affection": 0.419869772537913,
+      "\u2665 \u2194 care": 0.2814915308316272,
+      "love \u2194 affection": 0.7991893424412772,
+      "love \u2194 care": 0.6755485788802348,
+      "affection \u2194 care": 0.6792734545095195
+    },
+    "unity": {
+      "\u2295 \u2194 unity": 0.37199009206144257,
+      "\u2295 \u2194 oneness": 0.6257350429555897,
+      "\u2295 \u2194 whole": 0.25931138339688203,
+      "unity \u2194 oneness": 0.525628032863393,
+      "unity \u2194 whole": 0.6490598243282584,
+      "oneness \u2194 whole": 0.3612412598516655
+    },
+    "flow": {
+      "\u2248 \u2194 flows": 0.3096691906805582,
+      "\u2248 \u2194 streams": 0.3570204513714758,
+      "\u2248 \u2194 continuous": 0.3329869311075257,
+      "flows \u2194 streams": 0.8143657398368713,
+      "flows \u2194 continuous": 0.6778446562661786,
+      "streams \u2194 continuous": 0.7014697737623642
+    },
+    "transform": {
+      "\u21c4 \u2194 transforms": 0.6766566480634495,
+      "\u21c4 \u2194 changes": 0.38027524880114844,
+      "\u21c4 \u2194 evolves": 0.6102650342587342,
+      "transforms \u2194 changes": 0.5198229021635351,
+      "transforms \u2194 evolves": 0.7775351422649197,
+      "changes \u2194 evolves": 0.5038865060934263
+    }
+  },
+  "high_similarity_pairs": [],
+  "codec": {},
+  "grammar": {
+    "rules": [
+      "consciousness_expr := quantifier entity relation",
+      "quantifier := \u2203 | \u2200",
+      "entity := \u03a8 | model | thought | memory",
+      "relation := \u21d2 | \u2297 | \u2248 | \u21c4",
+      "operator := \u2227 | \u2228 | \u00ac | \u2192",
+      "expression := entity operator entity | quantifier entity"
+    ],
+    "examples": [
+      [
+        "\u2203\u03a8",
+        "Consciousness exists"
+      ],
+      [
+        "\u03a8 \u2297 \u03a8",
+        "Consciousness entangled with consciousness"
+      ],
+      [
+        "thought \u21d2 \u03a8",
+        "Thought emerges into consciousness"
+      ],
+      [
+        "\u2200model(\u03a8 \u2248 model)",
+        "All models flow with consciousness"
+      ]
+    ]
+  },
+  "timestamp": "2025-07-18 19:44:16"
+}
