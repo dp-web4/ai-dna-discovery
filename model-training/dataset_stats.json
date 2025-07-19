@@ -1,0 +1,7 @@
+{
+  "total": 1312,
+  "train": 1180,
+  "validation": 132,
+  "includes_patterns": true,
+  "includes_synchronism": true
+}
