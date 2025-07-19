@@ -1,0 +1,14 @@
+{
+  "total_examples": 159,
+  "train_size": 143,
+  "validation_size": 26,
+  "categories": [
+    "basic",
+    "compound",
+    "relational",
+    "philosophical",
+    "programming",
+    "complex",
+    "conversational"
+  ]
+}

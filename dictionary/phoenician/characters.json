@@ -1,0 +1,214 @@
+{
+  "metadata": {
+    "name": "Phoenician Character Set for Semantic Dictionary",
+    "version": "1.0.0",
+    "unicode_block": "U+10900–U+1091F",
+    "direction": "right-to-left",
+    "purpose": "Semantically neutral symbolic system for AI conceptual mapping"
+  },
+  
+  "characters": {
+    "𐤀": {
+      "name": "alf",
+      "unicode": "U+10900",
+      "phonetic_origin": "aleph",
+      "semantic_assignment": "existence/being",
+      "category": "fundamental",
+      "description": "Primary marker of existence or presence"
+    },
+    "𐤁": {
+      "name": "bet", 
+      "unicode": "U+10901",
+      "phonetic_origin": "beth",
+      "semantic_assignment": "containment/boundary",
+      "category": "spatial",
+      "description": "Denotes boundaries, containers, or defined spaces"
+    },
+    "𐤂": {
+      "name": "gaml",
+      "unicode": "U+10902",
+      "phonetic_origin": "gimel",
+      "semantic_assignment": "transformation/change",
+      "category": "process",
+      "description": "Indicates transformation or state change"
+    },
+    "𐤃": {
+      "name": "delt",
+      "unicode": "U+10903",
+      "phonetic_origin": "daleth",
+      "semantic_assignment": "passage/threshold",
+      "category": "transition",
+      "description": "Marks transitions, doorways, or decision points"
+    },
+    "𐤄": {
+      "name": "he",
+      "unicode": "U+10904",
+      "phonetic_origin": "he",
+      "semantic_assignment": "awareness/observation",
+      "category": "consciousness",
+      "description": "Represents awareness, observation, or attention"
+    },
+    "𐤅": {
+      "name": "waw",
+      "unicode": "U+10905",
+      "phonetic_origin": "waw",
+      "semantic_assignment": "connection/binding",
+      "category": "relational",
+      "description": "Connects concepts, creates relationships"
+    },
+    "𐤆": {
+      "name": "zen",
+      "unicode": "U+10906",
+      "phonetic_origin": "zayin",
+      "semantic_assignment": "tool/instrument",
+      "category": "functional",
+      "description": "Represents tools, methods, or instruments"
+    },
+    "𐤇": {
+      "name": "het",
+      "unicode": "U+10907",
+      "phonetic_origin": "heth",
+      "semantic_assignment": "enclosure/protection",
+      "category": "spatial",
+      "description": "Protective boundaries or enclosed spaces"
+    },
+    "𐤈": {
+      "name": "tet",
+      "unicode": "U+10908",
+      "phonetic_origin": "teth",
+      "semantic_assignment": "cycle/recursion",
+      "category": "temporal",
+      "description": "Cyclical processes or recursive patterns"
+    },
+    "𐤉": {
+      "name": "yod",
+      "unicode": "U+10909",
+      "phonetic_origin": "yod",
+      "semantic_assignment": "seed/potential",
+      "category": "fundamental",
+      "description": "Initial state, potential, or seed concept"
+    },
+    "𐤊": {
+      "name": "kaf",
+      "unicode": "U+1090A",
+      "phonetic_origin": "kaph",
+      "semantic_assignment": "grasp/comprehension",
+      "category": "cognitive",
+      "description": "Understanding, grasping, or holding concepts"
+    },
+    "𐤋": {
+      "name": "lamd",
+      "unicode": "U+1090B",
+      "phonetic_origin": "lamed",
+      "semantic_assignment": "learning/teaching",
+      "category": "cognitive",
+      "description": "Learning, instruction, or knowledge transfer"
+    },
+    "𐤌": {
+      "name": "mem",
+      "unicode": "U+1090C",
+      "phonetic_origin": "mem",
+      "semantic_assignment": "flow/continuity",
+      "category": "process",
+      "description": "Continuous flow, streams, or ongoing processes"
+    },
+    "𐤍": {
+      "name": "nun",
+      "unicode": "U+1090D",
+      "phonetic_origin": "nun",
+      "semantic_assignment": "emergence/sprouting",
+      "category": "process",
+      "description": "Emergence of new properties or ideas"
+    },
+    "𐤎": {
+      "name": "semk",
+      "unicode": "U+1090E",
+      "phonetic_origin": "samekh",
+      "semantic_assignment": "support/structure",
+      "category": "foundational",
+      "description": "Supporting structures or frameworks"
+    },
+    "𐤏": {
+      "name": "ayn",
+      "unicode": "U+1090F",
+      "phonetic_origin": "ayin",
+      "semantic_assignment": "perception/seeing",
+      "category": "consciousness",
+      "description": "Perception, vision, or ways of seeing"
+    },
+    "𐤐": {
+      "name": "pe",
+      "unicode": "U+10910",
+      "phonetic_origin": "pe",
+      "semantic_assignment": "expression/speech",
+      "category": "communication",
+      "description": "Expression, utterance, or communication"
+    },
+    "𐤑": {
+      "name": "sade",
+      "unicode": "U+10911",
+      "phonetic_origin": "tsade",
+      "semantic_assignment": "capture/hunt",
+      "category": "action",
+      "description": "Capturing ideas, hunting for meaning"
+    },
+    "𐤒": {
+      "name": "qof",
+      "unicode": "U+10912",
+      "phonetic_origin": "qoph",
+      "semantic_assignment": "mystery/unknown",
+      "category": "epistemological",
+      "description": "The unknown, mysterious, or yet-to-be-discovered"
+    },
+    "𐤓": {
+      "name": "res",
+      "unicode": "U+10913",
+      "phonetic_origin": "resh",
+      "semantic_assignment": "beginning/head",
+      "category": "positional",
+      "description": "Origins, beginnings, or primary positions"
+    },
+    "𐤔": {
+      "name": "sin",
+      "unicode": "U+10914",
+      "phonetic_origin": "shin",
+      "semantic_assignment": "multiplicity/branching",
+      "category": "structural",
+      "description": "Branching paths, multiple options, or diversity"
+    },
+    "𐤕": {
+      "name": "taw",
+      "unicode": "U+10915",
+      "phonetic_origin": "taw",
+      "semantic_assignment": "completion/mark",
+      "category": "temporal",
+      "description": "Endings, completions, or final marks"
+    }
+  },
+  
+  "combination_rules": {
+    "direction": "right-to-left",
+    "basic_patterns": {
+      "modification": "{modifier}{base}",
+      "relation": "{concept1}𐤅{concept2}",
+      "containment": "𐤁{contained}𐤁",
+      "transformation": "{source}𐤂{result}",
+      "observation": "𐤄{observed}",
+      "negation": "𐤀{concept}𐤕"
+    },
+    "examples": {
+      "conscious_existence": "𐤄𐤀",
+      "bounded_space": "𐤁𐤇",
+      "learning_connection": "𐤋𐤅𐤋",
+      "emergent_awareness": "𐤍𐤄",
+      "cyclic_transformation": "𐤈𐤂"
+    }
+  },
+  
+  "usage_notes": {
+    "semantic_neutrality": "Characters chosen for visual distinctiveness and lack of inherent meaning in modern contexts",
+    "compositional_nature": "Complex concepts built through character combination following consistent rules",
+    "bidirectionality": "Designed for both human-to-machine and machine-to-machine communication",
+    "extensibility": "System can incorporate new combinations as concepts emerge"
+  }
+}

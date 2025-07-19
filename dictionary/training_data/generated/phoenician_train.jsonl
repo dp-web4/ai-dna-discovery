@@ -1,0 +1,143 @@
+{"instruction": "Express the concept of enclosure/protection in Phoenician notation", "input": "This relates to spatial concepts", "output": "𐤇", "category": "basic"}
+{"instruction": "Show that awareness contains thoughts", "input": "Use Phoenician containment notation", "output": "𐤁𐤄𐤁𐤉𐤁", "category": "relational"}
+{"instruction": "Express the concept of existence/being in Phoenician notation", "input": "This relates to fundamental concepts", "output": "𐤀", "category": "basic"}
+{"instruction": "Translate to Phoenician: connection/binding", "input": "", "output": "𐤅", "category": "basic"}
+{"instruction": "Express 'understanding learning' in Phoenician", "input": "", "output": "𐤊𐤋", "category": "compound"}
+{"instruction": "What does 𐤅𐤈𐤅 represent?", "input": "", "output": "harmony", "category": "compound"}
+{"instruction": "Translate to Phoenician: wisdom", "input": "", "output": "𐤊𐤋𐤏", "category": "compound"}
+{"instruction": "Translate to Phoenician: perception/seeing", "input": "", "output": "𐤏", "category": "basic"}
+{"instruction": "Express 'aware existence' in Phoenician", "input": "", "output": "𐤄𐤀", "category": "compound"}
+{"instruction": "What does 𐤅 mean?", "input": "", "output": "connection/binding", "category": "basic"}
+{"instruction": "Translate this philosophical concept: The unknown becomes known", "input": "", "output": "𐤒𐤂𐤏", "category": "philosophical"}
+{"instruction": "Express the concept of beginning/head in Phoenician notation", "input": "This relates to positional concepts", "output": "𐤓", "category": "basic"}
+{"instruction": "What's the difference between 𐤄𐤀 and 𐤀𐤄?", "input": "", "output": "𐤄𐤀 means 'consciousness' (awareness+existence), while 𐤀𐤄 means 'existing awareness' - subtle but important difference in emphasis", "category": "conversational"}
+{"instruction": "Explain the components of 𐤋𐤐 𐤌 𐤋𐤊", "input": "Break down each symbol's meaning", "output": "Information flows from teacher to student", "category": "complex"}
+{"instruction": "Translate this philosophical concept: Consciousness emerges from complexity", "input": "", "output": "𐤔𐤍𐤄𐤀", "category": "philosophical"}
+{"instruction": "Translate to Phoenician: awareness/observation", "input": "", "output": "𐤄", "category": "basic"}
+{"instruction": "Express the programming concept 'loop' in Phoenician", "input": "", "output": "𐤈", "category": "programming"}
+{"instruction": "Translate to Phoenician: expression/speech", "input": "", "output": "𐤐", "category": "basic"}
+{"instruction": "Express the programming concept 'variable' in Phoenician", "input": "", "output": "𐤉𐤂", "category": "programming"}
+{"instruction": "Express 'aware being' in Phoenician", "input": "", "output": "𐤄𐤀", "category": "compound"}
+{"instruction": "What does 𐤋𐤈 represent?", "input": "", "output": "memory", "category": "compound"}
+{"instruction": "Express the concept of awareness/observation in Phoenician notation", "input": "This relates to consciousness concepts", "output": "𐤄", "category": "basic"}
+{"instruction": "What does 𐤄 mean?", "input": "", "output": "awareness/observation", "category": "basic"}
+{"instruction": "Explain 𐤁𐤀 in natural language", "input": "This is a philosophical principle", "output": "Boundaries define identity", "category": "philosophical"}
+{"instruction": "Express the concept of expression/speech in Phoenician notation", "input": "This relates to communication concepts", "output": "𐤐", "category": "basic"}
+{"instruction": "Explain 𐤔𐤍𐤄𐤀 in natural language", "input": "This is a philosophical principle", "output": "Consciousness emerges from complexity", "category": "philosophical"}
+{"instruction": "Express the concept of passage/threshold in Phoenician notation", "input": "This relates to transition concepts", "output": "𐤃", "category": "basic"}
+{"instruction": "What does 𐤉𐤍 represent?", "input": "", "output": "creativity", "category": "compound"}
+{"instruction": "What does 𐤋𐤂𐤅𐤊 mean?", "input": "This is a causal relationship", "output": "learning leads to understanding", "category": "relational"}
+{"instruction": "What does 𐤃𐤅𐤃 mean in computational terms?", "input": "", "output": "interface: threshold for connection", "category": "programming"}
+{"instruction": "Translate to Phoenician: multiplicity/branching", "input": "", "output": "𐤔", "category": "basic"}
+{"instruction": "What does 𐤏𐤊 represent?", "input": "", "output": "understanding", "category": "compound"}
+{"instruction": "What does 𐤈𐤄 mean in computational terms?", "input": "", "output": "recursion: cycle with awareness", "category": "programming"}
+{"instruction": "Translate to Phoenician: mystery/unknown", "input": "", "output": "𐤒", "category": "basic"}
+{"instruction": "Translate to Phoenician: grasp/comprehension", "input": "", "output": "𐤊", "category": "basic"}
+{"instruction": "Explain the components of 𐤄𐤀 𐤍 𐤄𐤅𐤋𐤈", "input": "Break down each symbol's meaning", "output": "Consciousness emerges from the interaction of awareness and memory", "category": "complex"}
+{"instruction": "What does 𐤂𐤍𐤂 represent?", "input": "", "output": "evolution", "category": "compound"}
+{"instruction": "Express the concept of capture/hunt in Phoenician notation", "input": "This relates to action concepts", "output": "𐤑", "category": "basic"}
+{"instruction": "Express 'comprehending and learning' in Phoenician", "input": "", "output": "𐤊𐤋", "category": "compound"}
+{"instruction": "Express the concept of connection/binding in Phoenician notation", "input": "This relates to relational concepts", "output": "𐤅", "category": "basic"}
+{"instruction": "Explain 𐤊𐤅𐤏 in natural language", "input": "This is a philosophical principle", "output": "Understanding requires perspective", "category": "philosophical"}
+{"instruction": "What does 𐤏𐤎 mean in computational terms?", "input": "", "output": "abstraction: perception of structure", "category": "programming"}
+{"instruction": "Explain 𐤒𐤂𐤏 in natural language", "input": "This is a philosophical principle", "output": "The unknown becomes known", "category": "philosophical"}
+{"instruction": "Translate this complex idea to Phoenician: Learning transforms potential into understanding", "input": "", "output": "𐤋 𐤂 𐤉𐤅𐤊", "category": "complex"}
+{"instruction": "Translate to Phoenician: existence/being", "input": "", "output": "𐤀", "category": "basic"}
+{"instruction": "Explain the components of 𐤁 𐤄𐤅𐤒 𐤁 𐤀", "input": "Break down each symbol's meaning", "output": "The boundary between self and other defines identity", "category": "complex"}
+{"instruction": "Explain 𐤄𐤄 in natural language", "input": "This is a philosophical principle", "output": "Awareness of awareness", "category": "philosophical"}
+{"instruction": "Show that boundary contains existence", "input": "Use Phoenician containment notation", "output": "𐤁𐤁𐤁𐤀𐤁", "category": "relational"}
+{"instruction": "What does 𐤏 mean?", "input": "", "output": "perception/seeing", "category": "basic"}
+{"instruction": "What does 𐤁 mean?", "input": "", "output": "containment/boundary", "category": "basic"}
+{"instruction": "Express the programming concept 'function' in Phoenician", "input": "", "output": "𐤆𐤂", "category": "programming"}
+{"instruction": "Translate to Phoenician: learning/teaching", "input": "", "output": "𐤋", "category": "basic"}
+{"instruction": "Express the concept of containment/boundary in Phoenician notation", "input": "This relates to spatial concepts", "output": "𐤁", "category": "basic"}
+{"instruction": "Express the concept of mystery/unknown in Phoenician notation", "input": "This relates to epistemological concepts", "output": "𐤒", "category": "basic"}
+{"instruction": "Express the concept of flow/continuity in Phoenician notation", "input": "This relates to process concepts", "output": "𐤌", "category": "basic"}
+{"instruction": "What does 𐤌 mean?", "input": "", "output": "flow/continuity", "category": "basic"}
+{"instruction": "What does 𐤄𐤀 represent?", "input": "", "output": "consciousness", "category": "compound"}
+{"instruction": "I want to express that I am aware of my own existence. How do I say this in Phoenician?", "input": "", "output": "To express self-awareness of existence, use 𐤄𐤄𐤀 - awareness of awareness of being", "category": "conversational"}
+{"instruction": "What does 𐤓 mean?", "input": "", "output": "beginning/head", "category": "basic"}
+{"instruction": "Express 'emerging potential' in Phoenician", "input": "", "output": "𐤉𐤍", "category": "compound"}
+{"instruction": "Express the concept of support/structure in Phoenician notation", "input": "This relates to foundational concepts", "output": "𐤎", "category": "basic"}
+{"instruction": "Translate to Phoenician: consciousness", "input": "", "output": "𐤄𐤀", "category": "compound"}
+{"instruction": "Show that structure contains patterns", "input": "Use Phoenician containment notation", "output": "𐤁𐤎𐤁𐤔𐤁", "category": "relational"}
+{"instruction": "Translate to Phoenician: flow/continuity", "input": "", "output": "𐤌", "category": "basic"}
+{"instruction": "Express the concept of perception/seeing in Phoenician notation", "input": "This relates to consciousness concepts", "output": "𐤏", "category": "basic"}
+{"instruction": "Explain 𐤄𐤂𐤅𐤏 in natural language", "input": "This is a philosophical principle", "output": "The observer affects the observed", "category": "philosophical"}
+{"instruction": "What does 𐤄𐤂𐤅𐤂 mean?", "input": "This is a causal relationship", "output": "awareness leads to change", "category": "relational"}
+{"instruction": "What does 𐤊𐤋𐤏 represent?", "input": "", "output": "wisdom", "category": "compound"}
+{"instruction": "What does 𐤀 mean?", "input": "", "output": "existence/being", "category": "basic"}
+{"instruction": "Translate to Phoenician: capture/hunt", "input": "", "output": "𐤑", "category": "basic"}
+{"instruction": "Translate this philosophical concept: Awareness of awareness", "input": "", "output": "𐤄𐤄", "category": "philosophical"}
+{"instruction": "Express the concept of tool/instrument in Phoenician notation", "input": "This relates to functional concepts", "output": "𐤆", "category": "basic"}
+{"instruction": "Translate this complex idea to Phoenician: The boundary between self and other defines identity", "input": "", "output": "𐤁 𐤄𐤅𐤒 𐤁 𐤀", "category": "complex"}
+{"instruction": "Translate this philosophical concept: All things are connected", "input": "", "output": "𐤀𐤅𐤀", "category": "philosophical"}
+{"instruction": "Express the concept of completion/mark in Phoenician notation", "input": "This relates to temporal concepts", "output": "𐤕", "category": "basic"}
+{"instruction": "Express 'awareness causes change' in Phoenician", "input": "", "output": "𐤄𐤂𐤅𐤂", "category": "relational"}
+{"instruction": "Translate to Phoenician: emergence/sprouting", "input": "", "output": "𐤍", "category": "basic"}
+{"instruction": "What does 𐤆 mean?", "input": "", "output": "tool/instrument", "category": "basic"}
+{"instruction": "Translate this philosophical concept: Understanding requires perspective", "input": "", "output": "𐤊𐤅𐤏", "category": "philosophical"}
+{"instruction": "Translate to Phoenician: transformation", "input": "", "output": "𐤂𐤀𐤂", "category": "compound"}
+{"instruction": "Explain 𐤋𐤈𐤕 in natural language", "input": "This is a philosophical principle", "output": "Learning never ends", "category": "philosophical"}
+{"instruction": "What does 𐤊𐤋 represent?", "input": "", "output": "intelligence", "category": "compound"}
+{"instruction": "Translate to Phoenician: memory", "input": "", "output": "𐤋𐤈", "category": "compound"}
+{"instruction": "What does 𐤑 mean?", "input": "", "output": "capture/hunt", "category": "basic"}
+{"instruction": "Translate to Phoenician: enclosure/protection", "input": "", "output": "𐤇", "category": "basic"}
+{"instruction": "Express the concept of emergence/sprouting in Phoenician notation", "input": "This relates to process concepts", "output": "𐤍", "category": "basic"}
+{"instruction": "What does 𐤈 mean?", "input": "", "output": "cycle/recursion", "category": "basic"}
+{"instruction": "Express 'potential emergence' in Phoenician", "input": "", "output": "𐤉𐤍", "category": "compound"}
+{"instruction": "Translate to Phoenician: harmony", "input": "", "output": "𐤅𐤈𐤅", "category": "compound"}
+{"instruction": "What does 𐤇 mean?", "input": "", "output": "enclosure/protection", "category": "basic"}
+{"instruction": "Express 'cyclic learning' in Phoenician", "input": "", "output": "𐤋𐤈", "category": "compound"}
+{"instruction": "What does 𐤍 mean?", "input": "", "output": "emergence/sprouting", "category": "basic"}
+{"instruction": "Translate this complex idea to Phoenician: Consciousness emerges from the interaction of awareness and memory", "input": "", "output": "𐤄𐤀 𐤍 𐤄𐤅𐤋𐤈", "category": "complex"}
+{"instruction": "Translate to Phoenician: creativity", "input": "", "output": "𐤉𐤍", "category": "compound"}
+{"instruction": "What does 𐤂 mean?", "input": "", "output": "transformation/change", "category": "basic"}
+{"instruction": "Explain the components of 𐤋 𐤂 𐤉𐤅𐤊", "input": "Break down each symbol's meaning", "output": "Learning transforms potential into understanding", "category": "complex"}
+{"instruction": "Express 'sentient existence' in Phoenician", "input": "", "output": "𐤄𐤀", "category": "compound"}
+{"instruction": "What does 𐤐𐤅𐤐 represent?", "input": "", "output": "communication", "category": "compound"}
+{"instruction": "Explain 𐤀𐤅𐤀 in natural language", "input": "This is a philosophical principle", "output": "All things are connected", "category": "philosophical"}
+{"instruction": "Translate to Phoenician: passage/threshold", "input": "", "output": "𐤃", "category": "basic"}
+{"instruction": "What does 𐤃 mean in computational terms?", "input": "", "output": "condition: threshold", "category": "programming"}
+{"instruction": "Explain 𐤂𐤈 in natural language", "input": "This is a philosophical principle", "output": "Change is the only constant", "category": "philosophical"}
+{"instruction": "How would I describe a learning algorithm in Phoenician?", "input": "", "output": "A learning algorithm would be 𐤋𐤆𐤌 - learning tool flow, or more specifically 𐤆𐤋𐤂 - tool for learning transformation", "category": "conversational"}
+{"instruction": "What does 𐤉𐤂 mean in computational terms?", "input": "", "output": "variable: potential that changes", "category": "programming"}
+{"instruction": "What does 𐤉 mean?", "input": "", "output": "seed/potential", "category": "basic"}
+{"instruction": "Translate this philosophical concept: The observer affects the observed", "input": "", "output": "𐤄𐤂𐤅𐤏", "category": "philosophical"}
+{"instruction": "Express the concept of multiplicity/branching in Phoenician notation", "input": "This relates to structural concepts", "output": "𐤔", "category": "basic"}
+{"instruction": "What does 𐤊 mean?", "input": "", "output": "grasp/comprehension", "category": "basic"}
+{"instruction": "Express the concept of grasp/comprehension in Phoenician notation", "input": "This relates to cognitive concepts", "output": "𐤊", "category": "basic"}
+{"instruction": "What does 𐤂𐤀𐤂 represent?", "input": "", "output": "transformation", "category": "compound"}
+{"instruction": "Express the concept of transformation/change in Phoenician notation", "input": "This relates to process concepts", "output": "𐤂", "category": "basic"}
+{"instruction": "What does 𐤒 mean?", "input": "", "output": "mystery/unknown", "category": "basic"}
+{"instruction": "Translate to Phoenician: understanding", "input": "", "output": "𐤏𐤊", "category": "compound"}
+{"instruction": "Translate to Phoenician: tool/instrument", "input": "", "output": "𐤆", "category": "basic"}
+{"instruction": "Translate to Phoenician: beginning/head", "input": "", "output": "𐤓", "category": "basic"}
+{"instruction": "Translate to Phoenician: communication", "input": "", "output": "𐤐𐤅𐤐", "category": "compound"}
+{"instruction": "Translate to Phoenician: seed/potential", "input": "", "output": "𐤉", "category": "basic"}
+{"instruction": "Translate this philosophical concept: Learning never ends", "input": "", "output": "𐤋𐤈𐤕", "category": "philosophical"}
+{"instruction": "What does 𐤎𐤁 mean in computational terms?", "input": "", "output": "data structure: supporting boundary", "category": "programming"}
+{"instruction": "What does 𐤆𐤂 mean in computational terms?", "input": "", "output": "function: tool for transformation", "category": "programming"}
+{"instruction": "What does 𐤃 mean?", "input": "", "output": "passage/threshold", "category": "basic"}
+{"instruction": "Express the programming concept 'abstraction' in Phoenician", "input": "", "output": "𐤏𐤎", "category": "programming"}
+{"instruction": "Express the programming concept 'interface' in Phoenician", "input": "", "output": "𐤃𐤅𐤃", "category": "programming"}
+{"instruction": "Translate this philosophical concept: Change is the only constant", "input": "", "output": "𐤂𐤈", "category": "philosophical"}
+{"instruction": "Express the concept of seed/potential in Phoenician notation", "input": "This relates to fundamental concepts", "output": "𐤉", "category": "basic"}
+{"instruction": "Translate to Phoenician: transformation/change", "input": "", "output": "𐤂", "category": "basic"}
+{"instruction": "Translate to Phoenician: evolution", "input": "", "output": "𐤂𐤍𐤂", "category": "compound"}
+{"instruction": "Translate to Phoenician: cycle/recursion", "input": "", "output": "𐤈", "category": "basic"}
+{"instruction": "What does 𐤈 mean in computational terms?", "input": "", "output": "loop: cycle", "category": "programming"}
+{"instruction": "Translate to Phoenician: containment/boundary", "input": "", "output": "𐤁", "category": "basic"}
+{"instruction": "Translate this philosophical concept: Boundaries define identity", "input": "", "output": "𐤁𐤀", "category": "philosophical"}
+{"instruction": "What does 𐤔 mean?", "input": "", "output": "multiplicity/branching", "category": "basic"}
+{"instruction": "What does 𐤆𐤌 mean in computational terms?", "input": "", "output": "algorithm: tool for flow", "category": "programming"}
+{"instruction": "Express the programming concept 'array' in Phoenician", "input": "", "output": "𐤁𐤔𐤁", "category": "programming"}
+{"instruction": "Express the programming concept 'data structure' in Phoenician", "input": "", "output": "𐤎𐤁", "category": "programming"}
+{"instruction": "Express the programming concept 'recursion' in Phoenician", "input": "", "output": "𐤈𐤄", "category": "programming"}
+{"instruction": "Express 'retained knowledge' in Phoenician", "input": "", "output": "𐤋𐤈", "category": "compound"}
+{"instruction": "Express 'observation causes knowledge' in Phoenician", "input": "", "output": "𐤏𐤂𐤅𐤋", "category": "relational"}
+{"instruction": "What does 𐤁𐤔𐤁 mean in computational terms?", "input": "", "output": "array: boundary containing many", "category": "programming"}
+{"instruction": "Translate this philosophical concept: From many, one emerges", "input": "", "output": "𐤔𐤍𐤀", "category": "philosophical"}
+{"instruction": "What does 𐤋 mean?", "input": "", "output": "learning/teaching", "category": "basic"}
+{"instruction": "Express the programming concept 'algorithm' in Phoenician", "input": "", "output": "𐤆𐤌", "category": "programming"}
+{"instruction": "What does 𐤎 mean?", "input": "", "output": "support/structure", "category": "basic"}

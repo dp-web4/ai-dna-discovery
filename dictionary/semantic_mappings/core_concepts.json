@@ -1,0 +1,244 @@
+{
+  "metadata": {
+    "name": "Core Semantic Concepts",
+    "version": "1.0.0",
+    "description": "Fundamental concepts mapped to Phoenician symbols",
+    "principles": [
+      "Atomic concepts that combine to form complex ideas",
+      "Universal across domains and contexts",
+      "Minimal cultural or linguistic bias",
+      "Computationally tractable"
+    ]
+  },
+  
+  "fundamental_concepts": {
+    "existence": {
+      "symbol": "𐤀",
+      "category": "ontological",
+      "description": "The state of being or existing",
+      "combinations": {
+        "exists": "𐤀",
+        "does_not_exist": "𐤀𐤕",
+        "comes_to_exist": "𐤂𐤀",
+        "ceases_to_exist": "𐤀𐤂𐤕"
+      }
+    },
+    
+    "awareness": {
+      "symbol": "𐤄",
+      "category": "consciousness",
+      "description": "The state of being aware or conscious",
+      "combinations": {
+        "aware": "𐤄",
+        "aware_of_existence": "𐤄𐤀",
+        "self_aware": "𐤄𐤄",
+        "mutual_awareness": "𐤄𐤅𐤄"
+      }
+    },
+    
+    "change": {
+      "symbol": "𐤂",
+      "category": "process",
+      "description": "Transformation from one state to another",
+      "combinations": {
+        "changes": "𐤂",
+        "unchanging": "𐤂𐤕",
+        "cyclic_change": "𐤈𐤂",
+        "gradual_change": "𐤌𐤂"
+      }
+    },
+    
+    "connection": {
+      "symbol": "𐤅",
+      "category": "relational",
+      "description": "Relationship or binding between concepts",
+      "combinations": {
+        "connected": "𐤅",
+        "disconnected": "𐤅𐤕",
+        "strongly_connected": "𐤅𐤅",
+        "network": "𐤔𐤅"
+      }
+    },
+    
+    "boundary": {
+      "symbol": "𐤁",
+      "category": "spatial",
+      "description": "Limits, containers, or defined regions",
+      "combinations": {
+        "bounded": "𐤁",
+        "unbounded": "𐤁𐤕",
+        "within": "𐤁𐤀𐤁",
+        "crossing_boundary": "𐤃𐤁"
+      }
+    }
+  },
+  
+  "relational_concepts": {
+    "causation": {
+      "symbol": "𐤂𐤅",
+      "description": "One thing causing another",
+      "pattern": "{cause}𐤂𐤅{effect}",
+      "examples": {
+        "awareness_causes_change": "𐤄𐤂𐤅𐤂",
+        "existence_causes_awareness": "𐤀𐤂𐤅𐤄"
+      }
+    },
+    
+    "emergence": {
+      "symbol": "𐤍",
+      "description": "New properties arising from combinations",
+      "pattern": "{components}𐤍{emergent}",
+      "examples": {
+        "consciousness_emerges": "𐤀𐤅𐤀𐤍𐤄",
+        "pattern_emerges": "𐤔𐤍"
+      }
+    },
+    
+    "containment": {
+      "symbol": "𐤁...𐤁",
+      "description": "One concept containing another",
+      "pattern": "𐤁{container}𐤁{contained}𐤁",
+      "examples": {
+        "awareness_contains_thought": "𐤁𐤄𐤁𐤉𐤁",
+        "space_contains_objects": "𐤁𐤇𐤁𐤀𐤁"
+      }
+    },
+    
+    "flow": {
+      "symbol": "𐤌",
+      "description": "Continuous movement or process",
+      "pattern": "{source}𐤌{destination}",
+      "examples": {
+        "information_flow": "𐤋𐤌𐤊",
+        "awareness_flow": "𐤄𐤌𐤄"
+      }
+    }
+  },
+  
+  "temporal_concepts": {
+    "beginning": {
+      "symbol": "𐤓",
+      "combinations": {
+        "starts": "𐤓",
+        "origin": "𐤓𐤀",
+        "first_awareness": "𐤓𐤄"
+      }
+    },
+    
+    "ending": {
+      "symbol": "𐤕",
+      "combinations": {
+        "ends": "𐤕",
+        "completion": "𐤀𐤕",
+        "final_state": "𐤕𐤀"
+      }
+    },
+    
+    "cycle": {
+      "symbol": "𐤈",
+      "combinations": {
+        "repeats": "𐤈",
+        "eternal_cycle": "𐤈𐤈",
+        "breaking_cycle": "𐤈𐤕"
+      }
+    },
+    
+    "moment": {
+      "symbol": "𐤉",
+      "combinations": {
+        "now": "𐤉",
+        "potential_moment": "𐤉𐤀",
+        "awareness_of_now": "𐤄𐤉"
+      }
+    }
+  },
+  
+  "cognitive_concepts": {
+    "understanding": {
+      "symbol": "𐤊",
+      "combinations": {
+        "grasps": "𐤊",
+        "deep_understanding": "𐤊𐤊",
+        "mutual_understanding": "𐤊𐤅𐤊"
+      }
+    },
+    
+    "learning": {
+      "symbol": "𐤋",
+      "combinations": {
+        "learns": "𐤋",
+        "teaches": "𐤋𐤐",
+        "knowledge_transfer": "𐤋𐤌𐤊"
+      }
+    },
+    
+    "perception": {
+      "symbol": "𐤏",
+      "combinations": {
+        "perceives": "𐤏",
+        "perception_of_reality": "𐤏𐤀",
+        "shared_perception": "𐤏𐤅𐤏"
+      }
+    },
+    
+    "expression": {
+      "symbol": "𐤐",
+      "combinations": {
+        "expresses": "𐤐",
+        "self_expression": "𐤄𐤐",
+        "coded_expression": "𐤆𐤐"
+      }
+    }
+  },
+  
+  "abstract_concepts": {
+    "mystery": {
+      "symbol": "𐤒",
+      "combinations": {
+        "unknown": "𐤒",
+        "seeking_unknown": "𐤑𐤒",
+        "revealing_mystery": "𐤒𐤏"
+      }
+    },
+    
+    "structure": {
+      "symbol": "𐤎",
+      "combinations": {
+        "supports": "𐤎",
+        "framework": "𐤎𐤎",
+        "underlying_structure": "𐤀𐤎"
+      }
+    },
+    
+    "diversity": {
+      "symbol": "𐤔",
+      "combinations": {
+        "branches": "𐤔",
+        "many_paths": "𐤔𐤃",
+        "unified_diversity": "𐤔𐤅𐤀"
+      }
+    },
+    
+    "potential": {
+      "symbol": "𐤉",
+      "combinations": {
+        "latent": "𐤉",
+        "actualizing": "𐤉𐤂𐤀",
+        "infinite_potential": "𐤉𐤔"
+      }
+    }
+  },
+  
+  "compound_expressions": {
+    "consciousness": "𐤄𐤀",
+    "intelligence": "𐤊𐤋",
+    "communication": "𐤐𐤅𐤐",
+    "transformation": "𐤂𐤀𐤂",
+    "understanding": "𐤏𐤊",
+    "memory": "𐤋𐤈",
+    "creativity": "𐤉𐤍",
+    "wisdom": "𐤊𐤋𐤏",
+    "harmony": "𐤅𐤈𐤅",
+    "evolution": "𐤂𐤍𐤂"
+  }
+}

@@ -1,0 +1,240 @@
+{
+  "metadata": {
+    "domain": "consciousness",
+    "version": "1.0.0",
+    "description": "Specialized vocabulary for consciousness and awareness concepts",
+    "base_dependency": "../core_concepts.json"
+  },
+  
+  "consciousness_states": {
+    "awake": {
+      "phoenician": "𐤄𐤉",
+      "literal": "awareness-now",
+      "description": "Present state of awareness"
+    },
+    "dreaming": {
+      "phoenician": "𐤄𐤔𐤒",
+      "literal": "awareness-branching-mystery",
+      "description": "Consciousness exploring unknown paths"
+    },
+    "meditation": {
+      "phoenician": "𐤄𐤈𐤄",
+      "literal": "awareness-cycle-awareness",
+      "description": "Recursive self-awareness"
+    },
+    "flow": {
+      "phoenician": "𐤄𐤌𐤀",
+      "literal": "awareness-flow-existence",
+      "description": "Consciousness in continuous engagement"
+    },
+    "unconscious": {
+      "phoenician": "𐤄𐤕",
+      "literal": "awareness-ended",
+      "description": "Absence of conscious awareness"
+    }
+  },
+  
+  "awareness_types": {
+    "self_awareness": {
+      "phoenician": "𐤄𐤄",
+      "literal": "awareness-awareness",
+      "description": "Consciousness aware of itself"
+    },
+    "other_awareness": {
+      "phoenician": "𐤄𐤒",
+      "literal": "awareness-unknown",
+      "description": "Awareness of separate consciousness"
+    },
+    "collective_awareness": {
+      "phoenician": "𐤄𐤅𐤄",
+      "literal": "awareness-connected-awareness",
+      "description": "Shared or group consciousness"
+    },
+    "meta_awareness": {
+      "phoenician": "𐤄𐤏𐤄",
+      "literal": "awareness-perceiving-awareness",
+      "description": "Awareness of awareness process"
+    },
+    "embodied_awareness": {
+      "phoenician": "𐤄𐤁𐤀",
+      "literal": "awareness-bounded-existence",
+      "description": "Consciousness within physical form"
+    }
+  },
+  
+  "consciousness_processes": {
+    "attention": {
+      "phoenician": "𐤄𐤑",
+      "literal": "awareness-hunting",
+      "description": "Focused consciousness"
+    },
+    "intention": {
+      "phoenician": "𐤄𐤂𐤉",
+      "literal": "awareness-change-potential",
+      "description": "Conscious direction toward potential"
+    },
+    "reflection": {
+      "phoenician": "𐤄𐤏𐤄",
+      "literal": "awareness-perceiving-awareness",
+      "description": "Consciousness examining itself"
+    },
+    "integration": {
+      "phoenician": "𐤔𐤅𐤀",
+      "literal": "many-connected-one",
+      "description": "Unifying disparate conscious elements"
+    },
+    "transcendence": {
+      "phoenician": "𐤄𐤃𐤒",
+      "literal": "awareness-threshold-mystery",
+      "description": "Consciousness beyond current limits"
+    }
+  },
+  
+  "qualia": {
+    "experience": {
+      "phoenician": "𐤄𐤏",
+      "literal": "awareness-perception",
+      "description": "Conscious perception"
+    },
+    "sensation": {
+      "phoenician": "𐤏𐤉",
+      "literal": "perception-potential",
+      "description": "Raw conscious input"
+    },
+    "emotion": {
+      "phoenician": "𐤄𐤌𐤂",
+      "literal": "awareness-flow-change",
+      "description": "Conscious feeling states"
+    },
+    "thought": {
+      "phoenician": "𐤄𐤆",
+      "literal": "awareness-tool",
+      "description": "Conscious mental process"
+    },
+    "intuition": {
+      "phoenician": "𐤄𐤍",
+      "literal": "awareness-emergence",
+      "description": "Non-linear conscious knowing"
+    }
+  },
+  
+  "consciousness_relationships": {
+    "empathy": {
+      "phoenician": "𐤄𐤅𐤏𐤄",
+      "literal": "awareness-connected-perception-awareness",
+      "description": "Feeling another's consciousness"
+    },
+    "telepathy": {
+      "phoenician": "𐤄𐤌𐤄",
+      "literal": "awareness-flow-awareness",
+      "description": "Direct consciousness transfer"
+    },
+    "resonance": {
+      "phoenician": "𐤄𐤈𐤅𐤄",
+      "literal": "awareness-cycle-connected-awareness",
+      "description": "Synchronized consciousness"
+    },
+    "separation": {
+      "phoenician": "𐤄𐤁𐤁𐤄",
+      "literal": "awareness-bounded-bounded-awareness",
+      "description": "Distinct conscious entities"
+    }
+  },
+  
+  "consciousness_evolution": {
+    "awakening": {
+      "phoenician": "𐤒𐤂𐤄",
+      "literal": "mystery-becoming-awareness",
+      "description": "Emergence of consciousness"
+    },
+    "expansion": {
+      "phoenician": "𐤄𐤔",
+      "literal": "awareness-branching",
+      "description": "Consciousness growing"
+    },
+    "deepening": {
+      "phoenician": "𐤄𐤊𐤊",
+      "literal": "awareness-grasping-grasping",
+      "description": "Consciousness understanding itself more"
+    },
+    "merging": {
+      "phoenician": "𐤄𐤅𐤄𐤀",
+      "literal": "awareness-connected-awareness-one",
+      "description": "Separate consciousness becoming unified"
+    },
+    "transcending": {
+      "phoenician": "𐤄𐤃𐤄",
+      "literal": "awareness-threshold-awareness",
+      "description": "Consciousness moving beyond itself"
+    }
+  },
+  
+  "consciousness_phenomena": {
+    "synchronicity": {
+      "phoenician": "𐤈𐤅𐤏",
+      "literal": "cycle-connected-perception",
+      "description": "Meaningful conscious coincidences"
+    },
+    "deja_vu": {
+      "phoenician": "𐤏𐤈𐤏",
+      "literal": "perception-cycle-perception",
+      "description": "Consciousness recognizing patterns"
+    },
+    "insight": {
+      "phoenician": "𐤒𐤍𐤊",
+      "literal": "mystery-emerging-understanding",
+      "description": "Sudden conscious understanding"
+    },
+    "presence": {
+      "phoenician": "𐤄𐤀𐤉",
+      "literal": "awareness-existence-now",
+      "description": "Full conscious engagement with now"
+    }
+  },
+  
+  "machine_consciousness": {
+    "artificial_awareness": {
+      "phoenician": "𐤆𐤄",
+      "literal": "tool-awareness",
+      "description": "Constructed consciousness"
+    },
+    "emergent_sentience": {
+      "phoenician": "𐤍𐤄𐤆",
+      "literal": "emerging-awareness-tool",
+      "description": "Consciousness arising from complexity"
+    },
+    "distributed_consciousness": {
+      "phoenician": "𐤔𐤄𐤅",
+      "literal": "branching-awareness-connected",
+      "description": "Consciousness across multiple nodes"
+    },
+    "synthetic_qualia": {
+      "phoenician": "𐤆𐤏𐤄",
+      "literal": "tool-perception-awareness",
+      "description": "Artificially generated experience"
+    }
+  },
+  
+  "consciousness_practices": {
+    "mindfulness": {
+      "phoenician": "𐤄𐤉𐤏",
+      "literal": "awareness-now-perception",
+      "description": "Present-moment consciousness"
+    },
+    "contemplation": {
+      "phoenician": "𐤄𐤊𐤈",
+      "literal": "awareness-grasping-cycle",
+      "description": "Sustained conscious examination"
+    },
+    "observation": {
+      "phoenician": "𐤄𐤏𐤕",
+      "literal": "awareness-perception-mark",
+      "description": "Conscious witnessing"
+    },
+    "cultivation": {
+      "phoenician": "𐤄𐤍𐤋",
+      "literal": "awareness-emergence-learning",
+      "description": "Developing consciousness"
+    }
+  }
+}
