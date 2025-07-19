@@ -1,0 +1,23 @@
+{
+  "consciousness_notation": {
+    "Ψ": "psi/consciousness_field",
+    "∃": "existence_operator",
+    "⇒": "emergence",
+    "π": "potential_states",
+    "ι": "information_integration",
+    "Ω": "omega_point/convergence",
+    "Σ": "sum_of_experiences",
+    "Ξ": "xi/transformation_matrix"
+  },
+  "phoenician_mappings": {
+    "psi/consciousness_field": "𐤄𐤀",
+    "existence_operator": "𐤀",
+    "emergence": "𐤍",
+    "potential_states": "𐤉𐤔",
+    "information_integration": "𐤋𐤅𐤊",
+    "omega_point/convergence": "𐤕𐤅𐤀",
+    "sum_of_experiences": "𐤎𐤏",
+    "xi/transformation_matrix": "𐤂𐤎"
+  },
+  "description": "Reference mapping between mathematical consciousness notation and Phoenician symbols"
+}

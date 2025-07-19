@@ -1,0 +1,20 @@
+{
+  "model_name": "tinyllama",
+  "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "training_date": "2025-07-19T13:50:50.569232",
+  "train_examples": 143,
+  "val_examples": 26,
+  "final_train_loss": 0.17381340886155763,
+  "final_val_loss": 0.19028007984161377,
+  "lora_config": {
+    "r": 16,
+    "lora_alpha": 32,
+    "target_modules": [
+      "q_proj",
+      "v_proj",
+      "k_proj",
+      "o_proj"
+    ],
+    "lora_dropout": 0.1
+  }
+}

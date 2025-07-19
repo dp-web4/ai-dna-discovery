@@ -50,3 +50,6 @@ Synchronism/
 *.pth
 *.bin
 *.model
+phoenician_env/
+*.pyc
+__pycache__/

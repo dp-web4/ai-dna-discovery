@@ -1,0 +1,7 @@
+{
+  "name": "Consciousness Notation Integration",
+  "description": "Bridges mathematical consciousness notation with Phoenician dictionary",
+  "total_examples": 57,
+  "train_size": 51,
+  "validation_size": 6
+}
