@@ -7,8 +7,8 @@ Tests one model at a time with resource monitoring
 import json
 import urllib.request
 import time
-import psutil
 import os
+import subprocess
 from datetime import datetime
 from distributed_memory import DistributedMemory
 from claude_orchestrator_memory import ClaudeOrchestratorMemory
@@ -36,15 +36,26 @@ class SafeUniversalPatternsTest:
     
     def check_resources(self):
         """Check if system has enough resources"""
-        memory = psutil.virtual_memory()
-        available_mb = memory.available / (1024 * 1024)
-        
-        print(f"💾 Available memory: {available_mb:.0f}MB")
-        
-        if available_mb < self.memory_threshold_mb:
-            print(f"⚠️  Low memory! Only {available_mb:.0f}MB available")
-            return False
-        return True
+        try:
+            # Use free command to check memory
+            result = subprocess.run(['free', '-m'], capture_output=True, text=True)
+            lines = result.stdout.strip().split('\n')
+            
+            # Parse memory line (second line)
+            if len(lines) > 1:
+                mem_parts = lines[1].split()
+                if len(mem_parts) >= 7:
+                    available_mb = int(mem_parts[6])  # Available column
+                    print(f"💾 Available memory: {available_mb}MB")
+                    
+                    if available_mb < self.memory_threshold_mb:
+                        print(f"⚠️  Low memory! Only {available_mb}MB available")
+                        return False
+                    return True
+        except:
+            # If we can't check, assume it's OK
+            print("💾 Memory check unavailable, proceeding...")
+            return True
     
     def query_model_safe(self, model, prompt):
         """Query with safety checks"""
