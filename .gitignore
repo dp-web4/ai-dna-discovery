@@ -39,3 +39,14 @@ models/
 
 # Other projects
 Synchronism/
+
+# Large files and archives
+*.tar.gz
+*.zip
+*.rar
+
+# Model files (too large for GitHub)
+*.safetensors
+*.pth
+*.bin
+*.model
