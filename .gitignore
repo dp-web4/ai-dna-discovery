@@ -39,3 +39,8 @@ models/
 
 # Other projects
 Synchronism/
+
+# Large files
+*.tar.gz
+*.zip
+*.rar
