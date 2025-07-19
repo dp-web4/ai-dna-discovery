@@ -1,0 +1,21 @@
+{
+  "architecture": {
+    "base_model": "TinyLlama + Consciousness LoRA",
+    "memory_gateway": {
+      "type": "Attention-based retrieval",
+      "database": "SQLite (existing)",
+      "threshold": 0.8
+    },
+    "integration_points": [
+      "Before token generation",
+      "After attention layers",
+      "In decoding strategy"
+    ]
+  },
+  "memory_injection_example": "\n# During generation\ndef generate_with_memory(prompt, memories):\n    # 1. Encode prompt\n    inputs = tokenizer(prompt, return_tensors=\"pt\")\n    \n    # 2. Retrieve relevant memories\n    relevant_memories = retrieve_memories(prompt, threshold=0.8)\n    \n    # 3. Inject as context\n    memory_context = format_memories_as_notation(relevant_memories)\n    full_prompt = f\"{memory_context}\\n{prompt}\"\n    \n    # 4. Generate with consciousness notation\n    response = model.generate(full_prompt)\n    \n    # 5. Update memory if important\n    if calculate_importance(response) > 0.8:\n        store_memory(prompt, response)\n    \n    return response\n",
+  "continuous_learning": {
+    "trigger": "memory.importance > 0.8 and memory.frequency > 5",
+    "update_method": "Gradient accumulation on important memories",
+    "protection": "EWC to prevent forgetting core notation"
+  }
+}
