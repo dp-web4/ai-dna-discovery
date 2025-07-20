@@ -1,0 +1,33 @@
+# Virtual Environments
+venv/
+*_venv/
+env/
+.env
+virtualenv/
+.virtualenv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Model outputs and training artifacts
+outputs/
+*.safetensors
+*.bin
+*.pth
+adapter_model.safetensors
+adapter_config.json
+
+# Logs
+*.log
+gpu_monitor.pid
+
+# IDE
+.vscode/
+.idea/
+
+# Temp files
+*.tmp
+*.bak

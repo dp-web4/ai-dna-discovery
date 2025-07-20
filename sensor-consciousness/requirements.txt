@@ -1,0 +1,36 @@
+# Sensor-Consciousness Integration Requirements
+
+# Computer Vision
+opencv-python>=4.8.0
+opencv-contrib-python>=4.8.0
+
+# Numerical Computing
+numpy>=1.24.0
+
+# Database
+# sqlite3 is built-in
+
+# Sensor Data Processing
+scipy>=1.11.0
+scikit-learn>=1.3.0
+
+# Audio Processing (for future)
+# pyaudio>=0.2.11
+# sounddevice>=0.4.6
+# librosa>=0.10.0
+
+# IMU/Motion Processing (for future)
+# pyserial>=3.5
+# adafruit-circuitpython-mpu6050>=1.2.0
+
+# Visualization
+matplotlib>=3.7.0
+pillow>=10.0.0
+
+# Real-time Processing
+# asyncio is built-in
+threadpoolctl>=3.2.0
+
+# For Jetson deployment
+# onnx>=1.14.0
+# onnxruntime>=1.15.0
