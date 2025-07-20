@@ -39,6 +39,51 @@ pandoc COMPREHENSIVE_REPORT.md \
 - The `--metadata title` prevents the warning about missing title
 - File size is typically ~1.4MB
 
+### For PDF with Phoenician Characters
+
+To properly display Phoenician characters in the PDF:
+
+1. First download the Noto Sans Phoenician font:
+```bash
+mkdir -p fonts && cd fonts
+wget https://github.com/googlefonts/noto-fonts/raw/main/hinted/ttf/NotoSansPhoenician/NotoSansPhoenician-Regular.ttf
+cd ..
+```
+
+2. Create a font configuration file `fonts/fallback.tex` with:
+```latex
+\usepackage{fontspec}
+\usepackage{newunicodechar}
+
+% Set main fonts
+\setmainfont{DejaVu Sans}[
+  BoldFont={DejaVu Sans Bold},
+  ItalicFont={DejaVu Sans Oblique},
+  BoldItalicFont={DejaVu Sans Bold Oblique}
+]
+
+\setmonofont{DejaVu Sans Mono}
+
+% Define Phoenician font
+\newfontfamily\phoenicianfont{NotoSansPhoenician-Regular.ttf}[Path=./fonts/]
+
+% Map each Phoenician character (𐤀-𐤕)
+\newunicodechar{𐤀}{{\phoenicianfont 𐤀}}
+% ... (map all 22 characters)
+```
+
+3. Generate the PDF with:
+```bash
+pandoc COMPREHENSIVE_REPORT.md \
+  -o AI_DNA_Discovery_Report_Phoenician.pdf \
+  --pdf-engine=xelatex \
+  -V geometry:margin=1in \
+  -H fonts/fallback.tex \
+  --highlight-style=tango
+```
+
+This method properly displays all Phoenician characters in the PDF!
+
 ### What NOT to Use
 
 - **Avoid pdfkit/wkhtmltopdf**: Creates very large files (30MB+)
