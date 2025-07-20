@@ -29,6 +29,33 @@ AI DNA Discovery is actively exploring cross-model communication and testing how
 ## Current Status
 Autonomous research program active as of July 14, 2025. Check `AUTONOMOUS_RESEARCH_PLAN.md` for current phase.
 
+## PDF Generation (Working Method)
+
+When converting markdown to PDF, use **pandoc** - it's already installed and works perfectly:
+
+```bash
+# Basic conversion
+pandoc input.md -o output.pdf
+
+# With better formatting (what works best)
+pandoc CUMULATIVE_PROGRESS_REPORT.md \
+  -o AI_DNA_Discovery_Cumulative_Report.pdf \
+  --pdf-engine=xelatex \
+  -V geometry:margin=1in \
+  -V mainfont="DejaVu Sans" \
+  -V monofont="DejaVu Sans Mono" \
+  --highlight-style=tango
+```
+
+**Note**: Warnings about missing characters (emojis, Phoenician) are normal and don't affect PDF creation.
+
+**Avoid**: 
+- Installing new Python packages (system is externally managed)
+- Using pdfkit/wkhtmltopdf (creates very large files)
+- ReportLab (requires pip install which fails)
+
+**Always create**: A .txt version as backup for maximum compatibility
+
 ## Phoenician Dictionary Project (July 19, 2025)
 
 ### Key Insight: "A tokenizer is a dictionary"
