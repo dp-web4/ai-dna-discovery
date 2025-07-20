@@ -17,6 +17,15 @@ python3 query_context.py search "distributed intelligence"
 cat /mnt/c/projects/ai-agents/misc/context-system/projects/ai-dna-discovery.md
 ```
 
+## CRITICAL: Windows Filename Compatibility
+
+**IMPORTANT**: Never use colons (:) in filenames or directory names!
+- Windows filesystems do not allow colons in filenames
+- This causes git pull failures on Windows machines
+- Replace colons with underscores (_) or dashes (-)
+- Common issue: Model names like "phi3:mini" should be "phi3_mini" in filenames
+- **Always test**: Ensure all filenames are Windows-compatible before committing
+
 ## This Project's Role
 
 AI DNA Discovery is actively exploring cross-model communication and testing how AI systems understand concepts from other projects, particularly Synchronism. Currently running autonomous multi-phase research.
