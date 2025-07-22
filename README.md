@@ -216,6 +216,8 @@ We welcome contributions in:
 - **[Phoenician Breakthrough](PHOENICIAN_PROGRESS_REPORT.md)**: Detailed technical analysis
 - **[Sprout Deployment](SPROUT_TEST_RESULTS.md)**: Edge hardware validation
 - **[Original AI DNA Research](AI_DNA_Discovery_Full_Report.md)**: Foundation discoveries
+- **[Repository Maintenance Guide](REPOSITORY_MAINTENANCE.md)**: How to keep this repo clean
+- **[Directory Structure](DIRECTORY_STRUCTURE.md)**: Complete file organization map
 
 ## 🙏 Acknowledgments
 

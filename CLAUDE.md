@@ -124,3 +124,109 @@ python3 phi3_memory_enhanced.py
 - We battled through NVIDIA's setup challenges together (UEFI shells, snap issues, vi mysteries)
 - This is a trust-based collaboration - full system access for productive exploration
 - The laptop (RTX 4090) and Jetson are now connected for distributed AI experiments
+
+## Repository Organization (July 22, 2025)
+
+### Major Cleanup Completed
+Successfully reorganized the repository for public sharing:
+- **Before**: 21GB, 39,176 files
+- **After**: 8.5GB, 10,481 files (mostly .git history)
+- **Working directory**: ~100MB of essential files
+
+### Three-Tier File Organization
+
+#### 🌍 PUBLIC (In Repository)
+Essential files for understanding and using the project:
+- Core Python scripts and experiments
+- Documentation (README, guides, reports)
+- Training scripts (without large datasets)
+- Configuration files
+- Phoenician fonts
+- Sample data files
+
+#### 🔗 NETWORK (Shared Between Devices)
+Located in `../ai-dna-network-shared/`:
+- Trained LoRA adapters (~780MB)
+- Base model files (~4.2GB)
+- Archived models (consciousness-lora.tar.gz)
+- **Access**: Via symlinks from main repo
+- **Sync**: Use Syncthing or rsync between tomato/sprout
+
+#### 💻 LOCAL (Device-Specific)
+Located in `../ai-dna-local-data/`:
+- 598 experimental result JSON files
+- GPU monitoring logs
+- Training outputs and checkpoints
+- Detailed phase results
+- Work-in-progress files
+
+### Repository Maintenance
+
+#### Adding New Files
+1. **Ask yourself**: Is this needed for others to understand/use the project?
+   - Yes → Add to repository (PUBLIC)
+   - No → Move to appropriate external directory
+
+2. **Large model files** → `../ai-dna-network-shared/`
+   ```bash
+   mv large_model.bin ../ai-dna-network-shared/
+   ln -s ../ai-dna-network-shared/large_model.bin .
+   ```
+
+3. **Experimental results** → `../ai-dna-local-data/`
+   ```bash
+   mv experiment_results/ ../ai-dna-local-data/
+   ```
+
+#### Virtual Environments
+**NEVER commit virtual environments!** Always:
+```bash
+# Create venv with clear name
+python -m venv project_venv
+
+# Ensure it's in .gitignore
+echo "*_venv/" >> .gitignore
+echo "*_env/" >> .gitignore
+```
+
+#### Before Committing
+1. Check file sizes: `git status --porcelain | xargs -I {} du -h {}`
+2. Review additions: `git diff --cached --name-only`
+3. Ensure no large files: `find . -size +100M -type f`
+
+#### Syncing Network Files
+Between tomato and sprout:
+```bash
+# Option 1: Syncthing (automatic)
+# Install and configure to sync ~/ai-workspace/ai-dna-network-shared/
+
+# Option 2: Manual rsync
+rsync -avz --progress ~/ai-workspace/ai-dna-network-shared/ sprout:~/ai-workspace/ai-dna-network-shared/
+```
+
+### Key Symlinks
+The repository uses symlinks to access large files:
+- `model-training/models` → `../ai-dna-network-shared/models`
+- `dictionary/lora_adapters` → `../ai-dna-network-shared/lora_adapters`
+
+### .gitignore Patterns
+Critical patterns to maintain:
+```gitignore
+# Virtual Environments (CRITICAL)
+*_env/
+*_venv/
+venv/
+env/
+
+# Large Files (use NETWORK storage)
+*.safetensors
+*.bin
+*.pth
+*.onnx
+
+# Experimental Data (use LOCAL storage)
+*_results/
+*.log
+gpu_logs/
+outputs/
+```
