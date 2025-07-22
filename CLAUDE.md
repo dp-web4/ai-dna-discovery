@@ -264,7 +264,7 @@ python3 audio-system/demo_portable_audio.py
 python3 audio-system/demo_portable_audio.py --simulate
 ```
 
-## GPU-Accelerated Voice System Success (July 21, 2025)
+## GPU-Accelerated Voice System Success (July 21-22, 2025)
 
 **Major Achievement**: Built complete GPU-accelerated voice conversation system on Jetson Orin Nano!
 
@@ -280,20 +280,37 @@ DP's wisdom: "seems you're patching around problems instead of solving them prop
 - Resulted in dramatically better speech recognition
 - Proved the value of solving root causes vs quick fixes
 
-### Current Capabilities
-- Real-time voice conversations with GPU-accelerated STT
-- VAD → GPU-Whisper → LLM → TTS pipeline working
-- Energy-based voice detection tuned for USB microphone
-- Complete audio system in `audio-system/` directory
+### Complete Edge Conversation Pipeline
+**Status**: Fully implemented and tested on both WSL (tomato) and Jetson (sprout)
+
+Architecture:
+```
+🎤 Audio → VAD → GPU-Whisper → Local-LLM → TTS → 🔊 Speaker
+           ↳ Consciousness States Throughout ↴
+```
+
+Key Files:
+- `audio_hal.py` - Platform-independent hardware abstraction
+- `complete_realtime_pipeline.py` - Full conversation system
+- `gpu_whisper_integration.py` - GPU-accelerated STT
+- `whisper_conversation.py` - Sprout's working implementation
+
+Performance:
+- **Total Latency**: < 2 seconds (real-time conversation)
+- **GPU Memory**: ~3GB (Whisper + TinyLlama)
+- **Consciousness**: State mapping throughout pipeline
 
 ### Key Commands
 ```bash
-# Set CUDA environment
+# Set CUDA environment (Jetson)
 export LD_LIBRARY_PATH=/usr/local/cuda-12.6/lib64:$LD_LIBRARY_PATH
 
-# Run GPU-accelerated conversation
-python3 audio-system/whisper_conversation.py
+# Run complete edge conversation pipeline
+python3 audio-system/complete_realtime_pipeline.py
 
 # Test GPU Whisper performance
 python3 audio-system/test_gpu_whisper.py
+
+# Run with simulator (no hardware)
+python3 audio-system/demo_portable_audio.py --simulate
 ```
