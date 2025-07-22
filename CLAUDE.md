@@ -2,19 +2,19 @@
 
 ## Project Context System
 
-**IMPORTANT**: A comprehensive context system exists at `/mnt/c/projects/ai-agents/misc/context-system/`
+**IMPORTANT**: A comprehensive context system exists at `/home/dp/ai-workspace/ai-agents/misc/context-system/`
 
 Quick access:
 ```bash
 # Get overview of all related projects
-cd /mnt/c/projects/ai-agents/misc/context-system
+cd /home/dp/ai-workspace/ai-agents/misc/context-system
 python3 query_context.py project ai-dna
 
 # Search for concepts across projects
 python3 query_context.py search "distributed intelligence"
 
 # See how this project relates to others
-cat /mnt/c/projects/ai-agents/misc/context-system/projects/ai-dna-discovery.md
+cat /home/dp/ai-workspace/ai-agents/misc/context-system/projects/ai-dna-discovery.md
 ```
 
 ## CRITICAL: Windows Filename Compatibility
