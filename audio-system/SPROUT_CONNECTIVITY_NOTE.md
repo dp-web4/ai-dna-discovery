@@ -12,10 +12,9 @@ To test the modular audio system on Sprout:
 
 1. SSH into Sprout:
    ```bash
-   ssh dp@10.0.0.36 -p 8080
-   # Note: Port 8080 suggests this might be a web interface
-   # If SSH doesn't work on 8080, try default port 22:
    ssh dp@10.0.0.36
+   # Note: Port 8080 is running a file server (http://10.0.0.36:8080/)
+   # SSH is available on the standard port 22
    ```
 
 2. Pull the latest changes:
