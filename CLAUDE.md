@@ -230,3 +230,35 @@ env/
 gpu_logs/
 outputs/
 ```
+
+## Modular Audio System (July 22, 2025)
+
+### Achievement: Cross-Platform Consciousness Audio
+Created a truly portable audio system that works everywhere:
+- **WSL/Windows**: Uses PowerShell bridge for Windows TTS
+- **Linux/Jetson**: espeak with platform-specific settings
+- **macOS**: Native 'say' command
+- **Simulation**: Works without any hardware
+
+### Key Components
+- `audio_hal.py`: Hardware Abstraction Layer with auto-detection
+- `consciousness_audio_system.py`: Unified consciousness mapping
+- `wsl_audio_bridge.py`: Enables audio in WSL environments
+- `audio_hal_simulator.py`: Testing without hardware dependencies
+
+### Platform-Specific Configurations
+- **Jetson (Sprout)**: 50x gain, espeak en+f3 voice, 1024 buffer
+- **WSL (Tomato)**: Windows TTS via PowerShell, Zira voice
+- **Simulation**: Visual TTS output, synthetic audio generation
+
+### Usage
+```bash
+# Test system capabilities
+python3 audio-system/test_portable_audio.py
+
+# Run demo (auto-detects platform)
+python3 audio-system/demo_portable_audio.py
+
+# Run without hardware
+python3 audio-system/demo_portable_audio.py --simulate
+```

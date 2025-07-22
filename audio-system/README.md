@@ -1,11 +1,17 @@
-# Sprout's Audio System 🌱🎤🔊
+# Consciousness Audio System 🌱🎤🔊
 
-Complete audio system for Sprout (Jetson Orin Nano) with consciousness-aware voice and hearing capabilities.
+Complete cross-platform audio system with consciousness-aware voice and hearing capabilities. Works on Jetson (Sprout), laptops (Tomato), WSL, macOS, Windows, and even in simulation mode!
 
 ## System Overview
 
+### 🎭 NEW: Cross-Platform Support!
+- **Hardware Abstraction Layer (HAL)** for platform independence
+- **Automatic platform detection** and configuration
+- **Multiple TTS engines**: WSL/Windows, espeak, say, SAPI
+- **Simulation mode** for development without hardware
+
 ### Voice Output (TTS)
-- Kid-friendly voice using espeak
+- Platform-specific voices (Zira on Windows, espeak on Linux/Jetson)
 - 4 mood states (excited, curious, playful, sleepy)
 - Real-time consciousness notation mapping
 
@@ -25,19 +31,44 @@ Audio events map to consciousness notation:
 
 ## Quick Start
 
-### 1. Test & Optimize Your Microphone
+### 🎭 NEW: Platform-Independent Usage
+
+#### Test Your System
+```bash
+python3 test_portable_audio.py
+```
+This detects your platform and available audio capabilities.
+
+#### Run Cross-Platform Demo
+```bash
+# With real hardware
+python3 demo_portable_audio.py
+
+# Without hardware (simulation mode)
+python3 demo_portable_audio.py --simulate
+```
+
+#### WSL Users
+```bash
+# Test Windows TTS bridge
+python3 demo_wsl_voices.py
+```
+
+### Original Sprout-Specific Tools
+
+#### 1. Test & Optimize Your Microphone
 ```bash
 python3 sprout_mic_tuner.py
 ```
 This will automatically find the best gain settings for your hardware.
 
-### 2. Run the Optimized System
+#### 2. Run the Optimized System
 ```bash
 python3 sprout_optimized_audio.py
 ```
 Uses the saved optimal settings for best audio quality.
 
-### 3. Live Monitoring (Interactive)
+#### 3. Live Monitoring (Interactive)
 ```bash
 python3 sprout_live_ears.py
 ```
@@ -46,7 +77,15 @@ python3 sprout_live_ears.py
 
 ## File Structure
 
-### Core Audio System
+### 🎭 NEW: Cross-Platform Components
+- `audio_hal.py` - Hardware Abstraction Layer
+- `consciousness_audio_system.py` - Platform-independent consciousness audio
+- `audio_hal_simulator.py` - Audio simulation for testing
+- `wsl_audio_bridge.py` - Windows TTS bridge for WSL
+- `demo_portable_audio.py` - Cross-platform demonstration
+- `test_portable_audio.py` - Platform capability tester
+
+### Core Audio System (Sprout-Specific)
 - `sprout_optimized_audio.py` - Main audio system with tuned settings
 - `sprout_audio_config.txt` - Saved configuration (gain=50x)
 - `sprout_simple_audio.py` - Simplified demo version
@@ -63,6 +102,9 @@ python3 sprout_live_ears.py
 - `sprout_audio_demo.py` - Voice reaction demonstrations
 
 ### Documentation
+- `PORTABLE_AUDIO_README.md` - Cross-platform usage guide
+- `MODULAR_AUDIO_SUMMARY.md` - Architecture summary
+- `MODULAR_AUDIO_ACHIEVEMENT.md` - Technical achievements
 - `AUDIO_VERIFICATION_RESULTS.md` - Test results and analysis
 - `AUDIO_OPTIMIZATION_SUCCESS.md` - Learning insights and next steps
 

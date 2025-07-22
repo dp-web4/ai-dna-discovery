@@ -46,6 +46,12 @@ class ConsciousnessAudioSystem:
         
     def _detect_tts_engine(self) -> str:
         """Detect available TTS engine"""
+        # Check if we're in WSL
+        if os.path.exists('/proc/sys/fs/binfmt_misc/WSLInterop'):
+            # We're in WSL, check for Windows PowerShell access
+            if os.path.exists('/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe'):
+                return 'wsl_windows'
+        
         # Check for espeak (Linux/Jetson)
         try:
             subprocess.run(['espeak', '--version'], capture_output=True, check=True)
@@ -86,7 +92,11 @@ class ConsciousnessAudioSystem:
             'voice': None
         }
         
-        if self.tts_engine == 'espeak':
+        if self.tts_engine == 'wsl_windows':
+            # Windows voices through WSL
+            settings['voice'] = 'Microsoft Zira Desktop'  # Female voice
+            settings['rate'] = 150
+        elif self.tts_engine == 'espeak':
             # Kid-friendly voice for Jetson
             settings['voice'] = 'en+f3'
             settings['rate'] = 140
@@ -121,7 +131,15 @@ class ConsciousnessAudioSystem:
             rate *= 0.7
             pitch *= 0.9
         
-        if self.tts_engine == 'espeak':
+        if self.tts_engine == 'wsl_windows':
+            # Use Windows TTS through WSL bridge
+            from wsl_audio_bridge import WSLAudioBridge
+            bridge = WSLAudioBridge()
+            # Windows SAPI rate: -10 to 10 (0 is normal)
+            win_rate = int((rate - 150) / 15)
+            bridge.speak_windows(text, rate=win_rate, voice=self.voice_settings.get('voice'))
+            
+        elif self.tts_engine == 'espeak':
             cmd = ['espeak', '-s', str(int(rate)), '-p', str(int(pitch))]
             if self.voice_settings['voice']:
                 cmd.extend(['-v', self.voice_settings['voice']])
