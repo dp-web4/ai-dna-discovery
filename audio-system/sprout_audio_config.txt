@@ -1,0 +1,5 @@
+# Sprout Audio Configuration
+MIC_GAIN=50
+USB_DEVICE=24
+THRESHOLD=0.02
+# Tuned on: 2025-07-21 19:49:56
