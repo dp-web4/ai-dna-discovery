@@ -1,0 +1,28 @@
+{
+  "platform": {
+    "system": "Linux",
+    "machine": "aarch64",
+    "platform": "Linux-5.15.148-tegra-aarch64-with-glibc2.35",
+    "processor": "aarch64",
+    "hostname": "sprout",
+    "python_version": "3.10.12",
+    "device_type": "jetson",
+    "jetson_info": "# R36 (release), REVISION: 4.4, GCID: 41062509, BOARD: generic, EABI: aarch64, DATE: Mon Jun 16 16:07:13 UTC 2025\n# KERNEL_VARIANT: oot\nTARGET_USERSPACE_LIB_DIR=nvidia\nTARGET_USERSPACE_LIB_DIR_PATH=usr/lib/aarch64-linux-gnu/nvidia"
+  },
+  "active_backend": "PyAudioBackend",
+  "input_device": {
+    "index": 28,
+    "name": "default",
+    "backend": null
+  },
+  "output_device": {
+    "index": 28,
+    "name": "default",
+    "backend": null
+  },
+  "audio_settings": {
+    "gain": 50.0,
+    "threshold": 0.02,
+    "buffer_size": 1024
+  }
+}
