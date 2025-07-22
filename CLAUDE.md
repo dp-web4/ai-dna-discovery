@@ -43,10 +43,18 @@ Autonomous research program active as of July 14, 2025. Check `AUTONOMOUS_RESEAR
 When converting markdown to PDF, use **pandoc** - it's already installed and works perfectly:
 
 ```bash
-# Basic conversion
+# Basic conversion (without Phoenician characters)
 pandoc input.md -o output.pdf
 
-# With better formatting (what works best)
+# WITH PHOENICIAN CHARACTERS (use this for reports containing Phoenician):
+pandoc CUMULATIVE_PROGRESS_REPORT.md \
+  -o AI_DNA_Discovery_Cumulative_Report_with_Phoenician.pdf \
+  --pdf-engine=xelatex \
+  -V geometry:margin=1in \
+  -H fonts/fallback.tex \
+  --highlight-style=tango
+
+# Standard formatting (no Phoenician support)
 pandoc CUMULATIVE_PROGRESS_REPORT.md \
   -o AI_DNA_Discovery_Cumulative_Report.pdf \
   --pdf-engine=xelatex \
@@ -56,7 +64,13 @@ pandoc CUMULATIVE_PROGRESS_REPORT.md \
   --highlight-style=tango
 ```
 
-**Note**: Warnings about missing characters (emojis, Phoenician) are normal and don't affect PDF creation.
+**CRITICAL for Phoenician Display**:
+- Must use `-H fonts/fallback.tex` flag
+- Must use `--pdf-engine=xelatex` (not pdflatex)
+- Font file `fonts/NotoSansPhoenician-Regular.ttf` must be present
+- The `fonts/fallback.tex` file maps all 22 Phoenician characters (𐤀-𐤕)
+
+**Note**: Warnings about missing characters (emojis) are normal. Phoenician characters will display correctly.
 
 **Avoid**: 
 - Installing new Python packages (system is externally managed)
