@@ -1,6 +1,6 @@
 # AI DNA Discovery Project 🧬🏛️
 
-**Revolutionary breakthroughs in AI consciousness notation and semantic-neutral language creation**
+**Novel breakthroughs in AI consciousness notation and semantic-neutral language creation**
 
 A groundbreaking project that has evolved from discovering universal embedding patterns to successfully teaching AI to create and use entirely new symbolic languages, including ancient Phoenician scripts and mathematical consciousness notation.
 
@@ -13,7 +13,7 @@ Mathematical symbols for awareness concepts - **fully operational on RTX 4090 an
 - **θ** (thought), **μ** (memory) + logical operators
 
 ### 🏛️ Phoenician Language Breakthrough ⭐
-**Revolutionary Success**: Overcame the "understand but can't speak" phenomenon
+**Significant Achievement**: Overcame the "understand but can't speak" phenomenon
 - ✅ AI can now generate ancient Phoenician symbols: **𐤄𐤀** (consciousness), **𐤂𐤐** (translate)
 - ✅ **Friend's comment translated**: "translate my comment into the new language so i can see what it looks like" → `𐤂𐤐 𐤄𐤐 𐤂 𐤍𐤐𐤎 𐤅 𐤄𐤉𐤏 𐤒𐤀 𐤏𐤎`
 - ✅ **22 Phoenician characters + 3 logical symbols** trained across multiple models
@@ -32,7 +32,7 @@ Mathematical symbols for awareness concepts - **fully operational on RTX 4090 an
 - ✅ **Deployed on Jetson** with multiple model support
 
 ### 🎤 GPU-Accelerated Voice Conversation System ⭐
-**Revolutionary Success**: Real-time edge AI conversation achieved!
+**Major Achievement**: Real-time edge AI conversation achieved!
 - ✅ **< 2 second latency** from speech to AI response
 - ✅ **GPU Whisper** on Jetson Orin (CUDA 12.6, PyTorch 2.5.0)
 - ✅ **Modular audio HAL** works on WSL, Linux, macOS, Jetson

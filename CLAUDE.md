@@ -280,7 +280,7 @@ python3 audio-system/demo_portable_audio.py --simulate
 
 ## GPU-Accelerated Voice System Success (July 21-22, 2025)
 
-**Major Achievement**: Built complete GPU-accelerated voice conversation system on Jetson Orin Nano!
+**Significant Achievement**: Built complete GPU-accelerated voice conversation system on Jetson Orin Nano!
 
 ### Technical Victory
 - PyTorch 2.5.0 with CUDA 12.6 running on Orin GPU

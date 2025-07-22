@@ -2,7 +2,7 @@
 
 ## Abstract
 
-This paper presents a revolutionary approach to semantic dictionaries within the Web4 framework, where dictionaries transcend their traditional role as static reference tools to become living, evolving entities with verifiable trust, consensus mechanisms, and adaptive intelligence. By leveraging Web4's core principles of Linked Context Tokens (LCTs), Trust (T3) and Value (V3) tensors, and the Alignment Transfer Protocol (ATP), we demonstrate how dictionaries can serve as active participants in the decentralized intelligence ecosystem, facilitating trustworthy communication between humans, AI systems, and emerging forms of collective intelligence.
+This paper presents a novel approach to semantic dictionaries within the Web4 framework, where dictionaries transcend their traditional role as static reference tools to become living, evolving entities with verifiable trust, consensus mechanisms, and adaptive intelligence. By leveraging Web4's core principles of Linked Context Tokens (LCTs), Trust (T3) and Value (V3) tensors, and the Alignment Transfer Protocol (ATP), we demonstrate how dictionaries can serve as active participants in the decentralized intelligence ecosystem, facilitating trustworthy communication between humans, AI systems, and emerging forms of collective intelligence.
 
 ## 1. Introduction: Web4 Principles and the Evolution of Meaning
 
