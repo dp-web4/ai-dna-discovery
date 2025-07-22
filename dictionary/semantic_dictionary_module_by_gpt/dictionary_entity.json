@@ -1,0 +1,23 @@
+{
+  "id": "web4.dictionary.semantic",
+  "version": "0.1.0",
+  "lct": {
+    "issuer": "system.bootstrap",
+    "timestamp": "2025-07-22T00:00:00Z",
+    "permissions": [
+      "read",
+      "extend",
+      "link"
+    ],
+    "consensus": {
+      "T3": {},
+      "V3": {}
+    }
+  },
+  "linked_chains": [
+    "metaLINXX",
+    "Web4-seed"
+  ],
+  "description": "Prototype semantic dictionary entity for symbolic AI reasoning.",
+  "status": "experimental"
+}

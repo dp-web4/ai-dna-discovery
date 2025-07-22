@@ -1,0 +1,34 @@
+{
+  "symbols": [
+    {
+      "glyph": "\ud802\udd00",
+      "name": "aleph",
+      "concept": "origin / primary force",
+      "trust_vector": {
+        "source": "human-curated",
+        "weight": 0.95
+      },
+      "linked_meanings": [
+        "alpha",
+        "start",
+        "root"
+      ],
+      "timestamp": "2025-07-22T00:00:00Z"
+    },
+    {
+      "glyph": "\ud802\udd01",
+      "name": "beth",
+      "concept": "container / house / structure",
+      "trust_vector": {
+        "source": "inferred",
+        "weight": 0.85
+      },
+      "linked_meanings": [
+        "home",
+        "vessel",
+        "framework"
+      ],
+      "timestamp": "2025-07-22T00:00:00Z"
+    }
+  ]
+}
