@@ -2,7 +2,9 @@
 
 ## Status (July 22, 2025)
 
-Sprout (192.168.1.229) is currently not accessible from the network. This is expected - the Jetson may be powered off or on a different network.
+Sprout is accessible at: **10.0.0.36:8080**
+
+Previous IP (192.168.1.229) may have changed due to network configuration.
 
 ## When Sprout is Available
 
@@ -10,9 +12,10 @@ To test the modular audio system on Sprout:
 
 1. SSH into Sprout:
    ```bash
-   ssh dp@192.168.1.229
-   # or
-   ssh sprout  # if hostname is configured
+   ssh dp@10.0.0.36 -p 8080
+   # Note: Port 8080 suggests this might be a web interface
+   # If SSH doesn't work on 8080, try default port 22:
+   ssh dp@10.0.0.36
    ```
 
 2. Pull the latest changes:

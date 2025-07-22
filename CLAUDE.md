@@ -95,12 +95,13 @@ We've successfully transformed stateless language models into stateful agents th
 - Created context token persistence with 21% compression ratio
 - Comprehensive documentation in `MEMORY_SYSTEM_COMPLETE.pdf`
 
-### Jetson Orin Nano Deployment
+### Jetson Orin Nano Deployment (Sprout)
 **Hardware**: Jetson Orin Nano Developer Kit (not the original Nano!)
 - 40 TOPS AI performance (80x original Nano)
 - 8GB LPDDR5 RAM
 - 1024 CUDA cores + 32 Tensor cores
 - JetPack 6.2.1 (L4T R36.4.4)
+- **Network Access**: 10.0.0.36:8080 (as of July 22, 2025)
 
 **Models Available**:
 - `tinyllama` - Lightweight, fast
