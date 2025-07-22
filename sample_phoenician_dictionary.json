@@ -1,0 +1,14 @@
+{
+  "phoenician_mappings": {
+    "𐤀": "A/aleph",
+    "𐤁": "B/beth", 
+    "𐤂": "G/gimel",
+    "𐤃": "D/daleth",
+    "𐤄": "H/he"
+  },
+  "example_translation": {
+    "english": "hello",
+    "phoenician": "𐤄𐤋𐤊",
+    "transliteration": "HLK"
+  }
+}
