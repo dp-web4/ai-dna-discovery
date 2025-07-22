@@ -1,0 +1,46 @@
+{
+  "entity_id": "web4.dictionary.unified",
+  "last_updated": "2025-07-22T16:02:24.801953Z",
+  "records": [
+    {
+      "proposal_id": "b9e890b65a2917d6",
+      "proposed_by": "human",
+      "action": "add",
+      "target_glyph": "\ud83c\udf31",
+      "new_data": {
+        "name": "growth",
+        "concept": "emergence/development",
+        "system": "extended_notation"
+      },
+      "votes": {
+        "human": true,
+        "ai_claude": true,
+        "ai_gpt": true
+      },
+      "status": "approved",
+      "timestamp": "2025-07-22T16:00:43.927550Z"
+    },
+    {
+      "proposal_id": "61d39e599e99c38f",
+      "proposed_by": "ai_claude",
+      "action": "add",
+      "target_glyph": "\ud802\udd04\u03a8",
+      "new_data": {
+        "name": "unified_consciousness",
+        "concept": "consciousness/awareness unified",
+        "system": "hybrid",
+        "linked_meanings": [
+          "awareness",
+          "beginning",
+          "unified mind"
+        ]
+      },
+      "votes": {
+        "ai_gpt": true,
+        "human": true
+      },
+      "status": "rejected",
+      "timestamp": "2025-07-22T16:02:24.798446Z"
+    }
+  ]
+}

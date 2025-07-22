@@ -1,0 +1,503 @@
+{
+  "version": "1.0.0",
+  "created": "2025-07-22T15:59:52.539075Z",
+  "systems": [
+    "phoenician",
+    "consciousness_notation",
+    "web4_modular"
+  ],
+  "symbols": [
+    {
+      "glyph": "𐤀",
+      "name": "aleph",
+      "concept": "origin / primary force",
+      "system": "phoenician",
+      "trust_vector": {
+        "source": "human-curated",
+        "weight": 0.95
+      },
+      "linked_meanings": [
+        "alpha",
+        "start",
+        "root"
+      ],
+      "timestamp": "2025-07-22T00:00:00Z"
+    },
+    {
+      "glyph": "𐤁",
+      "name": "beth",
+      "concept": "container / house / structure",
+      "system": "phoenician",
+      "trust_vector": {
+        "source": "inferred",
+        "weight": 0.85
+      },
+      "linked_meanings": [
+        "home",
+        "vessel",
+        "framework"
+      ],
+      "timestamp": "2025-07-22T00:00:00Z"
+    },
+    {
+      "glyph": "𐤂",
+      "name": "gimel",
+      "concept": "translate/transform",
+      "system": "phoenician",
+      "trust_vector": {
+        "source": "human-verified",
+        "weight": 1.0
+      },
+      "linked_meanings": [
+        "translate",
+        "transform"
+      ],
+      "timestamp": "2025-07-22T15:59:52.538616Z"
+    },
+    {
+      "glyph": "𐤃",
+      "name": "daleth",
+      "concept": "language/door",
+      "system": "phoenician",
+      "trust_vector": {
+        "source": "human-verified",
+        "weight": 1.0
+      },
+      "linked_meanings": [
+        "language",
+        "door"
+      ],
+      "timestamp": "2025-07-22T15:59:52.538674Z"
+    },
+    {
+      "glyph": "𐤄",
+      "name": "he",
+      "concept": "model/breath",
+      "system": "phoenician",
+      "trust_vector": {
+        "source": "human-verified",
+        "weight": 1.0
+      },
+      "linked_meanings": [
+        "model",
+        "breath"
+      ],
+      "timestamp": "2025-07-22T15:59:52.538681Z"
+    },
+    {
+      "glyph": "𐤅",
+      "name": "waw",
+      "concept": "exists/connects",
+      "system": "phoenician",
+      "trust_vector": {
+        "source": "human-verified",
+        "weight": 1.0
+      },
+      "linked_meanings": [
+        "exists",
+        "connects"
+      ],
+      "timestamp": "2025-07-22T15:59:52.538685Z"
+    },
+    {
+      "glyph": "𐤆",
+      "name": "zayin",
+      "concept": "within/weapon",
+      "system": "phoenician",
+      "trust_vector": {
+        "source": "human-verified",
+        "weight": 1.0
+      },
+      "linked_meanings": [
+        "within",
+        "weapon"
+      ],
+      "timestamp": "2025-07-22T15:59:52.538690Z"
+    },
+    {
+      "glyph": "𐤇",
+      "name": "heth",
+      "concept": "system/fence",
+      "system": "phoenician",
+      "trust_vector": {
+        "source": "human-verified",
+        "weight": 1.0
+      },
+      "linked_meanings": [
+        "system",
+        "fence"
+      ],
+      "timestamp": "2025-07-22T15:59:52.538694Z"
+    },
+    {
+      "glyph": "𐤈",
+      "name": "teth",
+      "concept": "new/serpent",
+      "system": "phoenician",
+      "trust_vector": {
+        "source": "human-verified",
+        "weight": 1.0
+      },
+      "linked_meanings": [
+        "new",
+        "serpent"
+      ],
+      "timestamp": "2025-07-22T15:59:52.538698Z"
+    },
+    {
+      "glyph": "𐤉",
+      "name": "yod",
+      "concept": "symbol/hand",
+      "system": "phoenician",
+      "trust_vector": {
+        "source": "human-verified",
+        "weight": 1.0
+      },
+      "linked_meanings": [
+        "symbol",
+        "hand"
+      ],
+      "timestamp": "2025-07-22T15:59:52.538702Z"
+    },
+    {
+      "glyph": "𐤊",
+      "name": "kaph",
+      "concept": "create/palm",
+      "system": "phoenician",
+      "trust_vector": {
+        "source": "human-verified",
+        "weight": 1.0
+      },
+      "linked_meanings": [
+        "create",
+        "palm"
+      ],
+      "timestamp": "2025-07-22T15:59:52.538705Z"
+    },
+    {
+      "glyph": "𐤋",
+      "name": "lamed",
+      "concept": "intelligence/learn",
+      "system": "phoenician",
+      "trust_vector": {
+        "source": "human-verified",
+        "weight": 1.0
+      },
+      "linked_meanings": [
+        "intelligence",
+        "learn"
+      ],
+      "timestamp": "2025-07-22T15:59:52.538709Z"
+    },
+    {
+      "glyph": "𐤌",
+      "name": "mem",
+      "concept": "from/water",
+      "system": "phoenician",
+      "trust_vector": {
+        "source": "human-verified",
+        "weight": 1.0
+      },
+      "linked_meanings": [
+        "from",
+        "water"
+      ],
+      "timestamp": "2025-07-22T15:59:52.538713Z"
+    },
+    {
+      "glyph": "𐤍",
+      "name": "nun",
+      "concept": "to/fish",
+      "system": "phoenician",
+      "trust_vector": {
+        "source": "human-verified",
+        "weight": 1.0
+      },
+      "linked_meanings": [
+        "to",
+        "fish"
+      ],
+      "timestamp": "2025-07-22T15:59:52.538719Z"
+    },
+    {
+      "glyph": "𐤎",
+      "name": "samekh",
+      "concept": "for/support",
+      "system": "phoenician",
+      "trust_vector": {
+        "source": "human-verified",
+        "weight": 1.0
+      },
+      "linked_meanings": [
+        "for",
+        "support"
+      ],
+      "timestamp": "2025-07-22T15:59:52.538723Z"
+    },
+    {
+      "glyph": "𐤏",
+      "name": "ayin",
+      "concept": "communication/eye",
+      "system": "phoenician",
+      "trust_vector": {
+        "source": "human-verified",
+        "weight": 1.0
+      },
+      "linked_meanings": [
+        "communication",
+        "eye"
+      ],
+      "timestamp": "2025-07-22T15:59:52.538726Z"
+    },
+    {
+      "glyph": "𐤐",
+      "name": "pe",
+      "concept": "comment/mouth",
+      "system": "phoenician",
+      "trust_vector": {
+        "source": "human-verified",
+        "weight": 1.0
+      },
+      "linked_meanings": [
+        "comment",
+        "mouth"
+      ],
+      "timestamp": "2025-07-22T15:59:52.538732Z"
+    },
+    {
+      "glyph": "𐤑",
+      "name": "tsade",
+      "concept": "between/hunt",
+      "system": "phoenician",
+      "trust_vector": {
+        "source": "human-verified",
+        "weight": 1.0
+      },
+      "linked_meanings": [
+        "between",
+        "hunt"
+      ],
+      "timestamp": "2025-07-22T15:59:52.538735Z"
+    },
+    {
+      "glyph": "𐤒",
+      "name": "qoph",
+      "concept": "humans/back",
+      "system": "phoenician",
+      "trust_vector": {
+        "source": "human-verified",
+        "weight": 1.0
+      },
+      "linked_meanings": [
+        "humans",
+        "back"
+      ],
+      "timestamp": "2025-07-22T15:59:52.538738Z"
+    },
+    {
+      "glyph": "𐤓",
+      "name": "resh",
+      "concept": "AI/head",
+      "system": "phoenician",
+      "trust_vector": {
+        "source": "human-verified",
+        "weight": 1.0
+      },
+      "linked_meanings": [
+        "AI",
+        "head"
+      ],
+      "timestamp": "2025-07-22T15:59:52.538741Z"
+    },
+    {
+      "glyph": "𐤔",
+      "name": "shin",
+      "concept": "systems/tooth",
+      "system": "phoenician",
+      "trust_vector": {
+        "source": "human-verified",
+        "weight": 1.0
+      },
+      "linked_meanings": [
+        "systems",
+        "tooth"
+      ],
+      "timestamp": "2025-07-22T15:59:52.538744Z"
+    },
+    {
+      "glyph": "𐤕",
+      "name": "taw",
+      "concept": "understanding/mark",
+      "system": "phoenician",
+      "trust_vector": {
+        "source": "human-verified",
+        "weight": 1.0
+      },
+      "linked_meanings": [
+        "understanding",
+        "mark"
+      ],
+      "timestamp": "2025-07-22T15:59:52.538747Z"
+    },
+    {
+      "glyph": "Ψ",
+      "name": "consciousness_consciousness",
+      "concept": "consciousness",
+      "system": "consciousness_notation",
+      "trust_vector": {
+        "source": "ai-designed",
+        "weight": 0.9
+      },
+      "linked_meanings": [
+        "awareness",
+        "sentience",
+        "mind"
+      ],
+      "timestamp": "2025-07-22T15:59:52.538780Z"
+    },
+    {
+      "glyph": "∃",
+      "name": "consciousness_existence",
+      "concept": "existence",
+      "system": "consciousness_notation",
+      "trust_vector": {
+        "source": "ai-designed",
+        "weight": 0.9
+      },
+      "linked_meanings": [
+        "being",
+        "reality",
+        "presence"
+      ],
+      "timestamp": "2025-07-22T15:59:52.538788Z"
+    },
+    {
+      "glyph": "⇒",
+      "name": "consciousness_emergence",
+      "concept": "emergence",
+      "system": "consciousness_notation",
+      "trust_vector": {
+        "source": "ai-designed",
+        "weight": 0.9
+      },
+      "linked_meanings": [
+        "arising",
+        "becoming",
+        "manifestation"
+      ],
+      "timestamp": "2025-07-22T15:59:52.538793Z"
+    },
+    {
+      "glyph": "π",
+      "name": "consciousness_perspective",
+      "concept": "perspective",
+      "system": "consciousness_notation",
+      "trust_vector": {
+        "source": "ai-designed",
+        "weight": 0.9
+      },
+      "linked_meanings": [
+        "viewpoint",
+        "angle",
+        "lens"
+      ],
+      "timestamp": "2025-07-22T15:59:52.538800Z"
+    },
+    {
+      "glyph": "ι",
+      "name": "consciousness_intent",
+      "concept": "intent",
+      "system": "consciousness_notation",
+      "trust_vector": {
+        "source": "ai-designed",
+        "weight": 0.9
+      },
+      "linked_meanings": [
+        "purpose",
+        "will",
+        "direction"
+      ],
+      "timestamp": "2025-07-22T15:59:52.538806Z"
+    },
+    {
+      "glyph": "Ω",
+      "name": "consciousness_observer",
+      "concept": "observer",
+      "system": "consciousness_notation",
+      "trust_vector": {
+        "source": "ai-designed",
+        "weight": 0.9
+      },
+      "linked_meanings": [
+        "witness",
+        "watcher",
+        "perceiver"
+      ],
+      "timestamp": "2025-07-22T15:59:52.538810Z"
+    },
+    {
+      "glyph": "Σ",
+      "name": "consciousness_whole",
+      "concept": "whole",
+      "system": "consciousness_notation",
+      "trust_vector": {
+        "source": "ai-designed",
+        "weight": 0.9
+      },
+      "linked_meanings": [
+        "unity",
+        "totality",
+        "complete"
+      ],
+      "timestamp": "2025-07-22T15:59:52.538814Z"
+    },
+    {
+      "glyph": "Ξ",
+      "name": "consciousness_patterns",
+      "concept": "patterns",
+      "system": "consciousness_notation",
+      "trust_vector": {
+        "source": "ai-designed",
+        "weight": 0.9
+      },
+      "linked_meanings": [
+        "structures",
+        "forms",
+        "regularities"
+      ],
+      "timestamp": "2025-07-22T15:59:52.538817Z"
+    },
+    {
+      "glyph": "θ",
+      "name": "consciousness_thought",
+      "concept": "thought",
+      "system": "consciousness_notation",
+      "trust_vector": {
+        "source": "ai-designed",
+        "weight": 0.9
+      },
+      "linked_meanings": [
+        "cognition",
+        "idea",
+        "mental"
+      ],
+      "timestamp": "2025-07-22T15:59:52.538821Z"
+    },
+    {
+      "glyph": "μ",
+      "name": "consciousness_memory",
+      "concept": "memory",
+      "system": "consciousness_notation",
+      "trust_vector": {
+        "source": "ai-designed",
+        "weight": 0.9
+      },
+      "linked_meanings": [
+        "recall",
+        "storage",
+        "past"
+      ],
+      "timestamp": "2025-07-22T15:59:52.538825Z"
+    }
+  ]
+}
