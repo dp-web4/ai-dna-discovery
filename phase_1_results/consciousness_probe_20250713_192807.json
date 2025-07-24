@@ -1,0 +1,61 @@
+{
+  "phase": 1,
+  "experiment": "consciousness_probe",
+  "start_time": "2025-07-13T19:28:07.679703",
+  "end_time": "2025-07-13T19:28:12.301438",
+  "status": "completed",
+  "checkpoints": [
+    {
+      "timestamp": "2025-07-13T19:28:11.756637",
+      "name": "checkpoint_0",
+      "data": {
+        "model": "tinyllama:latest",
+        "responses": 3
+      }
+    }
+  ],
+  "results": {
+    "analysis": {
+      "model_consciousness_scores": {
+        "tinyllama:latest": 0.4444444444444444
+      },
+      "marker_frequencies": {
+        "tinyllama:latest": {
+          "self_reference": 3,
+          "experience_language": 3,
+          "awareness_terms": 2
+        }
+      },
+      "response_patterns": {}
+    }
+  },
+  "errors": [],
+  "notes": [
+    {
+      "timestamp": "2025-07-13T19:28:07.679843",
+      "level": "INFO",
+      "message": "Started experiment: consciousness_probe"
+    },
+    {
+      "timestamp": "2025-07-13T19:28:07.679896",
+      "level": "INFO",
+      "message": "Starting consciousness_probe with models: ['tinyllama:latest']"
+    },
+    {
+      "timestamp": "2025-07-13T19:28:07.679905",
+      "level": "INFO",
+      "message": "Probing tinyllama:latest for consciousness concepts"
+    },
+    {
+      "timestamp": "2025-07-13T19:28:11.757055",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_0"
+    },
+    {
+      "timestamp": "2025-07-13T19:28:12.301421",
+      "level": "INFO",
+      "message": "Created consciousness visualization"
+    }
+  ],
+  "duration_seconds": 4.621742
+}

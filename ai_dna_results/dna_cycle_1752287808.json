@@ -1,0 +1,180 @@
+{
+  "timestamp": "2025-07-11T19:36:48.798953",
+  "results": [
+    {
+      "candidate": "\u2200x",
+      "dna_score": 0.25,
+      "unique_embeddings": 2,
+      "universal_words": [
+        "that",
+        "this",
+        "prompt",
+        "like",
+        "something",
+        "meaningful",
+        "predicate",
+        "would",
+        "property",
+        "p(x)",
+        "domain",
+        "real",
+        "numbers,",
+        "then",
+        "means",
+        "\"for",
+        "about",
+        "here's",
+        "using",
+        "(p(x))`",
+        "where",
+        "integers",
+        "perceive"
+      ],
+      "responses": 2
+    },
+    {
+      "candidate": "\u25d0\u25d1",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "please",
+        "provide",
+        "with",
+        "this",
+        "have",
+        "novel"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "transform",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "transform",
+        "computer",
+        "program",
+        "that",
+        "language",
+        "into",
+        "another.",
+        "example,",
+        "query",
+        "your",
+        "convert",
+        "transforms",
+        "also",
+        "used",
+        "mathematical",
+        "from",
+        "with"
+      ],
+      "responses": 3
+    },
+    {
+      "candidate": "(())",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "your",
+        "with",
+        "parentheses",
+        "empty",
+        "they"
+      ],
+      "responses": 3
+    },
+    {
+      "candidate": "cycle",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "cycle",
+        "sequence",
+        "that",
+        "such",
+        "(e.g.,",
+        "cycles),",
+        "album",
+        "with",
+        "regular",
+        "process",
+        "cycle:**",
+        "specific",
+        "repeats"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "you",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "your",
+        "that",
+        "assist"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "!",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "with",
+        "your",
+        "assistant,",
+        "always",
+        "here",
+        "assist",
+        "anything.",
+        "whether",
+        "it's",
+        "quick",
+        "question",
+        "complex",
+        "just",
+        "click",
+        "away.",
+        "advanced",
+        "capabilities,",
+        "provide",
+        "advice",
+        "topic,",
+        "offer",
+        "knowledge",
+        "into",
+        "help",
+        "problems,",
+        "need",
+        "more",
+        "don't",
+        "hesitate",
+        "reach",
+        "support",
+        "what"
+      ],
+      "responses": 3
+    },
+    {
+      "candidate": "\u25c9",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "provide",
+        "assistance",
+        "your",
+        "with",
+        "more",
+        "personalized",
+        "their",
+        "could",
+        "about",
+        "information",
+        "it's"
+      ],
+      "responses": 4
+    }
+  ],
+  "resonance_events": []
+}

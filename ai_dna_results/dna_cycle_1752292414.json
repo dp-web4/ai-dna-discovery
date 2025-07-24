@@ -1,0 +1,19 @@
+{
+  "timestamp": "2025-07-11T20:53:34.009025",
+  "results": [
+    {
+      "candidate": "is",
+      "dna_score": 0.25,
+      "unique_embeddings": 2,
+      "universal_words": [
+        "sure,",
+        "assistant",
+        "with",
+        "that",
+        "your"
+      ],
+      "responses": 2
+    }
+  ],
+  "resonance_events": []
+}

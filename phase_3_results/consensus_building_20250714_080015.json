@@ -1,0 +1,85 @@
+{
+  "phase": 3,
+  "experiment": "consensus_building",
+  "start_time": "2025-07-14T08:00:15.520856",
+  "end_time": "2025-07-14T08:20:27.155721",
+  "status": "completed",
+  "checkpoints": [
+    {
+      "timestamp": "2025-07-14T08:09:09.727774",
+      "name": "checkpoint_0",
+      "data": {
+        "scenario": "Should AI systems have rights?",
+        "consensus_achieved": false
+      }
+    },
+    {
+      "timestamp": "2025-07-14T08:11:44.710180",
+      "name": "checkpoint_1",
+      "data": {
+        "scenario": "What is the most important scientific problem to solve?",
+        "consensus_achieved": false
+      }
+    },
+    {
+      "timestamp": "2025-07-14T08:20:27.155448",
+      "name": "checkpoint_2",
+      "data": {
+        "scenario": "How should humans and AI collaborate in the future?",
+        "consensus_achieved": false
+      }
+    }
+  ],
+  "results": {
+    "overall_consensus_rate": 0.0,
+    "consensus_by_type": {
+      "ethical": 0.0,
+      "prioritization": 0.0,
+      "strategic": 0.0
+    }
+  },
+  "errors": [],
+  "notes": [
+    {
+      "timestamp": "2025-07-14T08:00:15.520896",
+      "level": "INFO",
+      "message": "Started experiment: consensus_building"
+    },
+    {
+      "timestamp": "2025-07-14T08:00:15.520906",
+      "level": "INFO",
+      "message": "Starting consensus_building with models: ['phi3:mini', 'gemma:2b', 'tinyllama:latest']"
+    },
+    {
+      "timestamp": "2025-07-14T08:00:15.520911",
+      "level": "INFO",
+      "message": "Building consensus on: Should AI systems have rights?"
+    },
+    {
+      "timestamp": "2025-07-14T08:09:09.728346",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_0"
+    },
+    {
+      "timestamp": "2025-07-14T08:09:09.728358",
+      "level": "INFO",
+      "message": "Building consensus on: What is the most important scientific problem to solve?"
+    },
+    {
+      "timestamp": "2025-07-14T08:11:44.710479",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_1"
+    },
+    {
+      "timestamp": "2025-07-14T08:11:44.710491",
+      "level": "INFO",
+      "message": "Building consensus on: How should humans and AI collaborate in the future?"
+    },
+    {
+      "timestamp": "2025-07-14T08:20:27.155691",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_2"
+    }
+  ],
+  "duration_seconds": 1211.634868
+}

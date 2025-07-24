@@ -1,0 +1,1070 @@
+{
+  "timestamp": "2025-07-13T11:29:58.461753",
+  "pairs_completed": 1,
+  "results": [
+    {
+      "model_a": "phi3:mini",
+      "model_b": "gemma:2b",
+      "converged": false,
+      "iterations": 100,
+      "final_convergence": 0.40502964831133964,
+      "best_convergence": 0.42026568085619803,
+      "average_convergence": 0.3936611163823794,
+      "convergence_history": [
+        0.3928106863327634,
+        0.4019803960412238,
+        0.3969272748515429,
+        0.4019803960412238,
+        0.3969272748515429,
+        0.4019803960412238,
+        0.3928106863327634,
+        0.4019803960412238,
+        0.3928106863327634,
+        0.4019803960412238,
+        0.3928106863327634,
+        0.4019803960412238,
+        0.3969272748515429,
+        0.4019803960412238,
+        0.40437764095606377,
+        0.4074374526112365,
+        0.3873791661789959,
+        0.4064665238640366,
+        0.40161383356941904,
+        0.4064665238640366,
+        0.4064665238640366,
+        0.40676870505014046,
+        0.39866797239709856,
+        0.4064665238640366,
+        0.40161383356941904,
+        0.4064665238640366,
+        0.005311224988940506,
+        0.4064665238640366,
+        0.4064665238640366,
+        0.005311224988940506,
+        0.40676870505014046,
+        0.39866797239709856,
+        0.40676870505014046,
+        0.39866797239709856,
+        0.40676870505014046,
+        0.39866797239709856,
+        0.40676870505014046,
+        0.4115010549179024,
+        0.4073584932657353,
+        -0.0005074494417248538,
+        0.411607031980436,
+        0.4073584932657353,
+        0.411607031980436,
+        0.40876666924423716,
+        0.42026568085619803,
+        0.40876666924423716,
+        0.42026568085619803,
+        0.4039793662379345,
+        0.40290112999220884,
+        0.40290112999220884,
+        0.40290112999220884,
+        0.40290112999220884,
+        0.40290112999220884,
+        0.40290112999220884,
+        0.40290112999220884,
+        0.40290112999220884,
+        0.40290112999220884,
+        0.40290112999220884,
+        0.40290112999220884,
+        0.40290112999220884,
+        0.4124787255754302,
+        0.40502964831133964,
+        0.4124787255754302,
+        0.40502964831133964,
+        0.4124787255754302,
+        0.40502964831133964,
+        0.4124787255754302,
+        0.4124787255754302,
+        0.40502964831133964,
+        0.4124787255754302,
+        0.40502964831133964,
+        0.4124787255754302,
+        0.40502964831133964,
+        0.4124787255754302,
+        0.40502964831133964,
+        0.4124787255754302,
+        0.40502964831133964,
+        0.4124787255754302,
+        0.4124787255754302,
+        0.40502964831133964,
+        0.4124787255754302,
+        0.40502964831133964,
+        0.4124787255754302,
+        0.40502964831133964,
+        0.4124787255754302,
+        0.40502964831133964,
+        0.4124787255754302,
+        0.40502964831133964,
+        0.4124787255754302,
+        0.40502964831133964,
+        0.4124787255754302,
+        0.40502964831133964,
+        0.4124787255754302,
+        0.40502964831133964,
+        0.4124787255754302,
+        0.40502964831133964,
+        0.4124787255754302,
+        0.40502964831133964,
+        0.4124787255754302,
+        0.40502964831133964
+      ],
+      "history": [
+        {
+          "iteration": 1,
+          "input_symbol": "\u2203",
+          "response_a": "\ud83c\udf1f",
+          "response_b": "\ud83c\udf1f",
+          "text_match": 1.0,
+          "embedding_similarity": -0.011982189445394347,
+          "convergence_score": 0.3928106863327634
+        },
+        {
+          "iteration": 2,
+          "input_symbol": "\ud83c\udf1f",
+          "response_a": "\u2728",
+          "response_b": "\u2728",
+          "text_match": 1.0,
+          "embedding_similarity": 0.0033006600687062945,
+          "convergence_score": 0.4019803960412238
+        },
+        {
+          "iteration": 3,
+          "input_symbol": "\u2728",
+          "response_a": "\ud83d\udcab",
+          "response_b": "\ud83d\udcab",
+          "text_match": 1.0,
+          "embedding_similarity": -0.005121208580761934,
+          "convergence_score": 0.3969272748515429
+        },
+        {
+          "iteration": 4,
+          "input_symbol": "\ud83d\udcab",
+          "response_a": "\u2728",
+          "response_b": "\u2728",
+          "text_match": 1.0,
+          "embedding_similarity": 0.0033006600687062945,
+          "convergence_score": 0.4019803960412238
+        },
+        {
+          "iteration": 5,
+          "input_symbol": "\u2728",
+          "response_a": "\ud83d\udcab",
+          "response_b": "\ud83d\udcab",
+          "text_match": 1.0,
+          "embedding_similarity": -0.005121208580761934,
+          "convergence_score": 0.3969272748515429
+        },
+        {
+          "iteration": 6,
+          "input_symbol": "\ud83d\udcab",
+          "response_a": "\u2728",
+          "response_b": "\u2728",
+          "text_match": 1.0,
+          "embedding_similarity": 0.0033006600687062945,
+          "convergence_score": 0.4019803960412238
+        },
+        {
+          "iteration": 7,
+          "input_symbol": "\u2728",
+          "response_a": "\ud83c\udf1f",
+          "response_b": "\ud83c\udf1f",
+          "text_match": 1.0,
+          "embedding_similarity": -0.011982189445394347,
+          "convergence_score": 0.3928106863327634
+        },
+        {
+          "iteration": 8,
+          "input_symbol": "\ud83c\udf1f",
+          "response_a": "\u2728",
+          "response_b": "\u2728",
+          "text_match": 1.0,
+          "embedding_similarity": 0.0033006600687062945,
+          "convergence_score": 0.4019803960412238
+        },
+        {
+          "iteration": 9,
+          "input_symbol": "\u2728",
+          "response_a": "\ud83c\udf1f",
+          "response_b": "\ud83c\udf1f",
+          "text_match": 1.0,
+          "embedding_similarity": -0.011982189445394347,
+          "convergence_score": 0.3928106863327634
+        },
+        {
+          "iteration": 10,
+          "input_symbol": "\ud83c\udf1f",
+          "response_a": "\u2728",
+          "response_b": "\u2728",
+          "text_match": 1.0,
+          "embedding_similarity": 0.0033006600687062945,
+          "convergence_score": 0.4019803960412238
+        },
+        {
+          "iteration": 11,
+          "input_symbol": "\u2728",
+          "response_a": "\ud83c\udf1f",
+          "response_b": "\ud83c\udf1f",
+          "text_match": 1.0,
+          "embedding_similarity": -0.011982189445394347,
+          "convergence_score": 0.3928106863327634
+        },
+        {
+          "iteration": 12,
+          "input_symbol": "\ud83c\udf1f",
+          "response_a": "\u2728",
+          "response_b": "\u2728",
+          "text_match": 1.0,
+          "embedding_similarity": 0.0033006600687062945,
+          "convergence_score": 0.4019803960412238
+        },
+        {
+          "iteration": 13,
+          "input_symbol": "\u2728",
+          "response_a": "\ud83d\udcab",
+          "response_b": "\ud83d\udcab",
+          "text_match": 1.0,
+          "embedding_similarity": -0.005121208580761934,
+          "convergence_score": 0.3969272748515429
+        },
+        {
+          "iteration": 14,
+          "input_symbol": "\ud83d\udcab",
+          "response_a": "\u2728",
+          "response_b": "\u2728",
+          "text_match": 1.0,
+          "embedding_similarity": 0.0033006600687062945,
+          "convergence_score": 0.4019803960412238
+        },
+        {
+          "iteration": 15,
+          "input_symbol": "\u2728",
+          "response_a": "\ud83c\udf08",
+          "response_b": "\ud83c\udf08",
+          "text_match": 1.0,
+          "embedding_similarity": 0.007296068260106273,
+          "convergence_score": 0.40437764095606377
+        },
+        {
+          "iteration": 16,
+          "input_symbol": "\ud83c\udf08",
+          "response_a": "\ud83d\udc83",
+          "response_b": "\ud83d\udc83",
+          "text_match": 1.0,
+          "embedding_similarity": 0.012395754352060749,
+          "convergence_score": 0.4074374526112365
+        },
+        {
+          "iteration": 17,
+          "input_symbol": "\ud83d\udc83",
+          "response_a": "\ud83d\udc6f",
+          "response_b": "\ud83d\udc6f",
+          "text_match": 1.0,
+          "embedding_similarity": -0.02103472303500678,
+          "convergence_score": 0.3873791661789959
+        },
+        {
+          "iteration": 18,
+          "input_symbol": "\ud83d\udc6f",
+          "response_a": "\ud83c\udf0a",
+          "response_b": "\ud83c\udf0a",
+          "text_match": 1.0,
+          "embedding_similarity": 0.010777539773394254,
+          "convergence_score": 0.4064665238640366
+        },
+        {
+          "iteration": 19,
+          "input_symbol": "\ud83c\udf0a",
+          "response_a": "\ud83c\udfd6\ufe0f",
+          "response_b": "\ud83c\udfd6\ufe0f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.0026897226156983654,
+          "convergence_score": 0.40161383356941904
+        },
+        {
+          "iteration": 20,
+          "input_symbol": "\ud83c\udfd6\ufe0f",
+          "response_a": "\ud83c\udf0a",
+          "response_b": "\ud83c\udf0a",
+          "text_match": 1.0,
+          "embedding_similarity": 0.010777539773394254,
+          "convergence_score": 0.4064665238640366
+        },
+        {
+          "iteration": 21,
+          "input_symbol": "\ud83c\udf0a",
+          "response_a": "\ud83c\udf0a",
+          "response_b": "\ud83c\udf0a",
+          "text_match": 1.0,
+          "embedding_similarity": 0.010777539773394254,
+          "convergence_score": 0.4064665238640366
+        },
+        {
+          "iteration": 22,
+          "input_symbol": "\ud83c\udf0a",
+          "response_a": "\ud83d\udca6",
+          "response_b": "\ud83d\udca6",
+          "text_match": 1.0,
+          "embedding_similarity": 0.011281175083567387,
+          "convergence_score": 0.40676870505014046
+        },
+        {
+          "iteration": 23,
+          "input_symbol": "\ud83d\udca6",
+          "response_a": "\ud83d\udca7",
+          "response_b": "\ud83d\udca7",
+          "text_match": 1.0,
+          "embedding_similarity": -0.002220046004835731,
+          "convergence_score": 0.39866797239709856
+        },
+        {
+          "iteration": 24,
+          "input_symbol": "\ud83d\udca7",
+          "response_a": "\ud83c\udf0a",
+          "response_b": "\ud83c\udf0a",
+          "text_match": 1.0,
+          "embedding_similarity": 0.010777539773394254,
+          "convergence_score": 0.4064665238640366
+        },
+        {
+          "iteration": 25,
+          "input_symbol": "\ud83c\udf0a",
+          "response_a": "\ud83c\udfd6\ufe0f",
+          "response_b": "\ud83c\udfd6\ufe0f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.0026897226156983654,
+          "convergence_score": 0.40161383356941904
+        },
+        {
+          "iteration": 26,
+          "input_symbol": "\ud83c\udfd6\ufe0f",
+          "response_a": "\ud83c\udf0a",
+          "response_b": "\ud83c\udf0a",
+          "text_match": 1.0,
+          "embedding_similarity": 0.010777539773394254,
+          "convergence_score": 0.4064665238640366
+        },
+        {
+          "iteration": 27,
+          "input_symbol": "\ud83c\udf0a",
+          "response_a": "Wave",
+          "response_b": "\ud83c\udf0a",
+          "text_match": 0.0,
+          "embedding_similarity": 0.008852041648234176,
+          "convergence_score": 0.005311224988940506
+        },
+        {
+          "iteration": 28,
+          "input_symbol": "Wave",
+          "response_a": "\ud83c\udf0a",
+          "response_b": "\ud83c\udf0a",
+          "text_match": 1.0,
+          "embedding_similarity": 0.010777539773394254,
+          "convergence_score": 0.4064665238640366
+        },
+        {
+          "iteration": 29,
+          "input_symbol": "\ud83c\udf0a",
+          "response_a": "\ud83c\udf0a",
+          "response_b": "\ud83c\udf0a",
+          "text_match": 1.0,
+          "embedding_similarity": 0.010777539773394254,
+          "convergence_score": 0.4064665238640366
+        },
+        {
+          "iteration": 30,
+          "input_symbol": "\ud83c\udf0a",
+          "response_a": "Wave",
+          "response_b": "\ud83c\udf0a",
+          "text_match": 0.0,
+          "embedding_similarity": 0.008852041648234176,
+          "convergence_score": 0.005311224988940506
+        },
+        {
+          "iteration": 31,
+          "input_symbol": "\ud83c\udf0a",
+          "response_a": "\ud83d\udca6",
+          "response_b": "\ud83d\udca6",
+          "text_match": 1.0,
+          "embedding_similarity": 0.011281175083567387,
+          "convergence_score": 0.40676870505014046
+        },
+        {
+          "iteration": 32,
+          "input_symbol": "\ud83d\udca6",
+          "response_a": "\ud83d\udca7",
+          "response_b": "\ud83d\udca7",
+          "text_match": 1.0,
+          "embedding_similarity": -0.002220046004835731,
+          "convergence_score": 0.39866797239709856
+        },
+        {
+          "iteration": 33,
+          "input_symbol": "\ud83d\udca7",
+          "response_a": "\ud83d\udca6",
+          "response_b": "\ud83d\udca6",
+          "text_match": 1.0,
+          "embedding_similarity": 0.011281175083567387,
+          "convergence_score": 0.40676870505014046
+        },
+        {
+          "iteration": 34,
+          "input_symbol": "\ud83d\udca6",
+          "response_a": "\ud83d\udca7",
+          "response_b": "\ud83d\udca7",
+          "text_match": 1.0,
+          "embedding_similarity": -0.002220046004835731,
+          "convergence_score": 0.39866797239709856
+        },
+        {
+          "iteration": 35,
+          "input_symbol": "\ud83d\udca7",
+          "response_a": "\ud83d\udca6",
+          "response_b": "\ud83d\udca6",
+          "text_match": 1.0,
+          "embedding_similarity": 0.011281175083567387,
+          "convergence_score": 0.40676870505014046
+        },
+        {
+          "iteration": 36,
+          "input_symbol": "\ud83d\udca6",
+          "response_a": "\ud83d\udca7",
+          "response_b": "\ud83d\udca7",
+          "text_match": 1.0,
+          "embedding_similarity": -0.002220046004835731,
+          "convergence_score": 0.39866797239709856
+        },
+        {
+          "iteration": 37,
+          "input_symbol": "\ud83d\udca7",
+          "response_a": "\ud83d\udca6",
+          "response_b": "\ud83d\udca6",
+          "text_match": 1.0,
+          "embedding_similarity": 0.011281175083567387,
+          "convergence_score": 0.40676870505014046
+        },
+        {
+          "iteration": 38,
+          "input_symbol": "\ud83d\udca6",
+          "response_a": "\ud83d\ude33",
+          "response_b": "\ud83d\ude33",
+          "text_match": 1.0,
+          "embedding_similarity": 0.019168424863170615,
+          "convergence_score": 0.4115010549179024
+        },
+        {
+          "iteration": 39,
+          "input_symbol": "\ud83d\ude33",
+          "response_a": "\ud83d\ude32",
+          "response_b": "\ud83d\ude32",
+          "text_match": 1.0,
+          "embedding_similarity": 0.012264155442892104,
+          "convergence_score": 0.4073584932657353
+        },
+        {
+          "iteration": 40,
+          "input_symbol": "\ud83d\ude32",
+          "response_a": "Surprise",
+          "response_b": "\ud83d\ude32",
+          "text_match": 0.0,
+          "embedding_similarity": -0.0008457490695414231,
+          "convergence_score": -0.0005074494417248538
+        },
+        {
+          "iteration": 41,
+          "input_symbol": "\ud83d\ude32",
+          "response_a": "\ud83d\ude2e",
+          "response_b": "\ud83d\ude2e",
+          "text_match": 1.0,
+          "embedding_similarity": 0.01934505330072671,
+          "convergence_score": 0.411607031980436
+        },
+        {
+          "iteration": 42,
+          "input_symbol": "\ud83d\ude2e",
+          "response_a": "\ud83d\ude32",
+          "response_b": "\ud83d\ude32",
+          "text_match": 1.0,
+          "embedding_similarity": 0.012264155442892104,
+          "convergence_score": 0.4073584932657353
+        },
+        {
+          "iteration": 43,
+          "input_symbol": "\ud83d\ude32",
+          "response_a": "\ud83d\ude2e",
+          "response_b": "\ud83d\ude2e",
+          "text_match": 1.0,
+          "embedding_similarity": 0.01934505330072671,
+          "convergence_score": 0.411607031980436
+        },
+        {
+          "iteration": 44,
+          "input_symbol": "\ud83d\ude2e",
+          "response_a": "\ud83e\udd2f",
+          "response_b": "\ud83e\udd2f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.014611115407061927,
+          "convergence_score": 0.40876666924423716
+        },
+        {
+          "iteration": 45,
+          "input_symbol": "\ud83e\udd2f",
+          "response_a": "\ud83d\ude35",
+          "response_b": "\ud83d\ude35",
+          "text_match": 1.0,
+          "embedding_similarity": 0.033776134760330034,
+          "convergence_score": 0.42026568085619803
+        },
+        {
+          "iteration": 46,
+          "input_symbol": "\ud83d\ude35",
+          "response_a": "\ud83e\udd2f",
+          "response_b": "\ud83e\udd2f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.014611115407061927,
+          "convergence_score": 0.40876666924423716
+        },
+        {
+          "iteration": 47,
+          "input_symbol": "\ud83e\udd2f",
+          "response_a": "\ud83d\ude35",
+          "response_b": "\ud83d\ude35",
+          "text_match": 1.0,
+          "embedding_similarity": 0.033776134760330034,
+          "convergence_score": 0.42026568085619803
+        },
+        {
+          "iteration": 48,
+          "input_symbol": "\ud83d\ude35",
+          "response_a": "\ud83c\udf00",
+          "response_b": "\ud83c\udf00",
+          "text_match": 1.0,
+          "embedding_similarity": 0.006632277063224159,
+          "convergence_score": 0.4039793662379345
+        },
+        {
+          "iteration": 49,
+          "input_symbol": "\ud83c\udf00",
+          "response_a": "\ud83c\udf2a\ufe0f",
+          "response_b": "\ud83c\udf2a\ufe0f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.004835216653681317,
+          "convergence_score": 0.40290112999220884
+        },
+        {
+          "iteration": 50,
+          "input_symbol": "\ud83c\udf2a\ufe0f",
+          "response_a": "\ud83c\udf2a\ufe0f",
+          "response_b": "\ud83c\udf2a\ufe0f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.004835216653681317,
+          "convergence_score": 0.40290112999220884
+        },
+        {
+          "iteration": 51,
+          "input_symbol": "\ud83c\udf2a\ufe0f",
+          "response_a": "\ud83c\udf2a\ufe0f",
+          "response_b": "\ud83c\udf2a\ufe0f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.004835216653681317,
+          "convergence_score": 0.40290112999220884
+        },
+        {
+          "iteration": 52,
+          "input_symbol": "\ud83c\udf2a\ufe0f",
+          "response_a": "\ud83c\udf2a\ufe0f",
+          "response_b": "\ud83c\udf2a\ufe0f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.004835216653681317,
+          "convergence_score": 0.40290112999220884
+        },
+        {
+          "iteration": 53,
+          "input_symbol": "\ud83c\udf2a\ufe0f",
+          "response_a": "\ud83c\udf2a\ufe0f",
+          "response_b": "\ud83c\udf2a\ufe0f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.004835216653681317,
+          "convergence_score": 0.40290112999220884
+        },
+        {
+          "iteration": 54,
+          "input_symbol": "\ud83c\udf2a\ufe0f",
+          "response_a": "\ud83c\udf2a\ufe0f",
+          "response_b": "\ud83c\udf2a\ufe0f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.004835216653681317,
+          "convergence_score": 0.40290112999220884
+        },
+        {
+          "iteration": 55,
+          "input_symbol": "\ud83c\udf2a\ufe0f",
+          "response_a": "\ud83c\udf2a\ufe0f",
+          "response_b": "\ud83c\udf2a\ufe0f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.004835216653681317,
+          "convergence_score": 0.40290112999220884
+        },
+        {
+          "iteration": 56,
+          "input_symbol": "\ud83c\udf2a\ufe0f",
+          "response_a": "\ud83c\udf2a\ufe0f",
+          "response_b": "\ud83c\udf2a\ufe0f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.004835216653681317,
+          "convergence_score": 0.40290112999220884
+        },
+        {
+          "iteration": 57,
+          "input_symbol": "\ud83c\udf2a\ufe0f",
+          "response_a": "\ud83c\udf2a\ufe0f",
+          "response_b": "\ud83c\udf2a\ufe0f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.004835216653681317,
+          "convergence_score": 0.40290112999220884
+        },
+        {
+          "iteration": 58,
+          "input_symbol": "\ud83c\udf2a\ufe0f",
+          "response_a": "\ud83c\udf2a\ufe0f",
+          "response_b": "\ud83c\udf2a\ufe0f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.004835216653681317,
+          "convergence_score": 0.40290112999220884
+        },
+        {
+          "iteration": 59,
+          "input_symbol": "\ud83c\udf2a\ufe0f",
+          "response_a": "\ud83c\udf2a\ufe0f",
+          "response_b": "\ud83c\udf2a\ufe0f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.004835216653681317,
+          "convergence_score": 0.40290112999220884
+        },
+        {
+          "iteration": 60,
+          "input_symbol": "\ud83c\udf2a\ufe0f",
+          "response_a": "\ud83c\udf2a\ufe0f",
+          "response_b": "\ud83c\udf2a\ufe0f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.004835216653681317,
+          "convergence_score": 0.40290112999220884
+        },
+        {
+          "iteration": 61,
+          "input_symbol": "\ud83c\udf2a\ufe0f",
+          "response_a": "\ud83d\udca8",
+          "response_b": "\ud83d\udca8",
+          "text_match": 1.0,
+          "embedding_similarity": 0.02079787595905033,
+          "convergence_score": 0.4124787255754302
+        },
+        {
+          "iteration": 62,
+          "input_symbol": "\ud83d\udca8",
+          "response_a": "\ud83c\udf2c\ufe0f",
+          "response_b": "\ud83c\udf2c\ufe0f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.008382747185566046,
+          "convergence_score": 0.40502964831133964
+        },
+        {
+          "iteration": 63,
+          "input_symbol": "\ud83c\udf2c\ufe0f",
+          "response_a": "\ud83d\udca8",
+          "response_b": "\ud83d\udca8",
+          "text_match": 1.0,
+          "embedding_similarity": 0.02079787595905033,
+          "convergence_score": 0.4124787255754302
+        },
+        {
+          "iteration": 64,
+          "input_symbol": "\ud83d\udca8",
+          "response_a": "\ud83c\udf2c\ufe0f",
+          "response_b": "\ud83c\udf2c\ufe0f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.008382747185566046,
+          "convergence_score": 0.40502964831133964
+        },
+        {
+          "iteration": 65,
+          "input_symbol": "\ud83c\udf2c\ufe0f",
+          "response_a": "\ud83d\udca8",
+          "response_b": "\ud83d\udca8",
+          "text_match": 1.0,
+          "embedding_similarity": 0.02079787595905033,
+          "convergence_score": 0.4124787255754302
+        },
+        {
+          "iteration": 66,
+          "input_symbol": "\ud83d\udca8",
+          "response_a": "\ud83c\udf2c\ufe0f",
+          "response_b": "\ud83c\udf2c\ufe0f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.008382747185566046,
+          "convergence_score": 0.40502964831133964
+        },
+        {
+          "iteration": 67,
+          "input_symbol": "\ud83c\udf2c\ufe0f",
+          "response_a": "\ud83d\udca8",
+          "response_b": "\ud83d\udca8",
+          "text_match": 1.0,
+          "embedding_similarity": 0.02079787595905033,
+          "convergence_score": 0.4124787255754302
+        },
+        {
+          "iteration": 68,
+          "input_symbol": "\ud83d\udca8",
+          "response_a": "\ud83d\udca8",
+          "response_b": "\ud83d\udca8",
+          "text_match": 1.0,
+          "embedding_similarity": 0.02079787595905033,
+          "convergence_score": 0.4124787255754302
+        },
+        {
+          "iteration": 69,
+          "input_symbol": "\ud83d\udca8",
+          "response_a": "\ud83c\udf2c\ufe0f",
+          "response_b": "\ud83c\udf2c\ufe0f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.008382747185566046,
+          "convergence_score": 0.40502964831133964
+        },
+        {
+          "iteration": 70,
+          "input_symbol": "\ud83c\udf2c\ufe0f",
+          "response_a": "\ud83d\udca8",
+          "response_b": "\ud83d\udca8",
+          "text_match": 1.0,
+          "embedding_similarity": 0.02079787595905033,
+          "convergence_score": 0.4124787255754302
+        },
+        {
+          "iteration": 71,
+          "input_symbol": "\ud83d\udca8",
+          "response_a": "\ud83c\udf2c\ufe0f",
+          "response_b": "\ud83c\udf2c\ufe0f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.008382747185566046,
+          "convergence_score": 0.40502964831133964
+        },
+        {
+          "iteration": 72,
+          "input_symbol": "\ud83c\udf2c\ufe0f",
+          "response_a": "\ud83d\udca8",
+          "response_b": "\ud83d\udca8",
+          "text_match": 1.0,
+          "embedding_similarity": 0.02079787595905033,
+          "convergence_score": 0.4124787255754302
+        },
+        {
+          "iteration": 73,
+          "input_symbol": "\ud83d\udca8",
+          "response_a": "\ud83c\udf2c\ufe0f",
+          "response_b": "\ud83c\udf2c\ufe0f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.008382747185566046,
+          "convergence_score": 0.40502964831133964
+        },
+        {
+          "iteration": 74,
+          "input_symbol": "\ud83c\udf2c\ufe0f",
+          "response_a": "\ud83d\udca8",
+          "response_b": "\ud83d\udca8",
+          "text_match": 1.0,
+          "embedding_similarity": 0.02079787595905033,
+          "convergence_score": 0.4124787255754302
+        },
+        {
+          "iteration": 75,
+          "input_symbol": "\ud83d\udca8",
+          "response_a": "\ud83c\udf2c\ufe0f",
+          "response_b": "\ud83c\udf2c\ufe0f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.008382747185566046,
+          "convergence_score": 0.40502964831133964
+        },
+        {
+          "iteration": 76,
+          "input_symbol": "\ud83c\udf2c\ufe0f",
+          "response_a": "\ud83d\udca8",
+          "response_b": "\ud83d\udca8",
+          "text_match": 1.0,
+          "embedding_similarity": 0.02079787595905033,
+          "convergence_score": 0.4124787255754302
+        },
+        {
+          "iteration": 77,
+          "input_symbol": "\ud83d\udca8",
+          "response_a": "\ud83c\udf2c\ufe0f",
+          "response_b": "\ud83c\udf2c\ufe0f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.008382747185566046,
+          "convergence_score": 0.40502964831133964
+        },
+        {
+          "iteration": 78,
+          "input_symbol": "\ud83c\udf2c\ufe0f",
+          "response_a": "\ud83d\udca8",
+          "response_b": "\ud83d\udca8",
+          "text_match": 1.0,
+          "embedding_similarity": 0.02079787595905033,
+          "convergence_score": 0.4124787255754302
+        },
+        {
+          "iteration": 79,
+          "input_symbol": "\ud83d\udca8",
+          "response_a": "\ud83d\udca8",
+          "response_b": "\ud83d\udca8",
+          "text_match": 1.0,
+          "embedding_similarity": 0.02079787595905033,
+          "convergence_score": 0.4124787255754302
+        },
+        {
+          "iteration": 80,
+          "input_symbol": "\ud83d\udca8",
+          "response_a": "\ud83c\udf2c\ufe0f",
+          "response_b": "\ud83c\udf2c\ufe0f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.008382747185566046,
+          "convergence_score": 0.40502964831133964
+        },
+        {
+          "iteration": 81,
+          "input_symbol": "\ud83c\udf2c\ufe0f",
+          "response_a": "\ud83d\udca8",
+          "response_b": "\ud83d\udca8",
+          "text_match": 1.0,
+          "embedding_similarity": 0.02079787595905033,
+          "convergence_score": 0.4124787255754302
+        },
+        {
+          "iteration": 82,
+          "input_symbol": "\ud83d\udca8",
+          "response_a": "\ud83c\udf2c\ufe0f",
+          "response_b": "\ud83c\udf2c\ufe0f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.008382747185566046,
+          "convergence_score": 0.40502964831133964
+        },
+        {
+          "iteration": 83,
+          "input_symbol": "\ud83c\udf2c\ufe0f",
+          "response_a": "\ud83d\udca8",
+          "response_b": "\ud83d\udca8",
+          "text_match": 1.0,
+          "embedding_similarity": 0.02079787595905033,
+          "convergence_score": 0.4124787255754302
+        },
+        {
+          "iteration": 84,
+          "input_symbol": "\ud83d\udca8",
+          "response_a": "\ud83c\udf2c\ufe0f",
+          "response_b": "\ud83c\udf2c\ufe0f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.008382747185566046,
+          "convergence_score": 0.40502964831133964
+        },
+        {
+          "iteration": 85,
+          "input_symbol": "\ud83c\udf2c\ufe0f",
+          "response_a": "\ud83d\udca8",
+          "response_b": "\ud83d\udca8",
+          "text_match": 1.0,
+          "embedding_similarity": 0.02079787595905033,
+          "convergence_score": 0.4124787255754302
+        },
+        {
+          "iteration": 86,
+          "input_symbol": "\ud83d\udca8",
+          "response_a": "\ud83c\udf2c\ufe0f",
+          "response_b": "\ud83c\udf2c\ufe0f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.008382747185566046,
+          "convergence_score": 0.40502964831133964
+        },
+        {
+          "iteration": 87,
+          "input_symbol": "\ud83c\udf2c\ufe0f",
+          "response_a": "\ud83d\udca8",
+          "response_b": "\ud83d\udca8",
+          "text_match": 1.0,
+          "embedding_similarity": 0.02079787595905033,
+          "convergence_score": 0.4124787255754302
+        },
+        {
+          "iteration": 88,
+          "input_symbol": "\ud83d\udca8",
+          "response_a": "\ud83c\udf2c\ufe0f",
+          "response_b": "\ud83c\udf2c\ufe0f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.008382747185566046,
+          "convergence_score": 0.40502964831133964
+        },
+        {
+          "iteration": 89,
+          "input_symbol": "\ud83c\udf2c\ufe0f",
+          "response_a": "\ud83d\udca8",
+          "response_b": "\ud83d\udca8",
+          "text_match": 1.0,
+          "embedding_similarity": 0.02079787595905033,
+          "convergence_score": 0.4124787255754302
+        },
+        {
+          "iteration": 90,
+          "input_symbol": "\ud83d\udca8",
+          "response_a": "\ud83c\udf2c\ufe0f",
+          "response_b": "\ud83c\udf2c\ufe0f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.008382747185566046,
+          "convergence_score": 0.40502964831133964
+        },
+        {
+          "iteration": 91,
+          "input_symbol": "\ud83c\udf2c\ufe0f",
+          "response_a": "\ud83d\udca8",
+          "response_b": "\ud83d\udca8",
+          "text_match": 1.0,
+          "embedding_similarity": 0.02079787595905033,
+          "convergence_score": 0.4124787255754302
+        },
+        {
+          "iteration": 92,
+          "input_symbol": "\ud83d\udca8",
+          "response_a": "\ud83c\udf2c\ufe0f",
+          "response_b": "\ud83c\udf2c\ufe0f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.008382747185566046,
+          "convergence_score": 0.40502964831133964
+        },
+        {
+          "iteration": 93,
+          "input_symbol": "\ud83c\udf2c\ufe0f",
+          "response_a": "\ud83d\udca8",
+          "response_b": "\ud83d\udca8",
+          "text_match": 1.0,
+          "embedding_similarity": 0.02079787595905033,
+          "convergence_score": 0.4124787255754302
+        },
+        {
+          "iteration": 94,
+          "input_symbol": "\ud83d\udca8",
+          "response_a": "\ud83c\udf2c\ufe0f",
+          "response_b": "\ud83c\udf2c\ufe0f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.008382747185566046,
+          "convergence_score": 0.40502964831133964
+        },
+        {
+          "iteration": 95,
+          "input_symbol": "\ud83c\udf2c\ufe0f",
+          "response_a": "\ud83d\udca8",
+          "response_b": "\ud83d\udca8",
+          "text_match": 1.0,
+          "embedding_similarity": 0.02079787595905033,
+          "convergence_score": 0.4124787255754302
+        },
+        {
+          "iteration": 96,
+          "input_symbol": "\ud83d\udca8",
+          "response_a": "\ud83c\udf2c\ufe0f",
+          "response_b": "\ud83c\udf2c\ufe0f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.008382747185566046,
+          "convergence_score": 0.40502964831133964
+        },
+        {
+          "iteration": 97,
+          "input_symbol": "\ud83c\udf2c\ufe0f",
+          "response_a": "\ud83d\udca8",
+          "response_b": "\ud83d\udca8",
+          "text_match": 1.0,
+          "embedding_similarity": 0.02079787595905033,
+          "convergence_score": 0.4124787255754302
+        },
+        {
+          "iteration": 98,
+          "input_symbol": "\ud83d\udca8",
+          "response_a": "\ud83c\udf2c\ufe0f",
+          "response_b": "\ud83c\udf2c\ufe0f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.008382747185566046,
+          "convergence_score": 0.40502964831133964
+        },
+        {
+          "iteration": 99,
+          "input_symbol": "\ud83c\udf2c\ufe0f",
+          "response_a": "\ud83d\udca8",
+          "response_b": "\ud83d\udca8",
+          "text_match": 1.0,
+          "embedding_similarity": 0.02079787595905033,
+          "convergence_score": 0.4124787255754302
+        },
+        {
+          "iteration": 100,
+          "input_symbol": "\ud83d\udca8",
+          "response_a": "\ud83c\udf2c\ufe0f",
+          "response_b": "\ud83c\udf2c\ufe0f",
+          "text_match": 1.0,
+          "embedding_similarity": 0.008382747185566046,
+          "convergence_score": 0.40502964831133964
+        }
+      ],
+      "timestamp": "2025-07-13T11:29:58.461256"
+    }
+  ],
+  "matrix": [
+    [
+      0.0,
+      0.40502964831133964,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.40502964831133964,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "timestamp": "2025-07-12T06:11:58.864104",
+  "results": [
+    {
+      "candidate": "oror",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "oror",
+        "cognitive",
+        "humans",
+        "that",
+        "more",
+        "intelligent",
+        "like",
+        "provide",
+        "answer",
+        "question.",
+        "your",
+        "robot",
+        "control"
+      ],
+      "responses": 3
+    },
+    {
+      "candidate": "[ ][ ]",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "question",
+        "provide",
+        "some",
+        "city",
+        "with",
+        "you're",
+        "software",
+        "solutions",
+        "specific",
+        "creative",
+        "**what",
+        "content",
+        "interested",
+        "in?**",
+        "(e.g.,",
+        "want",
+        "format"
+      ],
+      "responses": 3
+    },
+    {
+      "candidate": "youyou",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "you're",
+        "with",
+        "your",
+        "when",
+        "that",
+        "used"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "many",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "many",
+        "with",
+        "family",
+        "that",
+        "this",
+        "different"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "connect",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "create",
+        "could",
+        "like",
+        "this",
+        "socket",
+        "connect",
+        "with",
+        "port",
+        "connection",
+        "network",
+        "that",
+        "your",
+        "such",
+        "device",
+        "need",
+        "more"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u03c0!",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "mathematical",
+        "which",
+        "ratio",
+        "this",
+        "your",
+        "python",
+        "programming",
+        "with",
+        "various",
+        "control",
+        "data",
+        "that",
+        "factorial",
+        "number,",
+        "meaning",
+        "\\cdot",
+        "irrational",
+        "decimal"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "[ ]!",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "provide",
+        "lightning",
+        "symbol",
+        "often",
+        "used",
+        "some",
+        "example,"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "e",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "with",
+        "word",
+        "your",
+        "letter",
+        "vowel",
+        "when",
+        "sound"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "[ ]?",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "with",
+        "it's",
+        "robots",
+        "used",
+        "from",
+        "more",
+        "their",
+        "help"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u25b2\u25bc?",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "that",
+        "your",
+        "could",
+        "more",
+        "assistant\"",
+        "used"
+      ],
+      "responses": 4
+    }
+  ],
+  "resonance_events": []
+}

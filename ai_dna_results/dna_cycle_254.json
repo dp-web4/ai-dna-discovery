@@ -1,0 +1,24 @@
+{
+  "cycle": 254,
+  "timestamp": "2025-07-12T20:06:13.762443",
+  "results": [
+    {
+      "candidate": "or",
+      "dna_score": 1.0,
+      "responses": 2,
+      "timestamp": "2025-07-12T20:05:32.316681"
+    },
+    {
+      "candidate": "recursive",
+      "dna_score": 1.0,
+      "responses": 2,
+      "timestamp": "2025-07-12T20:06:00.837759"
+    },
+    {
+      "candidate": "emerge",
+      "dna_score": 1.0,
+      "responses": 2,
+      "timestamp": "2025-07-12T20:06:11.761668"
+    }
+  ]
+}

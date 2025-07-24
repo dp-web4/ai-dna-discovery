@@ -1,0 +1,189 @@
+{
+  "timestamp": "2025-07-12T08:06:46.136854",
+  "results": [
+    {
+      "candidate": "you?",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "have",
+        "today?"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "(())",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "closing",
+        "punctuation",
+        "however,",
+        "here's",
+        "sentence",
+        "(explanation",
+        "follows.)",
+        "that",
+        "which",
+        "empty",
+        "parentheses",
+        "have",
+        "programming",
+        "they",
+        "context"
+      ],
+      "responses": 3
+    },
+    {
+      "candidate": "\u2203y",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "this",
+        "that",
+        "\"there",
+        "represents",
+        "such",
+        "element",
+        "natural",
+        "there",
+        "value",
+        "exists",
+        "array",
+        "equal"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "same",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "sure,",
+        "with",
+        "same",
+        "assistant!",
+        "cutting-edge",
+        "artificial",
+        "more",
+        "personalized",
+        "experience.",
+        "some",
+        "platform",
+        "your",
+        "this",
+        "smart",
+        "home",
+        "that",
+        "voice",
+        "using",
+        "from",
+        "provide",
+        "personal",
+        "understand"
+      ],
+      "responses": 3
+    },
+    {
+      "candidate": "connect",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "connection",
+        "your",
+        "using",
+        "connect",
+        "with",
+        "this",
+        "here's",
+        "updated",
+        "version",
+        "text",
+        "\"connect\"",
+        "\"ai\":",
+        "what",
+        "devices",
+        "such",
+        "might",
+        "access"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "you!",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "with",
+        "your",
+        "know",
+        "what",
+        "have",
+        "help",
+        "today?",
+        "i'll"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "andand",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "that",
+        "word",
+        "it's",
+        "this",
+        "connect",
+        "with",
+        "complete",
+        "conjunction",
+        "order",
+        "have",
+        "used",
+        "clauses",
+        "went",
+        "walk",
+        "chocolate"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "[or?]",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "your"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u25b2\u25bc!",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "this",
+        "it's",
+        "provide",
+        "that",
+        "symbols",
+        "context"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "end",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "that",
+        "with",
+        "your",
+        "function",
+        "array"
+      ],
+      "responses": 4
+    }
+  ],
+  "resonance_events": []
+}

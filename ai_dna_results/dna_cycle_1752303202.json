@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-07-11T23:53:22.818812",
+  "results": [
+    {
+      "candidate": "\u2203y",
+      "dna_score": 0.25,
+      "unique_embeddings": 2,
+      "universal_words": [
+        "there",
+        "exists",
+        "variable",
+        "named",
+        "this",
+        "value",
+        "than",
+        "statement",
+        "property",
+        "that",
+        "least",
+        "such",
+        "type",
+        "element",
+        "student"
+      ],
+      "responses": 2
+    },
+    {
+      "candidate": "youyou",
+      "dna_score": 0.25,
+      "unique_embeddings": 2,
+      "universal_words": [
+        "here's",
+        "your",
+        "helpful"
+      ],
+      "responses": 2
+    }
+  ],
+  "resonance_events": []
+}

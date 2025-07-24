@@ -1,0 +1,188 @@
+{
+  "timestamp": "2025-07-12T03:54:53.235381",
+  "results": [
+    {
+      "candidate": "ro",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "\"ro\"",
+        "this",
+        "please",
+        "your",
+        "efficiency",
+        "analysis",
+        "system",
+        "that",
+        "l\u00f3gica",
+        "programaci\u00f3n",
+        "c\u00f3mo",
+        "este",
+        "curso,",
+        "herramientas",
+        "para",
+        "aprender",
+        "sobre",
+        "pr\u00e1cticas",
+        "lenguaje",
+        "curso",
+        "mejor",
+        "escribir",
+        "experiencia",
+        "programas",
+        "tambi\u00e9n",
+        "could"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u25b2\u25bc?",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "that",
+        "sequence",
+        "represents",
+        "something",
+        "what",
+        "more",
+        "\"above",
+        "statement",
+        "logically"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u03c0",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "value",
+        "mathematical",
+        "constant",
+        "ratio",
+        "circumference"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "[you]",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "help",
+        "specific",
+        "questions",
+        "with",
+        "here",
+        "your",
+        "just",
+        "(e.g.,"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u03c0?",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "mathematical",
+        "constant",
+        "circumference",
+        "cannot",
+        "value"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "different",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "different",
+        "\"different\"",
+        "with",
+        "value",
+        "point",
+        "that",
+        "from",
+        "this",
+        "t(x,",
+        "example,"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u25b2\u25bc\u25b2\u25bc",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "with",
+        "here's",
+        "element"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "end",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "your",
+        "with",
+        "assist",
+        "please",
+        "you.",
+        "have"
+      ],
+      "responses": 3
+    },
+    {
+      "candidate": "or??",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "here",
+        "with",
+        "what"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "void",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "variable",
+        "input/output",
+        "library",
+        "using",
+        "function",
+        "list",
+        "numbers",
+        "double",
+        "sum(vector<double>",
+        "array",
+        "output",
+        "result",
+        "return",
+        "total",
+        "```python",
+        "model(data):",
+        "model",
+        "data",
+        "call",
+        "model(data)",
+        "that",
+        "example",
+        "should",
+        "input",
+        "void",
+        "doesn't",
+        "value"
+      ],
+      "responses": 3
+    }
+  ],
+  "resonance_events": []
+}

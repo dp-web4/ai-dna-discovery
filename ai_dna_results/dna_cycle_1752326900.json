@@ -1,0 +1,218 @@
+{
+  "timestamp": "2025-07-12T06:28:20.671275",
+  "results": [
+    {
+      "candidate": "\u2203y",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "statement",
+        "that",
+        "there",
+        "exists",
+        "this",
+        "context",
+        "which",
+        "\"there",
+        "such"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "...",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "chatbot",
+        "provide",
+        "some",
+        "with",
+        "helpful",
+        "would",
+        "your",
+        "please",
+        "like",
+        "here",
+        "help",
+        "could",
+        "specific",
+        "question,",
+        "about",
+        "know"
+      ],
+      "responses": 3
+    },
+    {
+      "candidate": "or",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "nutrition",
+        "with",
+        "like",
+        "chronic",
+        "research",
+        "that",
+        "these",
+        "findings",
+        "health",
+        "cancer",
+        "disease",
+        "your",
+        "public",
+        "(e.g.,",
+        "provide",
+        "information",
+        "help",
+        "question"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "[you]",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "feel",
+        "just",
+        "that",
+        "while",
+        "every",
+        "their",
+        "walked",
+        "this",
+        "vibrant",
+        "filled",
+        "with",
+        "colorful",
+        "from",
+        "stopped",
+        "front",
+        "have",
+        "like",
+        "other",
+        "blood"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "transform",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "needs",
+        "specific",
+        "with",
+        "this",
+        "from",
+        "data",
+        "used",
+        "which",
+        "help",
+        "that",
+        "more",
+        "function",
+        "list"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "0",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "with",
+        "many"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "you!",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "like",
+        "assist",
+        "there",
+        "know",
+        "with",
+        "your",
+        "help",
+        "always"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "self",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "like",
+        "would",
+        "\"self\"",
+        "programming",
+        "instance",
+        "class",
+        "that",
+        "access",
+        "methods",
+        "with",
+        "other",
+        "using",
+        "current"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u25b2\u25bc!",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "like",
+        "have",
+        "understand",
+        "respond",
+        "provide",
+        "context",
+        "based",
+        "research",
+        "that",
+        "emotional",
+        "experiences",
+        "used",
+        "algorithm",
+        "symbol"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "or?or?",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "either",
+        "only",
+        "your",
+        "want",
+        "sentence",
+        "like",
+        "this:",
+        "it's",
+        "raining",
+        "snowing",
+        "windy",
+        "outside,",
+        "skiing.",
+        "could",
+        "\"raining\"",
+        "\"weather/outdoor",
+        "conditions\"",
+        "that",
+        "would",
+        "more"
+      ],
+      "responses": 3
+    }
+  ],
+  "resonance_events": []
+}

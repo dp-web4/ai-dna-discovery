@@ -1,0 +1,226 @@
+{
+  "timestamp": "2025-07-12T05:31:16.366405",
+  "results": [
+    {
+      "candidate": "or!",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "have",
+        "with",
+        "this",
+        "user:",
+        "could",
+        "assistant:",
+        "difficult",
+        "there",
+        "that",
+        "phrase",
+        "used",
+        "many",
+        "like",
+        "case,",
+        "their",
+        "decision",
+        "other",
+        "exclamation"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "then",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "could",
+        "provide",
+        "that",
+        "\"then\"",
+        "such",
+        "then",
+        "will",
+        "this",
+        "language",
+        "(this",
+        "means"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "uoy",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "word",
+        "with"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u25b2\u25bc",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "this",
+        "your",
+        "unwavering",
+        "could"
+      ],
+      "responses": 3
+    },
+    {
+      "candidate": "or?!",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "help",
+        "with",
+        "your",
+        "this",
+        "assistance",
+        "information",
+        "from",
+        "have",
+        "countless",
+        "providing",
+        "you've",
+        "contributions",
+        "will",
+        "more",
+        "that",
+        "understand"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u2605\u2606",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "instruction",
+        "stars",
+        "good",
+        "however,",
+        "without",
+        "additional",
+        "context",
+        "that",
+        "related",
+        "these",
+        "it's",
+        "more",
+        "this",
+        "phrase",
+        "wishing",
+        "some",
+        "could",
+        "with",
+        "like",
+        "sure,",
+        "rewritten",
+        "**sure,",
+        "rewrite",
+        "response",
+        "inclusive",
+        "sensitive.**",
+        "able",
+        "original",
+        "text",
+        "sensitive",
+        "offensive",
+        "language",
+        "background",
+        "importance",
+        "respect",
+        "about",
+        "here",
+        "have",
+        "topic",
+        "your",
+        "just"
+      ],
+      "responses": 3
+    },
+    {
+      "candidate": "e",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "with",
+        "also",
+        "they",
+        "were",
+        "engineer",
+        "help",
+        "their",
+        "letter"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "or??",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "could",
+        "provide",
+        "this",
+        "that",
+        "with",
+        "there",
+        "understand",
+        "asking",
+        "\"or\"?"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u03c0\u03c0",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "symbol",
+        "represents",
+        "mathematical",
+        "approximately",
+        "ratio",
+        "greek"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "[ ]!",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "[narrator",
+        "(n):]",
+        "with",
+        "(ai)]",
+        "about",
+        "don't",
+        "have",
+        "\"yes,",
+        "know",
+        "that",
+        "it's",
+        "what",
+        "make",
+        "like",
+        "help",
+        "some",
+        "sustainable",
+        "see.",
+        "food",
+        "agriculture",
+        "local",
+        "farmers",
+        "even",
+        "also",
+        "small"
+      ],
+      "responses": 4
+    }
+  ],
+  "resonance_events": []
+}

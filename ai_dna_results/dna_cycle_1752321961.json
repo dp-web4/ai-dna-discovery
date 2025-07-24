@@ -1,0 +1,211 @@
+{
+  "timestamp": "2025-07-12T05:06:01.762436",
+  "results": [
+    {
+      "candidate": "you!",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "here",
+        "with",
+        "know",
+        "help",
+        "your",
+        "it's"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "?",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "that",
+        "provided",
+        "operations",
+        "with",
+        "have",
+        "question",
+        "specific",
+        "information",
+        "help",
+        "assist"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "?ro",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "context",
+        "more",
+        "provide",
+        "translation",
+        "speech",
+        "with",
+        "your",
+        "text"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u25b2\u25bc?",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "like"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "dna",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "deoxyribonucleic",
+        "genetic",
+        "composed",
+        "four",
+        "adenine",
+        "(a),",
+        "thymine",
+        "guanine",
+        "(g),",
+        "cytosine",
+        "nucleotides",
+        "that",
+        "information"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u25b2\u25bc",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "example",
+        "here",
+        "could"
+      ],
+      "responses": 3
+    },
+    {
+      "candidate": "flow",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "have",
+        "\"flow\"",
+        "that",
+        "with",
+        "your",
+        "like",
+        "where",
+        "more",
+        "emily",
+        "makes",
+        "also",
+        "flow"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "I",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "social",
+        "media",
+        "staying",
+        "with",
+        "clients",
+        "building",
+        "also",
+        "comes",
+        "help",
+        "being",
+        "effective",
+        "your",
+        "avoid",
+        "digital",
+        "show",
+        "engaging",
+        "responding",
+        "comments",
+        "messages.",
+        "stay",
+        "keep",
+        "latest",
+        "trends",
+        "relevant",
+        "engage",
+        "schedule",
+        "share",
+        "content",
+        "that",
+        "industry",
+        "don't",
+        "afraid",
+        "about",
+        "provide",
+        "information",
+        "what",
+        "when",
+        "media.",
+        "respond",
+        "offer",
+        "questions",
+        "their",
+        "followers",
+        "valuable",
+        "solutions",
+        "problems.",
+        "other",
+        "informed",
+        "attend",
+        "gain",
+        "insights",
+        "into",
+        "take",
+        "proactive",
+        "marketing.",
+        "trust",
+        "from",
+        "letter",
+        "represent",
+        "sound"
+      ],
+      "responses": 3
+    },
+    {
+      "candidate": "\u221e",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "that",
+        "with",
+        "used",
+        "infinity",
+        "community",
+        "support",
+        "positive",
+        "than"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "youyou",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "more",
+        "such",
+        "healthcare",
+        "industries"
+      ],
+      "responses": 4
+    }
+  ],
+  "resonance_events": []
+}

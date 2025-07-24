@@ -1,0 +1,225 @@
+{
+  "timestamp": "2025-07-12T04:51:02.955185",
+  "results": [
+    {
+      "candidate": "\u2666\u2666\u2666",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "more",
+        "used",
+        "that",
+        "bullet",
+        "points",
+        "point"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "being",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "being"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "1",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "response",
+        "want",
+        "have"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "[and]",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "that",
+        "word",
+        "your",
+        "great",
+        "help",
+        "with",
+        "provide",
+        "like",
+        "could",
+        "just",
+        "personal",
+        "more",
+        "have"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "pattern",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "that",
+        "patterns",
+        "used",
+        "pattern",
+        "with",
+        "providing",
+        "data",
+        "such",
+        "help",
+        "provide",
+        "have"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "e",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "like",
+        "your",
+        "what",
+        "will",
+        "that",
+        "life",
+        "take",
+        "some",
+        "with",
+        "work",
+        "this",
+        "together.",
+        "routine",
+        "make",
+        "would",
+        "daily",
+        "more",
+        "english",
+        "word"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "< >",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "help",
+        "your",
+        "with",
+        "service",
+        "always",
+        "that",
+        "whether",
+        "need",
+        "will",
+        "ensure",
+        "customer",
+        "assistance"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "?",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "this",
+        "like",
+        "question",
+        "input",
+        "your",
+        "name"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u2192",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "here",
+        "help",
+        "about",
+        "things",
+        "that",
+        "already",
+        "from",
+        "helping",
+        "predicting",
+        "world",
+        "ways",
+        "couldn't",
+        "have",
+        "imagined",
+        "just",
+        "years",
+        "ago.",
+        "what",
+        "even",
+        "area",
+        "where",
+        "future",
+        "healthcare.",
+        "with",
+        "ability",
+        "analyze",
+        "vast",
+        "amounts",
+        "healthcare",
+        "transforming",
+        "it's",
+        "impact",
+        "many",
+        "fields",
+        "education",
+        "revolutionizing",
+        "automating",
+        "algorithms,",
+        "data",
+        "provide",
+        "marketing",
+        "creative",
+        "optimize",
+        "energy",
+        "production",
+        "more.",
+        "only",
+        "transform",
+        "almost",
+        "every",
+        "there",
+        "more",
+        "make",
+        "this",
+        "automate",
+        "processes,",
+        "poised",
+        "future,",
+        "let's",
+        "technology",
+        "responsibly",
+        "assist",
+        "you.",
+        "like"
+      ],
+      "responses": 3
+    },
+    {
+      "candidate": "0",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "provide",
+        "have",
+        "please",
+        "your"
+      ],
+      "responses": 4
+    }
+  ],
+  "resonance_events": []
+}

@@ -1,0 +1,88 @@
+{
+  "phase": 1,
+  "experiment": "lattice_structure",
+  "start_time": "2025-07-13T21:44:09.393182",
+  "end_time": "2025-07-13T21:44:13.123782",
+  "status": "completed",
+  "checkpoints": [
+    {
+      "timestamp": "2025-07-13T21:44:10.748564",
+      "name": "checkpoint_0",
+      "data": {
+        "model": "phi3:mini",
+        "nodes": 17,
+        "connections": 136
+      }
+    },
+    {
+      "timestamp": "2025-07-13T21:44:12.425788",
+      "name": "checkpoint_1",
+      "data": {
+        "model": "gemma:2b",
+        "nodes": 17,
+        "connections": 136
+      }
+    },
+    {
+      "timestamp": "2025-07-13T21:44:13.122666",
+      "name": "checkpoint_2",
+      "data": {
+        "model": "tinyllama:latest",
+        "nodes": 17,
+        "connections": 136
+      }
+    }
+  ],
+  "results": {
+    "universal_core_nodes": []
+  },
+  "errors": [],
+  "notes": [
+    {
+      "timestamp": "2025-07-13T21:44:09.393485",
+      "level": "INFO",
+      "message": "Started experiment: lattice_structure"
+    },
+    {
+      "timestamp": "2025-07-13T21:44:09.393557",
+      "level": "INFO",
+      "message": "Starting lattice_structure with models: ['phi3:mini', 'gemma:2b', 'tinyllama:latest']"
+    },
+    {
+      "timestamp": "2025-07-13T21:44:09.393571",
+      "level": "INFO",
+      "message": "Mapping lattice structure for phi3:mini"
+    },
+    {
+      "timestamp": "2025-07-13T21:44:10.748803",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_0"
+    },
+    {
+      "timestamp": "2025-07-13T21:44:10.748813",
+      "level": "INFO",
+      "message": "Mapping lattice structure for gemma:2b"
+    },
+    {
+      "timestamp": "2025-07-13T21:44:12.426091",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_1"
+    },
+    {
+      "timestamp": "2025-07-13T21:44:12.426106",
+      "level": "INFO",
+      "message": "Mapping lattice structure for tinyllama:latest"
+    },
+    {
+      "timestamp": "2025-07-13T21:44:13.122983",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_2"
+    },
+    {
+      "timestamp": "2025-07-13T21:44:13.123753",
+      "level": "INFO",
+      "message": "Saved consciousness lattice structure"
+    }
+  ],
+  "duration_seconds": 3.730603
+}

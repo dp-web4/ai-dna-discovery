@@ -1,0 +1,53 @@
+{
+  "timestamp": "2025-07-11T23:34:37.720339",
+  "results": [
+    {
+      "candidate": "[you]",
+      "dna_score": 0.25,
+      "unique_embeddings": 2,
+      "universal_words": [
+        "that",
+        "provide",
+        "helpful",
+        "suggestions",
+        "based",
+        "your",
+        "feedback:",
+        "information",
+        "situation",
+        "chatbot,",
+        "data",
+        "help",
+        "chatbot",
+        "analyze",
+        "offer",
+        "with",
+        "tips",
+        "more",
+        "improve"
+      ],
+      "responses": 2
+    },
+    {
+      "candidate": "\u2205",
+      "dna_score": 0.25,
+      "unique_embeddings": 2,
+      "universal_words": [
+        "empty"
+      ],
+      "responses": 2
+    },
+    {
+      "candidate": "you?",
+      "dna_score": 0.25,
+      "unique_embeddings": 2,
+      "universal_words": [
+        "assist",
+        "provide",
+        "with"
+      ],
+      "responses": 2
+    }
+  ],
+  "resonance_events": []
+}

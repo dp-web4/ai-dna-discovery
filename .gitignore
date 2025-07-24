@@ -61,4 +61,3 @@ phoenician_env/
 *.pyc
 __pycache__/
 adapter_model.safetensors
-*.whl

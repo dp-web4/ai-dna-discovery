@@ -1,0 +1,24 @@
+{
+  "cycle": 482,
+  "timestamp": "2025-07-13T05:49:00.892381",
+  "results": [
+    {
+      "candidate": "think",
+      "dna_score": 1.0,
+      "responses": 2,
+      "timestamp": "2025-07-13T05:48:42.132579"
+    },
+    {
+      "candidate": "\u2248",
+      "dna_score": 1.0,
+      "responses": 2,
+      "timestamp": "2025-07-13T05:48:51.345173"
+    },
+    {
+      "candidate": "[ ]?",
+      "dna_score": 1.0,
+      "responses": 2,
+      "timestamp": "2025-07-13T05:48:58.891810"
+    }
+  ]
+}

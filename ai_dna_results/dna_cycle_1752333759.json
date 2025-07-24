@@ -1,0 +1,219 @@
+{
+  "timestamp": "2025-07-12T08:22:39.203166",
+  "results": [
+    {
+      "candidate": "transform",
+      "dna_score": 0.25,
+      "unique_embeddings": 2,
+      "universal_words": [
+        "transforming",
+        "transformation",
+        "through",
+        "(such",
+        "have",
+        "negative",
+        "significant",
+        "changes",
+        "people",
+        "interact",
+        "with",
+        "each",
+        "systems"
+      ],
+      "responses": 2
+    },
+    {
+      "candidate": "\u2205",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "empty",
+        "with",
+        "elements.",
+        "mathematical"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u2200x",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "that",
+        "expression",
+        "\"for",
+        "without",
+        "context",
+        "what",
+        "statement",
+        "domain",
+        "domain.",
+        "every",
+        "means"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u03c0",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "will",
+        "which",
+        "that",
+        "with",
+        "every",
+        "provide",
+        "such"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "cycle",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "sequence",
+        "events",
+        "that",
+        "cycle,",
+        "cycles",
+        "machine",
+        "with",
+        "various",
+        "such",
+        "improve",
+        "example,",
+        "other",
+        "this",
+        "employer",
+        "also",
+        "from",
+        "cycle",
+        "mathematics,",
+        "function"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "0",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "this",
+        "would",
+        "there",
+        "here",
+        "happy",
+        "assist",
+        "you.",
+        "your",
+        "customer:",
+        "product",
+        "that",
+        "like",
+        "with",
+        "time",
+        "more",
+        "have",
+        "thank",
+        "appreciate",
+        "other",
+        "about",
+        "anything",
+        "provide",
+        "customer",
+        "help",
+        "number"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "if",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "here's",
+        "that",
+        "code",
+        "execute",
+        "condition",
+        "replace",
+        "with"
+      ],
+      "responses": 3
+    },
+    {
+      "candidate": "===",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "with",
+        "make",
+        "provide",
+        "recommendations",
+        "have",
+        "about",
+        "help",
+        "your",
+        "history",
+        "free",
+        "smartbill",
+        "what",
+        "that",
+        "engage",
+        "could",
+        "here",
+        "assist",
+        "specific",
+        "might",
+        "conversation",
+        "topic",
+        "anything",
+        "start",
+        "discussion",
+        "current",
+        "books,",
+        "movies,",
+        "interests",
+        "you.",
+        "know",
+        "you!",
+        "please",
+        "news"
+      ],
+      "responses": 3
+    },
+    {
+      "candidate": "1",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "with",
+        "assistant,",
+        "provide",
+        "excellent",
+        "customer",
+        "support",
+        "that",
+        "customers",
+        "product",
+        "this",
+        "it's",
+        "what"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "[ ]?",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "please",
+        "your"
+      ],
+      "responses": 4
+    }
+  ],
+  "resonance_events": []
+}

@@ -1,0 +1,182 @@
+{
+  "timestamp": "2025-07-12T09:57:03.902198",
+  "results": [
+    {
+      "candidate": "then",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "with",
+        "para",
+        "nuestro",
+        "aprendizaje",
+        "acerca",
+        "sobre"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "or??",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "asking",
+        "that",
+        "there",
+        "either/or",
+        "choose",
+        "between",
+        "where",
+        "could",
+        "option",
+        "case,"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "[ ]",
+      "dna_score": 0.5,
+      "unique_embeddings": 2,
+      "universal_words": [
+        "sure,",
+        "provide",
+        "with"
+      ],
+      "responses": 2
+    },
+    {
+      "candidate": "emerge",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "come",
+        "into",
+        "example,",
+        "emerge",
+        "emergence",
+        "emerged"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "{ }",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "empty",
+        "object",
+        "with",
+        "this",
+        "where",
+        "maya",
+        "human",
+        "been",
+        "abilities",
+        "could",
+        "their",
+        "from",
+        "have",
+        "information",
+        "that",
+        "would",
+        "able",
+        "knew",
+        "samuel",
+        "were",
+        "virus",
+        "into",
+        "there",
+        "prevent",
+        "using",
+        "also",
+        "about",
+        "found",
+        "stop",
+        "managed",
+        "more",
+        "research",
+        "equipment.",
+        "equipment",
+        "stolen"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "you!",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "that",
+        "there",
+        "your",
+        "feel",
+        "this",
+        "only",
+        "have",
+        "help",
+        "like"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u25b2\u25bc!",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "more",
+        "that",
+        "could",
+        "this",
+        "\"you",
+        "are\"",
+        "symbol"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "youyou",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "assistance",
+        "need",
+        "please",
+        "assist",
+        "more",
+        "provide",
+        "language.",
+        "could"
+      ],
+      "responses": 3
+    },
+    {
+      "candidate": "ro",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "that",
+        "assuming",
+        "have",
+        "provide",
+        "robot",
+        "meant"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "[ ][ ]",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "like",
+        "with",
+        "that",
+        "<!--",
+        "your",
+        "here"
+      ],
+      "responses": 4
+    }
+  ],
+  "resonance_events": []
+}

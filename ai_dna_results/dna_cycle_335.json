@@ -1,0 +1,24 @@
+{
+  "cycle": 335,
+  "timestamp": "2025-07-12T23:33:35.024528",
+  "results": [
+    {
+      "candidate": "believe",
+      "dna_score": 1.0,
+      "responses": 2,
+      "timestamp": "2025-07-12T23:31:50.230565"
+    },
+    {
+      "candidate": "false",
+      "dna_score": 1.0,
+      "responses": 2,
+      "timestamp": "2025-07-12T23:33:24.483264"
+    },
+    {
+      "candidate": "\u2209",
+      "dna_score": 1.0,
+      "responses": 2,
+      "timestamp": "2025-07-12T23:33:33.024051"
+    }
+  ]
+}

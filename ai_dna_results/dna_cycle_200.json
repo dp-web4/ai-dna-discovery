@@ -1,0 +1,36 @@
+{
+  "cycle": 200,
+  "timestamp": "2025-07-12T17:35:29.405708",
+  "results": [
+    {
+      "candidate": "meta",
+      "dna_score": 1.0,
+      "responses": 2,
+      "timestamp": "2025-07-12T17:34:37.665165"
+    },
+    {
+      "candidate": "know",
+      "dna_score": 1.0,
+      "responses": 2,
+      "timestamp": "2025-07-12T17:34:46.276233"
+    },
+    {
+      "candidate": "\u2209",
+      "dna_score": 1.0,
+      "responses": 2,
+      "timestamp": "2025-07-12T17:35:05.271607"
+    },
+    {
+      "candidate": "begin",
+      "dna_score": 1.0,
+      "responses": 2,
+      "timestamp": "2025-07-12T17:35:21.595103"
+    },
+    {
+      "candidate": "[ ]?",
+      "dna_score": 1.0,
+      "responses": 2,
+      "timestamp": "2025-07-12T17:35:27.404985"
+    }
+  ]
+}

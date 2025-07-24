@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-07-11T21:29:13.629647",
+  "results": [
+    {
+      "candidate": "or",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "like",
+        "without",
+        "context",
+        "provide",
+        "with",
+        "would",
+        "generate",
+        "assistant\"",
+        "(pronounced"
+      ],
+      "responses": 3
+    }
+  ],
+  "resonance_events": []
+}

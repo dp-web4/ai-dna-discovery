@@ -1,0 +1,12 @@
+{
+  "cycle": 311,
+  "timestamp": "2025-07-12T22:33:29.663975",
+  "results": [
+    {
+      "candidate": "and",
+      "dna_score": 1.0,
+      "responses": 2,
+      "timestamp": "2025-07-12T22:32:45.655490"
+    }
+  ]
+}

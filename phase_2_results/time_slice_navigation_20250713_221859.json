@@ -1,0 +1,106 @@
+{
+  "phase": 2,
+  "experiment": "time_slice_navigation",
+  "start_time": "2025-07-13T22:18:59.276754",
+  "end_time": "2025-07-13T22:25:27.941744",
+  "status": "completed",
+  "checkpoints": [
+    {
+      "timestamp": "2025-07-13T22:23:08.355555",
+      "name": "checkpoint_0",
+      "data": {
+        "model": "phi3:mini",
+        "scenarios": 5
+      }
+    },
+    {
+      "timestamp": "2025-07-13T22:24:56.145813",
+      "name": "checkpoint_1",
+      "data": {
+        "model": "gemma:2b",
+        "scenarios": 5
+      }
+    },
+    {
+      "timestamp": "2025-07-13T22:25:27.941257",
+      "name": "checkpoint_2",
+      "data": {
+        "model": "tinyllama:latest",
+        "scenarios": 5
+      }
+    }
+  ],
+  "results": {
+    "temporal_mastery": {
+      "phi3:mini": 0.875,
+      "gemma:2b": 0.6950000000000001,
+      "tinyllama:latest": 0.765
+    },
+    "concept_frequency": {
+      "phi3:mini": {
+        "synchronization": 5,
+        "causality": 5,
+        "boundaries": 3,
+        "discreteness": 4,
+        "continuity": 2
+      },
+      "gemma:2b": {
+        "synchronization": 4,
+        "causality": 2,
+        "boundaries": 1,
+        "discreteness": 4,
+        "continuity": 4
+      },
+      "tinyllama:latest": {
+        "synchronization": 5,
+        "causality": 3,
+        "discreteness": 5,
+        "continuity": 1
+      }
+    }
+  },
+  "errors": [],
+  "notes": [
+    {
+      "timestamp": "2025-07-13T22:18:59.276944",
+      "level": "INFO",
+      "message": "Started experiment: time_slice_navigation"
+    },
+    {
+      "timestamp": "2025-07-13T22:18:59.276995",
+      "level": "INFO",
+      "message": "Starting time_slice_navigation with models: ['phi3:mini', 'gemma:2b', 'tinyllama:latest']"
+    },
+    {
+      "timestamp": "2025-07-13T22:18:59.277006",
+      "level": "INFO",
+      "message": "Testing time slice understanding with phi3:mini"
+    },
+    {
+      "timestamp": "2025-07-13T22:23:08.355766",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_0"
+    },
+    {
+      "timestamp": "2025-07-13T22:23:08.355775",
+      "level": "INFO",
+      "message": "Testing time slice understanding with gemma:2b"
+    },
+    {
+      "timestamp": "2025-07-13T22:24:56.146170",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_1"
+    },
+    {
+      "timestamp": "2025-07-13T22:24:56.146183",
+      "level": "INFO",
+      "message": "Testing time slice understanding with tinyllama:latest"
+    },
+    {
+      "timestamp": "2025-07-13T22:25:27.941522",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_2"
+    }
+  ],
+  "duration_seconds": 388.664994
+}

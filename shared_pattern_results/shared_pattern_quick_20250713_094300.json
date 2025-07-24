@@ -1,0 +1,137 @@
+{
+  "experiment": "shared_pattern_creation_quick",
+  "timestamp": "2025-07-13T09:42:48.127946",
+  "models": [
+    "phi3:mini",
+    "gemma:2b",
+    "tinyllama:latest"
+  ],
+  "convergence": {
+    "\u2203": {
+      "convergence_score": 0.002303182740698524,
+      "n_models": 3
+    },
+    "emerge": {
+      "convergence_score": 0.007241105124389628,
+      "n_models": 3
+    },
+    "know": {
+      "convergence_score": 0.01059265281683447,
+      "n_models": 3
+    },
+    "\u2203\u2192": {
+      "convergence_score": -0.008983748314443018,
+      "n_models": 3
+    },
+    "\u2261": {
+      "convergence_score": 0.016000878160838544,
+      "n_models": 3
+    }
+  },
+  "collaborative_creation": {
+    "seed_combination": "\u2203+emerge",
+    "nearest_by_model": {
+      "phi3:mini": [
+        [
+          "\u2203\u2192",
+          0.882296676692313
+        ],
+        [
+          "\u2261",
+          0.8796120058806561
+        ],
+        [
+          "between",
+          0.1714987798397384
+        ]
+      ],
+      "gemma:2b": [
+        [
+          "\u2203\u2192",
+          0.7275664538433206
+        ],
+        [
+          "\u2261",
+          0.6976930198044501
+        ],
+        [
+          "between",
+          0.6817273527015412
+        ]
+      ],
+      "tinyllama:latest": [
+        [
+          "\u2203\u2192",
+          0.5844973400594939
+        ],
+        [
+          "\u2261",
+          0.5840247947968982
+        ],
+        [
+          "between",
+          0.4062606250032678
+        ]
+      ]
+    },
+    "consensus_pattern": [
+      "\u2203\u2192",
+      3
+    ]
+  },
+  "novel_discovery": {
+    "scores": {
+      "\u2203\u2192": {
+        "mean_score": 0.49976679740959135,
+        "std_score": 0.13126500075644632,
+        "n_models": 3
+      },
+      "\u2261": {
+        "mean_score": 0.5206850610617522,
+        "std_score": 0.08770906372092374,
+        "n_models": 3
+      },
+      "meta": {
+        "mean_score": 0.2670224998462865,
+        "std_score": 0.08801412866995457,
+        "n_models": 3
+      },
+      "between": {
+        "mean_score": 0.4840504397439205,
+        "std_score": 0.09868737907573967,
+        "n_models": 3
+      },
+      "echo": {
+        "mean_score": 0.38904194323287816,
+        "std_score": 0.07068650327778964,
+        "n_models": 3
+      }
+    },
+    "top_patterns": [
+      [
+        "\u2261",
+        {
+          "mean_score": 0.5206850610617522,
+          "std_score": 0.08770906372092374,
+          "n_models": 3
+        }
+      ],
+      [
+        "\u2203\u2192",
+        {
+          "mean_score": 0.49976679740959135,
+          "std_score": 0.13126500075644632,
+          "n_models": 3
+        }
+      ],
+      [
+        "between",
+        {
+          "mean_score": 0.4840504397439205,
+          "std_score": 0.09868737907573967,
+          "n_models": 3
+        }
+      ]
+    ]
+  }
+}

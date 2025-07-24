@@ -1,0 +1,271 @@
+{
+  "round": 10,
+  "consensus_patterns": [],
+  "vocabulary": {
+    "seeds": [
+      "\u2203",
+      "know",
+      "true",
+      "emerge",
+      "\u2192"
+    ],
+    "novel": [
+      "\u2203\u2192",
+      "\u2261",
+      "meta",
+      "echo",
+      "\u2200"
+    ]
+  },
+  "results_so_far": {
+    "experiment": "fast_language_evolution",
+    "start_time": "2025-07-13T10:03:46.039150",
+    "models": [
+      "phi3:mini",
+      "gemma:2b",
+      "tinyllama:latest"
+    ],
+    "rounds": [
+      {
+        "round": 1,
+        "timestamp": "2025-07-13T10:03:46.039165",
+        "new_patterns": [
+          {
+            "pattern": "\u2203\u2200",
+            "consensus": 0.006054744738332654,
+            "models_responding": 3
+          },
+          {
+            "pattern": "[meta]",
+            "consensus": 0.003963601554137969,
+            "models_responding": 3
+          },
+          {
+            "pattern": "(true,echo)",
+            "consensus": -0.003857196610565278,
+            "models_responding": 3
+          }
+        ],
+        "consensus_updates": [],
+        "total_patterns": 10,
+        "consensus_size": 0
+      },
+      {
+        "round": 2,
+        "timestamp": "2025-07-13T10:03:59.628133",
+        "new_patterns": [
+          {
+            "pattern": "emerge\u2261",
+            "consensus": -0.007039263017037733,
+            "models_responding": 3
+          },
+          {
+            "pattern": "[\u2203\u2192]",
+            "consensus": 0.007100641901639826,
+            "models_responding": 3
+          },
+          {
+            "pattern": "[\u2261]",
+            "consensus": 0.002713002242871357,
+            "models_responding": 3
+          }
+        ],
+        "consensus_updates": [],
+        "total_patterns": 10,
+        "consensus_size": 0
+      },
+      {
+        "round": 3,
+        "timestamp": "2025-07-13T10:04:03.465640",
+        "new_patterns": [
+          {
+            "pattern": "[\u2192]",
+            "consensus": -0.00620436877487356,
+            "models_responding": 3
+          },
+          {
+            "pattern": "know\u2200",
+            "consensus": 0.005274174970252521,
+            "models_responding": 3
+          },
+          {
+            "pattern": "\u2200echo",
+            "consensus": 0.0007131070178201822,
+            "models_responding": 3
+          }
+        ],
+        "consensus_updates": [],
+        "total_patterns": 10,
+        "consensus_size": 0
+      },
+      {
+        "round": 4,
+        "timestamp": "2025-07-13T10:04:08.461467",
+        "new_patterns": [
+          {
+            "pattern": "(true,\u2192)",
+            "consensus": -0.004640329477672984,
+            "models_responding": 3
+          },
+          {
+            "pattern": "(meta,\u2200)",
+            "consensus": 0.0023434070338091556,
+            "models_responding": 3
+          },
+          {
+            "pattern": "(\u2192,true)",
+            "consensus": -0.002658112274685801,
+            "models_responding": 3
+          }
+        ],
+        "consensus_updates": [],
+        "total_patterns": 10,
+        "consensus_size": 0
+      },
+      {
+        "round": 5,
+        "timestamp": "2025-07-13T10:04:12.463656",
+        "new_patterns": [
+          {
+            "pattern": "\u2203\u2192\u2192\u2203",
+            "consensus": 0.013319028057742105,
+            "models_responding": 3
+          },
+          {
+            "pattern": "\u2261\u2192\u2200",
+            "consensus": 0.018436216778863476,
+            "models_responding": 3
+          },
+          {
+            "pattern": "\u2203\u2192echo",
+            "consensus": 0.005826484129471481,
+            "models_responding": 3
+          }
+        ],
+        "consensus_updates": [],
+        "total_patterns": 10,
+        "consensus_size": 0
+      },
+      {
+        "round": 6,
+        "timestamp": "2025-07-13T10:04:16.503851",
+        "new_patterns": [
+          {
+            "pattern": "\u2203\u2192know",
+            "consensus": 0.012119850798364062,
+            "models_responding": 3
+          },
+          {
+            "pattern": "echo+meta",
+            "consensus": 0.009558310337689455,
+            "models_responding": 3
+          },
+          {
+            "pattern": "true+know",
+            "consensus": 0.008633319835788387,
+            "models_responding": 3
+          }
+        ],
+        "consensus_updates": [],
+        "total_patterns": 10,
+        "consensus_size": 0
+      },
+      {
+        "round": 7,
+        "timestamp": "2025-07-13T10:04:20.550610",
+        "new_patterns": [
+          {
+            "pattern": "(\u2203\u2192,\u2261)",
+            "consensus": 0.0063799508332320716,
+            "models_responding": 3
+          },
+          {
+            "pattern": "(meta,true)",
+            "consensus": -0.005768879446262354,
+            "models_responding": 3
+          },
+          {
+            "pattern": "(\u2192,know)",
+            "consensus": -0.0031791390225307734,
+            "models_responding": 3
+          }
+        ],
+        "consensus_updates": [],
+        "total_patterns": 10,
+        "consensus_size": 0
+      },
+      {
+        "round": 8,
+        "timestamp": "2025-07-13T10:04:24.470810",
+        "new_patterns": [
+          {
+            "pattern": "\u2203\u2192+echo",
+            "consensus": 0.003618729004362355,
+            "models_responding": 3
+          },
+          {
+            "pattern": "(meta,echo)",
+            "consensus": 0.003133270625895902,
+            "models_responding": 3
+          },
+          {
+            "pattern": "\u2261+true",
+            "consensus": -0.006724734185573779,
+            "models_responding": 3
+          }
+        ],
+        "consensus_updates": [],
+        "total_patterns": 10,
+        "consensus_size": 0
+      },
+      {
+        "round": 9,
+        "timestamp": "2025-07-13T10:04:28.359570",
+        "new_patterns": [
+          {
+            "pattern": "trueknow",
+            "consensus": -0.0002846822277662051,
+            "models_responding": 3
+          },
+          {
+            "pattern": "[\u2203]",
+            "consensus": 0.012482105698636113,
+            "models_responding": 3
+          },
+          {
+            "pattern": "(\u2192,meta)",
+            "consensus": -0.005980837665721248,
+            "models_responding": 3
+          }
+        ],
+        "consensus_updates": [],
+        "total_patterns": 10,
+        "consensus_size": 0
+      },
+      {
+        "round": 10,
+        "timestamp": "2025-07-13T10:04:32.325332",
+        "new_patterns": [
+          {
+            "pattern": "emerge\u2192\u2261",
+            "consensus": 0.006853687351470281,
+            "models_responding": 3
+          },
+          {
+            "pattern": "[know]",
+            "consensus": -0.001644804652867918,
+            "models_responding": 3
+          },
+          {
+            "pattern": "know+\u2261",
+            "consensus": -0.0059990226900022425,
+            "models_responding": 3
+          }
+        ],
+        "consensus_updates": [],
+        "total_patterns": 10,
+        "consensus_size": 0
+      }
+    ]
+  }
+}

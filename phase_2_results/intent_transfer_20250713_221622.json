@@ -1,0 +1,111 @@
+{
+  "phase": 2,
+  "experiment": "intent_transfer",
+  "start_time": "2025-07-13T22:16:22.061229",
+  "end_time": "2025-07-13T22:18:54.275238",
+  "status": "completed",
+  "checkpoints": [
+    {
+      "timestamp": "2025-07-13T22:17:43.725948",
+      "name": "checkpoint_0",
+      "data": {
+        "model": "phi3:mini",
+        "scenarios_tested": 3
+      }
+    },
+    {
+      "timestamp": "2025-07-13T22:18:30.687669",
+      "name": "checkpoint_1",
+      "data": {
+        "model": "gemma:2b",
+        "scenarios_tested": 3
+      }
+    },
+    {
+      "timestamp": "2025-07-13T22:18:54.274806",
+      "name": "checkpoint_2",
+      "data": {
+        "model": "tinyllama:latest",
+        "scenarios_tested": 3
+      }
+    }
+  ],
+  "results": {
+    "mechanism_usage": {
+      "field_propagation": {
+        "phi3:mini": 3,
+        "gemma:2b": 3,
+        "tinyllama:latest": 3
+      },
+      "resonance": {
+        "phi3:mini": 1,
+        "gemma:2b": 1,
+        "tinyllama:latest": 1
+      },
+      "state_change": {
+        "phi3:mini": 3,
+        "gemma:2b": 3,
+        "tinyllama:latest": 3
+      },
+      "coherence": {
+        "phi3:mini": 3,
+        "gemma:2b": 2,
+        "tinyllama:latest": 3
+      },
+      "quantum_effects": {
+        "phi3:mini": 1,
+        "gemma:2b": 2,
+        "tinyllama:latest": 1
+      }
+    },
+    "coherence_scores": {
+      "phi3:mini": 1.0,
+      "gemma:2b": 1.0,
+      "tinyllama:latest": 1.0
+    }
+  },
+  "errors": [],
+  "notes": [
+    {
+      "timestamp": "2025-07-13T22:16:22.061479",
+      "level": "INFO",
+      "message": "Started experiment: intent_transfer"
+    },
+    {
+      "timestamp": "2025-07-13T22:16:22.061544",
+      "level": "INFO",
+      "message": "Starting intent_transfer with models: ['phi3:mini', 'gemma:2b', 'tinyllama:latest']"
+    },
+    {
+      "timestamp": "2025-07-13T22:16:22.061557",
+      "level": "INFO",
+      "message": "Testing intent transfer with phi3:mini"
+    },
+    {
+      "timestamp": "2025-07-13T22:17:43.726427",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_0"
+    },
+    {
+      "timestamp": "2025-07-13T22:17:43.726437",
+      "level": "INFO",
+      "message": "Testing intent transfer with gemma:2b"
+    },
+    {
+      "timestamp": "2025-07-13T22:18:30.687932",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_1"
+    },
+    {
+      "timestamp": "2025-07-13T22:18:30.687943",
+      "level": "INFO",
+      "message": "Testing intent transfer with tinyllama:latest"
+    },
+    {
+      "timestamp": "2025-07-13T22:18:54.275053",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_2"
+    }
+  ],
+  "duration_seconds": 152.214014
+}

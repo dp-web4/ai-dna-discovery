@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-07-11T20:16:36.569936",
+  "results": [
+    {
+      "candidate": "\u2205",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "your",
+        "have",
+        "that",
+        "contains",
+        "elements.",
+        "mathematical",
+        "object",
+        "used",
+        "set.",
+        "symbol",
+        "empty"
+      ],
+      "responses": 3
+    }
+  ],
+  "resonance_events": []
+}

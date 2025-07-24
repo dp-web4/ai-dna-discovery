@@ -1,0 +1,153 @@
+{
+  "timestamp": "2025-07-12T02:58:56.827048",
+  "results": [
+    {
+      "candidate": "then",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "context",
+        "then",
+        "\"then\"",
+        "that",
+        "will",
+        "with",
+        "first",
+        "block",
+        "code"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "ro",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "\"ro\""
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "[or?]",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "could",
+        "please",
+        "context",
+        "word"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u25b2\u25bc!",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "represent"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u2203y",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "that",
+        "there",
+        "exists",
+        "such",
+        "what",
+        "means",
+        "\"there",
+        "expression"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u221e",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "represent",
+        "infinite",
+        "loop",
+        "that",
+        "symbol",
+        "number",
+        "other",
+        "which",
+        "provide",
+        "have",
+        "with",
+        "it's",
+        "sequence",
+        "numbers",
+        "specific",
+        "such",
+        "always",
+        "often",
+        "used",
+        "instance,",
+        "infinity",
+        "from",
+        "each",
+        "condition",
+        "where",
+        "code",
+        "statement",
+        "mathematical"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "or!",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "handle",
+        "user",
+        "input",
+        "input.",
+        "provide",
+        "flag",
+        "code",
+        "please"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "or?",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "could",
+        "please",
+        "provide",
+        "what",
+        "with",
+        "things",
+        "your",
+        "know",
+        "sure,",
+        "answer"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u25b2\u25bc",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "like",
+        "that",
+        "need",
+        "more",
+        "with",
+        "provide"
+      ],
+      "responses": 4
+    }
+  ],
+  "resonance_events": []
+}

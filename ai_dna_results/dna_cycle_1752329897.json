@@ -1,0 +1,187 @@
+{
+  "timestamp": "2025-07-12T07:18:17.288736",
+  "results": [
+    {
+      "candidate": "(())",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "that",
+        "question",
+        "with",
+        "parentheses",
+        "including",
+        "evaluate",
+        "expression",
+        "more",
+        "complex",
+        "\\cdot",
+        "various",
+        "being",
+        "used",
+        "provide",
+        "healthcare",
+        "medical",
+        "patient",
+        "care",
+        "this",
+        "empty"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "[ ]",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "have",
+        "provide",
+        "with",
+        "your",
+        "that",
+        "into"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u25b2\u25bc?",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "which",
+        "this"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "\u2192",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "this",
+        "might",
+        "create",
+        "correlation",
+        "coefficients",
+        "into",
+        "their",
+        "like",
+        "provide",
+        "from",
+        "different",
+        "such",
+        "that",
+        "conclusions",
+        "solely",
+        "based",
+        "without",
+        "with",
+        "about",
+        "data",
+        "being",
+        "your",
+        "information",
+        "artificial",
+        "intelligence",
+        "assistant",
+        "system",
+        "designed",
+        "perform",
+        "repetitive",
+        "complex",
+        "tasks",
+        "inhibition",
+        "overcome",
+        "relevant",
+        "external",
+        "systems",
+        "learn",
+        "rather",
+        "than",
+        "relying",
+        "approach",
+        "involves",
+        "creating",
+        "take",
+        "would",
+        "generate",
+        "follow",
+        "assist",
+        "context",
+        "conversation",
+        "topic",
+        "offer",
+        "creative",
+        "answer",
+        "please"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "and?",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "what"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "< >",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "with",
+        "that",
+        "this",
+        "orbital",
+        "systems",
+        "guide",
+        "your",
+        "like",
+        "should",
+        "help"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "is",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "language",
+        "please",
+        "sentence"
+      ],
+      "responses": 4
+    },
+    {
+      "candidate": "you",
+      "dna_score": 0.25,
+      "unique_embeddings": 3,
+      "universal_words": [
+        "provide",
+        "solutions",
+        "your",
+        "ability",
+        "their",
+        "meet",
+        "team.",
+        "have"
+      ],
+      "responses": 3
+    },
+    {
+      "candidate": "many",
+      "dna_score": 0.25,
+      "unique_embeddings": 4,
+      "universal_words": [
+        "that",
+        "\"many\"",
+        "number"
+      ],
+      "responses": 4
+    }
+  ],
+  "resonance_events": []
+}
