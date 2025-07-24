@@ -13,12 +13,13 @@ import time
 import tempfile
 import wave
 import requests
+from save_conversations import save_audio_segment, save_transcription
 
 class WhisperConversation:
     def __init__(self):
-        # Hardware (proven working settings)
-        self.USB_DEVICE = 24
-        self.GAIN = 50.0
+        # Hardware (updated for Bluetooth AIRHUG)
+        self.USB_DEVICE = 27  # Using default device (routes to AIRHUG)
+        self.GAIN = 10.0     # Reduced gain for better Bluetooth mic
         
         # VAD (adjusted for your microphone)
         self.ENERGY_THRESHOLD = 0.08  # Lowered to better detect speech
@@ -116,6 +117,14 @@ class WhisperConversation:
                 
                 if user_text:
                     print(f"\n💬 Whisper heard: '{user_text}'")
+                    
+                    # Save to SSD
+                    try:
+                        audio_path = save_audio_segment(audio_int16, 44100)
+                        save_transcription(user_text, audio_path, confidence=result.get("segments", [{}])[0].get("confidence"))
+                        print(f"💾 Saved to: {audio_path}")
+                    except Exception as e:
+                        print(f"⚠️ Could not save conversation: {e}")
                     
                     # Generate response
                     response = self.get_response(user_text)

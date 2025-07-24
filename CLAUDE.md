@@ -117,6 +117,12 @@ We've successfully transformed stateless language models into stateful agents th
 - JetPack 6.2.1 (L4T R36.4.4)
 - **Network Access**: 10.0.0.36:8080 (as of July 22, 2025)
 
+**New Hardware (July 23, 2025)**:
+- **1TB NVMe SSD** - Acer FA200, mounted at `/mnt/sprout-data`
+- **AIRHUG Bluetooth Audio** - Better voice quality than USB
+- **Dual Cameras** - Ready for multimodal AI (not configured yet)
+- **IMU on USB** - For motion sensing (not configured yet)
+
 **Models Available**:
 - `tinyllama` - Lightweight, fast
 - `phi3:mini` - More capable
@@ -319,15 +325,33 @@ Performance:
 # Set CUDA environment (Jetson)
 export LD_LIBRARY_PATH=/usr/local/cuda-12.6/lib64:$LD_LIBRARY_PATH
 
-# Run complete edge conversation pipeline
-python3 audio-system/complete_realtime_pipeline.py
+# Run GPU-accelerated conversation (now saves to SSD!)
+python3 audio-system/whisper_conversation.py
 
 # Test GPU Whisper performance
 python3 audio-system/test_gpu_whisper.py
 
+# Connect AIRHUG Bluetooth
+bluetoothctl
+# Then: connect 41:42:5A:A0:6B:ED
+
 # Run with simulator (no hardware)
 python3 audio-system/demo_portable_audio.py --simulate
 ```
+
+### SSD Storage Structure (July 23, 2025)
+```
+/mnt/sprout-data/           # 916GB available
+├── models/                 # AI models (Whisper, Ollama, LoRA)
+├── conversations/          # Voice recordings & transcripts
+│   └── YYYY-MM-DD/        # Daily folders with .wav and .json files
+├── camera-recordings/      # Future camera captures
+├── sensor-data/           # Future IMU data
+├── training-data/         # Custom datasets
+└── datasets/              # Downloaded datasets
+```
+
+All conversations are now automatically saved with audio and transcripts!
 
 ## Web4 Dictionary Living Entities (July 23, 2025)
 
