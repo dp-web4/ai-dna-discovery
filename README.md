@@ -210,6 +210,14 @@ We welcome contributions in:
 - **Symbol Systems**: Historical languages and domain-specific notation
 - **Web4 Integration**: Distributed consciousness protocols
 
+### Development Procedures
+See our **[Context and Procedures Guide](context_and_procedures/)** for:
+- Git operation checklists
+- PDF generation procedures
+- Hardware configuration safety
+- Research documentation standards
+- Code development workflows
+
 ## 📚 Key Documentation
 
 - **[Cumulative Progress Report](CUMULATIVE_PROGRESS_REPORT.md)**: Complete achievement overview

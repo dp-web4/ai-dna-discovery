@@ -97,10 +97,14 @@ We've successfully transformed stateless language models into stateful agents th
 
 ### Jetson Orin Nano Deployment
 **Hardware**: Jetson Orin Nano Developer Kit (not the original Nano!)
+- Model: Jetson Orin Nano Developer Kit
+- Connection: USB-C cable (confirmed working)
 - 40 TOPS AI performance (80x original Nano)
 - 8GB LPDDR5 RAM
 - 1024 CUDA cores + 32 Tensor cores
 - JetPack 6.2.1 (L4T R36.4.4)
+
+**IMPORTANT**: NEVER change from Device Tree to ACPI in UEFI settings!
 
 **Models Available**:
 - `tinyllama` - Lightweight, fast
