@@ -15,7 +15,8 @@ context_and_procedures/
 │   ├── pdf_generation.md             # PDF creation from markdown
 │   ├── hardware_changes.md           # Hardware configuration safety
 │   ├── research_documentation.md     # Research paper standards
-│   └── code_development.md           # Development workflows
+│   ├── code_development.md           # Development workflows
+│   └── jetson_recovery.md            # Jetson recovery procedures
 ├── prohibitions/                      # Things we must never do
 │   ├── git_prohibitions.md           # Git don'ts
 │   ├── hardware_prohibitions.md      # Hardware don'ts

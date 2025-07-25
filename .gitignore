@@ -46,6 +46,11 @@ models/
 
 # Other projects
 Synchronism/
+ai-agents/
+ai-dna-discovery/
+ai-dna-local-data/
+ai-dna-network-shared/
+jetson-setup/
 
 # Large files and archives
 *.tar.gz
