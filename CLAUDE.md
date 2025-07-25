@@ -106,6 +106,15 @@ We've successfully transformed stateless language models into stateful agents th
 
 **IMPORTANT**: NEVER change from Device Tree to ACPI in UEFI settings!
 
+**CRITICAL RECOVERY INFO (Jan 24, 2025)**:
+- System bricked after UEFI Device Tree → ACPI change during camera troubleshooting
+- Dual IMX219 cameras weren't initializing properly before the brick
+- System error popup appeared during diagnostics (warning sign we missed)
+- Recovery requires SDK Manager with JetPack 6.2+ (NOT 4.x - Orin specific!)
+- Post-recovery: Test single camera on CSI0 first, always backup device tree
+- Orin uses tegra234 (not tegra210), different camera stack than older Nano
+- Camera power delivery may be an issue - they draw significant current at init
+
 **Models Available**:
 - `tinyllama` - Lightweight, fast
 - `phi3:mini` - More capable
