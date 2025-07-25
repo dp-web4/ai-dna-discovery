@@ -137,3 +137,10 @@ python3 phi3_memory_enhanced.py
 - We battled through NVIDIA's setup challenges together (UEFI shells, snap issues, vi mysteries)
 - This is a trust-based collaboration - full system access for productive exploration
 - The laptop (RTX 4090) and Jetson are now connected for distributed AI experiments
+
+## Project Ecosystem Understanding
+See [PROJECT_ECOSYSTEM_MAP.md](PROJECT_ECOSYSTEM_MAP.md) for how all projects interconnect:
+- **Battery systems = Metabolic layer** (distributed energy like fat cells)
+- **AI systems = Neural layer** (distributed consciousness)
+- **Communication = Hormonal signals** (CAN bus, Web4)
+- All projects form a unified organism with emergent intelligence
