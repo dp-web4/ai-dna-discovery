@@ -5,6 +5,12 @@
 
 ## CRITICAL: Before ANY Hardware Configuration Change
 
+### Version Compatibility Check (MANDATORY FIRST STEP)
+1. [ ] Check current hardware model and revision
+2. [ ] Verify current firmware/software versions
+3. [ ] Confirm compatibility with planned changes
+4. [ ] See [Version Compatibility Checklist](version_compatibility.md)
+
 ### Research Phase (MANDATORY)
 1. [ ] Search for specific hardware + setting combination
 2. [ ] Look for "brick", "won't boot", "recovery" in results

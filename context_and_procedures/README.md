@@ -10,6 +10,7 @@ This directory contains living checklists and procedures that evolve as we learn
 context_and_procedures/
 ├── README.md                          # This file
 ├── checklists/                        # Specific task checklists
+│   ├── version_compatibility.md      # ALWAYS CHECK FIRST
 │   ├── git_operations.md             # Git workflow procedures
 │   ├── pdf_generation.md             # PDF creation from markdown
 │   ├── hardware_changes.md           # Hardware configuration safety
@@ -47,6 +48,7 @@ Before starting any task:
 
 ## Quick Links
 
+- **[Version Compatibility Checklist](checklists/version_compatibility.md)** ⚠️ CHECK FIRST
 - [Git Operations Checklist](checklists/git_operations.md)
 - [PDF Generation Checklist](checklists/pdf_generation.md)
 - [Hardware Changes Checklist](checklists/hardware_changes.md)

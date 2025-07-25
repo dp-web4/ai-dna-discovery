@@ -6,11 +6,13 @@
 
 ### Initial Setup
 1. [ ] Create project directory
-2. [ ] Initialize git repository
-3. [ ] Create `.gitignore` FIRST
-4. [ ] Add standard patterns to `.gitignore`
-5. [ ] Create README.md with project overview
-6. [ ] Set up virtual environment (AFTER `.gitignore`)
+2. [ ] Check version requirements for all tools/libraries
+3. [ ] Verify compatibility (see [Version Compatibility Checklist](version_compatibility.md))
+4. [ ] Initialize git repository
+5. [ ] Create `.gitignore` FIRST
+6. [ ] Add standard patterns to `.gitignore`
+7. [ ] Create README.md with project overview
+8. [ ] Set up virtual environment (AFTER `.gitignore`)
 
 ### Virtual Environment Setup
 ```bash

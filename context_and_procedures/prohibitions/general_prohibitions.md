@@ -25,6 +25,15 @@
 
 ## Development Practices
 
+### Version Assumptions
+- ❌ **NEVER** assume version compatibility
+- ❌ **NEVER** skip version checks before installation
+- ❌ **NEVER** mix major versions without research
+- ❌ **NEVER** ignore deprecation warnings
+- ❌ **NEVER** assume newer is always compatible
+
+**Why**: Version mismatches are a leading cause of system failures.
+
 ### Testing and Deployment
 - ❌ **NEVER** deploy untested code
 - ❌ **NEVER** test in production first
