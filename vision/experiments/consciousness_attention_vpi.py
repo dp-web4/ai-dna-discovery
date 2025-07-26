@@ -16,15 +16,26 @@ try:
     print("✅ VPI (NVIDIA Vision Programming Interface) available!")
     print(f"VPI Version: {vpi.__version__}")
     
-    # Check available backends
+    # Check available backends - VPI 3.x syntax
     backends = []
-    if vpi.Backend.CUDA in vpi.get_backends():
-        backends.append("CUDA")
-    if vpi.Backend.VIC in vpi.get_backends():
-        backends.append("VIC (Video Image Compositor)")
-    if vpi.Backend.PVA in vpi.get_backends():
-        backends.append("PVA (Programmable Vision Accelerator)")
-    print(f"Available backends: {', '.join(backends)}")
+    
+    # Test backend availability by trying to create a dummy stream
+    backend_tests = [
+        (vpi.Backend.CUDA, "CUDA"),
+        (vpi.Backend.VIC, "VIC (Video Image Compositor)"),
+        (vpi.Backend.PVA, "PVA (Programmable Vision Accelerator)"),
+        (vpi.Backend.CPU, "CPU")
+    ]
+    
+    for backend, name in backend_tests:
+        try:
+            # Create a test stream to check if backend is available
+            with vpi.Stream(backend):
+                backends.append(name)
+        except Exception:
+            pass
+    
+    print(f"Available backends: {', '.join(backends) if backends else 'None detected'}")
     
 except ImportError:
     VPI_AVAILABLE = False
@@ -56,7 +67,6 @@ class VPIConsciousnessVision:
             
             # Pre-allocate VPI arrays
             self.prev_frame_vpi = None
-            self.motion_detector = None
         else:
             print("WARNING: Running in CPU mode")
             
@@ -87,25 +97,17 @@ class VPIConsciousnessVision:
                 gray_vpi = frame_vpi.convert(vpi.Format.U8, backend=self.backend)
                 prev_gray_vpi = self.prev_frame_vpi.convert(vpi.Format.U8, backend=self.backend)
                 
-                # GPU-based motion detection
-                # Note: VPI doesn't have direct absdiff, so we use optical flow
-                if self.motion_detector is None:
-                    self.motion_detector = vpi.OpticalFlowDense(
-                        gray_vpi, 
-                        backend=self.backend,
-                        quality=vpi.OptFlowQuality.LOW  # Fast mode
-                    )
+                # Convert to CPU for motion detection
+                # VPI 3.x doesn't have all operations we need
+                # But we still benefit from GPU memory transfers
+                gray_cpu = np.array(gray_vpi.cpu())
+                prev_gray_cpu = np.array(prev_gray_vpi.cpu())
                 
-                # Calculate optical flow (motion vectors)
-                with self.stream:
-                    flow = self.motion_detector(prev_gray_vpi, gray_vpi)
-                    
-                # Convert flow to motion magnitude
-                # This stays on GPU until we need to analyze it
-                flow_cpu = flow.cpu()  # Only transfer when needed
+                # Simple motion detection (will be GPU with CuPy later)
+                diff_abs = np.abs(gray_cpu.astype(np.float32) - prev_gray_cpu.astype(np.float32))
                 
                 # Update motion heatmap
-                self._update_motion_from_flow(flow_cpu, h, w)
+                self._update_motion_from_diff(diff_abs, h, w)
                 
             self.prev_frame_vpi = frame_vpi
             
@@ -117,12 +119,8 @@ class VPIConsciousnessVision:
         
         return result
         
-    def _update_motion_from_flow(self, flow, h, w):
-        """Update motion heatmap from optical flow"""
-        # Calculate motion magnitude from flow vectors
-        flow_data = np.array(flow)
-        magnitude = np.sqrt(flow_data[:,:,0]**2 + flow_data[:,:,1]**2)
-        
+    def _update_motion_from_diff(self, diff_abs, h, w):
+        """Update motion heatmap from absolute difference"""
         # Update heatmap
         self.motion_heatmap *= 0.9
         
@@ -140,7 +138,7 @@ class VPIConsciousnessVision:
                 dist_from_focus = np.sqrt((center_x - self.focus_x)**2 + (center_y - self.focus_y)**2)
                 
                 if dist_from_focus > self.focus_radius:
-                    cell_motion = np.mean(magnitude[y1:y2, x1:x2]) / 10.0  # Normalize
+                    cell_motion = np.mean(diff_abs[y1:y2, x1:x2]) / 255.0  # Normalize
                     self.motion_heatmap[i, j] += cell_motion
         
         # Find peaks
