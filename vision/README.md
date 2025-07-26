@@ -33,11 +33,13 @@ Camera (CSI) → NVMM Buffer → GPU Inference → NVMM Buffer → Display/Proce
 ## Performance Analysis
 
 ### 📊 Key Results
-- **Processing Speed**: 111 FPS achieved with optimized CPU code
-- **Real-time Performance**: 30 FPS smooth operation (camera-limited)
-- **GPU Acceleration**: CuPy installed and tested
+- **Theoretical Processing**: 118.9 FPS capability (benchmark by Claude)
+- **Real-time Performance**: 30 FPS achieved (camera-limited)
+- **GPU Performance**: 3 FPS with CuPy (memory transfer overhead)
+- **Best Practice**: Optimized CPU achieves smooth 30 FPS
 
 ### 📖 Important Documentation
+- [**Performance Tracking Database**](experiments/PERFORMANCE_TRACKING.md) - Accurate test records
 - [**Data Flow & Bottleneck Analysis**](experiments/DATA_FLOW_ANALYSIS.md) - Complete pipeline breakdown
 - [**GPU Lessons Learned**](experiments/GPU_LESSONS_LEARNED.md) - When to use GPU vs CPU
 - [**GPU Acceleration Status**](experiments/GPU_ACCELERATION_STATUS.md) - Current capabilities
@@ -52,7 +54,10 @@ cd experiments
 python3 consciousness_attention_minimal_gpu.py  # 30 FPS real-time
 
 # Test raw processing speed
-python3 performance_benchmark.py  # Shows 111 FPS capability
+python3 performance_benchmark.py  # Shows 118.9 FPS theoretical capability
+
+# Track performance results
+python3 search_performance.py --summary  # View all test results
 ```
 
 ### GPU Development

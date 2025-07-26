@@ -32,12 +32,13 @@ Screen Output
 - **videoconvert**: ~8ms (CPU operation) ⚠️
 - **Total conversion**: ~9ms
 
-### 3. Vision Processing
-- **Color conversion**: 1.9ms
-- **Motion detection**: 2.6ms
-- **Grid calculation**: 2.2ms
-- **Visualization**: 2.3ms
-- **Total processing**: ~9ms (111 FPS capable!)
+### 3. Vision Processing (from benchmark test)
+- **Color conversion**: 1.94ms
+- **Absolute difference**: 0.22ms
+- **Gaussian blur**: 3.56ms
+- **Threshold**: 0.10ms
+- **Motion grid**: 2.58ms
+- **Total processing**: 8.41ms (118.9 FPS theoretical)
 
 ### 4. Display Pipeline
 - **OpenCV imshow**: ~3ms
@@ -179,7 +180,7 @@ Thread 4: Display
 
 ## Conclusion
 
-The system achieves excellent performance (111 FPS processing capability) but is limited by:
+The system achieves excellent theoretical performance (118.9 FPS in benchmarks) but real-world performance is limited by:
 1. Camera pipeline configuration (30 FPS cap)
 2. CPU-GPU memory transfers
 3. CPU-based visualization
