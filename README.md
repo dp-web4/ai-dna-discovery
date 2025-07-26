@@ -218,6 +218,39 @@ See our **[Context and Procedures Guide](context_and_procedures/)** for:
 - Research documentation standards
 - Code development workflows
 
+### Performance Tracking System 📊
+We maintain rigorous performance tracking across all experiments:
+
+**Quick Setup for New Experiment Areas**:
+```bash
+# Setup tracking in any experiment directory
+python3 setup_tracking.py path/to/experiment --type vision
+python3 setup_tracking.py llm_experiments --type llm
+python3 setup_tracking.py battery_tests --type hardware
+```
+
+**Key Features**:
+- SQL database for searchable results
+- Tracks who ran tests (user/claude/automated)
+- Domain-specific metrics support
+- Failed test tracking with error details
+- Export capabilities for analysis
+
+**Example Usage**:
+```bash
+# Record a test result
+python3 record_test.py my_test.py --fps 30 --gpu --notes "RTX 4090 test"
+
+# Search results
+python3 search_performance.py --gpu --min-fps 25
+python3 search_performance.py --who claude --days 7
+
+# View detailed metrics
+python3 search_performance.py --details 5
+```
+
+See **[Performance Tracking Template](PERFORMANCE_TRACKING_TEMPLATE.md)** for full documentation.
+
 ## 📚 Key Documentation
 
 - **[Cumulative Progress Report](CUMULATIVE_PROGRESS_REPORT.md)**: Complete achievement overview

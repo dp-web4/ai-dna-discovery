@@ -65,6 +65,42 @@ pandoc CUMULATIVE_PROGRESS_REPORT.md \
 
 **Always create**: A .txt version as backup for maximum compatibility
 
+## Performance Tracking System 📊
+
+**IMPORTANT**: Always record performance test results in the tracking database!
+
+### Quick Reference
+```bash
+# For any new experiment area, set up tracking first:
+python3 setup_tracking.py path/to/experiment --type [vision|llm|hardware|general]
+
+# Record test results immediately after running:
+python3 record_test.py script_name.py --type realtime --fps 30 --who user --notes "conditions"
+
+# Search and analyze results:
+python3 search_performance.py --summary  # Recent overview
+python3 search_performance.py --who claude  # Your tests
+python3 search_performance.py --details 5  # Full metrics
+```
+
+### Key Principles
+1. **Record who ran it**: user, claude, or automated
+2. **Note test type**: realtime, benchmark, or stress
+3. **Include context**: Environmental conditions, config, anomalies
+4. **Track failures**: Include error messages for debugging
+
+### Current Tracking Databases
+- `/vision/experiments/performance_tests.db` - Vision experiments (FPS, GPU usage)
+- Future: LLM experiments, battery tests, distributed systems
+
+### Templates Available
+- `performance_tracking_template.py` - Customize for new domains
+- `search_performance_template.py` - Domain-specific search
+- `record_test_template.py` - Easy result recording
+- `PERFORMANCE_TRACKING_TEMPLATE.md` - Full documentation
+
+**Remember**: Accurate tracking prevents confusion and enables optimization!
+
 ## Phoenician Dictionary Project (July 19, 2025)
 
 ### Key Insight: "A tokenizer is a dictionary"
