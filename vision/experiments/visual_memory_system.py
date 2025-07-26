@@ -76,10 +76,15 @@ class VisualMemorySystem:
             ])
         
         # Combine features
-        features = np.concatenate([hist, color_features])
+        features = np.concatenate([hist, color_features]).astype(np.float32)
         
         # Generate hash for quick lookup
         visual_hash = hashlib.md5(gray.tobytes()).hexdigest()
+        
+        # Print feature size for debugging
+        if not hasattr(self, '_feature_size_logged'):
+            print(f"Feature vector size: {len(features)} (32 hist + 12 color)")
+            self._feature_size_logged = True
         
         return features, visual_hash, small
         
@@ -147,6 +152,11 @@ class VisualMemorySystem:
         for row in c.fetchall():
             memory_id, feature_blob, visual_hash, importance, count, valence = row
             stored_features = np.frombuffer(feature_blob, dtype=np.float32)
+            
+            # Check for size mismatch
+            if len(stored_features) != len(features):
+                print(f"Warning: Feature size mismatch! Current: {len(features)}, Stored: {len(stored_features)}")
+                continue
             
             # Cosine similarity
             similarity = np.dot(features, stored_features) / (
@@ -304,6 +314,10 @@ def main():
         if not ret:
             break
             
+        # Initialize status and similar for first frame
+        status = "starting"
+        similar = []
+        
         # Process every 10th frame to build memory gradually
         if frame_count % 10 == 0:
             status, similar = consciousness.process_frame_with_consciousness(frame)
