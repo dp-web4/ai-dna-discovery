@@ -6,7 +6,6 @@ Demonstrates custom GPU kernels for vision processing
 
 import cv2
 import numpy as np
-import cupy as cp  # GPU arrays
 import time
 
 # Check if CuPy is available
@@ -180,11 +179,21 @@ def main():
     detector = GPUEdgeDetector()
     monitor = PerformanceMonitor()
     
-    # Open camera
-    cap = cv2.VideoCapture(0)
-    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
-    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
-    cap.set(cv2.CAP_PROP_FPS, 30)
+    # Open camera with GStreamer pipeline for Jetson
+    gst_pipeline = (
+        "nvarguscamerasrc sensor-id=0 ! "
+        "video/x-raw(memory:NVMM), width=1280, height=720, framerate=30/1 ! "
+        "nvvidconv ! "
+        "video/x-raw, format=BGRx ! "
+        "videoconvert ! "
+        "video/x-raw, format=BGR ! "
+        "appsink drop=1"
+    )
+    
+    cap = cv2.VideoCapture(gst_pipeline, cv2.CAP_GSTREAMER)
+    if not cap.isOpened():
+        print("GStreamer failed, trying V4L2...")
+        cap = cv2.VideoCapture(0, cv2.CAP_V4L2)
     
     artistic_mode = True
     

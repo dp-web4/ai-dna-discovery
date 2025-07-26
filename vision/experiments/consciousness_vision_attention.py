@@ -160,17 +160,25 @@ def main():
     # Initialize consciousness
     consciousness = ConsciousnessAttention()
     
-    # Open camera
-    cap = cv2.VideoCapture(0)  # Will use V4L2 backend
+    # Open camera with GStreamer pipeline for Jetson
+    gst_pipeline = (
+        "nvarguscamerasrc sensor-id=0 ! "
+        "video/x-raw(memory:NVMM), width=1280, height=720, framerate=30/1 ! "
+        "nvvidconv ! "
+        "video/x-raw, format=BGRx ! "
+        "videoconvert ! "
+        "video/x-raw, format=BGR ! "
+        "appsink drop=1"
+    )
+    
+    cap = cv2.VideoCapture(gst_pipeline, cv2.CAP_GSTREAMER)
     
     if not cap.isOpened():
         print("Error: Cannot open camera")
-        return
-        
-    # Set camera properties for performance
-    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
-    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
-    cap.set(cv2.CAP_PROP_FPS, 30)
+        print("Trying V4L2 fallback...")
+        cap = cv2.VideoCapture(0, cv2.CAP_V4L2)
+        if not cap.isOpened():
+            return
     
     prev_frame = None
     frame_count = 0
