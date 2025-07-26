@@ -30,5 +30,38 @@ Camera (CSI) → NVMM Buffer → GPU Inference → NVMM Buffer → Display/Proce
                     └──────── Zero Copy ───────────┘
 ```
 
+## Performance Analysis
+
+### 📊 Key Results
+- **Processing Speed**: 111 FPS achieved with optimized CPU code
+- **Real-time Performance**: 30 FPS smooth operation (camera-limited)
+- **GPU Acceleration**: CuPy installed and tested
+
+### 📖 Important Documentation
+- [**Data Flow & Bottleneck Analysis**](experiments/DATA_FLOW_ANALYSIS.md) - Complete pipeline breakdown
+- [**GPU Lessons Learned**](experiments/GPU_LESSONS_LEARNED.md) - When to use GPU vs CPU
+- [**GPU Acceleration Status**](experiments/GPU_ACCELERATION_STATUS.md) - Current capabilities
+- [**Consciousness Vision Evolution**](experiments/consciousness_evolution_summary.md) - Experiment history
+
 ## Getting Started
-See `experiments/` for specific vision projects.
+
+### Quick Start
+```bash
+# Run the best performing consciousness vision
+cd experiments
+python3 consciousness_attention_minimal_gpu.py  # 30 FPS real-time
+
+# Test raw processing speed
+python3 performance_benchmark.py  # Shows 111 FPS capability
+```
+
+### GPU Development
+```bash
+# Verify CuPy installation
+python3 -c "import cupy; print('CuPy version:', cupy.__version__)"
+
+# Run GPU tests
+python3 test_gpu_optimization.py
+```
+
+See `experiments/` for all vision projects.
