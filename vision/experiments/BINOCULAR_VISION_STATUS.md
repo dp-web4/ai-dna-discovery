@@ -36,14 +36,18 @@ Created a modular binocular consciousness system with:
 - `test_binocular.py` - Basic test runner
 - `test_binocular_simple.py` - Circle visualization test
 - `binocular_debug.py` - Debug version with motion heatmap
+- `binocular_simple_track.py` - Contour-based tracking (working well!)
+- `binocular_autocalibrate.py` - Grid-based auto-calibration (circles stuck)
+- `binocular_autocalibrate_v2.py` - Contour-based with auto-calibration
 
 ### Current Status
 - ✅ Dual cameras working (CSI0 and CSI1)
 - ✅ Independent eye modules functioning
 - ✅ Visualization working (orange left, blue right)
 - ✅ Motion detection running
-- ⚠️ Motion thresholds need auto-calibration
-- ⚠️ Focus updates working but need tuning
+- ✅ Contour-based tracking working well (user: "that is really good!")
+- ✅ Auto-calibration system implemented (v2)
+- ⚠️ Need to test auto-calibration with display connected
 
 ### Key Design Decisions
 1. **Modular Architecture**: Each eye is independent, correlation is separate
@@ -52,11 +56,17 @@ Created a modular binocular consciousness system with:
 4. **Extensible Cognition**: Easy to add new AI modules via hooks
 
 ### Next Steps
-1. Auto-calibration for motion detection thresholds
+1. ~~Auto-calibration for motion detection thresholds~~ ✅ DONE
 2. Depth-based attention mechanisms
 3. Temporal correlation between eyes
 4. Object persistence across saccades
 5. Binocular rivalry experiments
+
+### Recent Progress (July 27, 2025)
+- Fixed UnboundLocalError in binocular_autocalibrate_v2.py
+- Combined working contour-based tracking with auto-calibration
+- System adapts motion thresholds to environment automatically
+- Calibration data can be saved/loaded between sessions
 
 ### Performance Notes
 - Running at 30 FPS (camera limited)
