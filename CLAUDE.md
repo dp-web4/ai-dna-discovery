@@ -38,6 +38,13 @@ AI DNA Discovery is actively exploring cross-model communication and testing how
 ## Current Status
 Autonomous research program active as of July 14, 2025. Check `AUTONOMOUS_RESEARCH_PLAN.md` for current phase.
 
+### Binocular Vision System (July 27, 2025) ✅
+- Dual CSI cameras working perfectly at 30 FPS
+- Contour-based motion tracking (user: "that is really good!")
+- Auto-calibration adapts to environment in 10 seconds
+- Modular architecture: independent eyes + stereo correlation
+- See `vision/experiments/binocular_autocalibrate_v2.py`
+
 ## PDF Generation (Working Method)
 
 When converting markdown to PDF, use **pandoc** - it's already installed and works perfectly:
