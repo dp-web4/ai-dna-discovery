@@ -48,6 +48,8 @@ The overarching pattern is intelligence distributed across scales - from individ
 - Currently running multi-phase autonomous research program
 - Demonstrates distributed intelligence in AI systems
 
+**GitHub PAT Location**: The PAT for GitHub operations is stored in `../.env` (one directory up from ai-dna-discovery). This works across all machines.
+
 #### 4. Integration Tools
 - **modbatt-CAN**: Windows GUI for CAN bus configuration (C++ Builder)
 - **web4-modbatt-demo**: Cosmos SDK blockchain with custom modules (Go)

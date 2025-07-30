@@ -1,5 +1,8 @@
 # Claude Context for AI DNA Discovery
 
+## GitHub PAT Location
+**IMPORTANT**: The GitHub Personal Access Token is stored in `../.env` (one directory up from ai-dna-discovery). This .env file works across all machines.
+
 ## Project Context System
 
 **IMPORTANT**: A comprehensive context system exists at `/mnt/c/projects/ai-agents/misc/context-system/`
