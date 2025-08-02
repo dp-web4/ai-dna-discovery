@@ -1,5 +1,8 @@
 # Binocular Vision System Status
 
+## Video Demonstration
+- **Working System Video**: [20250726_213950.mp4](../20250726_213950.mp4) - Shows binocular vision with auto-calibration running at 30 FPS
+
 ## Completed (July 27, 2025)
 
 ### Architecture

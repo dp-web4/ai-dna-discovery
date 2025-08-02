@@ -24,7 +24,7 @@ Mathematical symbols for awareness concepts - **fully operational on RTX 4090 an
 - ✅ **Graceful fallback** to dictionary-based translation
 - ✅ **100% accuracy** in fallback mode for known patterns
 - ✅ **Interactive demos** and translation capabilities
-- ✅ **Binocular Vision System** with dual CSI cameras at 30 FPS
+- ✅ **Binocular Vision System** with dual CSI cameras at 30 FPS - [See Video Demo](vision/20250726_213950.mp4)
 - ✅ **Auto-Calibrating Motion Detection** adapts to environment
 
 ## 🚀 Quick Start

@@ -42,7 +42,7 @@ AI DNA Discovery is actively exploring cross-model communication and testing how
 Autonomous research program active as of July 14, 2025. Check `AUTONOMOUS_RESEARCH_PLAN.md` for current phase.
 
 ### Binocular Vision System (July 27, 2025) ✅
-- Dual CSI cameras working perfectly at 30 FPS
+- Dual CSI cameras working perfectly at 30 FPS - **[Video Demo](vision/20250726_213950.mp4)**
 - Contour-based motion tracking (user: "that is really good!")
 - Auto-calibration adapts to environment in 10 seconds
 - Modular architecture: independent eyes + stereo correlation

@@ -1,5 +1,8 @@
 # Vision Experiments on Jetson Orin Nano
 
+## Video Demonstrations
+- **[Binocular Vision System](20250726_213950.mp4)** - Working dual-camera system with auto-calibration at 30 FPS
+
 ## Directory Structure
 ```
 vision/
