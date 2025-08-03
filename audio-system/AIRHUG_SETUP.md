@@ -1,5 +1,15 @@
 # AIRHUG Bluetooth Audio Setup
 
+## ✅ CURRENT STATUS (Updated 2025-08-03)
+
+**AIRHUG 01 is successfully paired and configured:**
+- **Device**: AIRHUG 01 
+- **MAC Address**: 41:42:5A:A0:6B:ED
+- **Status**: Paired ✅ | Trusted ✅ | Connected ✅
+- **Audio Profiles**: Audio Sink, Handsfree, A/V Remote Control
+- **PulseAudio Sink**: `bluez_sink.41_42_5A_A0_6B_ED.handsfree_head_unit`
+- **Default Output**: Set as system default ✅
+
 ## Quick Connect Steps
 
 1. **Make sure AIRHUG is in pairing mode**
@@ -20,15 +30,15 @@
 
 4. **Wait for AIRHUG to appear** (look for something like):
    ```
-   [NEW] Device XX:XX:XX:XX:XX:XX AIRHUG 01
+   [NEW] Device 41:42:5A:A0:6B:ED AIRHUG 01
    ```
 
-5. **Copy the device address and run:**
+5. **Use the known device address and run:**
    ```
    scan off
-   pair XX:XX:XX:XX:XX:XX
-   connect XX:XX:XX:XX:XX:XX
-   trust XX:XX:XX:XX:XX:XX
+   pair 41:42:5A:A0:6B:ED
+   connect 41:42:5A:A0:6B:ED
+   trust 41:42:5A:A0:6B:ED
    exit
    ```
 

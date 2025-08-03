@@ -85,8 +85,8 @@ class BluetoothAudioConfidence(SensorConfidence):
         devices = {}
         
         try:
-            # Use bluetoothctl to list connected devices
-            result = subprocess.run(['bluetoothctl', 'devices', 'Connected'], 
+            # Use bluetoothctl to list all devices and filter connected ones
+            result = subprocess.run(['bluetoothctl', 'devices'], 
                                   capture_output=True, text=True, timeout=10)
             
             if result.returncode == 0:
@@ -99,8 +99,8 @@ class BluetoothAudioConfidence(SensorConfidence):
                             mac_address = match.group(1)
                             device_name = match.group(2)
                             
-                            # Check if it's an audio device
-                            if self._is_audio_device(mac_address):
+                            # Check if it's connected and an audio device
+                            if self._is_connected(mac_address) and self._is_audio_device(mac_address):
                                 devices[mac_address] = {
                                     'name': device_name,
                                     'mac': mac_address,
@@ -111,6 +111,20 @@ class BluetoothAudioConfidence(SensorConfidence):
             print(f"Error scanning devices: {e}")
         
         return devices
+    
+    def _is_connected(self, mac_address: str) -> bool:
+        """Check if device is currently connected"""
+        try:
+            result = subprocess.run(['bluetoothctl', 'info', mac_address], 
+                                  capture_output=True, text=True, timeout=5)
+            
+            if result.returncode == 0:
+                return 'Connected: yes' in result.stdout
+                
+        except Exception as e:
+            print(f"Error checking connection for {mac_address}: {e}")
+        
+        return False
     
     def _is_audio_device(self, mac_address: str) -> bool:
         """Check if device supports audio profiles"""
