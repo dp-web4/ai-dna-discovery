@@ -30,15 +30,30 @@ sudo python3 imu_config_tool.py --reset
 
 ### 3. Monitor IMU Data
 
-**GUI Visualizer** (recommended if display available):
+**GUI Visualizers**:
+
+For best performance (60+ FPS):
+```bash
+sudo python3 imu_visualizer_lite.py
+```
+
+For full features (50 FPS):
+```bash
+sudo python3 imu_visualizer_v2.py
+# or use launcher: ./launch_imu_v2.sh
+```
+
+For original version (20 FPS):
 ```bash
 sudo python3 imu_visualizer.py
 ```
-Features:
+
+Features vary by version:
 - 3D orientation display
 - Real-time acceleration/angle plots
-- Gyroscope visualization
+- Gyroscope visualization with time series
 - Compass display
+- Performance metrics
 - Safe to close without affecting terminal
 
 **Safe Terminal Monitor**:
@@ -62,9 +77,13 @@ sudo python3 monitor_imu.py --baud 115200
 - `configure_imu_baud.py` - Simple baud rate configuration
 
 ### Monitoring Tools
-- `imu_visualizer.py` - GUI application with 3D visualization
+- `imu_visualizer.py` - Full-featured GUI with 3D visualization (20 FPS)
+- `imu_visualizer_v2.py` - Improved version with gyro time series (50 FPS)
+- `imu_visualizer_lite.py` - Lightweight high-performance version (60+ FPS)
 - `imu_monitor_safe.py` - Safe terminal monitor (writes to file)
 - `monitor_imu.py` - Direct terminal monitor (use with caution)
+- `launch_imu_gui.sh` - Launcher for original visualizer
+- `launch_imu_v2.sh` - Launcher for V2 visualizer
 
 ### Analysis Tools
 - `analyze_imu_log.py` - Analyze recorded IMU data
@@ -76,6 +95,10 @@ sudo python3 monitor_imu.py --baud 115200
 - `imu_decoder.py` - Decode CMP10A binary protocol
 - `read_imu.py` - Read and parse IMU packets
 - `yahboom_cmp10a.py` - CMP10A-specific decoder
+
+### Orientation Tools
+- `imu_orientation_mapper.py` - Configure IMU-to-camera coordinate mapping
+- `README_PERFORMANCE.md` - Performance optimization guide
 
 ## IMU Data Format
 
@@ -121,6 +144,16 @@ See `../vision/experiments/` for binocular vision integration:
 4. **Device Not Found**: Check USB connection
    ```bash
    dmesg | grep ttyUSB
+   ```
+
+5. **Slow Frame Rate**: Use lightweight visualizer
+   ```bash
+   sudo python3 imu_visualizer_lite.py
+   ```
+
+6. **IMU-Camera Misalignment**: Configure orientation mapping
+   ```bash
+   python3 imu_orientation_mapper.py
    ```
 
 ## Next Steps

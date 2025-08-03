@@ -19,6 +19,13 @@ import sys
 # Add IMU path for imports
 sys.path.append(os.path.join(os.path.dirname(__file__), '../../imu'))
 
+# Import orientation mapper
+try:
+    from imu_orientation_mapper import IMUOrientationMapper, OrientationConfig
+    ORIENTATION_MAPPING_AVAILABLE = True
+except ImportError:
+    ORIENTATION_MAPPING_AVAILABLE = False
+
 @dataclass
 class IMUData:
     """IMU sensor readings"""
@@ -150,6 +157,16 @@ class StabilizedBinocularVision:
         self.imu_reader = IMUReader()
         self.imu_available = False
         
+        # Orientation mapping
+        self.orientation_mapper = None
+        if ORIENTATION_MAPPING_AVAILABLE:
+            try:
+                config = OrientationConfig.load()
+                self.orientation_mapper = IMUOrientationMapper(config)
+                print("Loaded IMU orientation configuration")
+            except:
+                print("No IMU orientation config found, using default")
+        
         # Stabilization parameters
         self.stabilization_enabled = True
         self.rotation_history = deque(maxlen=10)  # Smooth rotation
@@ -227,10 +244,24 @@ class StabilizedBinocularVision:
         if not self.stabilization_enabled or not self.reference_orientation:
             return frame
             
-        # Calculate rotation difference from reference
-        delta_roll = imu_data.roll - self.reference_orientation.roll
-        delta_pitch = imu_data.pitch - self.reference_orientation.pitch
-        delta_yaw = imu_data.yaw - self.reference_orientation.yaw
+        # Apply orientation mapping if available
+        if self.orientation_mapper:
+            current_angles = self.orientation_mapper.map_angles(
+                imu_data.roll, imu_data.pitch, imu_data.yaw
+            )
+            ref_angles = self.orientation_mapper.map_angles(
+                self.reference_orientation.roll,
+                self.reference_orientation.pitch,
+                self.reference_orientation.yaw
+            )
+            delta_roll = current_angles[0] - ref_angles[0]
+            delta_pitch = current_angles[1] - ref_angles[1]
+            delta_yaw = current_angles[2] - ref_angles[2]
+        else:
+            # No mapping, use raw values
+            delta_roll = imu_data.roll - self.reference_orientation.roll
+            delta_pitch = imu_data.pitch - self.reference_orientation.pitch
+            delta_yaw = imu_data.yaw - self.reference_orientation.yaw
         
         # Smooth rotation changes
         self.rotation_history.append((delta_roll, delta_pitch, delta_yaw))

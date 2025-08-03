@@ -42,9 +42,10 @@ Created a modular binocular consciousness system with:
 - `binocular_simple_track.py` - Contour-based tracking (working well!)
 - `binocular_autocalibrate.py` - Grid-based auto-calibration (circles stuck)
 - `binocular_autocalibrate_v2.py` - Contour-based with auto-calibration
-- `imu_stabilized_vision.py` - IMU-based stabilization system (NEW)
-- `imu_head_tracker.py` - Head tracking and gaze prediction (NEW)
-- `launch_stabilized_vision.sh` - Quick launcher for stabilized system (NEW)
+- `imu_stabilized_vision.py` - IMU-based stabilization system
+- `imu_head_tracker.py` - Head tracking and gaze prediction
+- `launch_stabilized_vision.sh` - Quick launcher for stabilized system
+- `IMU_VISION_INTEGRATION.md` - Integration documentation
 
 ### Current Status
 - ✅ Dual cameras working (CSI0 and CSI1)
@@ -83,6 +84,9 @@ Created a modular binocular consciousness system with:
 - Head tracking with gaze prediction
 - Attention-based visual processing
 - Saccade detection from angular velocity
+- Performance-optimized visualizers (20/50/60+ FPS options)
+- Orientation mapping tool for IMU-camera alignment
+- Automatic configuration loading
 
 ### Performance Notes
 - Running at 30 FPS (camera limited)

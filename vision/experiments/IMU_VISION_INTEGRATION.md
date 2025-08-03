@@ -103,6 +103,20 @@ sudo python3 imu_stabilized_vision.py
 - Total overhead: <10ms (maintains 30 FPS)
 - GPU acceleration possible via CUDA
 
+### Visualizer Performance
+- **Lite version**: 60+ FPS (recommended)
+- **V2 version**: 50 FPS (full features)
+- **Original**: 20 FPS (most complete)
+
+Choose based on your needs:
+```bash
+# For debugging/development
+python3 ../../imu/imu_visualizer_lite.py
+
+# For detailed analysis
+python3 ../../imu/imu_visualizer_v2.py
+```
+
 ## Troubleshooting
 
 ### IMU Not Detected
@@ -114,6 +128,11 @@ sudo python3 imu_stabilized_vision.py
 - Increase smoothing history size
 - Check IMU mounting (should be rigid)
 - Calibrate IMU if needed
+
+### IMU-Camera Axes Misaligned
+- Run orientation mapper: `python3 ../../imu/imu_orientation_mapper.py`
+- Test different mounting configurations
+- Save config for automatic loading
 
 ### Performance Issues
 - Reduce resolution if needed
