@@ -1,0 +1,17 @@
+{
+  "description": "IMU mounted vertically - standing up configuration",
+  "axis_map": {
+    "comment": "Assuming IMU is standing with Z pointing forward",
+    "x": "z",
+    "y": "x", 
+    "z": "-y"
+  },
+  "roll_offset": 0.0,
+  "pitch_offset": 90.0,
+  "yaw_offset": 0.0,
+  "flip_roll": false,
+  "flip_pitch": false,
+  "flip_yaw": false,
+  "magnetometer_notes": "Vertical mount severely limits magnetometer - sees mostly vertical field component. Heading unreliable until remounted horizontally.",
+  "mounting_recommendation": "For proper magnetometer function, mount IMU horizontally with Z axis pointing up"
+}
