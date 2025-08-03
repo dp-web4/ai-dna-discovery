@@ -1,7 +1,8 @@
 # Claude Context for AI DNA Discovery
 
 ## GitHub PAT Location
-**IMPORTANT**: The GitHub Personal Access Token is stored in `../.env` (one directory up from ai-dna-discovery). This .env file works across all machines.
+**IMPORTANT**: The GitHub Personal Access Token is stored in `/home/sprout/ai-workspace/github pat.txt`
+Note: The PAT file is in the parent ai-workspace directory, not in individual project folders.
 
 ## Project Context System
 
