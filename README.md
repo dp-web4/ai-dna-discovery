@@ -125,10 +125,12 @@ ai-dna-discovery/
 │   │   ├── binocular_autocalibrate_v2.py  # Auto-calibrating dual cameras
 │   │   ├── consciousness_attention_*.py    # Consciousness-based attention
 │   │   └── performance_tests.db           # Performance tracking database
-│   └── imu/                                # IMU integration tools (local workspace)
+├── 🎯 IMU Integration
+│   └── imu/                                # IMU integration tools
 │       ├── imu_visualizer.py              # 3D orientation GUI
 │       ├── imu_config_tool.py             # Baud rate configuration
-│       └── imu_monitor_safe.py            # Safe terminal monitoring
+│       ├── imu_monitor_safe.py            # Safe terminal monitoring
+│       └── README.md                      # IMU tools documentation
 └── 🔧 Setup & Training
     ├── install_pytorch_jetson.sh           # Jetson PyTorch installer
     └── model-training/                     # GPU training environments

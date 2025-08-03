@@ -17,7 +17,7 @@ import os
 import sys
 
 # Add IMU path for imports
-sys.path.append('/home/sprout/ai-workspace/imu')
+sys.path.append(os.path.join(os.path.dirname(__file__), '../../imu'))
 
 @dataclass
 class IMUData:

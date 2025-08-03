@@ -17,7 +17,8 @@ import math
 import sys
 
 # Add IMU path
-sys.path.append('/home/sprout/ai-workspace/imu')
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '../../imu'))
 
 @dataclass
 class HeadPose:

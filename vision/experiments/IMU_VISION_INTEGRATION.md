@@ -108,7 +108,7 @@ sudo python3 imu_stabilized_vision.py
 ### IMU Not Detected
 - Check USB connection: `ls -la /dev/ttyUSB*`
 - Verify baud rate: Should be 115200 (configured from 9600)
-- Test with IMU tools: `/home/sprout/ai-workspace/imu/imu_config_tool.py`
+- Test with IMU tools: `../../imu/imu_config_tool.py`
 
 ### Stabilization Jittery
 - Increase smoothing history size
