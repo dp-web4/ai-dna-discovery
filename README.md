@@ -26,6 +26,8 @@ Mathematical symbols for awareness concepts - **fully operational on RTX 4090 an
 - ✅ **Interactive demos** and translation capabilities
 - ✅ **Binocular Vision System** with dual CSI cameras at 30 FPS - [See Video Demo](vision/20250726_213950.mp4)
 - ✅ **Auto-Calibrating Motion Detection** adapts to environment
+- ✅ **IMU Integration** - Yahboom CMP10A 10-DOF sensor at 115200 baud
+- ✅ **Real-time Orientation Tracking** with 3D visualization tools
 
 ## 🚀 Quick Start
 
@@ -118,6 +120,15 @@ ai-dna-discovery/
 │   ├── continuous_ai_dna_experiment.py     # Universal pattern discovery
 │   ├── multi_model_dna_test.py            # Cross-model validation
 │   └── weekly_logs/                        # Historical progress
+├── 👁️ Vision & Sensing Systems
+│   ├── vision/experiments/                  # Binocular vision experiments
+│   │   ├── binocular_autocalibrate_v2.py  # Auto-calibrating dual cameras
+│   │   ├── consciousness_attention_*.py    # Consciousness-based attention
+│   │   └── performance_tests.db           # Performance tracking database
+│   └── imu/                                # IMU integration tools (local workspace)
+│       ├── imu_visualizer.py              # 3D orientation GUI
+│       ├── imu_config_tool.py             # Baud rate configuration
+│       └── imu_monitor_safe.py            # Safe terminal monitoring
 └── 🔧 Setup & Training
     ├── install_pytorch_jetson.sh           # Jetson PyTorch installer
     └── model-training/                     # GPU training environments
@@ -188,12 +199,14 @@ Complex: ∀θ ⊗ μ → "all thoughts entangled with memory"
 
 ## 📈 Next Milestones
 
-### Recently Completed (July 27, 2025) ✅
-- **Binocular Vision System**: Dual camera consciousness-based attention
-- **Auto-Calibration**: Motion detection adapts to environment automatically
+### Recently Completed ✅
+- **July 27, 2025**: Binocular Vision System with auto-calibration
+- **August 2, 2025**: IMU Integration and monitoring tools
 - **Contour-Based Tracking**: Real-time motion tracking at 30 FPS
+- **10-DOF Sensor Suite**: Accelerometer, gyroscope, magnetometer, barometer
 
 ### Immediate (In Progress)
+- **Vision-IMU Fusion**: Stabilized binocular vision using orientation data
 - **Multi-Model Training**: Deploy to Phi3, Gemma, Llama2, Mistral, Qwen
 - **Cross-Model Consensus**: Validate translation consistency
 - **GPU Acceleration**: NVIDIA Jetson PyTorch for hardware acceleration
@@ -208,6 +221,34 @@ Complex: ∀θ ⊗ μ → "all thoughts entangled with memory"
 - **Distributed Networks**: Mesh networks of translating edge devices
 - **LCT Verification**: Locality-Consistency-Tolerance principle integration
 - **Consensus Protocols**: Multi-model voting for translation accuracy
+
+## 🎯 Hardware Sensing Systems
+
+### Vision System
+- **Dual CSI Cameras**: IMX219 sensors at 640x480 @ 30 FPS
+- **3-inch baseline**: Stereo vision capability
+- **Auto-calibration**: Adapts to lighting conditions in 10 seconds
+- **Consciousness-based attention**: Motion detection drives focus
+
+### IMU Integration (August 2, 2025)
+- **Hardware**: Yahboom CMP10A 10-DOF sensor
+- **Interface**: USB @ 115200 baud (configured from 9600)
+- **Capabilities**: 
+  - 3-axis accelerometer (±16g)
+  - 3-axis gyroscope (±2000°/s)
+  - 3-axis magnetometer
+  - Barometric pressure/altitude
+- **Tools Available**:
+  - Real-time 3D orientation visualization
+  - Safe monitoring tools that won't crash terminal
+  - Configuration utilities for baud rate adjustment
+  - Data logging and analysis scripts
+
+### Sensor Fusion (In Progress)
+- Combine IMU orientation with vision tracking
+- Stabilized binocular vision using gyro data
+- Head tracking for attention mechanisms
+- Motion prediction for saccade planning
 
 ## 🤝 Contributing
 
