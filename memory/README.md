@@ -49,6 +49,18 @@ Multi-device memory synchronization:
 - Compressed delta transmission
 - Automatic periodic synchronization
 
+### 6. Contextual Pretrained Experts (CPTEs)
+Knowledge lifecycle management system:
+- **Internal CPTEs**: Frequently used knowledge maintained in full
+- **External CPTEs**: Aged-out knowledge accessed via MCP servers
+- **Knowledge Markers**: Lightweight references to external expertise
+- **MCP Integration**: Standardized protocol for external knowledge access
+
+Key files:
+- `CONTEXTUAL_PRETRAINED_EXPERTS.md` - Full CPTE design document
+- `cpte_proof_of_concept.py` - Basic CPTE lifecycle demo
+- `mcp_cpte_integration.py` - MCP server integration example
+
 ## Quick Start
 
 ### Basic Usage
@@ -115,6 +127,30 @@ dist_memory.add_peer("jetson", "192.168.1.100")
 
 # Start automatic synchronization
 dist_memory.start()
+```
+
+### Contextual Pretrained Experts (CPTEs)
+
+```python
+from mcp_cpte_integration import MCPCPTEManager
+
+# Create CPTE manager
+cpte_manager = MCPCPTEManager()
+
+# Register external expert via MCP
+cpte_manager.knowledge_markers['quantum_physics'] = MCPEnabledCPTEMarker(
+    domain='quantum_physics',
+    last_used=datetime(2020, 1, 1),
+    confidence=0.1,  # Low internal confidence
+    mcp_uri='mcp://physics-experts.ai/quantum'
+)
+
+# Consult external expert when needed
+result = await cpte_manager.consult_external_cpte(
+    'quantum_physics',
+    'explain quantum entanglement',
+    {'level': 'undergraduate'}
+)
 ```
 
 ## Memory Confidence Model
@@ -240,6 +276,11 @@ decay_rate = 0.95            # Temporal decay factor
 - **LCT Clarification**: Sensors don't emit LCTs - they have LCTs that contextualize their output
 - **Memory Entities**: Each memory could be an entity with its own T3/V3 profile affecting lifecycle
 - **Lightweight Framework**: Need efficient implementation to avoid overhead
+- **Contextual Pretrained Experts (CPTEs)**: New realization that knowledge can be:
+  - **Internal**: Frequently used, maintained in full form
+  - **External**: Aged out to markers, consulted when needed
+  - **Key Insight**: HRM is 'wise' but not 'learned' - mirrors human knowledge decay/delegation
+  - See [CONTEXTUAL_PRETRAINED_EXPERTS.md](CONTEXTUAL_PRETRAINED_EXPERTS.md) for full design
 
 ## Troubleshooting
 
