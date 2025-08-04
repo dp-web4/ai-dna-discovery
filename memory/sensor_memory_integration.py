@@ -11,7 +11,7 @@ from dataclasses import dataclass
 import logging
 import sqlite3
 
-from enhanced_memory_system import HierarchicalMemory, MemoryConfidence
+from .enhanced_memory_system import HierarchicalMemory, MemoryConfidence
 
 # Try to import numpy, but make it optional
 try:
