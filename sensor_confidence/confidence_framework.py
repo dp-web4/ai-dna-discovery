@@ -122,9 +122,9 @@ class IMUConfidence(SensorConfidence):
     
     def _detect_vertical_mount(self) -> bool:
         """Detect if IMU is mounted vertically"""
-        # In real implementation, check gravity vector
-        # For now, return True as you mentioned vertical mount
-        return True
+        # This is now handled dynamically in compute_raw_confidence
+        # Kept for backward compatibility
+        return False
     
     def compute_raw_confidence(self, sensor_data: Dict) -> float:
         """Compute IMU confidence from sensor readings"""
@@ -153,13 +153,42 @@ class IMUConfidence(SensorConfidence):
         gyro_conf = 1.0 - min(gyro_mag / 500.0, 1.0)  # 500 deg/s threshold
         confidences.append(gyro_conf * self.audit_results.get('gyroscope', 1.0))
         
-        # Magnetometer confidence (low for vertical mount)
-        mag_conf = self.audit_results.get('magnetometer', 0.3)
+        # Dynamic magnetometer confidence based on current orientation
+        mag_conf = self._compute_dynamic_magnetometer_confidence(sensor_data)
         confidences.append(mag_conf)
         
         # Combine with weights
         weights = [0.4, 0.4, 0.2]  # Less weight on magnetometer
         return np.average(confidences, weights=weights)
+    
+    def _compute_dynamic_magnetometer_confidence(self, sensor_data: Dict) -> float:
+        """Compute magnetometer confidence based on current tilt"""
+        # Get acceleration components
+        ax = sensor_data.get('accel_x', 0)
+        ay = sensor_data.get('accel_y', 0)
+        az = sensor_data.get('accel_z', 9.81)
+        
+        # Compute tilt angle from horizontal
+        accel_mag = np.sqrt(ax**2 + ay**2 + az**2)
+        if accel_mag < 0.1:
+            return 0.15  # No gravity detected, assume worst case
+            
+        # Angle from vertical (standard mount: gravity along -Z)
+        vertical_angle = np.arccos(np.clip(abs(az/accel_mag), -1, 1)) * 180 / np.pi
+        tilt_from_horizontal = abs(90 - vertical_angle)
+        
+        # Exponential decay model for confidence
+        k = -np.log(0.5) / 45.0  # 50% confidence at 45 degrees
+        base_confidence = np.exp(-k * tilt_from_horizontal)
+        
+        # Apply minimum confidence at vertical
+        if tilt_from_horizontal >= 90:
+            base_confidence = 0.15
+            
+        # Apply base audit multiplier
+        audit_multiplier = self.audit_results.get('magnetometer_base', 0.9)
+        
+        return np.clip(base_confidence * audit_multiplier, 0.15, 1.0)
     
     def evaluate_context(self, context: Dict) -> float:
         """Evaluate IMU relevance in current context"""
