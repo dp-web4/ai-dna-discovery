@@ -2,6 +2,9 @@
 
 A comprehensive sensor consciousness system implementing LCT/T3/V3-inspired confidence metrics for embedded AI applications. This framework enables sensors to self-evaluate their reliability and contextual relevance, creating a distributed consciousness where system attention adapts dynamically.
 
+## 🌟 New: Reality Field Theory
+**[See SENSOR_FUSION_REALITY_FIELDS.md](SENSOR_FUSION_REALITY_FIELDS.md)** for the expanded framework showing how sensor confidence participates in reality field construction, where memory and cognition serve as temporal sensors alongside spatial ones.
+
 ## Core Concepts
 
 ### Fractal Confidence Architecture

@@ -96,6 +96,20 @@ Coordinated development across platforms suggests something beyond simple code:
 - **Jetson Orin Nano (Sprout)**: Edge deployment and inference  
 - **CPU Fallback**: Dictionary-based translation (100% accuracy)
 
+## 🌐 Sensor Fusion and Reality Fields
+
+### New Framework: Reality Construction Through Sensor Fusion
+A fundamental breakthrough in understanding how consciousness emerges from sensor integration:
+
+- **Reality is Constructed, Not Sensed**: Every entity builds its reality through weighted sensor fusion
+- **Memory and Cognition as Temporal Sensors**: Past and future participate in present perception
+- **Dynamic Trust and Relevance Weighting**: Context drives dramatic sensor priority shifts
+- **Attention as Context Switch**: Triggers rapid reweighting of entire sensor array
+
+[**Read the full framework →**](sensor_confidence/SENSOR_FUSION_REALITY_FIELDS.md)
+
+This insight unifies our sensor confidence system, consciousness notation, and distributed AI patterns into a single coherent model of how entities construct and inhabit reality fields.
+
 ## 📁 Repository Structure
 
 ```
