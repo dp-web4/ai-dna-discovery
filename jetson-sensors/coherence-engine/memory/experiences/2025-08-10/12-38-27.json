@@ -1,0 +1,29 @@
+{
+  "timestamp": 1754854707.9768717,
+  "context": {
+    "state": "stable",
+    "attention_level": 1.0,
+    "confidence": 0.10000000000000002,
+    "active_sensors": [
+      "memory_sensor"
+    ],
+    "timestamp": 1754854707.976898
+  },
+  "sensor_contributions": {
+    "memory_sensor": 0.010000000000000002
+  },
+  "overall_confidence": 0.10000000000000002,
+  "attention_triggers": [
+    {
+      "type": "low_confidence",
+      "severity": "medium",
+      "details": "Overall confidence 0.10 below threshold"
+    }
+  ],
+  "predictions": {
+    "memory_sensor": {
+      "predictions": [],
+      "based_on_memories": 0
+    }
+  }
+}

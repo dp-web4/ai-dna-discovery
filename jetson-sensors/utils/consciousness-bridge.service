@@ -1,0 +1,38 @@
+[Unit]
+Description=Jetson-Legion Consciousness Bridge Service
+Documentation=https://github.com/dp-web4/private-context
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=sprout
+Group=sprout
+WorkingDirectory=/home/sprout/ai-workspace/private-context
+
+# Service execution
+ExecStart=/usr/bin/python3 /home/sprout/ai-workspace/private-context/jetson_consciousness_service.py
+
+# Restart policy
+Restart=always
+RestartSec=10
+StartLimitInterval=60
+StartLimitBurst=3
+
+# Environment
+Environment="PYTHONUNBUFFERED=1"
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+
+# Resource limits (optional, adjust as needed)
+MemoryLimit=512M
+CPUQuota=50%
+
+# Security hardening (optional)
+PrivateTmp=yes
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target

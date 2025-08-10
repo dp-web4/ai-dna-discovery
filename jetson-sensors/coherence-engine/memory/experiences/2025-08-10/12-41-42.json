@@ -1,0 +1,49 @@
+{
+  "timestamp": 1754854902.2503114,
+  "context": {
+    "state": "stable",
+    "attention_level": 0.1,
+    "confidence": 0.6,
+    "active_sensors": [
+      "memory_sensor"
+    ],
+    "timestamp": 1754854902.2503288
+  },
+  "sensor_contributions": {
+    "memory_sensor": 0.06
+  },
+  "overall_confidence": 0.6,
+  "attention_triggers": [],
+  "predictions": {
+    "memory_sensor": {
+      "predictions": [
+        {
+          "timestep": 1,
+          "predicted_state": "stable",
+          "confidence": 0.7
+        },
+        {
+          "timestep": 2,
+          "predicted_state": "stable",
+          "confidence": 0.6
+        },
+        {
+          "timestep": 3,
+          "predicted_state": "stable",
+          "confidence": 0.49999999999999994
+        },
+        {
+          "timestep": 4,
+          "predicted_state": "stable",
+          "confidence": 0.3999999999999999
+        },
+        {
+          "timestep": 5,
+          "predicted_state": "stable",
+          "confidence": 0.29999999999999993
+        }
+      ],
+      "based_on_memories": 20
+    }
+  }
+}

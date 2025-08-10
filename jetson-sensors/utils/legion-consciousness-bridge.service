@@ -1,0 +1,39 @@
+[Unit]
+Description=Legion Consciousness Bridge - Distributed AI Communication
+Documentation=https://github.com/dp-web4/private-context
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=dp
+Group=dp
+WorkingDirectory=/home/dp/ai-workspace/private-context
+Environment="PYTHONUNBUFFERED=1"
+Environment="PATH=/home/dp/miniforge3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
+# Main service
+ExecStart=/home/dp/miniforge3/bin/python3 /home/dp/ai-workspace/private-context/legion_bridge_service.py
+
+# Restart policy
+Restart=always
+RestartSec=10
+
+# Resource limits
+MemoryLimit=500M
+CPUQuota=20%
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=legion-bridge
+
+# Security
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/home/dp/ai-workspace/private-context/conversations
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target
