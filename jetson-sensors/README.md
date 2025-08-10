@@ -106,13 +106,15 @@ sudo apt-get install portaudio19-dev python3-pyaudio
 
 ## Current Status
 
-- ✅ Coherence Engine implemented
-- ✅ Memory sensor operational
-- ✅ Dashboard visualization working
-- ✅ Experience persistence active
-- 🔄 Vision integration in progress
-- 📋 IMU wrapper planned
-- 📋 Cognition sensor planned
+- ✅ Coherence Engine fully operational
+- ✅ Dual CSI cameras integrated (3280x2464 @ 21fps)
+- ✅ Live vision display with coherence overlay
+- ✅ Memory sensor with pattern recognition
+- ✅ Real-time dashboard visualization
+- ✅ Experience persistence across sessions
+- ✅ IMU sensor wrapper implemented
+- 📋 Cognition sensor (Claude/LLM) planned
+- ⚠️ One camera showing green overlay (hardware issue)
 
 ## Philosophy
 
