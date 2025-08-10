@@ -18,8 +18,8 @@ from matplotlib.animation import FuncAnimation
 from coherence_engine import (
     CoherenceEngine, Context, ContextState,
     TrustModel, RelevanceModel,
+    VisionSensor, IMUSensor, MemorySensor, CognitionSensor
 )
-from sensors import VisionSensor, IMUSensor, MemorySensor, CognitionSensor
 
 
 class EngineRunner(threading.Thread):
