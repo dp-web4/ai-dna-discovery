@@ -1,409 +1,376 @@
-#!/usr/bin/env python3
-"""
-Coherence Engine - Reality Field Generation through Sensor Fusion
-"""
+from __future__ import annotations
 
-import time
 import json
-import os
-from dataclasses import dataclass, asdict
-from typing import Dict, List, Any, Optional
-from collections import deque
-import numpy as np
-from datetime import datetime
+import logging
+import time
+from dataclasses import dataclass, field
+from enum import Enum, auto
+from pathlib import Path
+from typing import Dict, Iterable, List, Optional, Protocol, Tuple
 
-from sensors.base_sensor import SensorReading
+
+# ---------- Logging ----------
+
+logger = logging.getLogger("coherence_engine")
+if not logger.handlers:
+    handler = logging.StreamHandler()
+    fmt = logging.Formatter("[%(asctime)s] %(levelname)s %(name)s: %(message)s")
+    handler.setFormatter(fmt)
+    logger.addHandler(handler)
+logger.setLevel(logging.INFO)
+
+
+# ---------- Sensor Protocols ----------
+
+class Sensor(Protocol):
+    """Abstract sensor protocol. Implementations must be deterministic w.r.t. given context tick."""
+    id: str
+
+    def read(self, *, tick: int) -> float:
+        """
+        Return a normalized reading in [0, 1] for the current tick.
+        Implementations are responsible for their own normalization.
+        """
+        ...
+
+
+# ---------- Context & State ----------
+
+class ContextState(Enum):
+    STABLE = auto()
+    MOVING = auto()
+    UNSTABLE = auto()
+    NOVEL = auto()
+
+
+@dataclass
+class ContextSnapshot:
+    tick: int
+    state: ContextState
+    relevance: Dict[str, float]
+    trust: Dict[str, float]
+    field_value: float
+    trigger: Optional[str] = None
+    notes: Dict[str, str] = field(default_factory=dict)
+
+
+@dataclass
+class TrustModel:
+    """Tracks trust per sensor, optionally per state. Simple EWMA-style updates."""
+    base: Dict[str, float] = field(default_factory=dict)  # global fallback in [0,1]
+    per_state: Dict[Tuple[ContextState, str], float] = field(default_factory=dict)
+    lr: float = 0.05  # learning rate for trust updates
+
+    def get(self, sensor_id: str, state: ContextState) -> float:
+        return self.per_state.get((state, sensor_id), self.base.get(sensor_id, 0.5))
+
+    def update(self, sensor_id: str, state: ContextState, delta: float) -> None:
+        key = (state, sensor_id)
+        prev = self.get(sensor_id, state)
+        new = max(0.0, min(1.0, prev + self.lr * delta))
+        self.per_state[key] = new
+
+
+@dataclass
+class RelevanceModel:
+    """Computes task/scene fit per sensor given context state; tunable via per-state priors."""
+    priors: Dict[Tuple[ContextState, str], float] = field(default_factory=dict)
+
+    def get(self, sensor_id: str, state: ContextState) -> float:
+        return max(0.0, min(1.0, self.priors.get((state, sensor_id), 0.5)))
+
+
+@dataclass
+class AttentionPolicy:
+    """Defines when to trigger reweighting / context shifts."""
+    surprise_threshold: float = 0.25      # relative change threshold
+    conflict_threshold: float = 0.35      # simple conflict heuristic
+    confidence_floor: float = 0.15        # if field magnitude dips, re-evaluate
+    cooldown_ticks: int = 5               # hysteresis
+
+    _last_trigger_tick: int = -10
+
+    def should_trigger(
+        self,
+        *,
+        tick: int,
+        field_value: float,
+        prev_field_value: Optional[float],
+        raw: Dict[str, float],
+        weights: Dict[str, Tuple[float, float]],  # (relevance, trust)
+    ) -> Optional[str]:
+        """Return trigger reason or None."""
+        if tick - self._last_trigger_tick < self.cooldown_ticks:
+            return None
+
+        # Surprise: relative delta in field value
+        if prev_field_value is not None:
+            denom = max(1e-6, abs(prev_field_value))
+            rel_change = abs(field_value - prev_field_value) / denom
+            if rel_change > self.surprise_threshold:
+                self._last_trigger_tick = tick
+                return f"surprise:{rel_change:.2f}"
+
+        # Conflict: variance among weighted raw contributions
+        contribs = []
+        for sid, val in raw.items():
+            r, t = weights[sid]
+            contribs.append(val * r * t)
+        if contribs:
+            mean = sum(contribs) / len(contribs)
+            var = sum((c - mean) ** 2 for c in contribs) / max(1, len(contribs) - 1)
+            if var > self.conflict_threshold:
+                self._last_trigger_tick = tick
+                return f"conflict:{var:.2f}"
+
+        # Confidence floor
+        if field_value < self.confidence_floor:
+            self._last_trigger_tick = tick
+            return f"low_confidence:{field_value:.2f}"
+
+        return None
+
 
 @dataclass
 class Context:
-    """Current context state"""
-    state: str  # stable, moving, unstable, novel
-    attention_level: float  # 0.0 to 1.0
-    confidence: float  # Overall confidence
-    active_sensors: List[str]
-    timestamp: float
+    """Holds current state, models, and observability."""
+    state: ContextState = ContextState.STABLE
+    trust: TrustModel = field(default_factory=TrustModel)
+    relevance: RelevanceModel = field(default_factory=RelevanceModel)
+    attention: AttentionPolicy = field(default_factory=AttentionPolicy)
+    history: List[ContextSnapshot] = field(default_factory=list)
+    prev_field_value: Optional[float] = None
+
+    def compute_relevance_weights(self, sensor_ids: Iterable[str]) -> Dict[str, float]:
+        return {sid: self.relevance.get(sid, self.state) for sid in sensor_ids}
+
+    def compute_trust_weights(self, sensor_ids: Iterable[str]) -> Dict[str, float]:
+        return {sid: self.trust.get(sid, self.state) for sid in sensor_ids}
+
+    def shift(self, *, trigger: str, field_value: float, raw: Dict[str, float]) -> None:
+        """Simple state machine with hysteresis-friendly transitions."""
+        old = self.state
+        # Heuristic transitions based on trigger type
+        if trigger.startswith("surprise"):
+            self.state = ContextState.UNSTABLE
+        elif trigger.startswith("conflict"):
+            self.state = ContextState.NOVEL
+        elif trigger.startswith("low_confidence"):
+            self.state = ContextState.MOVING
+        else:
+            # default: toggle to UNSTABLE to force reevaluation
+            self.state = ContextState.UNSTABLE
+
+        logger.info(f"context shift: {old.name} -> {self.state.name} (trigger={trigger})")
+
+        # Record snapshot
+        snap = ContextSnapshot(
+            tick=len(self.history),
+            state=self.state,
+            relevance=self.compute_relevance_weights(raw.keys()),
+            trust=self.compute_trust_weights(raw.keys()),
+            field_value=field_value,
+            trigger=trigger,
+        )
+        self.history.append(snap)
+
+    def log_snapshot(self, *, field_value: float, raw: Dict[str, float], trigger: Optional[str] = None) -> None:
+        snap = ContextSnapshot(
+            tick=len(self.history),
+            state=self.state,
+            relevance=self.compute_relevance_weights(raw.keys()),
+            trust=self.compute_trust_weights(raw.keys()),
+            field_value=field_value,
+            trigger=trigger,
+        )
+        self.history.append(snap)
+
+
+# ---------- Coherence Engine ----------
 
 @dataclass
-class RealityField:
-    """The emergent reality from sensor fusion"""
-    timestamp: float
-    context: Context
-    sensor_contributions: Dict[str, float]  # sensor_name -> weighted contribution
-    overall_confidence: float
-    attention_triggers: List[Dict[str, Any]]
-    predictions: Dict[str, Any]
-    raw_readings: Dict[str, SensorReading]
-
 class CoherenceEngine:
-    """Main engine that creates reality from sensor fusion"""
-    
-    def __init__(self, memory_path: str = "memory"):
-        self.memory_path = memory_path
-        self.sensors = {}  # name -> sensor instance
-        self.current_context = Context(
-            state="stable",
-            attention_level=0.3,
-            confidence=0.5,
-            active_sensors=[],
-            timestamp=time.time()
+    sensors: List[Sensor]
+    context: Context
+
+    def step(self, *, tick: int) -> float:
+        # Read
+        raw = {s.id: s.read(tick=tick) for s in self.sensors}
+
+        # Weights
+        rel = self.context.compute_relevance_weights(raw.keys())
+        tru = self.context.compute_trust_weights(raw.keys())
+        weights = {sid: (rel[sid], tru[sid]) for sid in raw.keys()}
+
+        # Fuse
+        field_val = sum(raw[sid] * rel[sid] * tru[sid] for sid in raw.keys())
+
+        # Attention
+        reason = self.context.attention.should_trigger(
+            tick=tick,
+            field_value=field_val,
+            prev_field_value=self.context.prev_field_value,
+            raw=raw,
+            weights=weights,
         )
-        
-        # Context-based sensor weights
-        self.context_weights = {
-            "stable": {
-                "vision": 0.6,
-                "imu": 0.2,
-                "memory": 0.1,
-                "cognition": 0.1
-            },
-            "moving": {
-                "vision": 0.4,
-                "imu": 0.4,
-                "memory": 0.1,
-                "cognition": 0.1
-            },
-            "unstable": {
-                "vision": 0.2,
-                "imu": 0.3,
-                "memory": 0.2,
-                "cognition": 0.3
-            },
-            "novel": {
-                "vision": 0.3,
-                "imu": 0.1,
-                "memory": 0.3,
-                "cognition": 0.3
+
+        if reason:
+            self.context.shift(trigger=reason, field_value=field_val, raw=raw)
+            # Recompute weights after shift
+            rel = self.context.compute_relevance_weights(raw.keys())
+            tru = self.context.compute_trust_weights(raw.keys())
+            field_val = sum(raw[sid] * rel[sid] * tru[sid] for sid in raw.keys())
+            self.context.log_snapshot(field_value=field_val, raw=raw, trigger="post_shift")
+        else:
+            self.context.log_snapshot(field_value=field_val, raw=raw, trigger=None)
+
+        # Trust updates (toy heuristic: reward sensors that align with fused field sign/magnitude)
+        for sid in raw.keys():
+            aligned = 1.0 - abs((raw[sid] * rel[sid] * tru[sid]) - field_val)
+            delta = (aligned - 0.5)  # in [-0.5, 0.5]
+            self.context.trust.update(sid, self.context.state, delta)
+
+        self.context.prev_field_value = field_val
+        return field_val
+
+    # ---- Observability helpers ----
+
+    def export_history(self, path: Path) -> None:
+        data = [
+            {
+                "tick": snap.tick,
+                "state": snap.state.name,
+                "relevance": snap.relevance,
+                "trust": snap.trust,
+                "field_value": snap.field_value,
+                "trigger": snap.trigger,
+                "notes": snap.notes,
             }
-        }
-        
-        # History tracking
-        self.reality_history = deque(maxlen=100)
-        self.attention_history = deque(maxlen=50)
-        
-        # Attention trigger thresholds
-        self.attention_thresholds = {
-            "sudden_change": 0.3,  # Change in any sensor > threshold
-            "low_confidence": 0.4,  # Overall confidence < threshold
-            "expectation_violation": 0.5,  # Prediction error > threshold
-            "sensor_conflict": 0.4  # Disagreement between sensors
-        }
-        
-        # Initialize memory structure
-        self._init_memory_structure()
-        
-    def _init_memory_structure(self):
-        """Create memory directory structure"""
-        dirs = [
-            os.path.join(self.memory_path, "experiences"),
-            os.path.join(self.memory_path, "patterns"),
-            os.path.join(self.memory_path, "context"),
-            os.path.join(self.memory_path, "patterns", "spatial"),
-            os.path.join(self.memory_path, "patterns", "temporal"),
-            os.path.join(self.memory_path, "patterns", "contextual"),
-            os.path.join(self.memory_path, "patterns", "emergent"),
-            os.path.join(self.memory_path, "context", "stable"),
-            os.path.join(self.memory_path, "context", "unstable"),
-            os.path.join(self.memory_path, "context", "transitions")
+            for snap in self.context.history
         ]
-        
-        for dir_path in dirs:
-            os.makedirs(dir_path, exist_ok=True)
-    
-    def register_sensor(self, sensor):
-        """Register a new sensor with the engine"""
-        self.sensors[sensor.name] = sensor
-        self.current_context.active_sensors.append(sensor.name)
-        print(f"Registered sensor: {sensor.name} ({sensor.sensor_type})")
-        
-        # Initialize sensor
-        if sensor.initialize():
-            sensor.is_active = True
-            print(f"  ✓ {sensor.name} initialized")
-        else:
-            print(f"  ✗ {sensor.name} initialization failed")
-    
-    def read_all_sensors(self) -> Dict[str, SensorReading]:
-        """Read from all active sensors"""
-        readings = {}
-        
-        for name, sensor in self.sensors.items():
-            if sensor.is_active:
-                try:
-                    reading = sensor.read()
-                    if reading:
-                        readings[name] = reading
-                        sensor.update_trust(True, 0.01)
-                    else:
-                        sensor.update_trust(False, 0.02)
-                except Exception as e:
-                    print(f"Error reading {name}: {e}")
-                    sensor.update_trust(False, 0.05)
-        
-        return readings
-    
-    def detect_attention_triggers(self, readings: Dict[str, SensorReading]) -> List[Dict[str, Any]]:
-        """Check for conditions that should trigger attention shift"""
-        triggers = []
-        
-        # Check for sudden changes
-        for name, reading in readings.items():
-            if self.sensors[name].last_reading:
-                # Compare with last reading (simplified)
-                if reading.confidence < self.sensors[name].last_reading.confidence * 0.7:
-                    triggers.append({
-                        "type": "sudden_change",
-                        "sensor": name,
-                        "severity": "high",
-                        "details": f"Confidence dropped from {self.sensors[name].last_reading.confidence:.2f} to {reading.confidence:.2f}"
-                    })
-        
-        # Check overall confidence
-        overall_conf = np.mean([r.confidence for r in readings.values()]) if readings else 0
-        if overall_conf < self.attention_thresholds["low_confidence"]:
-            triggers.append({
-                "type": "low_confidence",
-                "severity": "medium",
-                "details": f"Overall confidence {overall_conf:.2f} below threshold"
-            })
-        
-        # Check for sensor conflicts (simplified - comparing confidence levels)
-        if len(readings) > 1:
-            confidences = [r.confidence for r in readings.values()]
-            if max(confidences) - min(confidences) > self.attention_thresholds["sensor_conflict"]:
-                triggers.append({
-                    "type": "sensor_conflict",
-                    "severity": "medium",
-                    "details": f"Sensor confidence spread: {min(confidences):.2f} to {max(confidences):.2f}"
-                })
-        
-        return triggers
-    
-    def update_context(self, readings: Dict[str, SensorReading], triggers: List[Dict[str, Any]]):
-        """Update context based on sensor readings and triggers"""
-        old_state = self.current_context.state
-        
-        # Simple context state machine
-        if triggers:
-            # High attention triggers
-            high_severity = any(t["severity"] == "high" for t in triggers)
-            if high_severity:
-                self.current_context.state = "unstable"
-                self.current_context.attention_level = min(1.0, self.current_context.attention_level + 0.3)
-            else:
-                self.current_context.attention_level = min(1.0, self.current_context.attention_level + 0.1)
-        else:
-            # Decay attention if no triggers
-            self.current_context.attention_level = max(0.1, self.current_context.attention_level - 0.05)
-            
-            # Update state based on sensor patterns
-            if "imu" in readings and readings["imu"].data.get("motion_detected", False):
-                self.current_context.state = "moving"
-            elif self.current_context.attention_level < 0.3:
-                self.current_context.state = "stable"
-        
-        # Check for novel situations (no matching memories)
-        if "memory" in readings:
-            memory_confidence = readings["memory"].confidence
-            if memory_confidence < 0.3:  # Low memory match = novel
-                self.current_context.state = "novel"
-        
-        # Update context timestamp
-        self.current_context.timestamp = time.time()
-        
-        # Log context transitions
-        if old_state != self.current_context.state:
-            self._save_context_transition(old_state, self.current_context.state, triggers)
-    
-    def compute_reality_field(self, readings: Dict[str, SensorReading]) -> RealityField:
-        """Compute the reality field from sensor readings"""
-        # Get context-appropriate weights
-        weights = self.context_weights.get(self.current_context.state, self.context_weights["stable"])
-        
-        # Calculate weighted contributions
-        contributions = {}
-        total_weight = 0
-        weighted_confidence = 0
-        
-        for name, reading in readings.items():
-            sensor_type = self.sensors[name].sensor_type
-            weight = weights.get(sensor_type, 0.1)
-            
-            # Adjust weight by sensor trust
-            trust = self.sensors[name].trust_score
-            adjusted_weight = weight * trust
-            
-            # Calculate contribution
-            contribution = reading.confidence * adjusted_weight
-            contributions[name] = contribution
-            
-            total_weight += adjusted_weight
-            weighted_confidence += contribution
-        
-        # Normalize confidence
-        overall_confidence = weighted_confidence / total_weight if total_weight > 0 else 0
-        
-        # Update context confidence
-        self.current_context.confidence = overall_confidence
-        
-        # Generate predictions (simplified for now)
-        predictions = self._generate_predictions(readings)
-        
-        # Detect attention triggers
-        triggers = self.detect_attention_triggers(readings)
-        
-        # Create reality field
-        field = RealityField(
-            timestamp=time.time(),
-            context=self.current_context,
-            sensor_contributions=contributions,
-            overall_confidence=overall_confidence,
-            attention_triggers=triggers,
-            predictions=predictions,
-            raw_readings=readings
-        )
-        
-        return field
-    
-    def _generate_predictions(self, readings: Dict[str, SensorReading]) -> Dict[str, Any]:
-        """Generate predictions based on current state"""
-        predictions = {}
-        
-        # Ask temporal sensors for predictions
-        for name, sensor in self.sensors.items():
-            if hasattr(sensor, 'predict_future'):
-                try:
-                    prediction = sensor.predict_future(timesteps=5)
-                    if prediction:
-                        predictions[name] = prediction
-                except:
-                    pass
-        
-        return predictions
-    
-    def _save_context_transition(self, old_state: str, new_state: str, triggers: List):
-        """Save context transition to memory"""
-        transition = {
-            "timestamp": datetime.now().isoformat(),
-            "old_state": old_state,
-            "new_state": new_state,
-            "triggers": triggers,
-            "active_sensors": self.current_context.active_sensors
-        }
-        
-        # Save to context/transitions
-        filename = f"{self.memory_path}/context/transitions/{int(time.time())}.json"
-        with open(filename, 'w') as f:
-            json.dump(transition, f, indent=2)
-    
-    def save_experience(self, reality_field: RealityField):
-        """Save current experience to memory"""
-        # Create daily directory
-        date_str = datetime.now().strftime("%Y-%m-%d")
-        day_path = os.path.join(self.memory_path, "experiences", date_str)
-        os.makedirs(day_path, exist_ok=True)
-        
-        # Save timestamped experience
-        timestamp_str = datetime.now().strftime("%H-%M-%S")
-        filename = os.path.join(day_path, f"{timestamp_str}.json")
-        
-        # Convert to serializable format
-        experience = {
-            "timestamp": reality_field.timestamp,
-            "context": asdict(reality_field.context),
-            "sensor_contributions": reality_field.sensor_contributions,
-            "overall_confidence": reality_field.overall_confidence,
-            "attention_triggers": reality_field.attention_triggers,
-            "predictions": reality_field.predictions
-        }
-        
-        with open(filename, 'w') as f:
-            json.dump(experience, f, indent=2)
-    
-    def step(self) -> RealityField:
-        """Single step of the coherence engine"""
-        # Read all sensors
-        readings = self.read_all_sensors()
-        
-        # Compute reality field
-        reality_field = self.compute_reality_field(readings)
-        
-        # Update context based on the field
-        self.update_context(readings, reality_field.attention_triggers)
-        
-        # Store in history
-        self.reality_history.append(reality_field)
-        
-        # Save experience periodically (every 10 steps)
-        if len(self.reality_history) % 10 == 0:
-            self.save_experience(reality_field)
-        
-        # Update sensor last readings
-        for name, reading in readings.items():
-            self.sensors[name].last_reading = reading
-        
-        return reality_field
-    
-    def run(self, duration: int = 60):
-        """Run the coherence engine for specified duration"""
-        print(f"\nCoherence Engine starting...")
-        print(f"Active sensors: {list(self.sensors.keys())}")
-        print(f"Initial context: {self.current_context.state}")
-        print("-" * 60)
-        
-        start_time = time.time()
-        step_count = 0
-        
-        try:
-            while time.time() - start_time < duration:
-                # Single step
-                reality_field = self.step()
-                step_count += 1
-                
-                # Display status every 10 steps
-                if step_count % 10 == 0:
-                    self.display_status(reality_field)
-                
-                # Small delay
-                time.sleep(0.1)
-                
-        except KeyboardInterrupt:
-            print("\nStopping engine...")
-        
-        print(f"\nCoherence Engine stopped after {step_count} steps")
-        print(f"Final context: {self.current_context.state}")
-        print(f"Experiences saved to: {self.memory_path}/experiences/")
-    
-    def display_status(self, reality_field: RealityField):
-        """Display current engine status"""
-        print(f"\n[Step {len(self.reality_history)}] Context: {self.current_context.state} | "
-              f"Attention: {self.current_context.attention_level:.2f} | "
-              f"Confidence: {reality_field.overall_confidence:.2f}")
-        
-        # Show sensor contributions
-        if reality_field.sensor_contributions:
-            print("  Sensors:", end=" ")
-            for name, contrib in reality_field.sensor_contributions.items():
-                print(f"{name}: {contrib:.3f}", end=" | ")
-            print()
-        
-        # Show triggers
-        if reality_field.attention_triggers:
-            print("  ⚠ Triggers:", end=" ")
-            for trigger in reality_field.attention_triggers:
-                print(f"{trigger['type']} ({trigger['severity']})", end=" | ")
-            print()
-    
-    def shutdown(self):
-        """Clean shutdown of engine and sensors"""
-        print("\nShutting down Coherence Engine...")
-        
-        # Save final experience
-        if self.reality_history:
-            self.save_experience(self.reality_history[-1])
-        
-        # Shutdown sensors
-        for name, sensor in self.sensors.items():
-            sensor.shutdown()
-            print(f"  Shutdown {name}")
-        
-        print("Coherence Engine shutdown complete")
+        path.write_text(json.dumps(data, indent=2))
+
+
+# ---------- Example Sensor Implementations (stubs) ----------
+
+@dataclass
+class VisionSensor:
+    id: str = "vision"
+    noise: float = 0.02
+    brightness: float = 0.5  # normalized
+
+    def read(self, *, tick: int) -> float:
+        # Simple periodic change to simulate lighting / occlusion
+        import math, random
+        drift = 0.1 * math.sin(tick / 10.0)
+        val = max(0.0, min(1.0, self.brightness + drift + random.uniform(-self.noise, self.noise)))
+        return val
+
+
+@dataclass
+class IMUSensor:
+    id: str = "imu"
+    noise: float = 0.02
+    motion_level: float = 0.0  # normalized
+
+    def read(self, *, tick: int) -> float:
+        # Simulate motion bursts
+        import math, random
+        burst = 0.5 if (tick % 40 in range(10, 15)) else 0.0
+        base = 0.1 * math.cos(tick / 15.0) + burst
+        val = max(0.0, min(1.0, self.motion_level + base + random.uniform(-self.noise, self.noise)))
+        return val
+
+
+@dataclass
+class MemorySensor:
+    id: str = "memory"
+    recency_bias: float = 0.6  # how strongly recent snapshots influence output [0..1]
+    window: int = 20
+    _buffer: List[float] = field(default_factory=list)
+
+    def read(self, *, tick: int) -> float:
+        # Emits a "confidence" based on pattern stability in recent fused fields
+        if not self._buffer:
+            return 0.3
+        n = min(len(self._buffer), self.window)
+        recent = self._buffer[-n:]
+        # Stability proxy: inverse of variance
+        mean = sum(recent) / n
+        var = sum((x - mean) ** 2 for x in recent) / max(1, n - 1)
+        stability = 1.0 / (1.0 + var)  # in (0,1]
+        return self.recency_bias * stability + (1 - self.recency_bias) * (mean if mean >= 0 else 0.0)
+
+    def observe_fused_value(self, fused: float) -> None:
+        self._buffer.append(fused)
+        if len(self._buffer) > 1024:
+            self._buffer.pop(0)
+
+
+@dataclass
+class CognitionSensor:
+    id: str = "cognition"
+    anticipatory_bias: float = 0.5
+    # In a real system, this would call out to local/remote models.
+
+    def read(self, *, tick: int) -> float:
+        # Toy: anticipates a bump before IMU bursts (lookahead)
+        val = 0.2 if (tick % 40 in range(8, 10)) else 0.05
+        return self.anticipatory_bias * val
+
+
+# ---------- Minimal Demo ----------
+
+def demo_run(ticks: int = 120, export_path: Optional[Path] = None) -> None:
+    # Initialize sensors
+    vision = VisionSensor()
+    imu = IMUSensor()
+    memory = MemorySensor()
+    cognition = CognitionSensor()
+
+    # Context models
+    trust = TrustModel(base={s.id: 0.5 for s in (vision, imu, memory, cognition)})
+    # Relevance priors per state
+    rel = RelevanceModel(priors={
+        (ContextState.STABLE, "vision"): 0.8,
+        (ContextState.STABLE, "imu"): 0.4,
+        (ContextState.STABLE, "memory"): 0.3,
+        (ContextState.STABLE, "cognition"): 0.2,
+
+        (ContextState.MOVING, "vision"): 0.7,
+        (ContextState.MOVING, "imu"): 0.9,
+        (ContextState.MOVING, "memory"): 0.25,
+        (ContextState.MOVING, "cognition"): 0.25,
+
+        (ContextState.UNSTABLE, "vision"): 0.5,
+        (ContextState.UNSTABLE, "imu"): 0.6,
+        (ContextState.UNSTABLE, "memory"): 0.6,
+        (ContextState.UNSTABLE, "cognition"): 0.7,
+
+        (ContextState.NOVEL, "vision"): 0.4,
+        (ContextState.NOVEL, "imu"): 0.5,
+        (ContextState.NOVEL, "memory"): 0.8,
+        (ContextState.NOVEL, "cognition"): 0.9,
+    })
+    ctx = Context(state=ContextState.STABLE, trust=trust, relevance=rel)
+
+    engine = CoherenceEngine(sensors=[vision, imu, memory, cognition], context=ctx)
+
+    logger.info("Starting demo run...")
+    for tick in range(ticks):
+        fused = engine.step(tick=tick)
+        # Let memory observe the fused field to evolve
+        memory.observe_fused_value(fused)
+        time.sleep(0.005)  # gentle pacing
+
+    logger.info("Demo run complete.")
+    if export_path:
+        engine.export_history(export_path)
+        logger.info(f"Exported history to {export_path}")
+
+
+# ---------- CLI ----------
+
+if __name__ == "__main__":
+    out = Path("coherence_history.json")
+    demo_run(ticks=150, export_path=out)
