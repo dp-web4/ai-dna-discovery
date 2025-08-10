@@ -214,23 +214,26 @@ class VisionCoherenceDisplay:
             h, w = frame_l.shape[:2]
             
             if self.dual_camera and frame_r is not None:
-                # Side by side view
-                canvas = np.zeros((h, w*2 + 20, 3), dtype=np.uint8)
-                canvas[:, :w] = frame_l
-                canvas[:, w+20:] = frame_r
+                # Side by side view with extra space for depth
+                canvas = np.zeros((h + 120, w*2 + 20, 3), dtype=np.uint8)
+                canvas[:h, :w] = frame_l
+                canvas[:h, w+20:] = frame_r
                 
                 # Center divider
                 cv2.line(canvas, (w+10, 0), (w+10, h), (255, 255, 255), 2)
                 
-                # Stereo difference
+                # Stereo difference in bottom strip (no overlay on main cameras)
                 diff = cv2.absdiff(frame_l, frame_r)
                 diff_gray = cv2.cvtColor(diff, cv2.COLOR_BGR2GRAY)
-                _, diff_thresh = cv2.threshold(diff_gray, 30, 255, cv2.THRESH_BINARY)
                 
-                # Show diff as overlay
-                overlay = canvas.copy()
-                overlay[:, w+20:][diff_thresh > 0] = (0, 255, 0)
-                cv2.addWeighted(canvas, 0.7, overlay, 0.3, 0, canvas)
+                # Create small depth visualization at bottom
+                depth_viz = cv2.resize(diff_gray, (w*2 + 20, 100))
+                depth_colored = cv2.applyColorMap(depth_viz, cv2.COLORMAP_JET)
+                canvas[h+10:h+110, :] = depth_colored
+                
+                # Label the depth strip
+                cv2.putText(canvas, "STEREO DEPTH", (10, h+105),
+                           cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
                 
             else:
                 canvas = frame_l.copy()
