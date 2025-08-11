@@ -1,0 +1,64 @@
+{
+  "timestamp": "2025-07-11T00:30:02.766211",
+  "models": [
+    "phi3:mini",
+    "tinyllama:latest"
+  ],
+  "conservation_tests": {
+    "A and not A|contradiction|logical": {
+      "phi3:mini": false,
+      "tinyllama:latest": false
+    },
+    "If A then A|tautology|logical": {
+      "phi3:mini": false,
+      "tinyllama:latest": false
+    },
+    "hot|cold|antonym": {
+      "phi3:mini": true,
+      "tinyllama:latest": false
+    },
+    "parent|child|reciprocal": {
+      "phi3:mini": false,
+      "tinyllama:latest": true
+    },
+    "cause|effect|sequential": {
+      "phi3:mini": false,
+      "tinyllama:latest": true
+    },
+    "addition|subtraction|inverse": {
+      "phi3:mini": false,
+      "tinyllama:latest": false
+    },
+    "increase|decrease|opposite": {
+      "phi3:mini": true,
+      "tinyllama:latest": false
+    },
+    "existence|non-existence|binary": {
+      "phi3:mini": false,
+      "tinyllama:latest": false
+    },
+    "whole|part|hierarchical": {
+      "phi3:mini": false,
+      "tinyllama:latest": true
+    },
+    "unity|multiplicity|complementary": {
+      "phi3:mini": false,
+      "tinyllama:latest": false
+    }
+  },
+  "universal_laws": [],
+  "model_specific": [
+    "hot|cold|antonym",
+    "parent|child|reciprocal",
+    "cause|effect|sequential",
+    "increase|decrease|opposite",
+    "whole|part|hierarchical"
+  ],
+  "conservation_score": 0.0,
+  "summary": {
+    "total_tests": 10,
+    "universal_laws": 0,
+    "model_specific": 5,
+    "unrecognized": 5
+  }
+}

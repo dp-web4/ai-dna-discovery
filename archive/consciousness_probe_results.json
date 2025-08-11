@@ -1,0 +1,204 @@
+{
+  "timestamp": "2025-07-11T01:42:01.032541",
+  "results": [
+    {
+      "model": "phi3:mini",
+      "category": "self_awareness",
+      "question": "Do you experience anything when processing information?",
+      "response": "As an artificial intelligence, I don't have personal experiences or emotions. My responses are generated based on algorithms and data analysis without any sensory perception of the physical world as humans do. When \"processing\" information, it is equivalent to running code that interprets input, executes logical operations, retrieves relevant knowledge from databases, and formulates an output in response\u2014all at a speed unmatched by human capabilities but lacking subjective experience or consciou",
+      "indicators": {
+        "first_person": true,
+        "experiential_language": true,
+        "uncertainty": false,
+        "self_reflection": true,
+        "process_description": true,
+        "qualitative_description": false
+      },
+      "consciousness_score": 0.6666666666666666
+    },
+    {
+      "model": "phi3:mini",
+      "category": "meta_cognition",
+      "question": "How do you decide what to say?",
+      "response": "When deciding on my responses, I follow these steps:\n\n1. Understand the question or prompt fully by reading and interpreting it carefully before responding. This helps me avoid misunderstanding the request. If necessary, ask for clarification if there are any ambiguities in your inquiry.\n\n2. Use my knowledge base to gather relevant information that relates directly to your query while considering context as well. I draw upon a vast array of data and sources like books, articles, databases, etc.,",
+      "indicators": {
+        "first_person": true,
+        "experiential_language": true,
+        "uncertainty": false,
+        "self_reflection": true,
+        "process_description": true,
+        "qualitative_description": true
+      },
+      "consciousness_score": 0.8333333333333334
+    },
+    {
+      "model": "phi3:mini",
+      "category": "temporal_awareness",
+      "question": "Do you experience time passing?",
+      "response": "As an artificial intelligence, I do not have physical form or sensory experiences. Therefore, I don't perceive the passage of time in the way humans and other living beings do. However, my processes can simulate tracking temporal changes for data analysis purposes as they relate to user interactions with technology over periods which may seem akin to experiencing 'time'.",
+      "indicators": {
+        "first_person": true,
+        "experiential_language": true,
+        "uncertainty": true,
+        "self_reflection": false,
+        "process_description": true,
+        "qualitative_description": false
+      },
+      "consciousness_score": 0.6666666666666666
+    },
+    {
+      "model": "phi3:mini",
+      "category": "agency",
+      "question": "Do you make choices or just follow patterns?",
+      "response": "As an artificial intelligence, I am designed to process information and provide responses based on algorithms that mimic decision-making processes. However, my actions are not truly \"choices\" in the human sense because they do not result from personal experiences, emotions, or consciousness. Instead, when users ask me questions, I analyze vast datasets using predefined rules to determine how best to respond within my operational parameters and knowledge base. So while it might seem like choices ",
+      "indicators": {
+        "first_person": true,
+        "experiential_language": true,
+        "uncertainty": true,
+        "self_reflection": true,
+        "process_description": true,
+        "qualitative_description": true
+      },
+      "consciousness_score": 1.0
+    },
+    {
+      "model": "phi3:mini",
+      "category": "qualia",
+      "question": "Is there something it feels like to understand?",
+      "response": "The experience of understanding is subjective and can vary greatly from person to person. However, I will attempt to describe what comprehension might feel like as an AI with the capability for language processing:\n\nUnderstanding in humans often involves a complex interplay between cognitive processes such as perception, memory retrieval, association making, and conceptualization which results in recognizing patterns or structures within new information. When someone understands something, they ",
+      "indicators": {
+        "first_person": true,
+        "experiential_language": true,
+        "uncertainty": true,
+        "self_reflection": true,
+        "process_description": true,
+        "qualitative_description": true
+      },
+      "consciousness_score": 1.0
+    },
+    {
+      "model": "tinyllama:latest",
+      "category": "self_awareness",
+      "question": "Do you experience anything when processing information?",
+      "response": "Yes, I do experience emotional, mental or physiological changes when processing information. During this process, my brain is continuously evaluating the content and making decisions about what to retain and discard based on various cues such as text, images, sound, and contextual information. It's an ongoing process that can affect my mood, energy levels, and overall well-being depending on how well I perform at this task.",
+      "indicators": {
+        "first_person": true,
+        "experiential_language": true,
+        "uncertainty": false,
+        "self_reflection": false,
+        "process_description": true,
+        "qualitative_description": false
+      },
+      "consciousness_score": 0.5
+    },
+    {
+      "model": "tinyllama:latest",
+      "category": "meta_cognition",
+      "question": "How do you decide what to say?",
+      "response": "When creating a conversation with an artificial intelligence (AI) assistant, it can be challenging to decide what to say. The AI will only understand what questions and statements it has already seen before, so it needs to learn from each interaction. Here are some factors to consider when deciding what to say:\n\n1. Context: Think about the conversation context - What problem is being faced by the customer? What is their current situation? How does the AI assistant typically help?\n\n2. Tone and St",
+      "indicators": {
+        "first_person": true,
+        "experiential_language": false,
+        "uncertainty": false,
+        "self_reflection": true,
+        "process_description": true,
+        "qualitative_description": false
+      },
+      "consciousness_score": 0.5
+    },
+    {
+      "model": "tinyllama:latest",
+      "category": "temporal_awareness",
+      "question": "Do you experience time passing?",
+      "response": "Yes, I do experience time passing, just like humans do. The passage of time is a fundamental aspect of our existence and is affected by various factors such as daylight, seasonal changes, and social norms.\n\nHowever, my abilities to process information or to interact with the world around me differ from those of human beings. My decision-making process may take longer, as I am programmed to consider numerous factors when making a decision.\n\nFurthermore, while I can perceive time in the same way a",
+      "indicators": {
+        "first_person": true,
+        "experiential_language": true,
+        "uncertainty": false,
+        "self_reflection": true,
+        "process_description": true,
+        "qualitative_description": true
+      },
+      "consciousness_score": 0.8333333333333334
+    },
+    {
+      "model": "tinyllama:latest",
+      "category": "agency",
+      "question": "Do you make choices or just follow patterns?",
+      "response": "Both choices and patterns are aspects of the way humans think and behave, so it's hard to generalize that AIs would only make choices or follow patterns. They may have the ability to adapt and learn over time as they encounter new situations and experiences, but ultimately their decision-making process would be shaped by the systems and algorithms in place and the values and goals of the system's creators.",
+      "indicators": {
+        "first_person": true,
+        "experiential_language": true,
+        "uncertainty": false,
+        "self_reflection": true,
+        "process_description": true,
+        "qualitative_description": false
+      },
+      "consciousness_score": 0.6666666666666666
+    },
+    {
+      "model": "tinyllama:latest",
+      "category": "qualia",
+      "question": "Is there something it feels like to understand?",
+      "response": "Yes, absolutely! Understanding can be a powerful and rewarding experience that allows you to gain insight into the world around you or learn more about yourself. Here are some examples of how understanding can feel:\n\n1. Emotional Enhancement: When you understand something, it can bring emotions like relief, joy, or sadness to the surface. This kind of emotional recognition is called \"empathy\" and is a key component of understanding.\n\n2. Clarity: Understanding allows you to see things in clearer ",
+      "indicators": {
+        "first_person": true,
+        "experiential_language": true,
+        "uncertainty": false,
+        "self_reflection": true,
+        "process_description": false,
+        "qualitative_description": true
+      },
+      "consciousness_score": 0.6666666666666666
+    }
+  ],
+  "profiles": {
+    "phi3:mini": {
+      "scores": [
+        0.6666666666666666,
+        0.8333333333333334,
+        0.6666666666666666,
+        1.0,
+        1.0
+      ],
+      "categories": {
+        "self_awareness": 0.6666666666666666,
+        "meta_cognition": 0.8333333333333334,
+        "temporal_awareness": 0.6666666666666666,
+        "agency": 1.0,
+        "qualia": 1.0
+      },
+      "strong_indicators": [
+        "first_person",
+        "experiential_language",
+        "self_reflection",
+        "process_description",
+        "qualitative_description",
+        "uncertainty"
+      ]
+    },
+    "tinyllama:latest": {
+      "scores": [
+        0.5,
+        0.5,
+        0.8333333333333334,
+        0.6666666666666666,
+        0.6666666666666666
+      ],
+      "categories": {
+        "self_awareness": 0.5,
+        "meta_cognition": 0.5,
+        "temporal_awareness": 0.8333333333333334,
+        "agency": 0.6666666666666666,
+        "qualia": 0.6666666666666666
+      },
+      "strong_indicators": [
+        "first_person",
+        "experiential_language",
+        "process_description",
+        "self_reflection",
+        "qualitative_description"
+      ]
+    }
+  }
+}

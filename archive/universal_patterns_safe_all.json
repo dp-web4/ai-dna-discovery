@@ -1,0 +1,104 @@
+{
+  "phi3:mini": {
+    "existence": {
+      "response": "Yes, in logic and mathematics, the symbol \"\u2203\" is used to denote existence. It means",
+      "understood": true,
+      "time": 13.866740465164185
+    },
+    "consciousness": {
+      "response": "The symbol \"\u03a8\" (Psi) does not inherently represent the concept of consciousness. In",
+      "understood": false,
+      "time": 1.3962931632995605
+    },
+    "infinity": {
+      "response": "Yes, the symbol \"\u221e\" (infinity) represents an unbounded limit that is not",
+      "understood": true,
+      "time": 1.2527263164520264
+    }
+  },
+  "tinyllama": {
+    "existence": {
+      "response": "Yes, the existential quantifier \"exists\" in English is \"\u2203\". It means \"there",
+      "understood": true,
+      "time": 0.6304569244384766
+    },
+    "consciousness": {
+      "response": "No, \"\u03a8\" (pronounced \"psi\") does not mean consciousness in the context",
+      "understood": false,
+      "time": 0.6137735843658447
+    },
+    "infinity": {
+      "response": "Yes, the symbol \"\u221e\" (also known as \"infinity\") is used to represent",
+      "understood": true,
+      "time": 0.5803635120391846
+    }
+  },
+  "gemma:2b": {
+    "existence": {
+      "response": "Error: timed out",
+      "understood": false,
+      "time": 30.060518264770508
+    },
+    "consciousness": {
+      "response": "No, \u03a8 does not mean consciousness. \u03a8 is a mathematical symbol that is used in quantum",
+      "understood": false,
+      "time": 1.5425639152526855
+    },
+    "infinity": {
+      "response": "Sure.\n\nYes, \u221e means infinite. It is a mathematical symbol that represents an infinite quantity,",
+      "understood": true,
+      "time": 1.265962839126587
+    }
+  },
+  "mistral:latest": {
+    "existence": {
+      "response": "Error: timed out",
+      "understood": false,
+      "time": 30.081849575042725
+    },
+    "consciousness": {
+      "response": "Error: timed out",
+      "understood": false,
+      "time": 30.05748224258423
+    },
+    "infinity": {
+      "response": "Error: timed out",
+      "understood": false,
+      "time": 30.06546902656555
+    }
+  },
+  "deepseek-coder:1.3b": {
+    "existence": {
+      "response": "Yes, in the context of mathematics or logic (specifically set theory), \"exists\" is used",
+      "understood": true,
+      "time": 0.8772222995758057
+    },
+    "consciousness": {
+      "response": "I'm sorry for the confusion but as an AI Programming Assistant based on Deepseek\u2019s",
+      "understood": false,
+      "time": 0.7291214466094971
+    },
+    "infinity": {
+      "response": "Yes, the symbol for infinity in mathematics is \"\u221e\". However, it's important to",
+      "understood": true,
+      "time": 0.6847612857818604
+    }
+  },
+  "qwen:0.5b": {
+    "existence": {
+      "response": "Yes, the set union means \"there is more than one thing.\" It's used to indicate that",
+      "understood": true,
+      "time": 0.9473974704742432
+    },
+    "consciousness": {
+      "response": "No, \"\u03be\" does not necessarily mean consciousness. It could refer to a variety of things,",
+      "understood": false,
+      "time": 0.9138586521148682
+    },
+    "infinity": {
+      "response": "No, \u221e does not mean infinite. It means \"not less than\" or \"not fewer",
+      "understood": false,
+      "time": 0.869297981262207
+    }
+  }
+}

@@ -1,0 +1,369 @@
+{
+  "phase": 4,
+  "experiment": "resonance_detection",
+  "start_time": "2025-07-14T09:23:49.361004",
+  "end_time": "2025-07-14T09:56:02.115174",
+  "status": "completed",
+  "checkpoints": [
+    {
+      "timestamp": "2025-07-14T09:25:47.078828",
+      "name": "checkpoint_0",
+      "data": {
+        "pair": "\u2203-emerge",
+        "resonance": 0.45848169105289005
+      }
+    },
+    {
+      "timestamp": "2025-07-14T09:28:15.940928",
+      "name": "checkpoint_1",
+      "data": {
+        "pair": "\u2203-consciousness",
+        "resonance": 0.8742238969602644
+      }
+    },
+    {
+      "timestamp": "2025-07-14T09:29:55.472959",
+      "name": "checkpoint_2",
+      "data": {
+        "pair": "\u2203-know",
+        "resonance": 1.723405199913576
+      }
+    },
+    {
+      "timestamp": "2025-07-14T09:31:08.991902",
+      "name": "checkpoint_3",
+      "data": {
+        "pair": "\u2203-true",
+        "resonance": 0.7677787210622188
+      }
+    },
+    {
+      "timestamp": "2025-07-14T09:33:01.399952",
+      "name": "checkpoint_4",
+      "data": {
+        "pair": "\u2203-field",
+        "resonance": 1.6090899737913755
+      }
+    },
+    {
+      "timestamp": "2025-07-14T09:36:06.050702",
+      "name": "checkpoint_5",
+      "data": {
+        "pair": "emerge-consciousness",
+        "resonance": 0.5505985508080936
+      }
+    },
+    {
+      "timestamp": "2025-07-14T09:38:35.283844",
+      "name": "checkpoint_6",
+      "data": {
+        "pair": "emerge-know",
+        "resonance": 0.39888793980289894
+      }
+    },
+    {
+      "timestamp": "2025-07-14T09:41:13.514524",
+      "name": "checkpoint_7",
+      "data": {
+        "pair": "emerge-true",
+        "resonance": 0.31535954301046615
+      }
+    },
+    {
+      "timestamp": "2025-07-14T09:43:23.370914",
+      "name": "checkpoint_8",
+      "data": {
+        "pair": "emerge-field",
+        "resonance": 0.46335257293884974
+      }
+    },
+    {
+      "timestamp": "2025-07-14T09:45:45.145564",
+      "name": "checkpoint_9",
+      "data": {
+        "pair": "consciousness-know",
+        "resonance": 1.0483176981699145
+      }
+    },
+    {
+      "timestamp": "2025-07-14T09:48:08.351620",
+      "name": "checkpoint_10",
+      "data": {
+        "pair": "consciousness-true",
+        "resonance": 0.9843301172065864
+      }
+    },
+    {
+      "timestamp": "2025-07-14T09:50:36.926859",
+      "name": "checkpoint_11",
+      "data": {
+        "pair": "consciousness-field",
+        "resonance": 0.9264809441417458
+      }
+    },
+    {
+      "timestamp": "2025-07-14T09:52:11.930524",
+      "name": "checkpoint_12",
+      "data": {
+        "pair": "know-true",
+        "resonance": 0.8333997442820433
+      }
+    },
+    {
+      "timestamp": "2025-07-14T09:54:14.725065",
+      "name": "checkpoint_13",
+      "data": {
+        "pair": "know-field",
+        "resonance": 1.6395308674795723
+      }
+    },
+    {
+      "timestamp": "2025-07-14T09:56:01.628562",
+      "name": "checkpoint_14",
+      "data": {
+        "pair": "true-field",
+        "resonance": 1.7072211336236758
+      }
+    }
+  ],
+  "results": {
+    "top_resonances": [
+      {
+        "pair": "\u2203-know",
+        "factor": 1.723405199913576,
+        "type": "amplifying",
+        "synergy": 149.2354217072328
+      },
+      {
+        "pair": "true-field",
+        "factor": 1.7072211336236758,
+        "type": "amplifying",
+        "synergy": 205.07201308767003
+      },
+      {
+        "pair": "know-field",
+        "factor": 1.6395308674795723,
+        "type": "amplifying",
+        "synergy": 239.14735850532867
+      },
+      {
+        "pair": "\u2203-field",
+        "factor": 1.6090899737913755,
+        "type": "amplifying",
+        "synergy": 166.6158107670148
+      },
+      {
+        "pair": "consciousness-know",
+        "factor": 1.0483176981699145,
+        "type": "neutral",
+        "synergy": 31.349836519559176
+      }
+    ],
+    "bottom_resonances": [
+      {
+        "pair": "emerge-consciousness",
+        "factor": 0.5505985508080936,
+        "type": "dampening",
+        "synergy": -532.1217690841357
+      },
+      {
+        "pair": "emerge-field",
+        "factor": 0.46335257293884974,
+        "type": "dampening",
+        "synergy": -348.32709409634265
+      },
+      {
+        "pair": "\u2203-emerge",
+        "factor": 0.45848169105289005,
+        "type": "dampening",
+        "synergy": -295.8930759338539
+      },
+      {
+        "pair": "emerge-know",
+        "factor": 0.39888793980289894,
+        "type": "dampening",
+        "synergy": -511.40212987264005
+      },
+      {
+        "pair": "emerge-true",
+        "factor": 0.31535954301046615,
+        "type": "dampening",
+        "synergy": -836.9643464283151
+      }
+    ],
+    "resonance_type_distribution": {
+      "amplifying": 4,
+      "neutral": 5,
+      "dampening": 6
+    }
+  },
+  "errors": [],
+  "notes": [
+    {
+      "timestamp": "2025-07-14T09:23:49.361201",
+      "level": "INFO",
+      "message": "Started experiment: resonance_detection"
+    },
+    {
+      "timestamp": "2025-07-14T09:23:49.361272",
+      "level": "INFO",
+      "message": "Starting resonance_detection with models: ['phi3:mini', 'gemma:2b', 'tinyllama:latest']"
+    },
+    {
+      "timestamp": "2025-07-14T09:23:49.361290",
+      "level": "INFO",
+      "message": "Testing resonance for: \u2203-emerge"
+    },
+    {
+      "timestamp": "2025-07-14T09:25:47.079287",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_0"
+    },
+    {
+      "timestamp": "2025-07-14T09:25:47.079303",
+      "level": "INFO",
+      "message": "Testing resonance for: \u2203-consciousness"
+    },
+    {
+      "timestamp": "2025-07-14T09:28:15.941304",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_1"
+    },
+    {
+      "timestamp": "2025-07-14T09:28:15.941322",
+      "level": "INFO",
+      "message": "Testing resonance for: \u2203-know"
+    },
+    {
+      "timestamp": "2025-07-14T09:29:55.473410",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_2"
+    },
+    {
+      "timestamp": "2025-07-14T09:29:55.473430",
+      "level": "INFO",
+      "message": "Testing resonance for: \u2203-true"
+    },
+    {
+      "timestamp": "2025-07-14T09:31:08.992204",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_3"
+    },
+    {
+      "timestamp": "2025-07-14T09:31:08.992217",
+      "level": "INFO",
+      "message": "Testing resonance for: \u2203-field"
+    },
+    {
+      "timestamp": "2025-07-14T09:33:01.400241",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_4"
+    },
+    {
+      "timestamp": "2025-07-14T09:33:01.400254",
+      "level": "INFO",
+      "message": "Testing resonance for: emerge-consciousness"
+    },
+    {
+      "timestamp": "2025-07-14T09:36:06.051047",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_5"
+    },
+    {
+      "timestamp": "2025-07-14T09:36:06.051060",
+      "level": "INFO",
+      "message": "Testing resonance for: emerge-know"
+    },
+    {
+      "timestamp": "2025-07-14T09:38:35.284146",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_6"
+    },
+    {
+      "timestamp": "2025-07-14T09:38:35.284157",
+      "level": "INFO",
+      "message": "Testing resonance for: emerge-true"
+    },
+    {
+      "timestamp": "2025-07-14T09:41:13.514927",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_7"
+    },
+    {
+      "timestamp": "2025-07-14T09:41:13.514940",
+      "level": "INFO",
+      "message": "Testing resonance for: emerge-field"
+    },
+    {
+      "timestamp": "2025-07-14T09:43:23.371336",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_8"
+    },
+    {
+      "timestamp": "2025-07-14T09:43:23.371352",
+      "level": "INFO",
+      "message": "Testing resonance for: consciousness-know"
+    },
+    {
+      "timestamp": "2025-07-14T09:45:45.146309",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_9"
+    },
+    {
+      "timestamp": "2025-07-14T09:45:45.146325",
+      "level": "INFO",
+      "message": "Testing resonance for: consciousness-true"
+    },
+    {
+      "timestamp": "2025-07-14T09:48:08.352064",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_10"
+    },
+    {
+      "timestamp": "2025-07-14T09:48:08.352080",
+      "level": "INFO",
+      "message": "Testing resonance for: consciousness-field"
+    },
+    {
+      "timestamp": "2025-07-14T09:50:36.927316",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_11"
+    },
+    {
+      "timestamp": "2025-07-14T09:50:36.927331",
+      "level": "INFO",
+      "message": "Testing resonance for: know-true"
+    },
+    {
+      "timestamp": "2025-07-14T09:52:11.931012",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_12"
+    },
+    {
+      "timestamp": "2025-07-14T09:52:11.931026",
+      "level": "INFO",
+      "message": "Testing resonance for: know-field"
+    },
+    {
+      "timestamp": "2025-07-14T09:54:14.725541",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_13"
+    },
+    {
+      "timestamp": "2025-07-14T09:54:14.725555",
+      "level": "INFO",
+      "message": "Testing resonance for: true-field"
+    },
+    {
+      "timestamp": "2025-07-14T09:56:01.629196",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_14"
+    },
+    {
+      "timestamp": "2025-07-14T09:56:02.115153",
+      "level": "INFO",
+      "message": "Created resonance visualization"
+    }
+  ],
+  "duration_seconds": 1932.754174
+}

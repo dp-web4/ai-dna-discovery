@@ -1,0 +1,12 @@
+# Latency budgets in milliseconds
+sensor_to_fusion_ms: 50
+fusion_to_decision_ms: 30
+decision_to_effector_ms: 20
+end_to_end_ms: 80
+
+# Guardrail windows (ticks)
+violation_window: 5
+recovery_window: 10
+
+# Hysteresis buffer in ms to prevent thrash
+hysteresis_ms: 5

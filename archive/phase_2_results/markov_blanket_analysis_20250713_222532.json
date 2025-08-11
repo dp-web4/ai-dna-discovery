@@ -1,0 +1,86 @@
+{
+  "phase": 2,
+  "experiment": "markov_blanket_analysis",
+  "start_time": "2025-07-13T22:25:32.953736",
+  "end_time": "2025-07-13T22:29:04.841105",
+  "status": "completed",
+  "checkpoints": [
+    {
+      "timestamp": "2025-07-13T22:27:55.648797",
+      "name": "checkpoint_0",
+      "data": {
+        "model": "phi3:mini"
+      }
+    },
+    {
+      "timestamp": "2025-07-13T22:28:40.279803",
+      "name": "checkpoint_1",
+      "data": {
+        "model": "gemma:2b"
+      }
+    },
+    {
+      "timestamp": "2025-07-13T22:29:04.840816",
+      "name": "checkpoint_2",
+      "data": {
+        "model": "tinyllama:latest"
+      }
+    }
+  ],
+  "results": {
+    "boundary_understanding": {
+      "phi3:mini": 0.4125,
+      "gemma:2b": 0.48749999999999993,
+      "tinyllama:latest": 0.5625
+    },
+    "practical_application": {
+      "phi3:mini": 1.0,
+      "gemma:2b": 1.0,
+      "tinyllama:latest": 1.0
+    }
+  },
+  "errors": [],
+  "notes": [
+    {
+      "timestamp": "2025-07-13T22:25:32.953950",
+      "level": "INFO",
+      "message": "Started experiment: markov_blanket_analysis"
+    },
+    {
+      "timestamp": "2025-07-13T22:25:32.954005",
+      "level": "INFO",
+      "message": "Starting markov_blanket_analysis with models: ['phi3:mini', 'gemma:2b', 'tinyllama:latest']"
+    },
+    {
+      "timestamp": "2025-07-13T22:25:32.954018",
+      "level": "INFO",
+      "message": "Testing Markov blanket understanding with phi3:mini"
+    },
+    {
+      "timestamp": "2025-07-13T22:27:55.649024",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_0"
+    },
+    {
+      "timestamp": "2025-07-13T22:27:55.649034",
+      "level": "INFO",
+      "message": "Testing Markov blanket understanding with gemma:2b"
+    },
+    {
+      "timestamp": "2025-07-13T22:28:40.280211",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_1"
+    },
+    {
+      "timestamp": "2025-07-13T22:28:40.280229",
+      "level": "INFO",
+      "message": "Testing Markov blanket understanding with tinyllama:latest"
+    },
+    {
+      "timestamp": "2025-07-13T22:29:04.841056",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_2"
+    }
+  ],
+  "duration_seconds": 211.887371
+}

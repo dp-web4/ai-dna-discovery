@@ -1,0 +1,43 @@
+# Trust calibration curves per sensor/entity
+# Each block defines the curve parameters for a source of evidence.
+# Rise: how quickly trust increases with consistent evidence.
+# Fall: how quickly trust drops with contradictory evidence.
+# Saturation: upper bound on trust (0..1).
+# Decay: passive decay per second toward baseline when idle.
+# Hysteresis: prevents rapid flip-flopping around thresholds.
+# Adversarial: optional guard-rails when adversarial patterns detected.
+global_defaults:
+  rise: 0.08
+  fall: 0.25
+  saturation: 0.98
+  decay_per_sec: 0.002
+  baseline: 0.5
+  hysteresis: 0.05
+  adversarial:
+    enabled: true
+    fall_boost: 1.5       # multiplier on fall under adversarial flag
+    cooldown_sec: 30
+
+sensors:
+  vision.dual_csi.v1:
+    rise: 0.06
+    fall: 0.30
+    saturation: 0.97
+    decay_per_sec: 0.003
+    hysteresis: 0.06
+  imu.mpu6050.v1:
+    rise: 0.10
+    fall: 0.20
+    saturation: 0.99
+    decay_per_sec: 0.001
+  temp.ds18b20.v1:
+    rise: 0.03
+    fall: 0.10
+    saturation: 0.99
+    decay_per_sec: 0.0005
+
+cross_context:
+  # When two sources agree, add bonus; when disagree, apply penalty.
+  agree_bonus: 0.04
+  disagree_penalty: 0.07
+  recency_half_life_sec: 120

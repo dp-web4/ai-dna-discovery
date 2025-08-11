@@ -1,0 +1,21 @@
+{
+  "model": "tinyllama",
+  "timestamp": "2025-07-18T21:03:44.018850",
+  "results": {
+    "existence": {
+      "response": "Yes, the existential quantifier \"exists\" in English is \"\u2203\". It means \"there",
+      "understood": true,
+      "time": 0.6304569244384766
+    },
+    "consciousness": {
+      "response": "No, \"\u03a8\" (pronounced \"psi\") does not mean consciousness in the context",
+      "understood": false,
+      "time": 0.6137735843658447
+    },
+    "infinity": {
+      "response": "Yes, the symbol \"\u221e\" (also known as \"infinity\") is used to represent",
+      "understood": true,
+      "time": 0.5803635120391846
+    }
+  }
+}

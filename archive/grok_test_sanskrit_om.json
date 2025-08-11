@@ -1,0 +1,16 @@
+{
+  "pattern": "ॐ",
+  "results": [
+    {
+      "model": "phi3:mini",
+      "success": true,
+      "embedding_size": 3072
+    },
+    {
+      "model": "tinyllama:latest",
+      "success": true,
+      "embedding_size": 2048
+    }
+  ],
+  "timestamp": "2025-07-12 17:03:50"
+}

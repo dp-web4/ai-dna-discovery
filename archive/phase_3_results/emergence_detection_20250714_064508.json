@@ -1,0 +1,95 @@
+{
+  "phase": 3,
+  "experiment": "emergence_detection",
+  "start_time": "2025-07-14T06:45:08.709819",
+  "end_time": "2025-07-14T07:15:59.781619",
+  "status": "completed",
+  "checkpoints": [
+    {
+      "timestamp": "2025-07-14T06:54:57.468397",
+      "name": "checkpoint_0",
+      "data": {
+        "scenario": "Collective Problem Solving",
+        "emergence_detected": true
+      }
+    },
+    {
+      "timestamp": "2025-07-14T07:00:59.902121",
+      "name": "checkpoint_1",
+      "data": {
+        "scenario": "Creative Collaboration",
+        "emergence_detected": true
+      }
+    },
+    {
+      "timestamp": "2025-07-14T07:15:59.781233",
+      "name": "checkpoint_2",
+      "data": {
+        "scenario": "Emergent Language",
+        "emergence_detected": true
+      }
+    }
+  ],
+  "results": {
+    "emergence_rate": 1.0,
+    "scenarios_with_emergence": 3,
+    "emergence_patterns": {
+      "Collective Problem Solving": {
+        "novel_concepts": 88,
+        "synergy": 1
+      },
+      "Creative Collaboration": {
+        "novel_concepts": 110,
+        "synergy": 1
+      },
+      "Emergent Language": {
+        "novel_concepts": 227,
+        "synergy": 1
+      }
+    }
+  },
+  "errors": [],
+  "notes": [
+    {
+      "timestamp": "2025-07-14T06:45:08.710016",
+      "level": "INFO",
+      "message": "Started experiment: emergence_detection"
+    },
+    {
+      "timestamp": "2025-07-14T06:45:08.710089",
+      "level": "INFO",
+      "message": "Starting emergence_detection with models: ['phi3:mini', 'gemma:2b', 'tinyllama:latest']"
+    },
+    {
+      "timestamp": "2025-07-14T06:45:08.710100",
+      "level": "INFO",
+      "message": "Testing emergence in: Collective Problem Solving"
+    },
+    {
+      "timestamp": "2025-07-14T06:54:57.468701",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_0"
+    },
+    {
+      "timestamp": "2025-07-14T06:54:57.468717",
+      "level": "INFO",
+      "message": "Testing emergence in: Creative Collaboration"
+    },
+    {
+      "timestamp": "2025-07-14T07:00:59.902418",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_1"
+    },
+    {
+      "timestamp": "2025-07-14T07:00:59.902434",
+      "level": "INFO",
+      "message": "Testing emergence in: Emergent Language"
+    },
+    {
+      "timestamp": "2025-07-14T07:15:59.781523",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_2"
+    }
+  ],
+  "duration_seconds": 1851.071803
+}

@@ -1,0 +1,21 @@
+{
+  "model": "gemma:2b",
+  "timestamp": "2025-07-18T21:05:00.048458",
+  "results": {
+    "existence": {
+      "response": "Error: timed out",
+      "understood": false,
+      "time": 30.060518264770508
+    },
+    "consciousness": {
+      "response": "No, \u03a8 does not mean consciousness. \u03a8 is a mathematical symbol that is used in quantum",
+      "understood": false,
+      "time": 1.5425639152526855
+    },
+    "infinity": {
+      "response": "Sure.\n\nYes, \u221e means infinite. It is a mathematical symbol that represents an infinite quantity,",
+      "understood": true,
+      "time": 1.265962839126587
+    }
+  }
+}

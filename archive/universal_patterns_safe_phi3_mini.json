@@ -1,0 +1,21 @@
+{
+  "model": "phi3:mini",
+  "timestamp": "2025-07-18T21:03:13.115014",
+  "results": {
+    "existence": {
+      "response": "Yes, in logic and mathematics, the symbol \"\u2203\" is used to denote existence. It means",
+      "understood": true,
+      "time": 13.866740465164185
+    },
+    "consciousness": {
+      "response": "The symbol \"\u03a8\" (Psi) does not inherently represent the concept of consciousness. In",
+      "understood": false,
+      "time": 1.3962931632995605
+    },
+    "infinity": {
+      "response": "Yes, the symbol \"\u221e\" (infinity) represents an unbounded limit that is not",
+      "understood": true,
+      "time": 1.2527263164520264
+    }
+  }
+}

@@ -1,0 +1,4 @@
+# Conflict policy (defaults)
+quorum: 1.2
+tie_break: role_priority   # or 'undecided'
+recency_half_life_sec: 120

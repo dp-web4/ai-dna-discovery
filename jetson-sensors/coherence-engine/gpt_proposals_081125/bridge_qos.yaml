@@ -1,0 +1,22 @@
+classes:
+  state:
+    priority: 1
+    ttl_ms: 1000
+    drop_policy: drop_oldest
+    queue_max: 256
+  event:
+    priority: 2
+    ttl_ms: 5000
+    drop_policy: drop_new
+    queue_max: 512
+  experience_batch:
+    priority: 0
+    ttl_ms: 15000
+    drop_policy: drop_oldest
+    queue_max: 64
+  pattern_diff:
+    priority: 3
+    ttl_ms: 2000
+    drop_policy: block
+    queue_max: 128
+housekeeper_interval_ms: 200

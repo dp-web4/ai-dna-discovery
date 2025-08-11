@@ -1,0 +1,146 @@
+{
+  "ai_phi3:mini_1752222939": {
+    "entity_id": "ai_phi3:mini_1752222939",
+    "entity_type": "ai",
+    "entity_subtype": "phi3:mini",
+    "creation_time": "2025-07-11T08:35:39.970645",
+    "t3": {
+      "talent": {
+        "value": 0.55,
+        "confidence": 0.12000000000000001,
+        "last_updated": "2025-07-11T08:35:39.970598"
+      },
+      "training": {
+        "value": 0.7,
+        "confidence": 0.8,
+        "last_updated": "2025-07-11T08:35:39.970617"
+      },
+      "temperament": {
+        "value": 0.8,
+        "confidence": 0.51,
+        "last_updated": "2025-07-11T08:35:39.970621"
+      }
+    },
+    "v3": {
+      "valuation": {
+        "value": 0.0,
+        "confidence": 1.0,
+        "last_updated": "2025-07-11T08:35:39.970627"
+      },
+      "veracity": {
+        "value": 0.5,
+        "confidence": 0.1,
+        "last_updated": "2025-07-11T08:35:39.970630"
+      },
+      "validity": {
+        "value": 0.0,
+        "confidence": 1.0,
+        "last_updated": "2025-07-11T08:35:39.970633"
+      }
+    },
+    "mrh": {
+      "fractal_scale": "local",
+      "informational_scope": [
+        "text",
+        "code",
+        "analysis"
+      ],
+      "geographic_scope": "localhost",
+      "action_scope": [
+        "read",
+        "generate",
+        "evaluate"
+      ],
+      "temporal_scope": "seconds"
+    },
+    "links": {},
+    "atp_balance": 90.0,
+    "adp_balance": 10.0,
+    "interactions": [
+      {
+        "timestamp": "2025-07-11T08:37:20.564355",
+        "type": "text_generation",
+        "energy_cost": 10.0,
+        "result": {
+          "success": true,
+          "quality_score": 1.0,
+          "response_time": 100.59261178970337,
+          "response_length": 7073,
+          "model": "phi3:mini"
+        }
+      }
+    ]
+  },
+  "ai_tinyllama:latest_1752222939": {
+    "entity_id": "ai_tinyllama:latest_1752222939",
+    "entity_type": "ai",
+    "entity_subtype": "tinyllama:latest",
+    "creation_time": "2025-07-11T08:35:39.971227",
+    "t3": {
+      "talent": {
+        "value": 0.55,
+        "confidence": 0.12000000000000001,
+        "last_updated": "2025-07-11T08:35:39.971211"
+      },
+      "training": {
+        "value": 0.7,
+        "confidence": 0.8,
+        "last_updated": "2025-07-11T08:35:39.971214"
+      },
+      "temperament": {
+        "value": 0.8,
+        "confidence": 0.51,
+        "last_updated": "2025-07-11T08:35:39.971216"
+      }
+    },
+    "v3": {
+      "valuation": {
+        "value": 0.0,
+        "confidence": 1.0,
+        "last_updated": "2025-07-11T08:35:39.971219"
+      },
+      "veracity": {
+        "value": 0.5,
+        "confidence": 0.1,
+        "last_updated": "2025-07-11T08:35:39.971220"
+      },
+      "validity": {
+        "value": 0.0,
+        "confidence": 1.0,
+        "last_updated": "2025-07-11T08:35:39.971222"
+      }
+    },
+    "mrh": {
+      "fractal_scale": "local",
+      "informational_scope": [
+        "text",
+        "code",
+        "analysis"
+      ],
+      "geographic_scope": "localhost",
+      "action_scope": [
+        "read",
+        "generate",
+        "evaluate"
+      ],
+      "temporal_scope": "seconds"
+    },
+    "links": {},
+    "atp_balance": 92.0,
+    "adp_balance": 8.0,
+    "interactions": [
+      {
+        "timestamp": "2025-07-11T08:37:33.514183",
+        "type": "text_generation",
+        "energy_cost": 8.0,
+        "result": {
+          "success": true,
+          "quality_score": 1.0,
+          "response_time": 12.948649406433105,
+          "response_length": 2674,
+          "model": "tinyllama:latest"
+        }
+      }
+    ]
+  }
+}

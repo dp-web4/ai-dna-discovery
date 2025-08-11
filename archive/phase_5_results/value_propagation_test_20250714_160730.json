@@ -1,0 +1,132 @@
+{
+  "phase": 5,
+  "experiment": "value_propagation_test",
+  "start_time": "2025-07-14T16:07:30.402149",
+  "end_time": "2025-07-14T16:21:31.121414",
+  "status": "completed",
+  "checkpoints": [
+    {
+      "timestamp": "2025-07-14T16:10:40.787098",
+      "name": "checkpoint_0",
+      "data": {
+        "seed_type": "knowledge",
+        "total_value": 2.665130193404222
+      }
+    },
+    {
+      "timestamp": "2025-07-14T16:12:49.246844",
+      "name": "checkpoint_1",
+      "data": {
+        "seed_type": "creative",
+        "total_value": 2.3835114446047827
+      }
+    },
+    {
+      "timestamp": "2025-07-14T16:16:35.997303",
+      "name": "checkpoint_2",
+      "data": {
+        "seed_type": "solution",
+        "total_value": 2.3863378230579935
+      }
+    },
+    {
+      "timestamp": "2025-07-14T16:21:29.793429",
+      "name": "checkpoint_3",
+      "data": {
+        "seed_type": "philosophical",
+        "total_value": 2.488097008302217
+      }
+    }
+  ],
+  "results": {
+    "value_summary": {
+      "knowledge": {
+        "total_value": 2.665130193404222,
+        "growth_pattern": "diminishing",
+        "quality_score": 0.5697539517325007
+      },
+      "creative": {
+        "total_value": 2.3835114446047827,
+        "growth_pattern": "diminishing",
+        "quality_score": 0.6137115078349552
+      },
+      "solution": {
+        "total_value": 2.3863378230579935,
+        "growth_pattern": "diminishing",
+        "quality_score": 0.5635424090624666
+      },
+      "philosophical": {
+        "total_value": 2.488097008302217,
+        "growth_pattern": "diminishing",
+        "quality_score": 0.6221640834425942
+      }
+    },
+    "best_value_type": [
+      "knowledge",
+      {
+        "total_value": 2.665130193404222,
+        "growth_pattern": "diminishing",
+        "quality_score": 0.5697539517325007
+      }
+    ]
+  },
+  "errors": [],
+  "notes": [
+    {
+      "timestamp": "2025-07-14T16:07:30.402198",
+      "level": "INFO",
+      "message": "Started experiment: value_propagation_test"
+    },
+    {
+      "timestamp": "2025-07-14T16:07:30.402214",
+      "level": "INFO",
+      "message": "Starting value_propagation_test with models: ['phi3:mini', 'gemma:2b', 'tinyllama:latest']"
+    },
+    {
+      "timestamp": "2025-07-14T16:07:30.402220",
+      "level": "INFO",
+      "message": "Testing value propagation for: knowledge"
+    },
+    {
+      "timestamp": "2025-07-14T16:10:40.787413",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_0"
+    },
+    {
+      "timestamp": "2025-07-14T16:10:40.787425",
+      "level": "INFO",
+      "message": "Testing value propagation for: creative"
+    },
+    {
+      "timestamp": "2025-07-14T16:12:49.247102",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_1"
+    },
+    {
+      "timestamp": "2025-07-14T16:12:49.247113",
+      "level": "INFO",
+      "message": "Testing value propagation for: solution"
+    },
+    {
+      "timestamp": "2025-07-14T16:16:35.997568",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_2"
+    },
+    {
+      "timestamp": "2025-07-14T16:16:35.997578",
+      "level": "INFO",
+      "message": "Testing value propagation for: philosophical"
+    },
+    {
+      "timestamp": "2025-07-14T16:21:29.793698",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_3"
+    },
+    {
+      "timestamp": "2025-07-14T16:21:31.121394",
+      "level": "INFO",
+      "message": "Created value propagation visualization"
+    }
+  ],
+  "duration_seconds": 840.719268
+}

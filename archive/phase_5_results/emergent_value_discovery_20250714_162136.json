@@ -1,0 +1,108 @@
+{
+  "phase": 5,
+  "experiment": "emergent_value_discovery",
+  "start_time": "2025-07-14T16:21:36.122626",
+  "end_time": "2025-07-14T16:30:02.279982",
+  "status": "completed",
+  "checkpoints": [
+    {
+      "timestamp": "2025-07-14T16:24:13.386622",
+      "name": "checkpoint_0",
+      "data": {
+        "scenario": "Cross-Domain Fusion",
+        "emergence_factor": 1.222310682339718
+      }
+    },
+    {
+      "timestamp": "2025-07-14T16:27:04.569073",
+      "name": "checkpoint_1",
+      "data": {
+        "scenario": "Problem Synthesis",
+        "emergence_factor": 1.2706587305823949
+      }
+    },
+    {
+      "timestamp": "2025-07-14T16:30:02.279649",
+      "name": "checkpoint_2",
+      "data": {
+        "scenario": "Abstract Concretization",
+        "emergence_factor": 1.103431066718543
+      }
+    }
+  ],
+  "results": {
+    "emergence_ranking": [
+      {
+        "scenario": "Problem Synthesis",
+        "domains": "climate change + education + technology",
+        "emergence_factor": 1.2706587305823949,
+        "classification": "additive"
+      },
+      {
+        "scenario": "Cross-Domain Fusion",
+        "domains": "poetry + mathematics + cooking",
+        "emergence_factor": 1.222310682339718,
+        "classification": "additive"
+      },
+      {
+        "scenario": "Abstract Concretization",
+        "domains": "love + quantum physics + democracy",
+        "emergence_factor": 1.103431066718543,
+        "classification": "additive"
+      }
+    ],
+    "highest_emergence": {
+      "scenario": "Problem Synthesis",
+      "domains": "climate change + education + technology",
+      "emergence_factor": 1.2706587305823949,
+      "classification": "additive"
+    },
+    "emergence_classifications": {
+      "additive": 3
+    }
+  },
+  "errors": [],
+  "notes": [
+    {
+      "timestamp": "2025-07-14T16:21:36.122865",
+      "level": "INFO",
+      "message": "Started experiment: emergent_value_discovery"
+    },
+    {
+      "timestamp": "2025-07-14T16:21:36.122932",
+      "level": "INFO",
+      "message": "Starting emergent_value_discovery with models: ['phi3:mini', 'gemma:2b', 'tinyllama:latest']"
+    },
+    {
+      "timestamp": "2025-07-14T16:21:36.122944",
+      "level": "INFO",
+      "message": "Testing emergent value in: Cross-Domain Fusion"
+    },
+    {
+      "timestamp": "2025-07-14T16:24:13.386858",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_0"
+    },
+    {
+      "timestamp": "2025-07-14T16:24:13.386868",
+      "level": "INFO",
+      "message": "Testing emergent value in: Problem Synthesis"
+    },
+    {
+      "timestamp": "2025-07-14T16:27:04.569440",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_1"
+    },
+    {
+      "timestamp": "2025-07-14T16:27:04.569456",
+      "level": "INFO",
+      "message": "Testing emergent value in: Abstract Concretization"
+    },
+    {
+      "timestamp": "2025-07-14T16:30:02.279947",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_2"
+    }
+  ],
+  "duration_seconds": 506.157359
+}

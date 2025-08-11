@@ -1,0 +1,44 @@
+{
+  "phase": 0,
+  "experiment": "test_experiment",
+  "start_time": "2025-07-13T19:11:13.074417",
+  "end_time": "2025-07-13T19:11:14.075681",
+  "status": "completed",
+  "checkpoints": [
+    {
+      "timestamp": "2025-07-13T19:11:14.074947",
+      "name": "checkpoint_0",
+      "data": {
+        "iteration": 1,
+        "score": 0.5
+      }
+    }
+  ],
+  "results": {
+    "test_value": 42,
+    "test_list": [
+      1,
+      2,
+      3
+    ]
+  },
+  "errors": [],
+  "notes": [
+    {
+      "timestamp": "2025-07-13T19:11:13.074733",
+      "level": "INFO",
+      "message": "Started experiment: test_experiment"
+    },
+    {
+      "timestamp": "2025-07-13T19:11:13.074741",
+      "level": "INFO",
+      "message": "Starting test sequence"
+    },
+    {
+      "timestamp": "2025-07-13T19:11:14.075660",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_0"
+    }
+  ],
+  "duration_seconds": 1.001269
+}

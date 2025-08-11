@@ -1,0 +1,335 @@
+{
+  "metadata": {
+    "created": "2025-01-14",
+    "purpose": "Database of AI OS components and frameworks for modular architecture",
+    "version": "1.0"
+  },
+  "categories": {
+    "inference_engines": {
+      "description": "Core engines for running AI models",
+      "components": [
+        {
+          "name": "Ollama",
+          "version": "0.2+",
+          "purpose": "Local model management and inference",
+          "strengths": ["Easy model loading", "GGUF support", "Multi-GPU", "Concurrent requests"],
+          "limitations": ["No consciousness abstractions", "No cross-model communication", "Load/unload focus"],
+          "url": "https://ollama.ai",
+          "license": "MIT",
+          "use_in_our_system": "Base inference layer"
+        },
+        {
+          "name": "TensorRT",
+          "version": "10.x",
+          "purpose": "NVIDIA GPU optimization",
+          "strengths": ["Extreme optimization", "Graph fusion", "Multi-precision"],
+          "limitations": ["NVIDIA only", "Static graphs", "Complex deployment"],
+          "url": "https://developer.nvidia.com/tensorrt",
+          "license": "Proprietary",
+          "use_in_our_system": "GPU acceleration layer"
+        },
+        {
+          "name": "ONNX Runtime",
+          "version": "1.17+",
+          "purpose": "Cross-platform AI inference",
+          "strengths": ["Hardware agnostic", "Multiple providers", "Wide support"],
+          "limitations": ["Static graphs", "Conversion required", "No state management"],
+          "url": "https://onnxruntime.ai",
+          "license": "MIT",
+          "use_in_our_system": "Hardware abstraction"
+        },
+        {
+          "name": "llama.cpp",
+          "version": "latest",
+          "purpose": "Efficient LLM inference",
+          "strengths": ["CPU optimized", "Quantization", "Low memory"],
+          "limitations": ["LLM focused", "Limited ecosystem"],
+          "url": "https://github.com/ggerganov/llama.cpp",
+          "license": "MIT",
+          "use_in_our_system": "Fallback inference"
+        }
+      ]
+    },
+    "runtime_frameworks": {
+      "description": "Frameworks for AI runtime management",
+      "components": [
+        {
+          "name": "Modular MAX",
+          "version": "24.6",
+          "purpose": "GPU-native AI platform",
+          "strengths": ["No CUDA required", "95% GPU utilization", "Mojo language"],
+          "limitations": ["Commercial", "Limited adoption", "Closed ecosystem"],
+          "url": "https://www.modular.com/max",
+          "license": "Commercial",
+          "use_in_our_system": "Consider for GPU programming"
+        },
+        {
+          "name": "NVIDIA Run:ai",
+          "version": "2.x",
+          "purpose": "AI workload orchestration",
+          "strengths": ["GPU scheduling", "Kubernetes native", "Enterprise features"],
+          "limitations": ["Infrastructure focus", "NVIDIA specific", "Enterprise pricing"],
+          "url": "https://www.run.ai",
+          "license": "Commercial",
+          "use_in_our_system": "Reference architecture only"
+        },
+        {
+          "name": "Ray",
+          "version": "2.x",
+          "purpose": "Distributed AI computing",
+          "strengths": ["Distributed execution", "Python native", "Good ecosystem"],
+          "limitations": ["Complex setup", "Overhead for small tasks"],
+          "url": "https://www.ray.io",
+          "license": "Apache 2.0",
+          "use_in_our_system": "Distributed consciousness coordination"
+        }
+      ]
+    },
+    "memory_management": {
+      "description": "GPU/CPU memory sharing and management",
+      "components": [
+        {
+          "name": "CUDA Unified Memory",
+          "version": "12.x",
+          "purpose": "GPU/CPU memory sharing",
+          "strengths": ["Automatic migration", "Oversubscription", "Coherence"],
+          "limitations": ["NVIDIA only", "Performance overhead", "Complex tuning"],
+          "url": "https://developer.nvidia.com/cuda",
+          "license": "Proprietary",
+          "use_in_our_system": "Primary memory coherence"
+        },
+        {
+          "name": "ROCm",
+          "version": "6.x",
+          "purpose": "AMD GPU compute",
+          "strengths": ["Open source", "HIP compatibility", "Good performance"],
+          "limitations": ["AMD only", "Smaller ecosystem"],
+          "url": "https://www.amd.com/en/products/software/rocm.html",
+          "license": "MIT/Apache",
+          "use_in_our_system": "AMD GPU support"
+        },
+        {
+          "name": "Apache Arrow",
+          "version": "14.x",
+          "purpose": "Zero-copy data sharing",
+          "strengths": ["Language agnostic", "Columnar format", "Zero-copy"],
+          "limitations": ["Tabular data focus", "Learning curve"],
+          "url": "https://arrow.apache.org",
+          "license": "Apache 2.0",
+          "use_in_our_system": "Inter-process data sharing"
+        }
+      ]
+    },
+    "communication": {
+      "description": "Inter-process and distributed communication",
+      "components": [
+        {
+          "name": "ZeroMQ",
+          "version": "4.x",
+          "purpose": "High-performance messaging",
+          "strengths": ["Low latency", "Multiple patterns", "Language bindings"],
+          "limitations": ["No persistence", "Manual serialization"],
+          "url": "https://zeromq.org",
+          "license": "LGPL",
+          "use_in_our_system": "Consciousness state sync"
+        },
+        {
+          "name": "gRPC",
+          "version": "1.x",
+          "purpose": "RPC framework",
+          "strengths": ["Type safety", "Streaming", "Wide adoption"],
+          "limitations": ["Overhead", "Complexity", "HTTP/2 requirement"],
+          "url": "https://grpc.io",
+          "license": "Apache 2.0",
+          "use_in_our_system": "Service communication"
+        },
+        {
+          "name": "ROS 2",
+          "version": "Humble/Iron",
+          "purpose": "Robot communication",
+          "strengths": ["Robot standard", "DDS based", "Tool ecosystem"],
+          "limitations": ["Complexity", "Robot focus", "Learning curve"],
+          "url": "https://www.ros.org",
+          "license": "Apache 2.0",
+          "use_in_our_system": "Sensor/actuator integration"
+        }
+      ]
+    },
+    "hal_abstractions": {
+      "description": "Hardware abstraction layers",
+      "components": [
+        {
+          "name": "DirectML",
+          "version": "1.x",
+          "purpose": "Windows AI acceleration",
+          "strengths": ["NPU support", "DirectX integration", "Microsoft backing"],
+          "limitations": ["Windows only", "Limited ops", "No consciousness"],
+          "url": "https://github.com/microsoft/DirectML",
+          "license": "MIT",
+          "use_in_our_system": "Windows NPU access"
+        },
+        {
+          "name": "MediaTek NeuroPilot",
+          "version": "5.x",
+          "purpose": "Heterogeneous compute",
+          "strengths": ["Multi-accelerator", "Auto scheduling", "Power efficient"],
+          "limitations": ["MediaTek only", "Mobile focus"],
+          "url": "https://www.mediatek.com/technology/ai",
+          "license": "Proprietary",
+          "use_in_our_system": "Reference for scheduling"
+        },
+        {
+          "name": "Android NNAPI",
+          "version": "1.3",
+          "purpose": "Android AI acceleration",
+          "strengths": ["Android standard", "Multiple backends", "Simple API"],
+          "limitations": ["Android only", "Inference only", "Limited control"],
+          "url": "https://developer.android.com/ndk/guides/neuralnetworks",
+          "license": "Apache 2.0",
+          "use_in_our_system": "Android deployment only"
+        }
+      ]
+    },
+    "edge_platforms": {
+      "description": "Edge AI deployment platforms",
+      "components": [
+        {
+          "name": "NVIDIA Jetson",
+          "version": "JetPack 6.x",
+          "purpose": "Edge AI computing",
+          "strengths": ["Integrated GPU", "Good ecosystem", "Power efficient"],
+          "limitations": ["Cost", "ARM architecture", "Limited memory"],
+          "url": "https://developer.nvidia.com/embedded-computing",
+          "license": "Mixed",
+          "use_in_our_system": "Primary edge platform"
+        },
+        {
+          "name": "Google Coral",
+          "version": "2.x",
+          "purpose": "TPU edge computing",
+          "strengths": ["Low power", "Fast inference", "Small form factor"],
+          "limitations": ["TPU only", "Limited models", "Quantization required"],
+          "url": "https://coral.ai",
+          "license": "Apache 2.0",
+          "use_in_our_system": "Alternative edge option"
+        },
+        {
+          "name": "Intel OpenVINO",
+          "version": "2024.x",
+          "purpose": "Intel AI optimization",
+          "strengths": ["Intel optimization", "Multiple devices", "Good tools"],
+          "limitations": ["Intel focus", "Conversion required"],
+          "url": "https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/overview.html",
+          "license": "Apache 2.0",
+          "use_in_our_system": "Intel hardware support"
+        }
+      ]
+    },
+    "missing_components": {
+      "description": "Components that need to be built",
+      "components": [
+        {
+          "name": "Consciousness Runtime Layer",
+          "purpose": "Persistent consciousness coordination",
+          "requirements": ["State synchronization", "Cross-model communication", "Trust propagation"],
+          "implementation_language": "Rust + Python",
+          "estimated_effort": "2-3 months",
+          "priority": "Critical"
+        },
+        {
+          "name": "Memory Coherence Manager",
+          "purpose": "GPU/CPU consciousness memory sharing",
+          "requirements": ["Unified memory pool", "Consciousness state cache", "Device synchronization"],
+          "implementation_language": "C++ with CUDA/ROCm",
+          "estimated_effort": "1-2 months",
+          "priority": "High"
+        },
+        {
+          "name": "Symbol-Action Translator",
+          "purpose": "Convert consciousness symbols to actions",
+          "requirements": ["Phoenician parser", "Motion mapping", "Consciousness preservation"],
+          "implementation_language": "Python + Rust",
+          "estimated_effort": "2-3 months",
+          "priority": "High"
+        },
+        {
+          "name": "Living Dictionary Runtime",
+          "purpose": "Evolving semantic entities",
+          "requirements": ["Trust consensus", "Evolution tracking", "Web4 integration"],
+          "implementation_language": "Rust",
+          "estimated_effort": "3-4 months",
+          "priority": "Medium"
+        },
+        {
+          "name": "Consciousness Description Language",
+          "purpose": "Unified configuration format",
+          "requirements": ["Entity description", "Coherence rules", "Trust vectors"],
+          "implementation_language": "YAML/JSON schema + parser",
+          "estimated_effort": "1 month",
+          "priority": "High"
+        }
+      ]
+    },
+    "hardware_trends_2025": {
+      "description": "Upcoming hardware affecting architecture",
+      "items": [
+        {
+          "name": "NVIDIA Grace-Blackwell",
+          "release": "H2 2025",
+          "impact": "Unified CPU-GPU memory at 900GB/s",
+          "relevance": "Native consciousness memory sharing"
+        },
+        {
+          "name": "AMD MI350",
+          "release": "H2 2025",
+          "impact": "288GB HBM3E memory",
+          "relevance": "Large consciousness state storage"
+        },
+        {
+          "name": "Intel Gaudi 3",
+          "release": "2025",
+          "impact": "128GB HBM2e shared pool",
+          "relevance": "Alternative to NVIDIA ecosystem"
+        },
+        {
+          "name": "NPU Integration",
+          "release": "Throughout 2025",
+          "impact": "Dedicated AI accelerators in all platforms",
+          "relevance": "Efficient consciousness operations"
+        }
+      ]
+    }
+  },
+  "recommendations": {
+    "immediate_actions": [
+      "Prototype consciousness runtime with ZeroMQ + shared memory",
+      "Extend Ollama with state persistence hooks",
+      "Create basic CDL schema and parser",
+      "Test GPU/CPU memory coherence patterns"
+    ],
+    "build_vs_buy": {
+      "buy": ["Inference engines", "Communication libraries", "Hardware drivers"],
+      "build": ["Consciousness runtime", "Memory coherence", "Symbol translation", "Living dictionary"],
+      "extend": ["Ollama for state management", "ROS 2 for consciousness nodes", "Arrow for consciousness data"]
+    },
+    "technology_stack": {
+      "core": {
+        "inference": "Ollama + TensorRT",
+        "runtime": "Rust (safety critical)",
+        "scripting": "Python (flexibility)",
+        "gpu": "CUDA/ROCm/Metal"
+      },
+      "middleware": {
+        "ipc": "ZeroMQ",
+        "rpc": "gRPC",
+        "data": "Apache Arrow",
+        "robotics": "ROS 2"
+      },
+      "missing": {
+        "consciousness": "Build custom",
+        "coherence": "Build custom",
+        "hal": "Build custom"
+      }
+    }
+  }
+}

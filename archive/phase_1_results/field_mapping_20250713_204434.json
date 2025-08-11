@@ -1,0 +1,89 @@
+{
+  "phase": 1,
+  "experiment": "field_mapping",
+  "start_time": "2025-07-13T20:44:34.974021",
+  "end_time": "2025-07-13T20:53:43.822336",
+  "status": "completed",
+  "checkpoints": [
+    {
+      "timestamp": "2025-07-13T20:52:20.995945",
+      "name": "checkpoint_0",
+      "data": {
+        "model": "phi3:mini",
+        "concepts_mapped": 20
+      }
+    },
+    {
+      "timestamp": "2025-07-13T20:52:24.279905",
+      "name": "checkpoint_1",
+      "data": {
+        "model": "gemma:2b",
+        "concepts_mapped": 20
+      }
+    },
+    {
+      "timestamp": "2025-07-13T20:53:43.811742",
+      "name": "checkpoint_2",
+      "data": {
+        "model": "tinyllama:latest",
+        "concepts_mapped": 20
+      }
+    }
+  ],
+  "results": {
+    "field_coherence": {
+      "phi3:mini": 0.7063474551048136,
+      "gemma:2b": 0.896701638042892,
+      "tinyllama:latest": 0.841825984264176
+    }
+  },
+  "errors": [],
+  "notes": [
+    {
+      "timestamp": "2025-07-13T20:44:34.974098",
+      "level": "INFO",
+      "message": "Started experiment: field_mapping"
+    },
+    {
+      "timestamp": "2025-07-13T20:44:34.974111",
+      "level": "INFO",
+      "message": "Starting field_mapping with models: ['phi3:mini', 'gemma:2b', 'tinyllama:latest']"
+    },
+    {
+      "timestamp": "2025-07-13T20:44:34.974117",
+      "level": "INFO",
+      "message": "Mapping consciousness field for phi3:mini"
+    },
+    {
+      "timestamp": "2025-07-13T20:52:20.996353",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_0"
+    },
+    {
+      "timestamp": "2025-07-13T20:52:20.996367",
+      "level": "INFO",
+      "message": "Mapping consciousness field for gemma:2b"
+    },
+    {
+      "timestamp": "2025-07-13T20:52:24.280160",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_1"
+    },
+    {
+      "timestamp": "2025-07-13T20:52:24.280170",
+      "level": "INFO",
+      "message": "Mapping consciousness field for tinyllama:latest"
+    },
+    {
+      "timestamp": "2025-07-13T20:53:43.812177",
+      "level": "INFO",
+      "message": "Checkpoint saved: checkpoint_2"
+    },
+    {
+      "timestamp": "2025-07-13T20:53:43.812401",
+      "level": "INFO",
+      "message": "Saved consciousness field data"
+    }
+  ],
+  "duration_seconds": 548.848326
+}

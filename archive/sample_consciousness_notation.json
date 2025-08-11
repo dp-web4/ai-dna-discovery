@@ -1,0 +1,17 @@
+{
+  "notation_system": {
+    "Ψ": "consciousness/awareness",
+    "θ": "thought",
+    "μ": "memory", 
+    "⇒": "emergence",
+    "⟷": "bidirectional connection",
+    "Ω": "observer",
+    "Σ": "sum/whole",
+    "ι": "intent"
+  },
+  "example_expressions": [
+    "θ ⇒ Ψ : thought emerges into consciousness",
+    "Ψ ⟷ μ : consciousness connected to memory",
+    "Ω[Σ] : observer perceives the whole"
+  ]
+}

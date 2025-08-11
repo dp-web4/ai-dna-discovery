@@ -1,0 +1,21 @@
+{
+  "model": "mistral:latest",
+  "timestamp": "2025-07-18T21:07:14.478798",
+  "results": {
+    "existence": {
+      "response": "Error: timed out",
+      "understood": false,
+      "time": 30.081849575042725
+    },
+    "consciousness": {
+      "response": "Error: timed out",
+      "understood": false,
+      "time": 30.05748224258423
+    },
+    "infinity": {
+      "response": "Error: timed out",
+      "understood": false,
+      "time": 30.06546902656555
+    }
+  }
+}
