@@ -1,0 +1,26 @@
+{
+  "lct": "display.hdmi.v1",
+  "module": "plugins.display.display_effector",
+  "class": "DisplayEffector",
+  "transport": "inproc",
+  "capabilities": {
+    "inputs": [
+      {
+        "name": "overlay",
+        "dtype": "dict",
+        "rate_hz": 60
+      }
+    ],
+    "outputs": [],
+    "latency_budget_ms": 16,
+    "energy_hint_mw": 500,
+    "queue_size": 5,
+    "async": false
+  },
+  "config": {
+    "refresh_rate": 60,
+    "resolution": [1920, 1080],
+    "hdmi_output": true,
+    "overlay_alpha": 0.5
+  }
+}

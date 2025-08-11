@@ -1,0 +1,32 @@
+{
+  "lct": "vision.dual_csi.v1",
+  "module": "plugins.vision.vision_sensor",
+  "class": "VisionSensor",
+  "transport": "inproc",
+  "capabilities": {
+    "outputs": [
+      {
+        "name": "frames",
+        "dtype": "numpy.ndarray",
+        "shape": [1920, 1080, 3],
+        "rate_hz": 30
+      },
+      {
+        "name": "motion",
+        "dtype": "dict",
+        "rate_hz": 10
+      }
+    ],
+    "inputs": [],
+    "latency_budget_ms": 50,
+    "energy_hint_mw": 800,
+    "queue_size": 10,
+    "async": true
+  },
+  "config": {
+    "resolution": [1920, 1080],
+    "fps": 30,
+    "dual_cam": true,
+    "device_ids": [0, 1]
+  }
+}
