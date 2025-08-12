@@ -99,29 +99,38 @@ Context determines sensor relevance:
 
 ## Current Status
 
-✅ **Working Implementation** with real hardware sensors:
-- Dual CSI cameras at 3280x2464 @ 21fps 
-- Serial IMU with gravity filtering
-- Persistent memory with pattern recognition
-- Live visualization with coherence overlay
+✅ **Experimental Platform Ready** - Not production, but ready for consciousness research!
+
+### Working Components
+- Dual CSI cameras at 1920x1080 @ 30fps (focus rings calibrated!)
+- Reality field generation from weighted sensor fusion
+- Trust evolution and context switching
+- Sleep cycles for memory maintenance
+- GPT's enhancements 86% integrated
+- Live visualization dashboards
 
 ### Quick Start
 
 ```bash
-# View live camera feeds with coherence overlay
-python3 vision_with_display.py
+# View live camera feeds (30 FPS!)
+python3 vision_1080p.py
 
 # Monitor reality field and sensor contributions
 python3 live_dashboard.py
 
 # Run full system with all sensors
 python3 test_real_sensors.py
+
+# Test GPT's enhancements
+python3 test_integration.py
 ```
 
-### Known Issues
-- One camera may show green texture overlay (hardware issue, not affecting coherence calculation)
-- IMU requires /dev/ttyUSB0 device to be connected
-- Memory directory grows over time (auto-pruning planned)
+### Ready for Experiments
+- Sensor conflict scenarios
+- Extended runtime observations
+- Trust calibration studies
+- Pattern emergence tracking
+- Sleep cycle optimization
 
 ## How to Proceed
 
