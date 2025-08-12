@@ -1,0 +1,12 @@
+learning:
+  lr_l1: 0.15
+  lr_l2: 0.10
+  lr_warmup_steps: 100
+  lr_cooldown_sec: 2.0
+  affect:
+    threshold: 0.6
+    cooldown_sec: 1.0
+    refractory_sec: 0.25
+  motif_table:
+    max_keys: 4096
+    eviction: { policy: "lru_age_score", witness_evictions: true }

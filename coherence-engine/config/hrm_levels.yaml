@@ -1,0 +1,20 @@
+levels:
+  L0: { enabled: true }
+  L1:
+    enabled: true
+    alpha_residual:
+      STABLE: 0.10
+      MOVING: 0.20
+      UNSTABLE: 0.30
+      NOVEL: 0.40
+    trust_min_enter: 0.3
+    trust_min_exit: 0.2
+  L2:
+    enabled: true
+    alpha_residual:
+      STABLE: 0.05
+      MOVING: 0.15
+      UNSTABLE: 0.25
+      NOVEL: 0.35
+    trust_min_enter: 0.4
+    trust_min_exit: 0.3
