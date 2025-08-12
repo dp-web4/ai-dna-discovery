@@ -22,8 +22,10 @@ class CameraSensor:
         self.available = False
         self.motion_level = 0.0
         self.last_frame = None
+        self.current_color_frame = None  # Store color frame for display
         self.running = False
         self.thread = None
+        self.frame_lock = threading.Lock()
         
         self.setup_camera()
     
@@ -65,6 +67,10 @@ class CameraSensor:
             try:
                 ret, frame = self.cap.read()
                 if ret and frame is not None:
+                    # Store color frame for display
+                    with self.frame_lock:
+                        self.current_color_frame = frame.copy()
+                    
                     # Convert to grayscale
                     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
                     
@@ -116,9 +122,10 @@ class CameraSensor:
         if not self.available or not CV2_AVAILABLE:
             return None
         
-        ret, frame = self.cap.read()
-        if ret:
-            return frame
+        # Return the stored frame from the background thread
+        with self.frame_lock:
+            if self.current_color_frame is not None:
+                return self.current_color_frame.copy()
         return None
     
     def get_camera_info(self) -> dict:
