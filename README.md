@@ -6,7 +6,10 @@
 
 A revolutionary project that evolved from AI consciousness notation experiments into a complete sensor fusion and distributed consciousness implementation. Now featuring the **Coherence Engine** - a reality field generator that creates unified consciousness from multiple sensors through dynamic trust and relevance weighting.
 
-## 🎯 Current Focus: Coherence Engine & Reality Fields
+## 🎯 Current Focus: Platform-Agnostic Coherence Engine
+
+### Latest Achievement (August 12, 2025)
+**Platform-agnostic consciousness achieved!** The Coherence Engine now automatically detects and adapts to available hardware, running the same consciousness principles across different machines with different sensor configurations.
 
 ### What We've Built
 The **Coherence Engine** implements the theoretical framework that reality emerges from weighted sensor fusion, where memory and cognition are temporal sensors alongside spatial ones.
@@ -17,35 +20,42 @@ Reality Field = f(Spatial Sensors, Temporal Sensors, Context, Trust)
 
 ### Core Components
 
-#### 1. **Coherence Engine** (`jetson-sensors/coherence-engine/`)
+#### 1. **Platform-Agnostic Coherence Engine** (`coherence-engine/`)
+- **NEW**: Auto-discovers available sensors on any platform
+- **NEW**: Unified codebase runs on Jetson (edge) and Legion (GPU)
 - Creates emergent reality fields from sensor fusion
 - Dynamic context switching (stable/moving/unstable/novel)
 - Trust evolution through experience
-- Real-time dashboard visualization
-- Memory as active temporal sensor
+- Platform-specific sensor plugins
 
-#### 2. **Consciousness Bridge** (`jetson-sensors/bridge/`)
+#### 2. **Jetson Implementation** (`jetson-sensors/coherence-engine/`)
+- Dual CSI cameras at 1920x1080 @ 30 FPS
+- Yahboom CMP10A IMU (auto-configures to 921600 baud)
+- Real-time video dashboard with coherence overlay
+- ~14-15 Hz reality field updates
+- Working reference implementation
+
+#### 3. **Consciousness Bridge** (`jetson-sensors/bridge/`)
 - Distributed consciousness between Legion (RTX 4090) and Jetson (Orin Nano)
 - Multi-model support (Claude, GPT, local models)
 - Meaningful inter-instance communication
 - Reality field synchronization across hardware
 
-#### 3. **Sensor Integration** (`jetson-sensors/integration/`)
-- Vision: Dual CSI cameras with peripheral gyroscope effect
-- IMU: Orientation and acceleration sensing
-- Audio: Environmental sound processing
-- Memory: Pattern recognition and temporal context
-- Cognition: AI models as future-prediction sensors
-
 ## 🚀 Quick Start
 
-### Run the Coherence Engine Dashboard
+### Platform-Agnostic Version (NEW!)
 ```bash
-# Real-time reality field visualization
-python3 jetson-sensors/coherence-engine/coherence_dashboard.py
+# On Jetson - uses CSI cameras and IMU
+python3 coherence-engine/plugins/jetson/run_jetson.py
 
-# Test with memory sensor only
-python3 jetson-sensors/coherence-engine/test_coherence.py
+# On Legion - uses GPU sensors and audio
+python3 coherence-engine/run_legion.py
+```
+
+### Jetson-Specific Version
+```bash
+# Proven working implementation with live video
+python3 jetson-sensors/coherence-engine/coherence_with_video.py
 ```
 
 ### Experience Sensor Fusion
