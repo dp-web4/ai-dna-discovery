@@ -11,16 +11,29 @@ import sys
 
 class YahboomCMP10A:
     def __init__(self, port='/dev/ttyUSB0', baud=921600):
-        """Initialize IMU connection"""
-        print(f"Connecting to Yahboom CMP10A at {port} ({baud} baud)...")
+        """Initialize IMU connection with auto-configuration to max baud rate"""
+        self.port = port
+        self.target_baud = baud
+        
+        # Try to connect at target baud first
+        print(f"Testing Yahboom CMP10A at {port} ({baud} baud)...")
         try:
             self.ser = serial.Serial(port, baud, timeout=0.1)
-            print("Connected!")
+            # Test if IMU responds at this rate
+            test_data = self.ser.read(100)
+            if test_data and b'\x55' in test_data:
+                print(f"✓ IMU already at {baud} baud!")
+            else:
+                self.ser.close()
+                raise Exception("No valid data at target baud")
         except Exception as e:
-            print(f"Failed to connect: {e}")
-            print("Trying fallback baud rate 9600...")
-            self.ser = serial.Serial(port, 9600, timeout=0.1)
-            print("Connected at 9600 baud")
+            # IMU is probably at default 9600, configure it
+            print(f"IMU not at {baud} baud, configuring...")
+            if self._configure_baud_rate():
+                print(f"✓ IMU configured to {baud} baud!")
+            else:
+                print(f"✗ Configuration failed, using 9600 baud")
+                self.ser = serial.Serial(port, 9600, timeout=0.1)
             
         self.buffer = b''
         
@@ -33,6 +46,64 @@ class YahboomCMP10A:
             0x54: 'magnetic',
             0x56: 'pressure_altitude'
         }
+    
+    def _configure_baud_rate(self):
+        """Configure IMU from 9600 to target baud rate"""
+        baud_map = {
+            4800: 0x01,
+            9600: 0x02,
+            19200: 0x03,
+            38400: 0x04,
+            57600: 0x05,
+            115200: 0x06,
+            230400: 0x07,
+            460800: 0x08,
+            921600: 0x09
+        }
+        
+        if self.target_baud not in baud_map:
+            print(f"Unsupported baud rate: {self.target_baud}")
+            return False
+            
+        try:
+            # Connect at 9600 to send config
+            print("  Connecting at 9600 baud...")
+            ser = serial.Serial(self.port, 9600, timeout=0.5)
+            time.sleep(0.1)
+            
+            # Send unlock command
+            cmd = [0xFF, 0xAA, 0x69, 0xB5]  # Unlock
+            cmd.append(sum(cmd) & 0xFF)  # Checksum
+            ser.write(bytes(cmd))
+            time.sleep(0.1)
+            
+            # Send baud rate command
+            cmd = [0xFF, 0xAA, 0x04, baud_map[self.target_baud]]
+            cmd.append(sum(cmd) & 0xFF)
+            ser.write(bytes(cmd))
+            time.sleep(0.1)
+            
+            # Send save command
+            cmd = [0xFF, 0xAA, 0x00, 0x00]
+            cmd.append(sum(cmd) & 0xFF)
+            ser.write(bytes(cmd))
+            time.sleep(0.1)
+            
+            ser.close()
+            
+            # Test new baud rate
+            time.sleep(0.5)
+            self.ser = serial.Serial(self.port, self.target_baud, timeout=0.5)
+            test_data = self.ser.read(100)
+            if test_data and b'\x55' in test_data:
+                return True
+            else:
+                self.ser.close()
+                return False
+                
+        except Exception as e:
+            print(f"  Configuration error: {e}")
+            return False
         
     def parse_packet(self, packet):
         """Parse a complete 11-byte packet"""
