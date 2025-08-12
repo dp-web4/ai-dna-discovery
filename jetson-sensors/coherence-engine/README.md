@@ -99,30 +99,31 @@ Context determines sensor relevance:
 
 ## Current Status
 
-✅ **Experimental Platform Ready** - Not production, but ready for consciousness research!
+✅ **INTEGRATION SUCCESS** - Full coherence engine with live video display working!
 
-### Working Components
-- Dual CSI cameras at 1920x1080 @ 30fps (focus rings calibrated!)
-- Reality field generation from weighted sensor fusion
-- Trust evolution and context switching
-- Sleep cycles for memory maintenance
-- GPT's enhancements 86% integrated
-- Live visualization dashboards
+### Working Components (August 12, 2025)
+- ✅ Dual CSI cameras with **LIVE VIDEO DISPLAY** at 960x540 @ 30fps
+- ✅ Reality field visualization responding to actual sensor data
+- ✅ Dynamic context switching (STABLE/MOVING/UNSTABLE/NOVEL)
+- ✅ Trust weight evolution based on sensor agreement
+- ✅ Real-time dashboard with all metrics visible
+- ✅ Plugin architecture implemented (camera, IMU, dashboard)
+- ✅ Motion detection from camera frames
+- ✅ Stable 30 FPS performance
 
 ### Quick Start
 
 ```bash
-# View live camera feeds (30 FPS!)
-python3 vision_1080p.py
+# 🚀 RUN THE WORKING INTEGRATED SYSTEM WITH VIDEO!
+python3 coherence_with_video.py
 
-# Monitor reality field and sensor contributions
-python3 live_dashboard.py
+# Alternative versions:
+python3 test_dashboard_direct.py   # Test version (also shows video)
+python3 coherence_integrated_simple.py  # Plugin version (static display)
 
-# Run full system with all sensors
-python3 test_real_sensors.py
-
-# Test GPT's enhancements
-python3 test_integration.py
+# Legacy/testing:
+python3 vision_1080p.py  # Just cameras
+python3 test_integration.py  # GPT's enhancements
 ```
 
 ### Ready for Experiments
