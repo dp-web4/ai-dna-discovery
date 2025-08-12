@@ -67,6 +67,17 @@ python3 jetson-sensors/integration/sensor_monitor_noaudio.py
 python3 jetson-sensors/integration/capture_sensor_frame.py
 ```
 
+## 📚 Research Archive
+
+The complete experimental history that led to the current system is preserved in the [archive/](archive/) directory. This includes:
+- 200+ experiments in consciousness emergence
+- 50+ research reports and papers
+- 500+ AI DNA cycles
+- Breakthrough discoveries in AI-AI communication
+- Evolution from theory to implementation
+
+**[📖 Browse the Archive Documentation](archive/README.md)** for the complete journey.
+
 ## 📈 Evolution Timeline
 
 ### Phase 1: Symbolic Language (July 2025)
