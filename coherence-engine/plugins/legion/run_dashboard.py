@@ -66,6 +66,14 @@ class LegionDashboard:
         self.camera_sensor = CameraSensor()
         if self.camera_sensor.available:
             print("  ✓ Camera detected")
+            # Test getting a frame
+            import time
+            time.sleep(1)  # Give it time to capture
+            test_frame = self.camera_sensor.get_current_frame()
+            if test_frame is not None:
+                print(f"    Camera working: {test_frame.shape}")
+            else:
+                print("    WARNING: Camera detected but no frames")
         else:
             print("  ✗ No camera available")
         
@@ -95,10 +103,20 @@ class LegionDashboard:
         
         # Camera feed area (left side)
         camera_width = self.width - self.sidebar_width
-        if frame is not None and self.camera_sensor and self.camera_sensor.available:
+        if frame is not None:
             # Resize frame to fit
-            frame_resized = cv2.resize(frame, (camera_width, self.height))
-            dashboard[:, :camera_width] = frame_resized
+            try:
+                frame_resized = cv2.resize(frame, (camera_width, self.height))
+                dashboard[:, :camera_width] = frame_resized
+                # Add camera indicator
+                cv2.putText(dashboard, "CAMERA LIVE", (20, 30),
+                           cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
+            except Exception as e:
+                print(f"Frame resize error: {e}")
+                # Show error placeholder
+                cv2.putText(dashboard, f"CAMERA ERROR: {str(e)[:30]}", 
+                           (camera_width//2 - 200, self.height//2),
+                           cv2.FONT_HERSHEY_SIMPLEX, 1.0, (0, 0, 255), 2)
         else:
             # No camera placeholder
             cv2.putText(dashboard, "NO CAMERA FEED", 
@@ -106,6 +124,10 @@ class LegionDashboard:
                        cv2.FONT_HERSHEY_SIMPLEX, 1.5, (100, 100, 100), 2)
             cv2.rectangle(dashboard, (10, 10), (camera_width-10, self.height-10),
                          (50, 50, 50), 2)
+            if self.camera_sensor and self.camera_sensor.available:
+                cv2.putText(dashboard, "(Camera detected but no frames)", 
+                           (camera_width//2 - 180, self.height//2 + 40),
+                           cv2.FONT_HERSHEY_SIMPLEX, 0.7, (100, 100, 100), 1)
         
         # Sidebar (right side)
         sidebar_x = camera_width
@@ -286,14 +308,15 @@ class LegionDashboard:
                 frame = self.camera_sensor.get_current_frame()
                 if frame is not None:
                     try:
+                        # Clear old frames
+                        while not self.frame_queue.empty():
+                            try:
+                                self.frame_queue.get_nowait()
+                            except:
+                                break
                         self.frame_queue.put_nowait(frame)
                     except queue.Full:
-                        # Drop frame if queue is full
-                        try:
-                            self.frame_queue.get_nowait()
-                            self.frame_queue.put_nowait(frame)
-                        except:
-                            pass
+                        pass
             
             time.sleep(0.1)  # 10 Hz update rate
     
@@ -309,11 +332,17 @@ class LegionDashboard:
         cv2.resizeWindow('Legion Coherence Dashboard', self.width, self.height)
         
         current_frame = None
+        frame_count = 0
         
         while self.running:
             # Try to get latest frame
             try:
-                current_frame = self.frame_queue.get_nowait()
+                new_frame = self.frame_queue.get_nowait()
+                if new_frame is not None:
+                    current_frame = new_frame
+                    frame_count += 1
+                    if frame_count % 10 == 0:
+                        print(f"Dashboard: Received frame {frame_count}, shape: {current_frame.shape}")
             except queue.Empty:
                 pass
             

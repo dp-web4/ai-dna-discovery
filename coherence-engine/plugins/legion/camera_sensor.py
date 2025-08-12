@@ -3,6 +3,7 @@ Camera sensor for Legion - uses webcam or USB cameras via OpenCV
 """
 import threading
 import time
+import os
 from typing import Optional, Tuple
 
 try:
@@ -27,7 +28,30 @@ class CameraSensor:
         self.thread = None
         self.frame_lock = threading.Lock()
         
+        # Start camera power enabler for Legion laptops
+        self.power_thread = None
+        self._start_camera_power_enabler()
+        
         self.setup_camera()
+    
+    def _start_camera_power_enabler(self):
+        """Start thread to continuously enable camera power on Legion laptops"""
+        camera_power_path = "/sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/camera_power"
+        
+        # Check if we're on a Legion laptop with camera_power control
+        if os.path.exists(camera_power_path):
+            def enable_camera_power():
+                while self.running or not hasattr(self, 'running'):  # Keep running even during init
+                    try:
+                        with open(camera_power_path, 'w') as f:
+                            f.write('1')
+                    except:
+                        pass  # Silently ignore errors
+                    time.sleep(0.1)
+            
+            self.power_thread = threading.Thread(target=enable_camera_power, daemon=True)
+            self.power_thread.start()
+            print("Legion camera power enabler started")
     
     def setup_camera(self):
         """Initialize camera capture"""
@@ -146,5 +170,7 @@ class CameraSensor:
         self.running = False
         if self.thread:
             self.thread.join(timeout=1.0)
+        if self.power_thread:
+            self.power_thread.join(timeout=0.5)
         if hasattr(self, 'cap'):
             self.cap.release()
