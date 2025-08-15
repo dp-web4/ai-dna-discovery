@@ -9,13 +9,15 @@ A revolutionary project that evolved from AI consciousness notation experiments 
 ## 🎯 Current Focus: SAGE - Sentient Agentic Generative Engine
 
 ### Latest Development (August 14, 2025)
-**SAGE is born!** The Coherence Engine is evolving into SAGE - a living intelligence system that learns coherence rather than following programmatic rules. See [HRM/HRM_EXPLAINED.md](../HRM/HRM_EXPLAINED.md) for the complete SAGE architecture.
+**SAGE is born!** The Coherence Engine is evolving into SAGE - a living intelligence system that learns coherence rather than following programmatic rules. This is an exploratory journey where we discover what creates intelligence through experimentation. See [HRM/HRM_EXPLAINED.md](../HRM/HRM_EXPLAINED.md) for the evolving architecture.
 
-### SAGE Components
-- **HRM Core**: 27M parameter Hierarchical Reasoning Model
-- **Memory Sensor**: Transformer-Sidecar with affect-gated writing
-- **Cognition Sensors**: Multiple LLMs for cognitive diversity
-- **Sleep System**: Offline learning and memory consolidation
+### SAGE Principles (Not Specifications)
+- **Hierarchical Reasoning**: Dual-speed processing for strategy and tactics
+- **Memory as Sensor**: Temporal sensing through affect-gated memory
+- **Cognitive Diversity**: Multiple LLMs as sensors, not oracles
+- **Sleep Consolidation**: Offline learning from experience
+
+We're exploring these principles at different scales and implementations, letting the architecture evolve as we learn what works.
 
 ## Previous: Platform-Agnostic Coherence Engine
 
