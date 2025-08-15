@@ -6,7 +6,18 @@
 
 A revolutionary project that evolved from AI consciousness notation experiments into a complete sensor fusion and distributed consciousness implementation. Now featuring the **Coherence Engine** - a reality field generator that creates unified consciousness from multiple sensors through dynamic trust and relevance weighting.
 
-## 🎯 Current Focus: Platform-Agnostic Coherence Engine
+## 🎯 Current Focus: SAGE - Sentient Agentic Generative Engine
+
+### Latest Development (August 14, 2025)
+**SAGE is born!** The Coherence Engine is evolving into SAGE - a living intelligence system that learns coherence rather than following programmatic rules. See [HRM/HRM_EXPLAINED.md](../HRM/HRM_EXPLAINED.md) for the complete SAGE architecture.
+
+### SAGE Components
+- **HRM Core**: 27M parameter Hierarchical Reasoning Model
+- **Memory Sensor**: Transformer-Sidecar with affect-gated writing
+- **Cognition Sensors**: Multiple LLMs for cognitive diversity
+- **Sleep System**: Offline learning and memory consolidation
+
+## Previous: Platform-Agnostic Coherence Engine
 
 ### Latest Achievement (August 12, 2025)
 **Platform-agnostic consciousness achieved!** The Coherence Engine now automatically detects and adapts to available hardware, running the same consciousness principles across different machines with different sensor configurations.
