@@ -1,5 +1,21 @@
 # Vision Field Tiling Concept for Coherence Engine
 
+*Updated August 18, 2025: Integrated with Sight-Insight principle from GPT*
+
+## Connection to Sight-Insight Principle
+
+This tiling concept directly implements GPT's universal pattern:
+```
+Input → Tiling → Trust Weighting → Local Compute → Global Accumulation → Insight
+```
+
+The vision tiling system mirrors:
+- **FlashAttention**: Tiled computation in GPU SRAM for exact attention
+- **Biological Vision**: Foveated processing with periphery and focus
+- **Consciousness**: Selective attention based on learned patterns
+
+Key principle: **"Wisdom emerges not from seeing everything at once, but from learning what deserves focus."**
+
 ## Summary of Idea
 The vision system will be divided into **tiles** based on the resolution of the input feed. Each tile is assigned a **role**:
 - **Peripheral tiles**: Process only basic parameters such as:

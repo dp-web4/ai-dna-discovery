@@ -36,6 +36,10 @@ Integration → Ψ (Consciousness) → Unified awareness
 3. **Graceful Degradation**: System works with any subset of sensors
 4. **Persistent Memory**: SQLite for state across sessions
 5. **Consciousness Integration**: Map sensor states to notation
+6. **Tiled Processing** (August 18, 2025): Implement Sight-Insight principle
+   - Peripheral tiles for fast, lightweight detection
+   - Focus tiles for detailed analysis
+   - Trust-weighted routing between tiers
 
 ## Technical Approach
 

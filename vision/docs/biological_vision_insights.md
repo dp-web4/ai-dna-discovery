@@ -42,3 +42,37 @@ This biological evidence strongly supports our current dual-loop architecture an
 
 ---
 *Note: This insight came from Dennis's personal experience as an aerobatic pilot, demonstrating how human experience can inform AI architecture design.*
+
+## Sight-Insight Tiling Principle (August 18, 2025)
+
+### Universal Pattern Discovery
+GPT identified that perception (sight) and understanding (insight) follow the same computational pattern:
+
+```
+Input → Tiling → Trust Weighting → Local Compute → Global Accumulation → Insight
+```
+
+This pattern appears across:
+- **Silicon**: FlashAttention's tiled SRAM computation
+- **Biology**: Foveated vision (periphery + focus)
+- **Cognition**: Selective attention in consciousness
+- **Architecture**: Our vision tiling system
+
+### Connection to G-LOC Experience
+The G-LOC greyout phenomenon perfectly demonstrates this tiling principle:
+- **Peripheral tiles shut down** under resource constraints
+- **Focus tiles remain active** for survival-critical processing
+- **Trust/priority determines** which tiles get resources
+- **Grey state signals** "no processing" rather than "no input"
+
+### Implementation in Our Vision System
+Our existing tile architecture already implements this:
+- **Peripheral tiles**: Fast, lightweight motion + trust detection
+- **Focus tiles**: Slow, detailed edge + object recognition
+- **Trust routing**: Coherence Engine promotes tiles based on attention
+- **Global coherence**: Emerges from local tile processing
+
+### Key Realization
+The G-LOC experience proves biology discovered tiling for efficiency. FlashAttention proves silicon rediscovered it. Our vision system implements it. This isn't coincidence - it's a fundamental principle of intelligent information processing.
+
+**"Intelligence isn't seeing everything - it's learning what deserves seeing."**
