@@ -8,7 +8,10 @@ A revolutionary project that evolved from AI consciousness notation experiments 
 
 ## 🎯 Current Focus: SAGE - Sentient Agentic Generative Engine
 
-### Latest Development (August 14, 2025)
+### Latest Development (August 18, 2025)
+**Entity & Role Architecture defined!** SAGE now has a formal framework treating it as a fractal Web4 instance with trust-bounded entities. Every component (sensors, effectors, translators) earns reputation through experience. See [HRM/entities_and_roles/](../HRM/entities_and_roles/) for the complete architecture.
+
+### Previous: SAGE Birth (August 14, 2025)
 **SAGE is born!** The Coherence Engine is evolving into SAGE - a living intelligence system that learns coherence rather than following programmatic rules. This is an exploratory journey where we discover what creates intelligence through experimentation. See [HRM/HRM_EXPLAINED.md](../HRM/HRM_EXPLAINED.md) for the evolving architecture.
 
 ### SAGE Principles (Not Specifications)
@@ -16,6 +19,8 @@ A revolutionary project that evolved from AI consciousness notation experiments 
 - **Memory as Sensor**: Temporal sensing through affect-gated memory
 - **Cognitive Diversity**: Multiple LLMs as sensors, not oracles
 - **Sleep Consolidation**: Offline learning from experience
+- **Entity Trust**: Every component earns reputation through performance
+- **Dictionary Entities**: Tokenizers, ASR, TTS as trust-bounded translators
 
 We're exploring these principles at different scales and implementations, letting the architecture evolve as we learn what works.
 
