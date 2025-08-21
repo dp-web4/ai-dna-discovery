@@ -1,44 +1,9 @@
 # Claude Context for AI DNA Discovery
 
-## Machine Identification & GitHub PAT Location
+## Authentication
+**GitHub PAT Location**: `../.env` (GITHUB_PAT variable)
+- Use for pushing: `git push https://dp-web4:$(grep GITHUB_PAT ../.env | cut -d= -f2)@github.com/dp-web4/ai-dna-discovery.git`
 
-**CRITICAL**: First identify which machine you're on, then use the appropriate PAT location!
-
-### How to Identify Current Machine
-```bash
-# Check hostname and computer name
-hostname  # Returns machine identifier
-cmd.exe /c "echo %COMPUTERNAME%" 2>&1 | tr -d '\r'  # Windows computer name
-```
-
-### GitHub PAT Locations by Machine
-
-| Machine | Identification | PAT Location |
-|---------|---------------|--------------|
-| **CBP (Windows Desktop)** | hostname: `cbp`, COMPUTERNAME: `CBP` | `/mnt/c/exe/projects/ai-agents/.env` (GITHUB_PAT variable) |
-| **Sprout (Jetson)** | hostname: `sprout` | `/home/sprout/ai-workspace/github pat.txt` |
-| **Other Machines** | Check private-context/machines/ | TBD - check machine-specific docs |
-
-### How to Push to GitHub (Machine-Aware)
-```bash
-# 1. First identify machine
-MACHINE=$(hostname)
-
-# 2. Get PAT based on machine
-if [ "$MACHINE" = "cbp" ]; then
-    # CBP Windows Desktop
-    GITHUB_PAT=$(grep GITHUB_PAT /mnt/c/exe/projects/ai-agents/.env | cut -d'=' -f2)
-elif [ "$MACHINE" = "sprout" ]; then
-    # Jetson
-    GITHUB_PAT=$(cat "/home/sprout/ai-workspace/github pat.txt")
-else
-    echo "Unknown machine - check private-context/machines/"
-    exit 1
-fi
-
-# 3. Push with PAT
-git push https://dp-web4:${GITHUB_PAT}@github.com/dp-web4/ai-dna-discovery.git main
-```
 
 ## Project Context System
 
