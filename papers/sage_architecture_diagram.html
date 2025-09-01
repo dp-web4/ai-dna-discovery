@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SAGE Architecture Diagram</title>
+  <style>
+    body {
+      background-color: #0b1a2b;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    svg {
+      width: 95%;
+      height: auto;
+    }
+    .node rect, .node ellipse, .node circle {
+      fill: none;
+      stroke: #fff;
+      stroke-width: 2;
+    }
+    .text {
+      fill: #fff;
+      font-size: 14px;
+      text-anchor: middle;
+    }
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .arrow {
+      stroke: #fff;
+      stroke-width: 2;
+      fill: none;
+      marker-end: url(#arrowhead);
+    }
+  </style>
+</head>
+<body>
+  <svg viewBox="0 0 1400 800">
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+              refX="10" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#fff" />
+      </marker>
+    </defs>
+
+    <!-- Title -->
+    <text x="700" y="40" class="title">SAGE ARCHITECTURE</text>
+
+    <!-- SNARC Memory -->
+    <circle class="node" cx="200" cy="250" r="90" />
+    <text x="200" y="230" class="text">SNARC</text>
+    <text x="200" y="250" class="text">Memory</text>
+    <text x="200" y="270" class="text" font-size="12">Surprise–Novelty–</text>
+    <text x="200" y="285" class="text" font-size="12">Arousal–Reward–Conflict</text>
+
+    <!-- Awareness Engine / HRM -->
+    <ellipse class="node" cx="700" cy="300" rx="150" ry="50" />
+    <text x="700" y="295" class="text">Awareness Engine</text>
+    <text x="700" y="315" class="text">/ HRM</text>
+    <text x="700" y="335" class="text" font-size="12">(Hierarchical Reasoning Model)</text>
+
+    <!-- Situation to Puzzle VAE -->
+    <rect class="node" x="600" y="150" width="200" height="60" rx="10" ry="10" />
+    <text x="700" y="185" class="text">Situation → Puzzle VAE</text>
+
+    <!-- Puzzle to Action VAE -->
+    <rect class="node" x="1000" y="250" width="200" height="60" rx="10" ry="10" />
+    <text x="1100" y="285" class="text">Puzzle → Action VAE</text>
+
+    <!-- Plugin Framework / IRP -->
+    <rect class="node" x="500" y="420" width="400" height="60" rx="10" ry="10" />
+    <text x="700" y="455" class="text">Plugin Framework / IRP</text>
+    <text x="700" y="475" class="text" font-size="12">Iterative Refinement Primitive</text>
+
+    <!-- Planning LLM -->
+    <rect class="node" x="520" y="520" width="150" height="50" rx="10" ry="10" />
+    <text x="595" y="550" class="text">Planning (LLM)</text>
+
+    <!-- Detection Diffusion -->
+    <rect class="node" x="730" y="520" width="150" height="50" rx="10" ry="10" />
+    <text x="805" y="550" class="text">Detection (Diffusion)</text>
+
+    <!-- Sensors -->
+    <rect class="node" x="100" y="520" width="100" height="40" rx="10" ry="10" />
+    <text x="150" y="545" class="text">Vision</text>
+
+    <rect class="node" x="100" y="580" width="100" height="40" rx="10" ry="10" />
+    <text x="150" y="605" class="text">IMU</text>
+
+    <rect class="node" x="100" y="640" width="100" height="40" rx="10" ry="10" />
+    <text x="150" y="665" class="text">Audio</text>
+
+    <!-- Effectors -->
+    <rect class="node" x="1150" y="520" width="120" height="40" rx="10" ry="10" />
+    <text x="1210" y="545" class="text">Motors</text>
+
+    <rect class="node" x="1150" y="580" width="120" height="40" rx="10" ry="10" />
+    <text x="1210" y="605" class="text">Speech</text>
+
+    <rect class="node" x="1150" y="640" width="120" height="40" rx="10" ry="10" />
+    <text x="1210" y="665" class="text">Display</text>
+
+    <!-- Arrows -->
+    <line class="arrow" x1="290" y1="250" x2="550" y2="300" /> <!-- SNARC → HRM -->
+    <line class="arrow" x1="700" y1="210" x2="700" y2="250" /> <!-- Situation VAE → HRM -->
+    <line class="arrow" x1="850" y1="300" x2="1000" y2="280" /> <!-- HRM → Puzzle to Action VAE -->
+    <line class="arrow" x1="700" y1="350" x2="700" y2="420" /> <!-- HRM → IRP -->
+    <line class="arrow" x1="595" y1="470" x2="595" y2="520" /> <!-- IRP → Planning -->
+    <line class="arrow" x1="805" y1="470" x2="805" y2="520" /> <!-- IRP → Detection -->
+
+    <!-- Sensors to IRP -->
+    <line class="arrow" x1="200" y1="540" x2="500" y2="450" /> <!-- Vision → IRP -->
+    <line class="arrow" x1="200" y1="600" x2="500" y2="450" /> <!-- IMU → IRP -->
+    <line class="arrow" x1="200" y1="660" x2="500" y2="450" /> <!-- Audio → IRP -->
+
+    <!-- Puzzle to Action VAE to Effectors -->
+    <line class="arrow" x1="1200" y1="310" x2="1210" y2="520" /> <!-- VAE → Motors -->
+  </svg>
+</body>
+</html>
