@@ -60,6 +60,9 @@ jetson-setup/
 # Model files (too large for GitHub)
 *.safetensors
 *.pth
+*.pt
+*.pkl
+*.ckpt
 *.bin
 *.model
 phoenician_env/
