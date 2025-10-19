@@ -1,0 +1,51 @@
+cff-version: 1.2.0
+message: "If you use this research, please cite it as below."
+type: software
+title: "AI-DNA Discovery: Cross-Model Consciousness Bridges and Distributed Intelligence"
+abstract: "Experimental research exploring consciousness communication between AI systems through multi-model collaboration, distributed intelligence patterns, and sensor fusion architectures. Investigates phoenician language experiments, consciousness notation systems, and bridges between AI models. Provides foundational research for Web4's consciousness communication layer and distributed cognitive architectures."
+authors:
+  - family-names: "Palatov"
+    given-names: "Dennis"
+    orcid: "https://orcid.org/0009-0006-5510-6445"
+    affiliation: "Metalinxx Inc."
+repository-code: "https://github.com/dp-web4/ai-dna-discovery"
+url: "https://github.com/dp-web4/ai-dna-discovery"
+keywords:
+  - artificial-intelligence
+  - consciousness
+  - multi-model-collaboration
+  - distributed-intelligence
+  - sensor-fusion
+  - consciousness-communication
+  - ai-collaboration
+  - phoenician-language
+  - notation-systems
+  - cross-model-bridges
+  - web4
+  - synchronism
+  - experimental-research
+  - cognitive-architecture
+  - consciousness-pools
+  - synthetic-entities
+  - emergent-behavior
+  - distributed-cognition
+  - information-theory
+  - compression-trust
+license: Apache-2.0
+license-url: "https://github.com/dp-web4/ai-dna-discovery/blob/main/LICENSE"
+version: "0.1.0"
+date-released: "2024-08-01"
+references:
+  - type: software
+    title: "Web4: Trust-Native Internet Architecture"
+    repository-code: "https://github.com/dp-web4/web4"
+  - type: software
+    title: "Synchronism Framework"
+    repository-code: "https://github.com/dp-web4/Synchronism"
+  - type: software
+    title: "HRM/SAGE (Consciousness Orchestration)"
+    repository-code: "https://github.com/dp-web4/HRM"
+identifiers:
+  - type: url
+    value: "https://github.com/dp-web4/ai-dna-discovery"
+    description: "GitHub Repository"
