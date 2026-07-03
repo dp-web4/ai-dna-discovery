@@ -1,32 +1,19 @@
 #!/bin/bash
 #
 # Load Git Environment on Startup
-# This script ensures the PAT is available in the environment
+# The GitHub PAT is retired — the ecosystem uses SSH only. This script sets
+# the git identity and verifies SSH access to GitHub (no token provisioning).
 #
 
-# Define paths
-PAT_SOURCE="/home/sprout/ai-workspace/github pat.txt"
-ENV_FILE="/home/sprout/ai-workspace/.env"
-
-# Check if PAT source exists
-if [ ! -f "$PAT_SOURCE" ]; then
-    echo "[$(date)] ERROR: PAT source not found at '$PAT_SOURCE'" >&2
-    exit 1
-fi
-
-# Create/update .env file
-PAT=$(cat "$PAT_SOURCE")
-echo "GITHUB_PAT=${PAT}" > "$ENV_FILE"
-
-# Export for current session
-export GITHUB_PAT="${PAT}"
-
-# Log success
-echo "[$(date)] Git environment loaded successfully" 
-
-# Optionally set git credential helper to use the PAT
-git config --global credential.helper store
+# Git identity config
 git config --global user.name "dp-web4"
 git config --global user.email "dp@web4.ai"
+
+# Verify SSH access to GitHub (non-fatal: log a warning if unavailable)
+if ssh -o BatchMode=yes -o StrictHostKeyChecking=accept-new -T git@github.com 2>&1 | grep -q "successfully authenticated"; then
+    echo "[$(date)] GitHub SSH access verified"
+else
+    echo "[$(date)] WARNING: GitHub SSH not verified — ensure this machine's SSH key is added to the dp-web4 account (ssh-add -l; ssh -T git@github.com)" >&2
+fi
 
 echo "[$(date)] Git configuration updated"

@@ -1,8 +1,9 @@
 # Claude Context for AI DNA Discovery
 
 ## Authentication
-**GitHub PAT Location**: `../.env` (GITHUB_PAT variable)
-- Use for pushing: `git push https://dp-web4:$(grep GITHUB_PAT ../.env | cut -d= -f2)@github.com/dp-web4/ai-dna-discovery.git`
+**SSH only** — the GitHub PAT is retired ecosystem-wide.
+- Push: `git push origin main` (origin is `git@github.com:dp-web4/ai-dna-discovery.git`)
+- If push fails, ensure this machine's SSH key is loaded and on the dp-web4 account: `ssh-add -l; ssh -T git@github.com`
 
 
 ## Project Context System
