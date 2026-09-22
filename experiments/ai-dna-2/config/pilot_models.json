@@ -1,0 +1,21 @@
+{
+  "purpose": "small, ungated, cross-family CPU pilot; not a claim-grade model panel",
+  "models": [
+    {
+      "id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "role": "modern small instruct model"
+    },
+    {
+      "id": "EleutherAI/pythia-410m-deduped-v0",
+      "family": "gpt_neox",
+      "role": "research-oriented distinct architecture"
+    },
+    {
+      "id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+      "family": "llama",
+      "role": "small Llama-family comparison"
+    }
+  ],
+  "load_policy": "one model per process; CPU float32 on pub; exact revisions recorded in generated manifest"
+}
