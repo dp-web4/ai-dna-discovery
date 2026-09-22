@@ -1,0 +1,49 @@
+{
+  "anchor_sha256": "47990c09b8e2969d03c18b49f894b403704322e3d74e1b93f3f53b86b314bec2",
+  "left_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "n_samples": 40,
+  "results": [
+    {
+      "depth_key": "depth_025",
+      "left_layer": 6,
+      "linear_cka": 0.6574741207663037,
+      "null_mean": -0.002760459346625223,
+      "null_std": 0.0755531260789273,
+      "permutation_p": 0.002,
+      "rdm_spearman": 0.6332230860137711,
+      "right_layer": 6
+    },
+    {
+      "depth_key": "depth_050",
+      "left_layer": 12,
+      "linear_cka": 0.6600255463273573,
+      "null_mean": 0.001691785982984953,
+      "null_std": 0.07449895624508296,
+      "permutation_p": 0.002,
+      "rdm_spearman": 0.5574304160465545,
+      "right_layer": 12
+    },
+    {
+      "depth_key": "depth_075",
+      "left_layer": 18,
+      "linear_cka": 0.6254202961179529,
+      "null_mean": -0.001033465683222989,
+      "null_std": 0.07199881958095124,
+      "permutation_p": 0.002,
+      "rdm_spearman": 0.3401317227674602,
+      "right_layer": 18
+    },
+    {
+      "depth_key": "depth_100",
+      "left_layer": 24,
+      "linear_cka": 0.7611392738291425,
+      "null_mean": 0.002933443286017388,
+      "null_std": 0.08599762538081801,
+      "permutation_p": 0.002,
+      "rdm_spearman": 0.5334277720327008,
+      "right_layer": 24
+    }
+  ],
+  "right_model": "EleutherAI/pythia-410m-deduped-v0",
+  "schema": "ai-dna-2.relational-report.v1"
+}
