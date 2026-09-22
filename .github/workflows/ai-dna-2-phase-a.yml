@@ -1,0 +1,30 @@
+name: AI-DNA 2.0 Phase A
+
+on:
+  pull_request:
+    paths:
+      - "experiments/ai-dna-2/**"
+      - ".github/workflows/ai-dna-2-phase-a.yml"
+  push:
+    branches: [main]
+    paths:
+      - "experiments/ai-dna-2/**"
+      - ".github/workflows/ai-dna-2-phase-a.yml"
+
+jobs:
+  phase-a:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: experiments/ai-dna-2
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Phase A dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Unit tests
+        run: pytest -q
+      - name: Synthetic rotation acceptance
+        run: python run_phase_a.py
