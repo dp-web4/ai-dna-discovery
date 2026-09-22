@@ -16,7 +16,7 @@ Build a reproducible harness that distinguishes:
 
 The harness must make it difficult to accidentally reproduce the original 2025 methodological error.
 
-It must also distinguish **statistical correspondence** from **semantic correspondence**. RDM, CKA, retrieval, and permutation statistics are instruments; none is semantic evidence unless the measured structure responds correctly to controlled meaning-preserving and meaning-changing interventions. See `MRH_SEMANTIC_INVARIANTS.md`.
+It must also distinguish **statistical correspondence** from **semantic correspondence**. RDM, CKA, retrieval, and permutation statistics are instruments; none is semantic evidence unless the measured structure responds correctly to controlled meaning-preserving and meaning-changing interventions. See `SEMANTIC_CLOSURE_HORIZONS.md`.
 
 ## 2. Non-goals
 
@@ -207,9 +207,9 @@ If mean-only explains the functional gain, do not describe the residual basis as
 Phase C is now split into:
 
 - **C0 — geometry instrumentation validation:** establish that non-random relational structure is measurable across architectures. The initial pub pilot belongs here and is explicitly pre-semantic.
-- **C1 — MRH-semantic invariance/sensitivity:** establish that the measured structure tracks coherent meaning rather than prompt/token nuisance variables.
+- **C1 — semantic-closure invariance/sensitivity:** establish that the measured structure tracks coherent meaning rather than prompt/token nuisance variables.
 
-C1 is a gate for claim-grade relational universality and for Phase D alignment.
+C1 is a gate for claim-grade relational universality and for Phase D alignment. **Semantic closure horizon (SCH)** is the C1 term; Web4 MRH remains a separate declared/signed graph-neighborhood construct with traversal depth.
 
 For every architecture pair and layer-depth pair:
 
@@ -230,15 +230,15 @@ It does **not** advance to semantic or alignment claims on those facts alone.
 For C1, each semantic target must include controlled probe families:
 
 - paraphrase/surface variation with meaning preserved;
-- outside-MRH distractors that should not change meaning;
-- inside-MRH evidence that should change or disambiguate meaning;
+- outside-closure distractors that should not change meaning;
+- inside-closure evidence that should change or disambiguate meaning;
 - lexical near-neighbor / meaning-flip pairs that should separate;
 - where useful, progressive-context probes that estimate a semantic closure horizon.
 
 A candidate advances beyond C1 only if it:
 
 - is invariant under meaning-preserving surface changes;
-- is insensitive to outside-MRH distractors;
+- is insensitive to outside-closure distractors;
 - changes appropriately under meaning-relevant evidence;
 - separates lexically similar but semantically different cases;
 - preserves semantic relations or transformations across architectures;
@@ -364,7 +364,7 @@ That small milestone validates the scientific plumbing before GPU/model complexi
 
 ## 16. SAGE handoff condition
 
-The preferred architecture-neutral primitive, if C1 succeeds, is not a generic latent vector. It is a semantic entity/relation plus its relevance horizon: what evidence established it, what lies inside/outside the MRH, which transformations preserve identity, and which change meaning.
+The preferred architecture-neutral primitive, if C1 succeeds, is not a generic latent vector. It is a semantic entity/relation plus its relevance horizon: what evidence established it, what lies inside/outside the semantic closure horizon, which transformations preserve identity, and which change meaning.
 
 No SAGE architecture change is justified by this experiment until Phase D or E succeeds.
 
