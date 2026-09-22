@@ -16,6 +16,8 @@ Build a reproducible harness that distinguishes:
 
 The harness must make it difficult to accidentally reproduce the original 2025 methodological error.
 
+It must also distinguish **statistical correspondence** from **semantic correspondence**. RDM, CKA, retrieval, and permutation statistics are instruments; none is semantic evidence unless the measured structure responds correctly to controlled meaning-preserving and meaning-changing interventions. See `MRH_SEMANTIC_INVARIANTS.md`.
+
 ## 2. Non-goals
 
 - proving a universal latent language from a single metric;
@@ -202,6 +204,13 @@ If mean-only explains the functional gain, do not describe the residual basis as
 
 ## 9. Phase C acceptance: relational cross-architecture test
 
+Phase C is now split into:
+
+- **C0 — geometry instrumentation validation:** establish that non-random relational structure is measurable across architectures. The initial pub pilot belongs here and is explicitly pre-semantic.
+- **C1 — MRH-semantic invariance/sensitivity:** establish that the measured structure tracks coherent meaning rather than prompt/token nuisance variables.
+
+C1 is a gate for claim-grade relational universality and for Phase D alignment.
+
 For every architecture pair and layer-depth pair:
 
 - compute RDM Spearman;
@@ -211,14 +220,35 @@ For every architecture pair and layer-depth pair:
 
 Run permutation nulls with at least 1,000 identity shuffles for final claims.
 
-A candidate signal advances if it:
+A C0 candidate signal is worth further study if it:
 
 - beats null with corrected significance;
-- appears in at least three architecture pairs;
-- survives paraphrase aggregation;
-- appears on held-out concepts and at least one held-out domain.
+- appears in at least three architecture pairs.
+
+It does **not** advance to semantic or alignment claims on those facts alone.
+
+For C1, each semantic target must include controlled probe families:
+
+- paraphrase/surface variation with meaning preserved;
+- outside-MRH distractors that should not change meaning;
+- inside-MRH evidence that should change or disambiguate meaning;
+- lexical near-neighbor / meaning-flip pairs that should separate;
+- where useful, progressive-context probes that estimate a semantic closure horizon.
+
+A candidate advances beyond C1 only if it:
+
+- is invariant under meaning-preserving surface changes;
+- is insensitive to outside-MRH distractors;
+- changes appropriately under meaning-relevant evidence;
+- separates lexically similar but semantically different cases;
+- preserves semantic relations or transformations across architectures;
+- survives held-out concepts and at least one held-out domain.
+
+Token count, character count, frequency, syntax, and related variables are nuisance metadata / confound controls, never target signals.
 
 ## 10. Phase D acceptance: learned alignment
+
+**Entry gate:** Phase D should not begin as a claim-bearing experiment until C1 has identified structure that tracks semantic manipulations rather than merely non-random geometry.
 
 Implement in order:
 
@@ -333,6 +363,8 @@ The first PR after this design should contain only enough code to pass Phase A:
 That small milestone validates the scientific plumbing before GPU/model complexity is introduced.
 
 ## 16. SAGE handoff condition
+
+The preferred architecture-neutral primitive, if C1 succeeds, is not a generic latent vector. It is a semantic entity/relation plus its relevance horizon: what evidence established it, what lies inside/outside the MRH, which transformations preserve identity, and which change meaning.
 
 No SAGE architecture change is justified by this experiment until Phase D or E succeeds.
 
