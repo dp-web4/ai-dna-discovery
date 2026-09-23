@@ -303,7 +303,7 @@ Examples:
 
 If the representation follows lexical overlap instead of the meaning flip, the candidate invariant fails.
 
-### D. Outside-MRH distractors
+### D. Outside-closure distractors
 
 Add semantically irrelevant material before and after the target context.
 
@@ -331,7 +331,7 @@ It should advance only if the same structure shows the correct **semantic respon
 
 1. **invariant** under meaning-preserving surface changes;
 2. **insensitive** to outside-closure distractors;
-3. **sensitive** to meaning-changing evidence inside the MRH;
+3. **sensitive** to meaning-changing evidence inside the semantic closure horizon;
 4. **separates** lexical near-neighbors with different meanings;
 5. **preserves** semantic relations or transformations across architectures;
 6. generalizes to held-out concepts and domains.
