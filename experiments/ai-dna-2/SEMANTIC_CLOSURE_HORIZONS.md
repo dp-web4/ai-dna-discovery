@@ -26,7 +26,7 @@ Therefore:
 
 > **A metric is not meaningful merely because it is significant. Its semantic interpretation must be specified by the experimental manipulation that produced it.**
 
-RDM, CKA, retrieval scores, p-values, and related statistics are measuring instruments. They are not the phenomenon.
+RDM, CKA, local-neighborhood overlap, retrieval scores, p-values, and related statistics are measuring instruments. They are not the phenomenon. Local-neighborhood measures are now preferred for C1 because calibrated external evidence suggests they survive where apparent global geometric convergence may not.
 
 The target phenomenon is architecture-independent structure in how coherent meanings are represented, distinguished, stabilized, and transformed.
 
@@ -84,6 +84,16 @@ The conceptual ancestry remains useful: both constrain what is relevant. The mec
 
 HUB also surfaced a useful test principle from Web4: **assert the relation, not the coordinate.** C1 should therefore predeclare semantic relations/transformations expected to be conserved and test those relations across architectures, rather than treating geometric similarity itself as the claim.
 
+
+## Connection to PRH and calibrated local neighborhoods
+
+The Platonic Representation Hypothesis independently supports comparing induced relations rather than raw coordinates. Its caption-density result is adjacent to semantic closure: richer observations improve cross-modal alignment, but it does not distinguish relevant semantic evidence from additional correlated surface structure.
+
+A 2026 calibrated re-analysis further shows that raw global similarity can grow with representation width and layer-selection opportunity, while local neighborhood identity remains robust. SCH therefore treats **local semantic neighborhood transitions** as the primary observable and global CKA/RDM as supporting diagnostics.
+
+The key extension beyond PRH is causal/semantic: C1 asks which evidence should preserve, change, invert, or establish a **predeclared semantic relation**. The metric measures that predicted response; it does not define the meaning after the fact.
+
+See `PRH_RELEVANCE.md`.
 
 ## Three primary semantic quantities
 
