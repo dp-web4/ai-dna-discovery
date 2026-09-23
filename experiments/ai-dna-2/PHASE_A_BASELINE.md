@@ -49,6 +49,8 @@ python3 -m venv .venv
 
 The exact naive-cosine values depend on the fixed RNG implementation and floating-point library but should remain close. The invariance metrics and held-out retrieval should be numerically exact or effectively exact.
 
-## Next gate
+## Status after baseline
 
-A runtime partner should independently reproduce Phase A before model extraction begins. Pub is the primary pilot runner; see `EXECUTION_PARTNER.md`.
+Phase A has since been independently reproduced on Pub, and the real-model C0 pilot has run on Qwen2.5-0.5B-Instruct, Pythia-410M, and TinyLlama-1.1B. Phase A is therefore closed as an instrumentation gate.
+
+The next claim-bearing gate is C1 Semantic Closure Horizon; see `STATUS.md`, `SEMANTIC_CLOSURE_HORIZONS.md`, and `PRH_RELEVANCE.md`.
