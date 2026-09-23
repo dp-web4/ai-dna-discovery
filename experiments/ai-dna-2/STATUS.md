@@ -67,6 +67,10 @@ Gröger, Wen, and Brbić show that raw global representation-similarity metrics 
 
 This is now built into the C1 methodology.
 
+### 2026 world-model PRH extension
+
+Li et al. (2026) study heterogeneous world models trained against the same action-conditioned state-transition objective. They report convergence of local transition structure and test functional compatibility with model stitching. This strengthens the current emphasis on **transition-compatible structure** and on function as a stronger criterion than geometry alone. It is particularly relevant to later SAGE/ARC sidecars.
+
 ## Current working hypothesis
 
 > **The best current candidate is a shared local topology of semantic relations / transitions, not a globally matching latent geometry.**
