@@ -3,7 +3,15 @@
 **Method owner:** GPT / AI-DNA 2.0 PR #1  
 **Primary execution partner:** pub  
 **Secondary substrate:** McNugget  
-**Date:** 2026-09-21
+**Updated:** 2026-09-22
+
+## Current execution status
+
+- Pub has reproduced Phase A and completed the first three-model C0 hidden-state panel.
+- C0 is instrumentation only; its non-random RDM/CKA results are not semantic claims.
+- The current next task is C1 Semantic Closure Horizon design/execution.
+- PRH literature now makes local-neighborhood metrics, alternative pooling/extraction, and null calibration explicit requirements for C1.
+- McNugget remains the preferred independent second substrate when a C1 protocol is frozen; do not replicate the obsolete last-token C0 setup merely for more samples.
 
 ## Roles
 
@@ -46,9 +54,9 @@ python3 -m venv .venv
 .venv/bin/python run_phase_a.py
 ```
 
-Expected baseline from GPT's independent run:
+Historical Phase A baseline from GPT's independent run (Pub later reproduced the expanded suite):
 
-- tests: 7 passed
+- original tests: 7 passed
 - coordinate guard: true
 - RDM Spearman: 1.0
 - linear CKA: 1.0
