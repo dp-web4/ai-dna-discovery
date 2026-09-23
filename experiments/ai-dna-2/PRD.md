@@ -1,6 +1,6 @@
 # PRD: AI-DNA 2.0 Experimental Harness
 
-**Status:** proposed  
+**Status:** v0.2 active — Phase A/C0 complete; C1 design current as of 2026-09-22  
 **Parent:** \`README.md\` in this directory  
 **Principle:** compare invariants, not arbitrary coordinates.
 
@@ -101,14 +101,22 @@ A mapping that has enough capacity to memorize the dictionary is a translation s
 
 ### 4.4 Primary metrics are fixed before the first full run
 
-Primary:
+C1 primary instruments, in priority order:
 
-- RDM Spearman correlation;
+- mutual/local k-nearest-neighbor overlap;
+- predeclared semantic relation / triplet conservation;
+- CKNNA-style local neighborhood comparison where implementation is auditable;
+- held-out neighborhood conservation under semantic intervention.
+
+Supporting diagnostics:
+
+- RDM Spearman / RSA;
 - linear CKA;
-- held-out top-k retrieval / MRR;
-- neighborhood overlap;
-- functional effect-sign agreement;
-- functional effect-size correlation.
+- global geometry / Procrustes diagnostics.
+
+Later-phase primary outputs remain held-out retrieval/MRR and functional effect-sign/effect-size agreement.
+
+Raw global metric magnitude is never self-interpreting; the reported statistic must be calibrated against its actual null, including representation width and layer-selection/aggregation.
 
 Secondary analyses may be exploratory but must be labeled as such.
 
@@ -141,9 +149,10 @@ The first run can use a smaller pilot set (100-200 concepts) only to validate th
 
 For causal LMs:
 
-- run a fixed prompt template plus paraphrase variants;
+- run multiple declared prompt templates / paraphrase variants;
 - extract hidden states at normalized layer-depth positions;
-- pool over concept span and/or final prompt token using declared methods;
+- compare declared pooling methods including semantic-span/closure-point and mean pooling;
+- retain last-token pooling only as a diagnostic/control, not as the default semantic representation;
 - store native dimension;
 - L2 normalization may be applied only after the raw vector is preserved;
 - record tokenizer output and span mapping.
@@ -213,12 +222,14 @@ C1 is a gate for claim-grade relational universality and for Phase D alignment. 
 
 For every architecture pair and layer-depth pair:
 
-- compute RDM Spearman;
-- compute linear CKA from sample Gram matrices;
-- compute k-nearest-neighbor overlap;
-- compute semantic triplet ordering accuracy.
+- compute local/mutual k-nearest-neighbor overlap;
+- compute predeclared semantic triplet/relation accuracy;
+- compute a local-kernel/CKNNA-style metric when available;
+- compute RDM Spearman and linear CKA as supporting diagnostics.
 
-Run permutation nulls with at least 1,000 identity shuffles for final claims.
+For claim-bearing C1 results, declare the semantic relation before the run (for example SAME-CONCEPT, DISJOINT-SENSE, TEMPORAL-ORDER, CAUSAL-DIRECTION) and state which intervention should preserve, invert, or create that relation.
+
+Run permutation/null calibration with at least 1,000 valid shuffles for final claims. The permutation scheme must preserve grouped dependence (for example paraphrases/minimal-pair families) rather than assuming every row is freely exchangeable. Calibrate the aggregate statistic actually reported, including any max/selection across layer pairs.
 
 A C0 candidate signal is worth further study if it:
 
@@ -306,15 +317,19 @@ A single dramatic example is not sufficient.
 
 ## 12. Statistics
 
-Use bootstrap confidence intervals over concepts/examples.
+Use bootstrap confidence intervals over concepts/examples, with grouping respected where probes share a semantic family.
 
 Use permutation tests for alignment/relational metrics where analytic assumptions are weak.
 
+**Null calibration is mandatory for representation-similarity claims.** Raw CKA/RSA/shape magnitudes can have nonzero baselines that depend on representation width, sample size, and how many layer pairs are searched. If the analysis selects or aggregates across layers, calibrate that final selected/aggregated statistic under the same procedure.
+
+Use restricted/block permutations for paraphrase and minimal-pair families; do not destroy within-family dependence and call the resulting shuffle a valid null.
+
 Correct for multiple architecture/layer comparisons in confirmatory results.
 
-Report effect sizes, not only p-values.
+Report calibrated effect sizes and uncertainty, not only p-values.
 
-All random seeds are recorded.
+All random seeds and permutation-block definitions are recorded.
 
 ## 13. Provenance and reproducibility
 
@@ -378,3 +393,14 @@ If Phase D succeeds but Phase E fails, a discovered mapping may still be useful 
 If Phase E succeeds, then evaluate a genuine architecture-adapter layer for SAGE beings/nodes, with provenance identifying source model, mapping version, confidence, and failure domain.
 
 That integration should live in SAGE; this repository remains the experimental evidence base.
+
+
+## 17. External prior-art constraints
+
+The experiment design is now explicitly informed by:
+
+- Huh et al. (2024), *The Platonic Representation Hypothesis*: coordinate-free relational/kernel comparison, extraction sensitivity, and information-density effects.
+- Gröger, Wen, Brbić (2026), *Revisiting the Platonic Representation Hypothesis: An Aristotelian View*: width/layer-selection null inflation and stronger calibrated local-neighborhood convergence than global geometry.
+- Kaushik et al. (2025), *The Universal Weight Subspace Hypothesis*: same-architecture weight-space positive/control track.
+
+See `PRH_RELEVANCE.md` for the mapping. These papers constrain methodology; none is treated as proof of AI-DNA 2.0's semantic or functional claims.
