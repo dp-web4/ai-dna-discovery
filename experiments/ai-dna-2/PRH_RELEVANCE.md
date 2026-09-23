@@ -137,6 +137,7 @@ The invariant is not that a vector stops moving. It is that **the named semantic
 | UWSH | weight/update subspaces | shared architecture | low-dimensional same-architecture parameter structure | positive/control track |
 | PRH 2024 | kernels / relational geometry | none | increasing relational convergence across models/modalities | primary conceptual prior |
 | Aristotelian 2026 | calibrated local neighborhoods | none | local neighbor relations survive where global convergence weakens | primary metric correction |
+| World-model PRH 2026 | action-conditioned state-transition representations | none initially; stitching adapters later | predictive consistency can yield transition-compatible latent structure | transition/functional prior |
 | AI-DNA 2.0 | intervention-defined semantic relations + later function | none initially; learned map later | semantic conservation / SCH / functional transfer | target research program |
 
 ## Concrete changes adopted
