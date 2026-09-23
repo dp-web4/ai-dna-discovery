@@ -1,8 +1,8 @@
 # AI-DNA 2.0: Coordinate, Relational, and Functional Universality
 
-**Status:** experiment design, not yet executed  
-**Date:** 2026-09-21  
-**Origin:** retrospective on the 2025 AI-DNA experiments, prompted by Kaushik et al., *The Universal Weight Subspace Hypothesis* (arXiv:2512.05117)
+**Status:** active experiment — Phase A and C0 complete; C1 Semantic Closure Horizon next  
+**Updated:** 2026-09-22  
+**Origin:** retrospective on the 2025 AI-DNA experiments; now informed by the Universal Weight Subspace Hypothesis, the Platonic Representation Hypothesis (PRH), and the 2026 calibrated "Aristotelian" re-analysis of PRH
 
 ## Why reopen this question?
 
@@ -29,6 +29,16 @@ The experiment deliberately separates three claims that were previously mixed to
 A fourth track provides a positive/control comparison with recent work:
 
 4. **Within-architecture weight-subspace structure** — do independently fine-tuned instances of one architecture occupy a shared low-dimensional parameter subspace?
+
+## Closest external prior: PRH and its calibrated re-analysis
+
+Huh et al. (2024), *The Platonic Representation Hypothesis*, is the closest published precedent to the corrected AI-DNA 2.0 question. PRH compares representations through their induced kernels / sample-to-sample relations rather than raw coordinate equality, reports cross-model and cross-modal convergence, and shows that representation extraction and information density materially affect measured alignment.
+
+A 2026 re-analysis by Gröger, Wen, and Brbić shows that raw global similarity scores can be inflated by representation width and by selecting over more layers. After permutation-based calibration, much global convergence weakens while **local neighborhood identity remains robust**.
+
+AI-DNA 2.0 therefore treats local semantic neighborhoods as primary, global CKA/RDM magnitude as diagnostic, and null calibration as mandatory. C1 also goes beyond PRH by defining semantic significance through predeclared meaning-preserving and meaning-changing interventions rather than similarity alone.
+
+See `PRH_RELEVANCE.md`.
 
 ## Relation to the Universal Weight Subspace Hypothesis
 
@@ -168,8 +178,13 @@ For unrelated architectures, raw cosine is reported only as a demonstration of w
 
 ### Level 1: coordinate-free relational metrics
 
+**Priority order after the PRH re-analysis:** local neighborhood identity/overlap first; semantic triplet/relation tests second; global RDM/CKA as supporting diagnostics. Raw global magnitudes must be calibrated against appropriate width/layer-selection nulls.
+
 Use sample-by-sample geometry instead of coordinate identity:
 
+- mutual/local k-nearest-neighbor overlap (primary);
+- CKNNA-style local neighborhood comparison where implementation is auditable;
+- predeclared semantic triplet/relation conservation;
 - representational dissimilarity matrices (RDMs);
 - rank correlation between pairwise-distance matrices;
 - linear CKA on Gram matrices;
