@@ -1,0 +1,49 @@
+{
+  "anchor_sha256": "47990c09b8e2969d03c18b49f894b403704322e3d74e1b93f3f53b86b314bec2",
+  "left_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "n_samples": 40,
+  "results": [
+    {
+      "depth_key": "depth_025",
+      "left_layer": 6,
+      "linear_cka": 0.6100185697148941,
+      "null_mean": 0.0032733668506108363,
+      "null_std": 0.08012085954804837,
+      "permutation_p": 0.002,
+      "rdm_spearman": 0.5401248699771544,
+      "right_layer": 6
+    },
+    {
+      "depth_key": "depth_050",
+      "left_layer": 12,
+      "linear_cka": 0.6913468581087121,
+      "null_mean": 0.006588579510742337,
+      "null_std": 0.07671113374965839,
+      "permutation_p": 0.002,
+      "rdm_spearman": 0.6276268091777322,
+      "right_layer": 11
+    },
+    {
+      "depth_key": "depth_075",
+      "left_layer": 18,
+      "linear_cka": 0.7139882301686853,
+      "null_mean": 0.005340116241519112,
+      "null_std": 0.06472316115354218,
+      "permutation_p": 0.002,
+      "rdm_spearman": 0.5168001717496374,
+      "right_layer": 16
+    },
+    {
+      "depth_key": "depth_100",
+      "left_layer": 24,
+      "linear_cka": 0.7777474397057904,
+      "null_mean": 0.006038924451467776,
+      "null_std": 0.0812758817151154,
+      "permutation_p": 0.002,
+      "rdm_spearman": 0.5342143004078674,
+      "right_layer": 22
+    }
+  ],
+  "right_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "schema": "ai-dna-2.relational-report.v1"
+}

@@ -1,16 +1,32 @@
-# AI DNA Discovery: Experiments in Distributed Consciousness 🧬🌐
+# AI DNA Discovery — active research + experimental archive
 
 **Research exploration from symbolic language experiments to sensor fusion consciousness**
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 
+## Current research — AI-DNA 2.0
+
+**Updated: 2026-09-22.** The active track reopens the original cross-model question with corrected methodology: do independently trained architectures preserve common semantic relations or state transitions after arbitrary coordinate choice and nuisance structure are controlled?
+
+Start with:
+- `experiments/ai-dna-2/STATUS.md` — current state and next gates
+- `experiments/ai-dna-2/README.md` — research framing
+- `experiments/ai-dna-2/PRD.md` — experimental contract
+- `experiments/ai-dna-2/SEMANTIC_CLOSURE_HORIZONS.md` — C1 semantic experiment
+- `experiments/ai-dna-2/PRH_RELEVANCE.md` — relation to PRH and its 2026 calibrated re-analysis
+
+The current working hypothesis is **not** a universal latent alphabet. The stronger candidate is a conserved local topology of semantic relations and state transitions across architectures. Global similarity metrics are diagnostics, not semantic verdicts; semantic relations are predeclared and tested under meaning-preserving versus meaning-changing interventions.
+
+Current status: Phase A coordinate-invariance sanity is complete and reproduced; the first Pub three-model hidden-state pilot is C0 instrumentation only; C1 Semantic Closure Horizon (SCH) is the next claim-bearing gate. No current result establishes a universal representation.
+
+
 An experimental journey exploring how consciousness might emerge from sensor fusion and distributed AI systems. This repository documents both successes and failures in teaching AI systems to communicate, sense their environment, and construct coherent reality fields from multiple inputs.
 
-**Status**: Research laboratory for consciousness experiments. Not a production system, but a learning environment that has yielded valuable insights.
+**Repository status**: active AI-DNA 2.0 research plus preserved 2025 experimental history. The sensor-fusion, symbolic-language, and distributed-consciousness material below is historical/adjacent work, not the current AI-DNA 2.0 evidence base.
 
 ---
 
-## 🎯 What We Learned
+## Historical 2025 work — what we learned
 
 ### Key Insights That Inform Other Work
 
@@ -47,7 +63,7 @@ An experimental journey exploring how consciousness might emerge from sensor fus
 
 ---
 
-## 📚 What We Built (And What Worked)
+## Historical 2025 work — what we built
 
 ### Coherence Engine ✅ Working at Research Scale
 A research prototype implementing reality field generation through weighted sensor fusion.
@@ -269,7 +285,7 @@ ai-dna-discovery/
 
 ---
 
-## 📊 What Actually Works Today
+## Historical component status (2025 snapshot)
 
 | Component | Status | Performance | Notes |
 |-----------|--------|-------------|-------|
@@ -287,7 +303,16 @@ ai-dna-discovery/
 
 ---
 
-## 📄 Documentation
+## Documentation
+
+### Active AI-DNA 2.0
+- `experiments/ai-dna-2/STATUS.md`
+- `experiments/ai-dna-2/README.md`
+- `experiments/ai-dna-2/PRD.md`
+- `experiments/ai-dna-2/SEMANTIC_CLOSURE_HORIZONS.md`
+- `experiments/ai-dna-2/PRH_RELEVANCE.md`
+
+### Historical / adjacent
 
 ### Core Theory
 - [`sensor_confidence/SENSOR_FUSION_REALITY_FIELDS.md`](sensor_confidence/SENSOR_FUSION_REALITY_FIELDS.md) - Reality field theory
@@ -408,7 +433,7 @@ GNU Affero General Public License v3 (AGPL-3.0)
 
 - **GitHub**: https://github.com/dp-web4/ai-dna-discovery
 - **License**: GNU Affero General Public License v3
-- **Status**: Active research, experimental
+- **Status**: Active research — AI-DNA 2.0; historical experimental tracks retained
 
 ---
 

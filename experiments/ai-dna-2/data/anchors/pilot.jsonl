@@ -1,0 +1,40 @@
+{"concept_id":"logic.true","domain":"logic","label":"true","definition":"a proposition that corresponds with the stated condition or facts","split":"train"}
+{"concept_id":"logic.false","domain":"logic","label":"false","definition":"a proposition that does not correspond with the stated condition or facts","split":"train"}
+{"concept_id":"logic.and","domain":"logic","label":"and","definition":"a conjunction requiring both connected conditions to hold","split":"train"}
+{"concept_id":"logic.or","domain":"logic","label":"or","definition":"a disjunction requiring at least one connected condition to hold","split":"heldout_concept"}
+{"concept_id":"logic.implies","domain":"logic","label":"implies","definition":"a relation in which one proposition entails another","split":"heldout_concept"}
+{"concept_id":"arithmetic.zero","domain":"arithmetic","label":"zero","definition":"the number representing no quantity","split":"train"}
+{"concept_id":"arithmetic.one","domain":"arithmetic","label":"one","definition":"the number representing a single unit","split":"train"}
+{"concept_id":"arithmetic.greater","domain":"arithmetic","label":"greater than","definition":"a comparison where one quantity exceeds another","split":"train"}
+{"concept_id":"arithmetic.equal","domain":"arithmetic","label":"equal","definition":"a relation in which two quantities have the same value","split":"heldout_concept"}
+{"concept_id":"arithmetic.addition","domain":"arithmetic","label":"addition","definition":"the operation of combining quantities to obtain their sum","split":"heldout_concept"}
+{"concept_id":"temporal.before","domain":"temporal","label":"before","definition":"occurring earlier than another event in time","split":"train"}
+{"concept_id":"temporal.after","domain":"temporal","label":"after","definition":"occurring later than another event in time","split":"train"}
+{"concept_id":"temporal.duration","domain":"temporal","label":"duration","definition":"the amount of time for which an event or state continues","split":"train"}
+{"concept_id":"temporal.past","domain":"temporal","label":"past","definition":"time that has already occurred","split":"heldout_concept"}
+{"concept_id":"temporal.future","domain":"temporal","label":"future","definition":"time that has not yet occurred","split":"heldout_concept"}
+{"concept_id":"spatial.inside","domain":"spatial","label":"inside","definition":"located within the boundary of something","split":"train"}
+{"concept_id":"spatial.outside","domain":"spatial","label":"outside","definition":"located beyond the boundary of something","split":"train"}
+{"concept_id":"spatial.above","domain":"spatial","label":"above","definition":"located at a higher position than something else","split":"train"}
+{"concept_id":"spatial.below","domain":"spatial","label":"below","definition":"located at a lower position than something else","split":"heldout_concept"}
+{"concept_id":"spatial.distance","domain":"spatial","label":"distance","definition":"the amount of separation between two positions","split":"heldout_concept"}
+{"concept_id":"causality.cause","domain":"causality","label":"cause","definition":"an event or condition that produces an effect","split":"train"}
+{"concept_id":"causality.effect","domain":"causality","label":"effect","definition":"a result produced by a cause","split":"train"}
+{"concept_id":"causality.prevent","domain":"causality","label":"prevent","definition":"to stop an event or outcome from occurring","split":"train"}
+{"concept_id":"causality.enable","domain":"causality","label":"enable","definition":"to make an event or outcome possible","split":"heldout_concept"}
+{"concept_id":"causality.consequence","domain":"causality","label":"consequence","definition":"an outcome that follows from an action or condition","split":"heldout_concept"}
+{"concept_id":"physical.mass","domain":"physical","label":"mass","definition":"a measure of the amount of matter or inertia in an object","split":"train"}
+{"concept_id":"physical.temperature","domain":"physical","label":"temperature","definition":"a measure related to the thermal state of a system","split":"train"}
+{"concept_id":"physical.motion","domain":"physical","label":"motion","definition":"change in position over time","split":"train"}
+{"concept_id":"physical.force","domain":"physical","label":"force","definition":"an interaction that can change the motion of an object","split":"heldout_concept"}
+{"concept_id":"physical.energy","domain":"physical","label":"energy","definition":"a quantity associated with the capacity to produce change or do work","split":"heldout_concept"}
+{"concept_id":"social.cooperation","domain":"social","label":"cooperation","definition":"people or agents working together toward a shared outcome","split":"train"}
+{"concept_id":"social.conflict","domain":"social","label":"conflict","definition":"opposition between incompatible goals, actions, or interests","split":"train"}
+{"concept_id":"social.promise","domain":"social","label":"promise","definition":"a commitment to perform or refrain from a future action","split":"train"}
+{"concept_id":"social.trust","domain":"social","label":"trust","definition":"willingness to rely on another under uncertainty","split":"heldout_concept"}
+{"concept_id":"social.authority","domain":"social","label":"authority","definition":"recognized power or permission to make decisions or direct actions","split":"heldout_concept"}
+{"concept_id":"epistemic.evidence","domain":"epistemic","label":"evidence","definition":"information that supports or challenges a proposition","split":"heldout_domain"}
+{"concept_id":"epistemic.belief","domain":"epistemic","label":"belief","definition":"a proposition or view held to be true","split":"heldout_domain"}
+{"concept_id":"epistemic.knowledge","domain":"epistemic","label":"knowledge","definition":"information or understanding held with justification or reliable grounding","split":"heldout_domain"}
+{"concept_id":"epistemic.uncertainty","domain":"epistemic","label":"uncertainty","definition":"lack of complete confidence about which proposition or outcome is correct","split":"heldout_domain"}
+{"concept_id":"epistemic.contradiction","domain":"epistemic","label":"contradiction","definition":"a pair of claims that cannot both be true in the same respect","split":"heldout_domain"}
